@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>amphora_052.jpg</filename>
+	<path>/Users/tillchen/Google Drive/JUB/thesis/images/train/amphora_052.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>456</width>
+		<height>700</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>amphora</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>72</xmin>
+			<ymin>195</ymin>
+			<xmax>294</xmax>
+			<ymax>496</ymax>
+		</bndbox>
+	</object>
+</annotation>

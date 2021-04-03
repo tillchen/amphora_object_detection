@@ -1,0 +1,38 @@
+<annotation>
+	<folder>val</folder>
+	<filename>amphora_011.jpeg</filename>
+	<path>/Users/tillchen/Google Drive/JUB/thesis/images/val/amphora_011.jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>630</width>
+		<height>581</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>amphora</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>179</xmin>
+			<ymin>166</ymin>
+			<xmax>407</xmax>
+			<ymax>366</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>amphora</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>286</xmin>
+			<ymin>272</ymin>
+			<xmax>630</xmax>
+			<ymax>581</ymax>
+		</bndbox>
+	</object>
+</annotation>
