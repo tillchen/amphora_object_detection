@@ -1,0 +1,54 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{JS06}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=da652fe8976346f22f2e2f6c91008caa}{%
+           family={Sample},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Jacobs University Bremen}%
+      }
+      \strng{namehash}{da652fe8976346f22f2e2f6c91008caa}
+      \strng{fullhash}{da652fe8976346f22f2e2f6c91008caa}
+      \strng{bibnamehash}{da652fe8976346f22f2e2f6c91008caa}
+      \strng{authorbibnamehash}{da652fe8976346f22f2e2f6c91008caa}
+      \strng{authornamehash}{da652fe8976346f22f2e2f6c91008caa}
+      \strng{authorfullhash}{da652fe8976346f22f2e2f6c91008caa}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{9}
+      \field{title}{{On the Possibility of the Impossible}}
+      \field{type}{Bachelor's Thesis}
+      \field{year}{2010}
+      \verb{doi}
+      \verb 08/15
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

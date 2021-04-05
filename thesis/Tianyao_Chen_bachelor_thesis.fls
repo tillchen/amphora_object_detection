@@ -1,0 +1,205 @@
+PWD /Users/tillchen/Google Drive/JUB/thesis/thesis
+INPUT /usr/local/texlive/2018/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.tex
+OUTPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.log
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/size11.clo
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/size11.clo
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/switch.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/logreq/logreq.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-dm.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-dm.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-compat.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/blx-compat.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/biblatex.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/parskip/parskip.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/parskip/parskip.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux
+OUTPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1phv.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1phv.fd
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+OUTPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.bcf
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.bbl
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.bbl
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.bbl
+INPUT /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
+OUTPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
+OUTPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/bsc-logo.pdf
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/bsc-logo.pdf
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/bsc-logo.pdf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.toc
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.toc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb7t.tfm
+OUTPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.toc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvb7t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvb8r.tfm
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/bsc-plot.pdf
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/bsc-plot.pdf
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/bsc-plot.pdf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvrc7t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvrc7t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.run.xml
+OUTPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.run.xml
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
