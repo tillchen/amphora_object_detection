@@ -19,34 +19,29 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{JS06}{thesis}{}
+    \entry{geron2019hands}{book}{}
       \name{author}{1}{}{%
-        {{hash=da652fe8976346f22f2e2f6c91008caa}{%
-           family={Sample},
-           familyi={S\bibinitperiod},
-           given={J.},
-           giveni={J\bibinitperiod}}}%
+        {{hash=7757299fb85e73df5dcdf0249c368ef9}{%
+           family={G{é}ron},
+           familyi={G\bibinitperiod},
+           given={Aur{é}lien},
+           giveni={A\bibinitperiod}}}%
       }
-      \list{institution}{1}{%
-        {Jacobs University Bremen}%
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
       }
-      \strng{namehash}{da652fe8976346f22f2e2f6c91008caa}
-      \strng{fullhash}{da652fe8976346f22f2e2f6c91008caa}
-      \strng{bibnamehash}{da652fe8976346f22f2e2f6c91008caa}
-      \strng{authorbibnamehash}{da652fe8976346f22f2e2f6c91008caa}
-      \strng{authornamehash}{da652fe8976346f22f2e2f6c91008caa}
-      \strng{authorfullhash}{da652fe8976346f22f2e2f6c91008caa}
-      \field{sortinit}{S}
-      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \strng{namehash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{fullhash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{bibnamehash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{authorbibnamehash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{authornamehash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{authorfullhash}{7757299fb85e73df5dcdf0249c368ef9}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{month}{9}
-      \field{title}{{On the Possibility of the Impossible}}
-      \field{type}{Bachelor's Thesis}
-      \field{year}{2010}
-      \verb{doi}
-      \verb 08/15
-      \endverb
+      \field{title}{Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, tools, and techniques to build intelligent systems}
+      \field{year}{2019}
     \endentry
   \enddatalist
 \endrefsection

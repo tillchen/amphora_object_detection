@@ -1974,7 +1974,7 @@
     <bcf:datasource type="file" datatype="bibtex">Tianyao_Chen_bachelor_thesis.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">JS06</bcf:citekey>
+    <bcf:citekey order="1">geron2019hands</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
