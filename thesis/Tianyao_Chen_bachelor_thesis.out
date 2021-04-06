@@ -1,5 +1,17 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Statement and Motivation of Research}{}% 2
-\BOOKMARK [1][-]{section.3}{Description of the Investigation}{}% 3
-\BOOKMARK [1][-]{section.4}{Evaluation of the Investigation}{}% 4
-\BOOKMARK [1][-]{section.5}{Conclusions}{}% 5
+\BOOKMARK [2][-]{subsection.1.1}{Motivation}{section.1}% 2
+\BOOKMARK [3][-]{subsubsection.1.1.1}{Relevance of Amphoras}{subsection.1.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.1.2}{Computer Vision for Underwater Object Detection}{subsection.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.2}{Deep Learning}{section.1}% 5
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Artifical Neural Networks \(ANN\)}{subsection.1.2}% 6
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Convultional Neural Networks \(CNN\)}{subsection.1.2}% 7
+\BOOKMARK [3][-]{subsubsection.1.2.3}{Deep Learning for Computer Vision}{subsection.1.2}% 8
+\BOOKMARK [3][-]{subsubsection.1.2.4}{Deep Learning vs. Traditional Computer Vision}{subsection.1.2}% 9
+\BOOKMARK [2][-]{subsection.1.3}{Object Detection}{section.1}% 10
+\BOOKMARK [3][-]{subsubsection.1.3.1}{Region-Based Convultional Neural Networks \(R-CNN\)}{subsection.1.3}% 11
+\BOOKMARK [3][-]{subsubsection.1.3.2}{Single Shot Detector \(SSD\)}{subsection.1.3}% 12
+\BOOKMARK [3][-]{subsubsection.1.3.3}{You Only Look Once \(YOLO\)}{subsection.1.3}% 13
+\BOOKMARK [1][-]{section.2}{Description of the Investigation}{}% 14
+\BOOKMARK [1][-]{section.3}{Evaluation of the Investigation}{}% 15
+\BOOKMARK [1][-]{section.4}{Conclusions}{}% 16
+\BOOKMARK [1][-]{section.5}{Future Work}{}% 17

@@ -3,10 +3,50 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Statement and Motivation of Research}{1}{section.2}
+\contentsline {subsection}{\numberline {1.1}Motivation}{1}{subsection.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Description of the Investigation}{1}{section.3}
+\contentsline {subsubsection}{\numberline {1.1.1}Relevance of Amphoras}{1}{subsubsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Evaluation of the Investigation}{1}{section.4}
+\contentsline {subsubsection}{\numberline {1.1.2}Computer Vision for Underwater Object Detection}{1}{subsubsection.1.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusions}{2}{section.5}
+\contentsline {subsection}{\numberline {1.2}Deep Learning}{1}{subsection.1.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.1}Artifical Neural Networks (ANN)}{1}{subsubsection.1.2.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.2}Convultional Neural Networks (CNN)}{1}{subsubsection.1.2.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.3}Deep Learning for Computer Vision}{1}{subsubsection.1.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.2.4}Deep Learning vs. Traditional Computer Vision}{1}{subsubsection.1.2.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3}Object Detection}{1}{subsection.1.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.1}Region-Based Convultional Neural Networks (R-CNN)}{1}{subsubsection.1.3.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{R-CNN}{1}{section*.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Faster R-CNN}{1}{section*.6}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Faster R-CNN}{1}{section*.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.2}Single Shot Detector (SSD)}{2}{subsubsection.1.3.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {1.3.3}You Only Look Once (YOLO)}{2}{subsubsection.1.3.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{YOLO}{2}{section*.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{YOLOv2}{2}{section*.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{YOLOv3}{2}{section*.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{YOLOv4}{2}{section*.11}
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{YOLOv5}{2}{section*.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Description of the Investigation}{2}{section.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Evaluation of the Investigation}{2}{section.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Conclusions}{3}{section.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Future Work}{3}{section.5}
