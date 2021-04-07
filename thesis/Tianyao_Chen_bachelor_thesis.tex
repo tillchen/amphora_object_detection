@@ -5,11 +5,12 @@
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{helvet}
 \usepackage[english]{babel}     %% typographie française
-\usepackage[style=numeric,language=english]{biblatex}
+\usepackage[style=numeric,language=english, sorting=none]{biblatex}
 \usepackage{parskip}		%% blank lines between paragraphs, no indent
 \usepackage[margin=1cm]{caption}%% give long captions a margin
 \usepackage{booktabs}           %% typesetting nice tables
-\usepackage[pdftex]{graphicx}	%% include graphics, preferrably pdf
+\usepackage[pdftex]{graphicx}	%% include graphics, preferably pdf
+\graphicspath{ {./images/} }
 \usepackage[pdftex]{hyperref}	%% many PDF options can be set here
 \pdfadjustspacing=1		%% force LaTeX-like character spacing
 
@@ -132,6 +133,45 @@
 
   \subsubsection{Relevance of Amphoras}
 
+  The name \textit{amphora} is derived from the Greek word \textit{amphoreus}, which literally means "two-handled"
+  \cite{harper2001online, twede2002commercial}. It is the combination of two linguistic roots: \textit{amphi}
+  (on both sides) and \textit{phoreus} (bearer) \cite{harper2001online, twede2002commercial}. Amphoras (or amphorae)
+  were commercially used from 1500 B.C.E. to 500 C.E. to ship products throughout the Mediterranean,
+  supplying the ancient Greek and Roman empires \cite{twede2002commercial}. Amphoras were designed to ship large quantities
+  of liquid (wine, olives, and oils) and dry products (grain, nuts, and salted fish) \cite{twede2002commercial}.
+
+  Like many measures that are named after the packages that held them, amphoras were also a semi-standard unit of liquid
+  measure \cite{twede2002commercial}. A cargo ship's capacity was measured by the number of amphoras it could carry
+  instead of by weight \cite{twede2002commercial,cousteau1954fish}.
+
+  The structurally strongly egg-like shape and the high volume to weight ratio made amphoras very efficient packages
+  \cite{twede2002commercial}. Amphoras were by far the most common cargo type in Mediterranean shipwreck analysis;
+  more than half of the ships only carried amphoras \cite{twede2002commercial,parker1984shipwrecks}.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{amphora_stowage_aboard_ship.png}
+    \end{center}
+    \caption{The egg-like shape enabled amphoras to interlock and minimize the waste of space on a ship.
+    Source: \cite{twede2002commercial}.}
+  \end{figure}
+
+  Amphoras' various shapes and markings - which changed over time and varied by region, producer, contents, and brand
+  identity - were used to identify the package status and the different products inside \cite{twede2002commercial}.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{amphora_various_shape.png}
+    \end{center}
+    \caption{Amphoras have various shapes. Source: \cite{twede2002commercial}.}
+  \end{figure}
+
+  Amphoras have great significance in archaeology. They can be used as evidence for the trade patterns throughout
+  the Mediterranean \cite{twede2002commercial}. As they were usually discarded at the destination of a trade and have been
+  found in shipwrecks, archaeologists have been using them to recreate the transit routes \cite{twede2002commercial}.
+  Furthermore, researchers have been able to classify different amphoras, which also helps to date ruins and shipwrecks
+  \cite{twede2002commercial}.
+
   \subsubsection{Computer Vision for Underwater Object Detection}
 
   \subsection{Deep Learning}
@@ -209,14 +249,6 @@
     \end{center}
   \end{table}
 
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{bsc-plot}
-    \end{center}
-    \caption{Many dots distributed over a two dimensional unit space
-      without any discernible pattern or deeper meaning}
-  \end{figure}
-
   \subsection{Visual Evaluation}
   \subsection{Metric Evaluation}
 
@@ -229,9 +261,8 @@
 
   \section{Future Work}
 
-  \cite{geron2019hands}
-
   \newpage
+
   \printbibliography
 
 \end{document}

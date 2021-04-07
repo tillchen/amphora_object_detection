@@ -18,30 +18,111 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{geron2019hands}{book}{}
+  \datalist[entry]{none/global//global/global}
+    \entry{harper2001online}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
       \name{author}{1}{}{%
-        {{hash=7757299fb85e73df5dcdf0249c368ef9}{%
-           family={G{é}ron},
-           familyi={G\bibinitperiod},
-           given={Aur{é}lien},
-           giveni={A\bibinitperiod}}}%
+        {{hash=1cdc575a297b62c2f48f6241c4a4290d}{%
+           family={Harper},
+           familyi={H\bibinitperiod},
+           given={Douglas},
+           giveni={D\bibinitperiod}}}%
       }
-      \list{publisher}{1}{%
-        {O'Reilly Media}%
-      }
-      \strng{namehash}{7757299fb85e73df5dcdf0249c368ef9}
-      \strng{fullhash}{7757299fb85e73df5dcdf0249c368ef9}
-      \strng{bibnamehash}{7757299fb85e73df5dcdf0249c368ef9}
-      \strng{authorbibnamehash}{7757299fb85e73df5dcdf0249c368ef9}
-      \strng{authornamehash}{7757299fb85e73df5dcdf0249c368ef9}
-      \strng{authorfullhash}{7757299fb85e73df5dcdf0249c368ef9}
-      \field{sortinit}{G}
-      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \strng{namehash}{19b09db748d4a8799d85c41ad0423e17}
+      \strng{fullhash}{19b09db748d4a8799d85c41ad0423e17}
+      \strng{bibnamehash}{19b09db748d4a8799d85c41ad0423e17}
+      \strng{authorbibnamehash}{19b09db748d4a8799d85c41ad0423e17}
+      \strng{authornamehash}{19b09db748d4a8799d85c41ad0423e17}
+      \strng{authorfullhash}{19b09db748d4a8799d85c41ad0423e17}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, tools, and techniques to build intelligent systems}
-      \field{year}{2019}
+      \field{title}{Online etymology dictionary}
+      \field{year}{2001}
+    \endentry
+    \entry{twede2002commercial}{article}{}
+      \name{author}{1}{}{%
+        {{hash=1497b963886d034294b06c44c3da26e1}{%
+           family={Twede},
+           familyi={T\bibinitperiod},
+           given={Diana},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sage Publications Sage CA: Thousand Oaks, CA}%
+      }
+      \strng{namehash}{1497b963886d034294b06c44c3da26e1}
+      \strng{fullhash}{1497b963886d034294b06c44c3da26e1}
+      \strng{bibnamehash}{1497b963886d034294b06c44c3da26e1}
+      \strng{authorbibnamehash}{1497b963886d034294b06c44c3da26e1}
+      \strng{authornamehash}{1497b963886d034294b06c44c3da26e1}
+      \strng{authorfullhash}{1497b963886d034294b06c44c3da26e1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Macromarketing}
+      \field{number}{1}
+      \field{title}{Commercial amphoras: the earliest consumer packages?}
+      \field{volume}{22}
+      \field{year}{2002}
+      \field{pages}{98\bibrangedash 108}
+      \range{pages}{11}
+    \endentry
+    \entry{cousteau1954fish}{article}{}
+      \name{author}{1}{}{%
+        {{hash=e0c683bca205f21ef839ad3e5bd57344}{%
+           family={Cousteau},
+           familyi={C\bibinitperiod},
+           given={Jacques\bibnamedelima Yves},
+           giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Geographic Society}%
+      }
+      \strng{namehash}{e0c683bca205f21ef839ad3e5bd57344}
+      \strng{fullhash}{e0c683bca205f21ef839ad3e5bd57344}
+      \strng{bibnamehash}{e0c683bca205f21ef839ad3e5bd57344}
+      \strng{authorbibnamehash}{e0c683bca205f21ef839ad3e5bd57344}
+      \strng{authornamehash}{e0c683bca205f21ef839ad3e5bd57344}
+      \strng{authorfullhash}{e0c683bca205f21ef839ad3e5bd57344}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{National geographic}
+      \field{number}{1}
+      \field{title}{Fish men discover a 2,200-year-old Greek ship}
+      \field{volume}{105}
+      \field{year}{1954}
+      \field{pages}{1\bibrangedash 36}
+      \range{pages}{36}
+    \endentry
+    \entry{parker1984shipwrecks}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b92e9ede28a5a151b87d91e72e56fa1b}{%
+           family={Parker},
+           familyi={P\bibinitperiod},
+           given={Anthony\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Archaeological Review from Cambridge}%
+      }
+      \strng{namehash}{b92e9ede28a5a151b87d91e72e56fa1b}
+      \strng{fullhash}{b92e9ede28a5a151b87d91e72e56fa1b}
+      \strng{bibnamehash}{b92e9ede28a5a151b87d91e72e56fa1b}
+      \strng{authorbibnamehash}{b92e9ede28a5a151b87d91e72e56fa1b}
+      \strng{authornamehash}{b92e9ede28a5a151b87d91e72e56fa1b}
+      \strng{authorfullhash}{b92e9ede28a5a151b87d91e72e56fa1b}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Shipwrecks and ancient trade in the Mediterranean}
+      \field{year}{1984}
     \endentry
   \enddatalist
 \endrefsection
