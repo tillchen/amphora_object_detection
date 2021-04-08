@@ -522,6 +522,251 @@
       \field{pages}{423\bibrangedash 431}
       \range{pages}{9}
     \endentry
+    \entry{maaten2007computer}{article}{}
+      \name{author}{5}{}{%
+        {{hash=23ec2a1ba8f3fb03b7b8afe2fc06f94c}{%
+           family={Maaten},
+           familyi={M\bibinitperiod},
+           given={L\bibnamedelima van\bibnamedelima der},
+           giveni={L\bibinitperiod\bibinitdelim v\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=64f463dea54fe9b9b25ae2d67ad48868}{%
+           family={Boon},
+           familyi={B\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fcf37d04be86b55ef8db4e90f31f5fbd}{%
+           family={Lange},
+           familyi={L\bibinitperiod},
+           given={Guus},
+           giveni={G\bibinitperiod}}}%
+        {{hash=20aadbc8ae41428f9b1284b900fb2064}{%
+           family={Paijmans},
+           familyi={P\bibinitperiod},
+           given={Hans},
+           giveni={H\bibinitperiod}}}%
+        {{hash=42ac0ed20b82df7a89b9a9f44b0cfa07}{%
+           family={Postma},
+           familyi={P\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Budapest: Archaeolingua}%
+      }
+      \strng{namehash}{8352d4ec5555cad95a3c14947935d90c}
+      \strng{fullhash}{18c9dc51dc506c1de49705b6a918ce78}
+      \strng{bibnamehash}{8352d4ec5555cad95a3c14947935d90c}
+      \strng{authorbibnamehash}{8352d4ec5555cad95a3c14947935d90c}
+      \strng{authornamehash}{8352d4ec5555cad95a3c14947935d90c}
+      \strng{authorfullhash}{18c9dc51dc506c1de49705b6a918ce78}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Computer vision and machine learning for archaeology}
+      \field{year}{2007}
+    \endentry
+    \entry{qin2015underwater}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=faa8123d39d1da0315a2a8f98d72809e}{%
+           family={Qin},
+           familyi={Q\bibinitperiod},
+           given={Hongwei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6985a4d38e914192f55daa2dea379a93}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Xiu},
+           giveni={X\bibinitperiod}}}%
+        {{hash=b231c6b6222084dd58a6cb98a6cd11e0}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zhixiong},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=a3ccf9b2545aef2e9db7a5e0627d6e8d}{%
+           family={Shang},
+           familyi={S\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{8fffbe0077920869c47fdb1b1f2c6971}
+      \strng{fullhash}{d2c5ed70de7ca8ba11eb64afd9bd7409}
+      \strng{bibnamehash}{8fffbe0077920869c47fdb1b1f2c6971}
+      \strng{authorbibnamehash}{8fffbe0077920869c47fdb1b1f2c6971}
+      \strng{authornamehash}{8fffbe0077920869c47fdb1b1f2c6971}
+      \strng{authorfullhash}{d2c5ed70de7ca8ba11eb64afd9bd7409}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{OCEANS 2015-MTS/IEEE Washington}
+      \field{title}{When underwater imagery analysis meets deep learning: A solution at the age of big visual data}
+      \field{year}{2015}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+    \endentry
+    \entry{rizzini2015investigation}{article}{}
+      \name{author}{4}{}{%
+        {{hash=4137c712e513cbc2399420112f4bc6eb}{%
+           family={Rizzini},
+           familyi={R\bibinitperiod},
+           given={Dario\bibnamedelima Lodi},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=c7ddd64ea42d11766ab4994deb7c9828}{%
+           family={Kallasi},
+           familyi={K\bibinitperiod},
+           given={Fabjan},
+           giveni={F\bibinitperiod}}}%
+        {{hash=aaf6060a309271bac409dd609fbb7375}{%
+           family={Oleari},
+           familyi={O\bibinitperiod},
+           given={Fabio},
+           giveni={F\bibinitperiod}}}%
+        {{hash=e1dd7846d1c9383d02b471f6f4462dbb}{%
+           family={Caselli},
+           familyi={C\bibinitperiod},
+           given={Stefano},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications Sage UK: London, England}%
+      }
+      \strng{namehash}{cca20bbe8d5233b100e6f14225d27465}
+      \strng{fullhash}{207a6b15115c9bed133d41509cfd211e}
+      \strng{bibnamehash}{cca20bbe8d5233b100e6f14225d27465}
+      \strng{authorbibnamehash}{cca20bbe8d5233b100e6f14225d27465}
+      \strng{authornamehash}{cca20bbe8d5233b100e6f14225d27465}
+      \strng{authorfullhash}{207a6b15115c9bed133d41509cfd211e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Advanced Robotic Systems}
+      \field{number}{6}
+      \field{title}{Investigation of vision-based underwater object detection with multiple datasets}
+      \field{volume}{12}
+      \field{year}{2015}
+      \field{pages}{77}
+      \range{pages}{1}
+    \endentry
+    \entry{lu2017underwater}{article}{}
+      \name{author}{6}{}{%
+        {{hash=b37c036ec00946927e8d18e6d2aad1fa}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Huimin},
+           giveni={H\bibinitperiod}}}%
+        {{hash=f07bb8c831660e6f7ce1e9431f8008b2}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yujie},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=2f71605b6d6d87334ae98b17d503d95e}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yudong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=fb194450e9046854896c4ca5f2dc8d01}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Min},
+           giveni={M\bibinitperiod}}}%
+        {{hash=b0ee5383babec6d0cd90e7230ef36681}{%
+           family={Serikawa},
+           familyi={S\bibinitperiod},
+           given={Seiichi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ee097c9f653cc9f0a0ae02b299818f4d}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Hyoungseop},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{0a1c064f4f4849fc0b628a0e67b666a8}
+      \strng{fullhash}{9c2b57d40121d3847a88444b51fefda1}
+      \strng{bibnamehash}{0a1c064f4f4849fc0b628a0e67b666a8}
+      \strng{authorbibnamehash}{0a1c064f4f4849fc0b628a0e67b666a8}
+      \strng{authornamehash}{0a1c064f4f4849fc0b628a0e67b666a8}
+      \strng{authorfullhash}{9c2b57d40121d3847a88444b51fefda1}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mobile networks and applications}
+      \field{number}{6}
+      \field{title}{Underwater optical image processing: a comprehensive review}
+      \field{volume}{22}
+      \field{year}{2017}
+      \field{pages}{1204\bibrangedash 1211}
+      \range{pages}{8}
+    \endentry
+    \entry{abu2019statistically}{article}{}
+      \name{author}{2}{}{%
+        {{hash=756aea6563ae221f69fecede2fb27013}{%
+           family={Abu},
+           familyi={A\bibinitperiod},
+           given={Avi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=41ec1a3f6269e661b7aa933f539f963d}{%
+           family={Diamant},
+           familyi={D\bibinitperiod},
+           given={Roee},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d3b14b5e669a6ed30e272ba4fe539b6c}
+      \strng{fullhash}{d3b14b5e669a6ed30e272ba4fe539b6c}
+      \strng{bibnamehash}{d3b14b5e669a6ed30e272ba4fe539b6c}
+      \strng{authorbibnamehash}{d3b14b5e669a6ed30e272ba4fe539b6c}
+      \strng{authornamehash}{d3b14b5e669a6ed30e272ba4fe539b6c}
+      \strng{authorfullhash}{d3b14b5e669a6ed30e272ba4fe539b6c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Sensors Journal}
+      \field{number}{16}
+      \field{title}{A statistically-based method for the detection of underwater objects in sonar imagery}
+      \field{volume}{19}
+      \field{year}{2019}
+      \field{pages}{6858\bibrangedash 6871}
+      \range{pages}{14}
+    \endentry
+    \entry{gordon1992use}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=fb145d57cc08627137fcc9ec5d76b1b9}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Alan},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fb145d57cc08627137fcc9ec5d76b1b9}
+      \strng{fullhash}{fb145d57cc08627137fcc9ec5d76b1b9}
+      \strng{bibnamehash}{fb145d57cc08627137fcc9ec5d76b1b9}
+      \strng{authorbibnamehash}{fb145d57cc08627137fcc9ec5d76b1b9}
+      \strng{authornamehash}{fb145d57cc08627137fcc9ec5d76b1b9}
+      \strng{authorfullhash}{fb145d57cc08627137fcc9ec5d76b1b9}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 1992 Symposium on Autonomous Underwater Vehicle Technology}
+      \field{title}{Use of laser scanning system on mobile underwater platforms}
+      \field{year}{1992}
+      \field{pages}{202\bibrangedash 205}
+      \range{pages}{4}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
