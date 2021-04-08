@@ -1994,6 +1994,16 @@
     <bcf:citekey order="14">twede2002commercial</bcf:citekey>
     <bcf:citekey order="15">twede2002commercial</bcf:citekey>
     <bcf:citekey order="16">twede2002commercial</bcf:citekey>
+    <bcf:citekey order="17">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="18">rawat2017deep</bcf:citekey>
+    <bcf:citekey order="19">zhao2019object</bcf:citekey>
+    <bcf:citekey order="19">liu2020deep</bcf:citekey>
+    <bcf:citekey order="20">jing2019neural</bcf:citekey>
+    <bcf:citekey order="21">goodfellow2014generative</bcf:citekey>
+    <bcf:citekey order="22">parkhi2015deep</bcf:citekey>
+    <bcf:citekey order="23">poppe2010survey</bcf:citekey>
+    <bcf:citekey order="24">toshev2014deeppose</bcf:citekey>
+    <bcf:citekey order="25">niu2018neural</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
