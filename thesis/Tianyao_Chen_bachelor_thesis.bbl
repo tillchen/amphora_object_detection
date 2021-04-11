@@ -885,6 +885,119 @@
       \field{pages}{30351\bibrangedash 30384}
       \range{pages}{34}
     \endentry
+    \entry{burkov2019hundred}{book}{}
+      \name{author}{1}{}{%
+        {{hash=e7bec4aeb6cbfe8741541f4a2ab78c26}{%
+           family={Burkov},
+           familyi={B\bibinitperiod},
+           given={Andriy},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Andriy Burkov Canada}%
+      }
+      \strng{namehash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{fullhash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{bibnamehash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{authorbibnamehash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{authornamehash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \strng{authorfullhash}{e7bec4aeb6cbfe8741541f4a2ab78c26}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The hundred-page machine learning book}
+      \field{volume}{1}
+      \field{year}{2019}
+    \endentry
+    \entry{zhang2018definition}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=c2c91e1c041d5a9bede8d13d46e1fa1b}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={WJ},
+           giveni={W\bibinitperiod}}}%
+        {{hash=32f42a47836f14fff710f8647fea52fc}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Guosheng},
+           giveni={G\bibinitperiod}}}%
+        {{hash=4c27dee742f15f38272349804e49d6be}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Yingzi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=1d90a0ce4d903a9ec68bf6ff16833cd3}{%
+           family={Ji},
+           familyi={J\bibinitperiod},
+           given={Chunli},
+           giveni={C\bibinitperiod}}}%
+        {{hash=178120286bc51e98da62981fd13fd48c}{%
+           family={Gupta},
+           familyi={G\bibinitperiod},
+           given={Madan\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{e7448b7a8e84ddd7baae1b47896b305d}
+      \strng{fullhash}{7a51913604b0c613fef043a22dc67d68}
+      \strng{bibnamehash}{e7448b7a8e84ddd7baae1b47896b305d}
+      \strng{authorbibnamehash}{e7448b7a8e84ddd7baae1b47896b305d}
+      \strng{authornamehash}{e7448b7a8e84ddd7baae1b47896b305d}
+      \strng{authorfullhash}{7a51913604b0c613fef043a22dc67d68}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2018 World automation congress (WAC)}
+      \field{title}{On definition of deep learning}
+      \field{year}{2018}
+      \field{pages}{1\bibrangedash 5}
+      \range{pages}{5}
+    \endentry
+    \entry{goodfellow2016deep}{book}{}
+      \name{author}{4}{}{%
+        {{hash=5d2585c11210cf1d4512e6e0a03ec315}{%
+           family={Goodfellow},
+           familyi={G\bibinitperiod},
+           given={Ian},
+           giveni={I\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={Courville},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={Bengio},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MIT press Cambridge}%
+      }
+      \strng{namehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{fullhash}{d84b0b9d19401c079b1a67dd4962d9e0}
+      \strng{bibnamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorbibnamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
+      \strng{authorfullhash}{d84b0b9d19401c079b1a67dd4962d9e0}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{2}
+      \field{title}{Deep learning}
+      \field{volume}{1}
+      \field{year}{2016}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

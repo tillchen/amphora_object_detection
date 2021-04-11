@@ -195,6 +195,9 @@ INPUT ./images/amphora_various_shape.png
 INPUT ./images/amphora_various_shape.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvro7t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/deep_learning.png
+INPUT ./images/deep_learning.png
+INPUT ./images/deep_learning.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
