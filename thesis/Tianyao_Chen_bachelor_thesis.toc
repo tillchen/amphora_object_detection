@@ -7,7 +7,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.1.1}Relevance of Amphoras}{1}{subsubsection.1.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.1.2}Computer Vision for Underwater Object Detection}{2}{subsubsection.1.1.2}
+\contentsline {subsubsection}{\numberline {1.1.2}Computer Vision for Underwater Archaeology}{2}{subsubsection.1.1.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2}Deep Learning}{3}{subsection.1.2}
 \defcounter {refsection}{0}\relax 
@@ -45,7 +45,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{YOLO}{3}{section*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv2}{3}{section*.15}
+\contentsline {paragraph}{YOLOv2}{4}{section*.15}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{YOLOv3}{4}{section*.16}
 \defcounter {refsection}{0}\relax 
