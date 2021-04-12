@@ -885,6 +885,59 @@
       \field{pages}{30351\bibrangedash 30384}
       \range{pages}{34}
     \endentry
+    \entry{samuel1959some}{article}{}
+      \name{author}{1}{}{%
+        {{hash=85bb35746f89367bfd835e2583d9965e}{%
+           family={Samuel},
+           familyi={S\bibinitperiod},
+           given={Arthur\bibnamedelima L},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IBM}%
+      }
+      \strng{namehash}{85bb35746f89367bfd835e2583d9965e}
+      \strng{fullhash}{85bb35746f89367bfd835e2583d9965e}
+      \strng{bibnamehash}{85bb35746f89367bfd835e2583d9965e}
+      \strng{authorbibnamehash}{85bb35746f89367bfd835e2583d9965e}
+      \strng{authornamehash}{85bb35746f89367bfd835e2583d9965e}
+      \strng{authorfullhash}{85bb35746f89367bfd835e2583d9965e}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IBM Journal of research and development}
+      \field{number}{3}
+      \field{title}{Some studies in machine learning using the game of checkers}
+      \field{volume}{3}
+      \field{year}{1959}
+      \field{pages}{210\bibrangedash 229}
+      \range{pages}{20}
+    \endentry
+    \entry{geron2019hands}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7757299fb85e73df5dcdf0249c368ef9}{%
+           family={G{é}ron},
+           familyi={G\bibinitperiod},
+           given={Aur{é}lien},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media}%
+      }
+      \strng{namehash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{fullhash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{bibnamehash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{authorbibnamehash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{authornamehash}{7757299fb85e73df5dcdf0249c368ef9}
+      \strng{authorfullhash}{7757299fb85e73df5dcdf0249c368ef9}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, tools, and techniques to build intelligent systems}
+      \field{year}{2019}
+    \endentry
     \entry{burkov2019hundred}{book}{}
       \name{author}{1}{}{%
         {{hash=e7bec4aeb6cbfe8741541f4a2ab78c26}{%
@@ -989,8 +1042,8 @@
       \strng{authorbibnamehash}{d17e6557c5836d2d978179999ea1037f}
       \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
       \strng{authorfullhash}{d84b0b9d19401c079b1a67dd4962d9e0}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{number}{2}

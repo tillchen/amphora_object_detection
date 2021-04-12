@@ -2020,11 +2020,13 @@
     <bcf:citekey order="35">drap2015underwater</bcf:citekey>
     <bcf:citekey order="36">drap2015underwater</bcf:citekey>
     <bcf:citekey order="37">drap2015underwater</bcf:citekey>
-    <bcf:citekey order="38">burkov2019hundred</bcf:citekey>
-    <bcf:citekey order="38">zhang2018definition</bcf:citekey>
-    <bcf:citekey order="39">goodfellow2016deep</bcf:citekey>
+    <bcf:citekey order="38">samuel1959some</bcf:citekey>
+    <bcf:citekey order="38">geron2019hands</bcf:citekey>
+    <bcf:citekey order="39">burkov2019hundred</bcf:citekey>
+    <bcf:citekey order="39">zhang2018definition</bcf:citekey>
     <bcf:citekey order="40">goodfellow2016deep</bcf:citekey>
     <bcf:citekey order="41">goodfellow2016deep</bcf:citekey>
+    <bcf:citekey order="42">goodfellow2016deep</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
