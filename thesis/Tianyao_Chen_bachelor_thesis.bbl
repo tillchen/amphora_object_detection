@@ -1051,6 +1051,40 @@
       \field{volume}{1}
       \field{year}{2016}
     \endentry
+    \entry{mcculloch1943logical}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ab276c79cb07a4e40e320974b3e17abb}{%
+           family={McCulloch},
+           familyi={M\bibinitperiod},
+           given={Warren\bibnamedelima S},
+           giveni={W\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=c5a56e799cdf785e814246c091d36e73}{%
+           family={Pitts},
+           familyi={P\bibinitperiod},
+           given={Walter},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{eab08eddb4719c72a337c996dc1d1bc6}
+      \strng{fullhash}{eab08eddb4719c72a337c996dc1d1bc6}
+      \strng{bibnamehash}{eab08eddb4719c72a337c996dc1d1bc6}
+      \strng{authorbibnamehash}{eab08eddb4719c72a337c996dc1d1bc6}
+      \strng{authornamehash}{eab08eddb4719c72a337c996dc1d1bc6}
+      \strng{authorfullhash}{eab08eddb4719c72a337c996dc1d1bc6}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The bulletin of mathematical biophysics}
+      \field{number}{4}
+      \field{title}{A logical calculus of the ideas immanent in nervous activity}
+      \field{volume}{5}
+      \field{year}{1943}
+      \field{pages}{115\bibrangedash 133}
+      \range{pages}{19}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

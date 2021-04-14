@@ -2027,6 +2027,11 @@
     <bcf:citekey order="40">goodfellow2016deep</bcf:citekey>
     <bcf:citekey order="41">goodfellow2016deep</bcf:citekey>
     <bcf:citekey order="42">goodfellow2016deep</bcf:citekey>
+    <bcf:citekey order="43">mcculloch1943logical</bcf:citekey>
+    <bcf:citekey order="44">geron2019hands</bcf:citekey>
+    <bcf:citekey order="44">mcculloch1943logical</bcf:citekey>
+    <bcf:citekey order="45">geron2019hands</bcf:citekey>
+    <bcf:citekey order="46">geron2019hands</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

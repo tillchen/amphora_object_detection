@@ -198,6 +198,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/deep_learning.png
 INPUT ./images/deep_learning.png
 INPUT ./images/deep_learning.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/ann_logic_computations.png
+INPUT ./images/ann_logic_computations.png
+INPUT ./images/ann_logic_computations.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
