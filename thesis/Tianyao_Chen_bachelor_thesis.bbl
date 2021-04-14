@@ -1167,6 +1167,63 @@
       \field{pages}{209\bibrangedash 212}
       \range{pages}{4}
     \endentry
+    \entry{rumelhart1985learning}{report}{}
+      \name{author}{3}{}{%
+        {{hash=d198ae71c61c758b90826c452447133f}{%
+           family={Rumelhart},
+           familyi={R\bibinitperiod},
+           given={David\bibnamedelima E},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=5aeb1de9b6c6f00a078230c628e6f41c}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoffrey\bibnamedelima E},
+           giveni={G\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=f0fac00adb48128fc1f7750b2d8e7065}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Ronald\bibnamedelima J},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {California Univ San Diego La Jolla Inst for Cognitive Science}%
+      }
+      \strng{namehash}{6c0c2652b5e4e9258c40ce50c5704c6b}
+      \strng{fullhash}{6c0c2652b5e4e9258c40ce50c5704c6b}
+      \strng{bibnamehash}{6c0c2652b5e4e9258c40ce50c5704c6b}
+      \strng{authorbibnamehash}{6c0c2652b5e4e9258c40ce50c5704c6b}
+      \strng{authornamehash}{6c0c2652b5e4e9258c40ce50c5704c6b}
+      \strng{authorfullhash}{6c0c2652b5e4e9258c40ce50c5704c6b}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Learning internal representations by error propagation}
+      \field{type}{techreport}
+      \field{year}{1985}
+    \endentry
+    \entry{ruder2016overview}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b468248a20d75c52ee742f4592c2569f}{%
+           family={Ruder},
+           familyi={R\bibinitperiod},
+           given={Sebastian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{fullhash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{bibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorbibnamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authornamehash}{b468248a20d75c52ee742f4592c2569f}
+      \strng{authorfullhash}{b468248a20d75c52ee742f4592c2569f}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1609.04747}
+      \field{title}{An overview of gradient descent optimization algorithms}
+      \field{year}{2016}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

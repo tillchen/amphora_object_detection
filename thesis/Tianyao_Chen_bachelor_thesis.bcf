@@ -2022,6 +2022,7 @@
     <bcf:citekey order="37">drap2015underwater</bcf:citekey>
     <bcf:citekey order="38">samuel1959some</bcf:citekey>
     <bcf:citekey order="38">geron2019hands</bcf:citekey>
+    <bcf:citekey order="39">geron2019hands</bcf:citekey>
     <bcf:citekey order="39">burkov2019hundred</bcf:citekey>
     <bcf:citekey order="39">zhang2018definition</bcf:citekey>
     <bcf:citekey order="40">goodfellow2016deep</bcf:citekey>
@@ -2044,6 +2045,12 @@
     <bcf:citekey order="55">lowel1992selection</bcf:citekey>
     <bcf:citekey order="56">geron2019hands</bcf:citekey>
     <bcf:citekey order="57">geron2019hands</bcf:citekey>
+    <bcf:citekey order="58">geron2019hands</bcf:citekey>
+    <bcf:citekey order="59">geron2019hands</bcf:citekey>
+    <bcf:citekey order="60">rumelhart1985learning</bcf:citekey>
+    <bcf:citekey order="61">ruder2016overview</bcf:citekey>
+    <bcf:citekey order="62">geron2019hands</bcf:citekey>
+    <bcf:citekey order="63">geron2019hands</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

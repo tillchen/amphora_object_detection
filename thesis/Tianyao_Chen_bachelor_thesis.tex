@@ -209,8 +209,8 @@
   Machine learning is the class of algorithms that allow computers to learn and improve from data instead of being
   explicitly programmed \cite{samuel1959some, geron2019hands}. And deep learning is the subfield of machine learning that
   builds artificial neural networks with more than one layer between the input and output layers
-  \cite{burkov2019hundred, zhang2018definition}. Deep learning constructs complex representations by combining simpler
-  ones from the previous layers \cite{goodfellow2016deep}.
+  \cite{geron2019hands, burkov2019hundred, zhang2018definition}. Deep learning constructs complex representations by
+  combining simpler ones from the previous layers \cite{goodfellow2016deep}.
 
   \begin{figure}[ht]
     \begin{center}
@@ -272,7 +272,21 @@
   as "neurons wire together if they fire together \cite{lowel1992selection}" \cite{geron2019hands}. However, the Perceptron
   can not learn complex patterns due the linear decision boundary of the output neurons, and it can only make predictions
   based on a hard threshold instead of outputting a class probability \cite{geron2019hands}. To address these limitations,
-  Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
+  the Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{mlp.png}
+    \end{center}
+    \caption{A Multilayer Perceptron with one hidden layer. Source: \cite{geron2019hands}}
+  \end{figure}
+
+  Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first makes a prediction and measures the
+  error in the forward pass, then measures the error contribution from each connection in the reverse pass, and finally
+  tweaks the connection weights to reduce teh error in the Gradient Descent \cite{ruder2016overview} step
+  \cite{geron2019hands}. Activation functions like Rectified Linear Unit $ReLU(z) = max(0, z)$ and hyperbolic tangent
+  function $tanh(z) = 2\sigma(2z)-1$ are used to add nonlinearity, which theoretically gives a large enough deep neural
+  network the ability to approximate any continuos function \cite{geron2019hands}.
 
   \subsubsection{Convultional Neural Networks (CNNs)}
   \subsubsection{Deep Learning vs. Traditional Computer Vision}

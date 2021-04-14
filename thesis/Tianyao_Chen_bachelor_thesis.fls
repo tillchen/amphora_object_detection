@@ -223,6 +223,9 @@ INPUT ./images/perceptron.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/mlp.png
+INPUT ./images/mlp.png
+INPUT ./images/mlp.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
