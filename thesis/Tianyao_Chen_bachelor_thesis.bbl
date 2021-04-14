@@ -1224,6 +1224,168 @@
       \field{title}{An overview of gradient descent optimization algorithms}
       \field{year}{2016}
     \endentry
+    \entry{van2013deep}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=813df14acfb56e16c10e4e3ec92b46ff}{%
+           family={Van\bibnamedelimb Den\bibnamedelima Oord},
+           familyi={V\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim O\bibinitperiod},
+           given={A{ä}ron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a133b469b21b870786119a47b1b691eb}{%
+           family={Dieleman},
+           familyi={D\bibinitperiod},
+           given={Sander},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f0f119220171795798e2647a3018867a}{%
+           family={Schrauwen},
+           familyi={S\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Neural Information Processing Systems Foundation (NIPS)}%
+      }
+      \strng{namehash}{52296d567c5f48afb13c66f19d3c9bcf}
+      \strng{fullhash}{52296d567c5f48afb13c66f19d3c9bcf}
+      \strng{bibnamehash}{52296d567c5f48afb13c66f19d3c9bcf}
+      \strng{authorbibnamehash}{52296d567c5f48afb13c66f19d3c9bcf}
+      \strng{authornamehash}{52296d567c5f48afb13c66f19d3c9bcf}
+      \strng{authorfullhash}{52296d567c5f48afb13c66f19d3c9bcf}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Neural Information Processing Systems Conference (NIPS 2013)}
+      \field{title}{Deep content-based music recommendation}
+      \field{volume}{26}
+      \field{year}{2013}
+    \endentry
+    \entry{collobert2008unified}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=133261178beda1dc3991e0e1dfd5a791}{%
+           family={Collobert},
+           familyi={C\bibinitperiod},
+           given={Ronan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=417a25f3511d7c21e76d4a15e67dd679}{%
+           family={Weston},
+           familyi={W\bibinitperiod},
+           given={Jason},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f03c11485c163ec75428e6ceb05851f1}
+      \strng{fullhash}{f03c11485c163ec75428e6ceb05851f1}
+      \strng{bibnamehash}{f03c11485c163ec75428e6ceb05851f1}
+      \strng{authorbibnamehash}{f03c11485c163ec75428e6ceb05851f1}
+      \strng{authornamehash}{f03c11485c163ec75428e6ceb05851f1}
+      \strng{authorfullhash}{f03c11485c163ec75428e6ceb05851f1}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 25th international conference on Machine learning}
+      \field{title}{A unified architecture for natural language processing: Deep neural networks with multitask learning}
+      \field{year}{2008}
+      \field{pages}{160\bibrangedash 167}
+      \range{pages}{8}
+    \endentry
+    \entry{hubel1959single}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ef1cf54b3dd47533c335360701d44376}{%
+           family={Hubel},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima H},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{ef1cf54b3dd47533c335360701d44376}
+      \strng{fullhash}{ef1cf54b3dd47533c335360701d44376}
+      \strng{bibnamehash}{ef1cf54b3dd47533c335360701d44376}
+      \strng{authorbibnamehash}{ef1cf54b3dd47533c335360701d44376}
+      \strng{authornamehash}{ef1cf54b3dd47533c335360701d44376}
+      \strng{authorfullhash}{ef1cf54b3dd47533c335360701d44376}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of physiology}
+      \field{number}{2}
+      \field{title}{Single unit activity in striate cortex of unrestrained cats}
+      \field{volume}{147}
+      \field{year}{1959}
+      \field{pages}{226\bibrangedash 238}
+      \range{pages}{13}
+    \endentry
+    \entry{hubel1959receptive}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ef1cf54b3dd47533c335360701d44376}{%
+           family={Hubel},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima H},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=6fd186cf41a1dd6feb1964146d18a3c5}{%
+           family={Wiesel},
+           familyi={W\bibinitperiod},
+           given={Torsten\bibnamedelima N},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{fullhash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{bibnamehash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{authorbibnamehash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{authornamehash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{authorfullhash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of physiology}
+      \field{number}{3}
+      \field{title}{Receptive fields of single neurones in the cat's striate cortex}
+      \field{volume}{148}
+      \field{year}{1959}
+      \field{pages}{574\bibrangedash 591}
+      \range{pages}{18}
+    \endentry
+    \entry{hubel1968receptive}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ef1cf54b3dd47533c335360701d44376}{%
+           family={Hubel},
+           familyi={H\bibinitperiod},
+           given={David\bibnamedelima H},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=6fd186cf41a1dd6feb1964146d18a3c5}{%
+           family={Wiesel},
+           familyi={W\bibinitperiod},
+           given={Torsten\bibnamedelima N},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{fullhash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{bibnamehash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{authorbibnamehash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{authornamehash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \strng{authorfullhash}{b61026f392e3b6ea6663b1c55f3d5bb9}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of physiology}
+      \field{number}{1}
+      \field{title}{Receptive fields and functional architecture of monkey striate cortex}
+      \field{volume}{195}
+      \field{year}{1968}
+      \field{pages}{215\bibrangedash 243}
+      \range{pages}{29}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
