@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  14 APR 2021 15:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  14 APR 2021 17:09
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -437,8 +437,62 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
 \Hy@SectionHShift=\skip65
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip66
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen138
+)) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen139
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 27.
+\inf@bad=\count296
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count297
+\leftroot@=\count298
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count299
+\DOTSCASE@=\count300
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen140
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count301
+\c@MaxMatrixCols=\count302
+\dotsspace@=\muskip11
+\c@parentequation=\count303
+\dspbrk@lvl=\count304
+\tag@help=\toks19
+\row@=\count305
+\column@=\count306
+\maxfields@=\count307
+\andhelp@=\toks20
+\eqnshift@=\dimen141
+\alignsep@=\dimen142
+\tagshift@=\dimen143
+\tagwidth@=\dimen144
+\totwidth@=\dimen145
+\lineht@=\dimen146
+\@envbody=\toks21
+\multlinegap=\skip67
+\multlinetaggap=\skip68
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 28.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -448,26 +502,26 @@ File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (biblatex)                Loading 'csquotes' recommended.
 
-\@quotelevel=\count296
-\@quotereset=\count297
+\@quotelevel=\count308
+\@quotereset=\count309
 (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux)
 \openout1 = `Tianyao_Chen_bachelor_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 32.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
@@ -513,24 +567,24 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Tianyao_Chen_bachelor_thesis.bbl' found.
 (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 31.
-Package biblatex Info: Reference segment=0 on input line 31.
+Package biblatex Info: Reference section=0 on input line 32.
+Package biblatex Info: Reference segment=0 on input line 32.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen138
-\scratchbox=\box26
-\nofMPsegments=\count299
-\nofMParguments=\count300
-\everyMPshowfont=\toks18
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen139
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
-\everyMPtoPDFconversion=\toks19
+\scratchcounter=\count310
+\scratchdimen=\dimen147
+\scratchbox=\box28
+\nofMPsegments=\count311
+\nofMParguments=\count312
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count313
+\MPscratchDim=\dimen148
+\MPnumerator=\count314
+\makeMPintoPDFobject=\count315
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -543,7 +597,7 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-\AtBeginShipoutBox=\box27
+\AtBeginShipoutBox=\box29
  (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
  (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -551,17 +605,17 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 31.
+Package hyperref Info: Link coloring ON on input line 32.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count304
+\c@section@level=\count316
 )
-LaTeX Info: Redefining \ref on input line 31.
-LaTeX Info: Redefining \pageref on input line 31.
-LaTeX Info: Redefining \nameref on input line 31.
+LaTeX Info: Redefining \ref on input line 32.
+LaTeX Info: Redefining \pageref on input line 32.
+LaTeX Info: Redefining \nameref on input line 32.
  (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out) (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out)
 \@outlinefile=\write5
 \openout5 = `Tianyao_Chen_bachelor_thesis.out'.
@@ -569,26 +623,20 @@ LaTeX Info: Redefining \nameref on input line 31.
 <bsc-logo.pdf, id=100, 233.87375pt x 84.315pt>
 File: bsc-logo.pdf Graphic file (type pdf)
 <use bsc-logo.pdf>
-Package pdftex.def Info: bsc-logo.pdf  used on input line 37.
+Package pdftex.def Info: bsc-logo.pdf  used on input line 38.
 (pdftex.def)             Requested size: 187.09923pt x 67.45207pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 42.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 43.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 51.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 65.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 65.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 65.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 52.
  [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/tillchen/Google Drive/JUB/thesis/thesis/bsc-logo.pdf>]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 72.
  [2]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 110.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 111.
  [3] (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.toc
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 4.
@@ -598,16 +646,16 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 
  [4]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 136.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 137.
 <./images/amphora_stowage_aboard_ship.png, id=168, 459.7175pt x 328.22626pt>
 File: ./images/amphora_stowage_aboard_ship.png Graphic file (type png)
 <use ./images/amphora_stowage_aboard_ship.png>
-Package pdftex.def Info: ./images/amphora_stowage_aboard_ship.png  used on input line 153.
+Package pdftex.def Info: ./images/amphora_stowage_aboard_ship.png  used on input line 154.
 (pdftex.def)             Requested size: 341.43437pt x 243.79013pt.
 <./images/amphora_various_shape.png, id=173, 956.57375pt x 609.27625pt>
 File: ./images/amphora_various_shape.png Graphic file (type png)
 <use ./images/amphora_various_shape.png>
-Package pdftex.def Info: ./images/amphora_various_shape.png  used on input line 164.
+Package pdftex.def Info: ./images/amphora_various_shape.png  used on input line 165.
 (pdftex.def)             Requested size: 341.43437pt x 217.47061pt.
  [1
 
@@ -615,34 +663,45 @@ Package pdftex.def Info: ./images/amphora_various_shape.png  used on input line 
 <./images/deep_learning.png, id=246, 520.94624pt x 398.48875pt>
 File: ./images/deep_learning.png Graphic file (type png)
 <use ./images/deep_learning.png>
-Package pdftex.def Info: ./images/deep_learning.png  used on input line 216.
+Package pdftex.def Info: ./images/deep_learning.png  used on input line 217.
 (pdftex.def)             Requested size: 341.43437pt x 261.17317pt.
 <./images/ann_logic_computations.png, id=252, 514.92375pt x 152.57pt>
 File: ./images/ann_logic_computations.png Graphic file (type png)
 <use ./images/ann_logic_computations.png>
-Package pdftex.def Info: ./images/ann_logic_computations.png  used on input line 232.
+Package pdftex.def Info: ./images/ann_logic_computations.png  used on input line 233.
 (pdftex.def)             Requested size: 341.43437pt x 101.16676pt.
- [3 <./images/deep_learning.png>] [4 <./images/ann_logic_computations.png>] [5] [6]
-Overfull \hbox (0.94344pt too wide) in paragraph at lines 324--324
+<./images/tlu.png, id=258, 516.93124pt x 166.6225pt>
+File: ./images/tlu.png Graphic file (type png)
+<use ./images/tlu.png>
+Package pdftex.def Info: ./images/tlu.png  used on input line 251.
+(pdftex.def)             Requested size: 341.43437pt x 110.05762pt.
+ [3 <./images/deep_learning.png>]
+<./images/perceptron.png, id=276, 440.64626pt x 190.7125pt>
+File: ./images/perceptron.png Graphic file (type png)
+<use ./images/perceptron.png>
+Package pdftex.def Info: ./images/perceptron.png  used on input line 261.
+(pdftex.def)             Requested size: 341.43437pt x 147.77736pt.
+ [4 <./images/ann_logic_computations.png> <./images/tlu.png> <./images/perceptron.png>] [5] [6] [7]
+Overfull \hbox (0.94344pt too wide) in paragraph at lines 364--364
 []\OT1/phv/m/n/10.95 Mohamed El-gendy. \OT1/phv/m/sl/10.95 Deep Learn-ing for Vi-sion Sys-tems\OT1/phv/m/n/10.95 . Man-ning Pub-li-ca-tions, 2020. 
  []
 
 
-Overfull \hbox (38.58963pt too wide) in paragraph at lines 324--324
+Overfull \hbox (38.58963pt too wide) in paragraph at lines 364--364
 []\OT1/phv/m/n/10.95 Ian J Good-fel-low et al. ``Gen-er-a-tive ad-ver-sar-ial net-works''. In: \OT1/phv/m/sl/10.95 arXiv preprint arXiv:1406.2661
  []
 
-[7]
-Overfull \hbox (5.0725pt too wide) in paragraph at lines 324--324
+[8]
+Overfull \hbox (5.0725pt too wide) in paragraph at lines 364--364
 []\OT1/phv/m/n/10.95 WJ Zhang et al. ``On def-i-ni-tion of deep learn-ing''. In: \OT1/phv/m/sl/10.95 2018 World au-toma-tion congress
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
-[8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 365.
+[9]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 365.
  (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 365.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 365.
 Package rerunfilecheck Info: File `Tianyao_Chen_bachelor_thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 20CF14E48689EAFA3A2187861243971D;1742.
 Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
@@ -650,18 +709,18 @@ Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 13949 strings out of 492649
- 239740 string characters out of 6129623
- 686171 words of memory out of 5000000
- 17589 multiletter control sequences out of 15000+600000
- 22922 words of font info for 43 fonts, out of 8000000 for 9000
+ 14565 strings out of 492649
+ 247218 string characters out of 6129623
+ 697034 words of memory out of 5000000
+ 18176 multiletter control sequences out of 15000+600000
+ 24525 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,48p,932b,1666s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (12 pages, 773664 bytes).
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (13 pages, 872995 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 307 compressed objects within 4 object streams
- 87 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 394 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 228 words of extra memory for PDF output out of 10000 (max. 10000000)
 

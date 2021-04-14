@@ -1085,6 +1085,88 @@
       \field{pages}{115\bibrangedash 133}
       \range{pages}{19}
     \endentry
+    \entry{rosenblatt1957perceptron}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9e8511ef13d0cdda3a709b93fa650e71}{%
+           family={Rosenblatt},
+           familyi={R\bibinitperiod},
+           given={Frank},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cornell Aeronautical Laboratory}%
+      }
+      \strng{namehash}{9e8511ef13d0cdda3a709b93fa650e71}
+      \strng{fullhash}{9e8511ef13d0cdda3a709b93fa650e71}
+      \strng{bibnamehash}{9e8511ef13d0cdda3a709b93fa650e71}
+      \strng{authorbibnamehash}{9e8511ef13d0cdda3a709b93fa650e71}
+      \strng{authornamehash}{9e8511ef13d0cdda3a709b93fa650e71}
+      \strng{authorfullhash}{9e8511ef13d0cdda3a709b93fa650e71}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The perceptron, a perceiving and recognizing automaton Project Para}
+      \field{year}{1957}
+    \endentry
+    \entry{hebb2005organization}{book}{}
+      \name{author}{1}{}{%
+        {{hash=2f0da08615f4b5e9a0ea5353bd4d78d3}{%
+           family={Hebb},
+           familyi={H\bibinitperiod},
+           given={Donald\bibnamedelima Olding},
+           giveni={D\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Psychology Press}%
+      }
+      \strng{namehash}{2f0da08615f4b5e9a0ea5353bd4d78d3}
+      \strng{fullhash}{2f0da08615f4b5e9a0ea5353bd4d78d3}
+      \strng{bibnamehash}{2f0da08615f4b5e9a0ea5353bd4d78d3}
+      \strng{authorbibnamehash}{2f0da08615f4b5e9a0ea5353bd4d78d3}
+      \strng{authornamehash}{2f0da08615f4b5e9a0ea5353bd4d78d3}
+      \strng{authorfullhash}{2f0da08615f4b5e9a0ea5353bd4d78d3}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The organization of behavior: A neuropsychological theory}
+      \field{year}{2005}
+    \endentry
+    \entry{lowel1992selection}{article}{}
+      \name{author}{2}{}{%
+        {{hash=0489dcdb3040d863ea91840ebcdf2a3a}{%
+           family={Lowel},
+           familyi={L\bibinitperiod},
+           given={Siegrid},
+           giveni={S\bibinitperiod}}}%
+        {{hash=974000371a3ba2b0a655dec8d315a71a}{%
+           family={Singer},
+           familyi={S\bibinitperiod},
+           given={Wolf},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {American Association for the Advancement of Science}%
+      }
+      \strng{namehash}{c8afbbd780b1dd20b97514f4b2b8d46e}
+      \strng{fullhash}{c8afbbd780b1dd20b97514f4b2b8d46e}
+      \strng{bibnamehash}{c8afbbd780b1dd20b97514f4b2b8d46e}
+      \strng{authorbibnamehash}{c8afbbd780b1dd20b97514f4b2b8d46e}
+      \strng{authornamehash}{c8afbbd780b1dd20b97514f4b2b8d46e}
+      \strng{authorfullhash}{c8afbbd780b1dd20b97514f4b2b8d46e}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Science}
+      \field{number}{5041}
+      \field{title}{Selection of intrinsic horizontal connections in the visual cortex by correlated neuronal activity}
+      \field{volume}{255}
+      \field{year}{1992}
+      \field{pages}{209\bibrangedash 212}
+      \range{pages}{4}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

@@ -13,6 +13,7 @@
 \graphicspath{ {./images/} }
 \usepackage[pdftex]{hyperref}	%% many PDF options can be set here
 \pdfadjustspacing=1		%% force LaTeX-like character spacing
+\usepackage{amsmath}
 
 \newcommand{\myname}{Tianyao Chen}
 \newcommand{\mytitle}{Deep Learning for Detecting Amphoras in Ancient Shipwrecks}
@@ -233,6 +234,45 @@
     \end{center}
     \caption{ANNs performing logical computations with the activation threshold of 2. Source: \cite{geron2019hands}}
   \end{figure}
+
+  Then the Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
+  (TLU) or linear threshold unit (LTU) \cite{rosenblatt1957perceptron}. The inputs and outputs are numbers instead of
+  binary values, and each input has a weight. TLU computes the weighted sum of the inputs and then applies a step
+  function like the Heaviside function
+  $heaviside (x) =
+  \begin{cases}
+    0 & x \le 0 \\
+    1 & x \geq 0 \\
+  \end{cases}$
+  \cite{geron2019hands, rosenblatt1957perceptron}.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{tlu.png}
+    \end{center}
+    \caption{Threshold logic unit. Source: \cite{geron2019hands}}
+  \end{figure}
+
+  A single TLU can be used for simple linear binary classification, while a layer of TLUs plus a bias neuron form a
+  Perceptron capable of multi-output classification \cite{geron2019hands}.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{perceptron.png}
+    \end{center}
+    \caption{A Perceptron with three output neurons. Source: \cite{geron2019hands}}
+  \end{figure}
+
+  The outputs of a fully connected layer is computed as follows, where $\mathbf{X}, \mathbf{W}, \mathbf{b}$, and $\phi$
+  are respectively the input matrix, weight matrix, bias vector, and activation function:
+
+  $$h_{\mathbf{W,b}}(\mathbf{X}) = \phi(\mathbf{XW} + \mathbf{b})$$
+
+  The Perceptron is trained using a variant of the Herbb's rule \cite{hebb2005organization}, which is famously summarized
+  as "neurons wire together if they fire together \cite{lowel1992selection}" \cite{geron2019hands}. However, the Perceptron
+  can not learn complex patterns due the linear decision boundary of the output neurons, and it can only make predictions
+  based on a hard threshold instead of outputting a class probability \cite{geron2019hands}. To address these limitations,
+  Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
 
   \subsubsection{Convultional Neural Networks (CNNs)}
   \subsubsection{Deep Learning vs. Traditional Computer Vision}
