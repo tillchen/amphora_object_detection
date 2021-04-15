@@ -143,11 +143,11 @@
 
   Like many measures that are named after the packages, amphoras were also a semi-standard unit of liquid
   measure \cite{twede2002commercial}. A cargo ship's capacity was measured by the number of amphoras it could carry
-  instead of by weight \cite{twede2002commercial,cousteau1954fish}.
+  instead of by weight \cite{twede2002commercial, cousteau1954fish}.
 
   The structurally strong egg-like shape and the high volume-to-weight ratio made amphoras very efficient packages
   \cite{twede2002commercial}. Amphoras were by far the most common cargo type in Mediterranean shipwreck analysis;
-  more than half of the ships only carried amphoras \cite{twede2002commercial,parker1984shipwrecks}.
+  more than half of the ships only carried amphoras \cite{twede2002commercial, parker1984shipwrecks}.
 
   \begin{figure}[ht]
     \begin{center}
@@ -218,7 +218,7 @@
     \end{center}
     \caption{A deep learning system that learns the representations of a person. This is achieved by combining simpler
     features like corners and contours, which are further expressed by combining simpler features like edges. Source:
-    \cite{goodfellow2016deep}}
+    \cite{goodfellow2016deep}.}
   \end{figure}
 
   \subsubsection{Artifical Neural Networks (ANNs)}
@@ -232,7 +232,7 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{ann_logic_computations.png}
     \end{center}
-    \caption{ANNs performing logical computations with the activation threshold of 2. Source: \cite{geron2019hands}}
+    \caption{ANNs performing logical computations with the activation threshold of 2. Source: \cite{geron2019hands}.}
   \end{figure}
 
   Then the Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
@@ -250,7 +250,7 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{tlu.png}
     \end{center}
-    \caption{Threshold logic unit. Source: \cite{geron2019hands}}
+    \caption{Threshold logic unit. Source: \cite{geron2019hands}.}
   \end{figure}
 
   A single TLU can be used for simple linear binary classification, while a layer of TLUs plus a bias neuron form a
@@ -260,7 +260,7 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{perceptron.png}
     \end{center}
-    \caption{A Perceptron with three output neurons. Source: \cite{geron2019hands}}
+    \caption{A Perceptron with three output neurons. Source: \cite{geron2019hands}.}
   \end{figure}
 
   The outputs of a fully connected layer is computed as follows, where $\mathbf{X}, \mathbf{W}, \mathbf{b}$, and $\phi$
@@ -278,7 +278,7 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{mlp.png}
     \end{center}
-    \caption{A Multilayer Perceptron with one hidden layer. Source: \cite{geron2019hands}}
+    \caption{A Multilayer Perceptron with one hidden layer. Source: \cite{geron2019hands}.}
   \end{figure}
 
   Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first makes a prediction and measures the
@@ -311,7 +311,7 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{cnn_layers.png}
     \end{center}
-    \caption{CNN layers with rectangular receptive fields. Source: \cite{geron2019hands}}
+    \caption{CNN layers with rectangular receptive fields. Source: \cite{geron2019hands}.}
   \end{figure}
 
   The filters or convolution kernels, which are learned during training, are neurons' weights that can be presented as
@@ -324,7 +324,7 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{filters.png}
     \end{center}
-    \caption{Two feature maps obtained by applying two different filters. Source: \cite{geron2019hands}}
+    \caption{Two feature maps obtained by applying two different filters. Source: \cite{geron2019hands}.}
   \end{figure}
 
   The pooling layers subsample (i.e. shrink) the input image to reduce the computational load and the number of paramters,
@@ -336,14 +336,14 @@
       \includegraphics[width=.8\textwidth]{max_pooling.png}
     \end{center}
     \caption{A max pooling layer with a 2 x 2 kernel and stride 2. Only the max value from each receptive field
-    gets passed to the next layer. Source: \cite{geron2019hands}}
+    gets passed to the next layer. Source: \cite{geron2019hands}.}
   \end{figure}
 
   \begin{figure}[ht]
     \begin{center}
       \includegraphics[width=.8\textwidth]{max_pooling_invariance.png}
     \end{center}
-    \caption{Max pooling layer's invariance to small translations. Source: \cite{geron2019hands}}
+    \caption{Max pooling layer's invariance to small translations. Source: \cite{geron2019hands}.}
   \end{figure}
 
   The typical CNN architecture involves the aforementioned convolutional layers, pooling layers, and fully connected layers.
@@ -355,7 +355,7 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{typical_cnn.png}
     \end{center}
-    \caption{The typical CNN architecuture. Source: \cite{geron2019hands}}
+    \caption{The typical CNN architecuture. Source: \cite{geron2019hands}.}
   \end{figure}
 
   Here we give ResNet a more in-depth introduction, as it's the backbone network in the model we use to detect amphoras.
@@ -370,10 +370,17 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{resnet.png}
     \end{center}
-    \caption{ResNet architecture. Source: \cite{geron2019hands}}
+    \caption{ResNet architecture. Source: \cite{geron2019hands}.}
   \end{figure}
 
-  \subsubsection{Deep Learning vs. Traditional Computer Vision}
+  \subsection{Deep Learning vs. Traditional Computer Vision}
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{deep_learning_vs_traditional_computer_vision.png}
+    \end{center}
+    \caption{(a) Traditional computer vision workflow. (b) Deep learning workflow. Source: \cite{o2019deep}.}
+  \end{figure}
 
   \subsection{Object Detection}
 

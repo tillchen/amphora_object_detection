@@ -1687,6 +1687,68 @@
       \field{pages}{3431\bibrangedash 3440}
       \range{pages}{10}
     \endentry
+    \entry{o2019deep}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=77f1ebe097f2eb6ba430259e7c3f909e}{%
+           family={O’Mahony},
+           familyi={O\bibinitperiod},
+           given={Niall},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3610783d90e6f33dd2825fba18530c85}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f6c6043c7f099e12414c35f022c46dfd}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Anderson},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e1f762bc2171cfad70c98da2ce1542e9}{%
+           family={Harapanahalli},
+           familyi={H\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a09134160f1841661f857c3a1cf5953d}{%
+           family={Hernandez},
+           familyi={H\bibinitperiod},
+           given={Gustavo\bibnamedelima Velasco},
+           giveni={G\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=b3797f2c968cc507cbbe92ca103399e7}{%
+           family={Krpalkova},
+           familyi={K\bibinitperiod},
+           given={Lenka},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2c218dde295b64e98278c09e600dfdb0}{%
+           family={Riordan},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2016abe7bd371587d0d74f7864ae1ef9}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{2d07575872bf36b35df51b0e1ecfaef3}
+      \strng{fullhash}{870dc993489646657f4346db826dd89c}
+      \strng{bibnamehash}{2d07575872bf36b35df51b0e1ecfaef3}
+      \strng{authorbibnamehash}{2d07575872bf36b35df51b0e1ecfaef3}
+      \strng{authornamehash}{2d07575872bf36b35df51b0e1ecfaef3}
+      \strng{authorfullhash}{870dc993489646657f4346db826dd89c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Science and Information Conference}
+      \field{title}{Deep learning vs. traditional computer vision}
+      \field{year}{2019}
+      \field{pages}{128\bibrangedash 144}
+      \range{pages}{17}
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
