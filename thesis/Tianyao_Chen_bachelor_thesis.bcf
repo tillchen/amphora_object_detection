@@ -2075,6 +2075,15 @@
     <bcf:citekey order="83">geron2019hands</bcf:citekey>
     <bcf:citekey order="84">geron2019hands</bcf:citekey>
     <bcf:citekey order="85">geron2019hands</bcf:citekey>
+    <bcf:citekey order="86">lecun1998gradient</bcf:citekey>
+    <bcf:citekey order="87">krizhevsky2012imagenet</bcf:citekey>
+    <bcf:citekey order="88">szegedy2015going</bcf:citekey>
+    <bcf:citekey order="89">simonyan2014very</bcf:citekey>
+    <bcf:citekey order="90">he2016deep</bcf:citekey>
+    <bcf:citekey order="91">chollet2017xception</bcf:citekey>
+    <bcf:citekey order="92">hu2018squeeze</bcf:citekey>
+    <bcf:citekey order="93">geron2019hands</bcf:citekey>
+    <bcf:citekey order="94">geron2019hands</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
