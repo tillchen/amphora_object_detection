@@ -314,6 +314,19 @@
     \caption{CNN layers with rectangular receptive fields. Source: \cite{geron2019hands}}
   \end{figure}
 
+  The filters or convolution kernels, which are learned during training, are neurons' weights that can be presented as
+  small images the size of receptive fields \cite{geron2019hands}. For example, a black sqaure with a horizontal white
+  line in the middle (a matrix full of 0s except for the central row with 1s) is a filter that only reacts to the central
+  row in the receptive field. A layer of neurons with the same filter outputs a feature map, which highlights the parts
+  of an image that activate the filter the most \cite{geron2019hands}.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{filters.png}
+    \end{center}
+    \caption{Two feature maps obtained by applying two different filters. Source: \cite{geron2019hands}}
+  \end{figure}
+
   \subsubsection{Deep Learning vs. Traditional Computer Vision}
 
   \subsection{Object Detection}
