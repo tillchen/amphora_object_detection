@@ -380,10 +380,11 @@
   image classification, object detection, and semantic segmentation \cite{qin2015underwater, voulodimos2018deep, o2019deep}.
 
   Traditionally, computer vision requires the manual feature selection and engineering step, which relies on domain knowledge
-  to produce high-quality features \cite{elgendy2020deep, o2019deep}. These handcrafted features are further procesed
-  by a machine learning classifier like a support vector machine (SVM) \cite{elgendy2020deep, o2019deep}. However, manual
-  feature extraction becomes more and more complex as the number of classes increases \cite{o2019deep}. Besides, conventional
-  machine learning algorithms' ability to generalize saturates quickly as the size of training data grows \cite{qin2015underwater}.
+  to produce high-quality features \cite{elgendy2020deep, zhao2019object, o2019deep}. These handcrafted features are further
+  procesed by a machine learning classifier like a support vector machine (SVM)
+  \cite{elgendy2020deep, zhao2019object, o2019deep}. However, manual feature extraction becomes more and more complex as
+  the number of classes increases \cite{o2019deep}. Besides, conventional machine learning algorithms' ability to
+  generalize saturates quickly as the size of training data grows \cite{qin2015underwater}.
 
   In deep learning, the manual feature extraction step is no longer needed, and neural networks can be trained end-to-end
   as a feature extractor plus a classifier \cite{elgendy2020deep, o2019deep}. Thus, deep learning requires less domain
@@ -407,9 +408,12 @@
 
   \subsection{Object Detection}
 
-  Define object detection and introduce the sliding CNN approach.
-
-  \subsubsection{Fully Convolutional Networks (FCNs)}
+  Object detection is the computer vision task that localizes and classifies objects in an image
+  \cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection remains to be one of the most
+  challenging problems in computer vision, as it can be considered as both a regression task (localization by predicting
+  the bounding box) and a classification task (predicting the object class in each bounding box)
+  \cite{elgendy2020deep, geron2019hands}. Plus, the large variantions in viewpoints, poses, occlusions, and lighting
+  conditions make it even more difficult to perform perfect object detection \cite{zhao2019object, liu2020deep}.
 
   \subsubsection{General Object Detection Framework Components}
 

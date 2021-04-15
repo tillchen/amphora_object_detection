@@ -19,9 +19,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.4}Object Detection}{8}{subsection.1.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.1}Fully Convolutional Networks (FCNs)}{9}{subsubsection.1.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.2}General Object Detection Framework Components}{9}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.1}General Object Detection Framework Components}{9}{subsubsection.1.4.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Region Proposals}{9}{section*.19}
 \defcounter {refsection}{0}\relax 
@@ -31,7 +29,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Metrics}{9}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.3}Region-Based Convultional Neural Networks (R-CNN)}{9}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.2}Region-Based Convultional Neural Networks (R-CNN)}{9}{subsubsection.1.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{R-CNN}{9}{section*.23}
 \defcounter {refsection}{0}\relax 
@@ -39,9 +37,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Faster R-CNN}{9}{section*.25}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.4}Single Shot Detector (SSD)}{9}{subsubsection.1.4.4}
+\contentsline {subsubsection}{\numberline {1.4.3}Single Shot Detector (SSD)}{9}{subsubsection.1.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.5}You Only Look Once (YOLO)}{9}{subsubsection.1.4.5}
+\contentsline {subsubsection}{\numberline {1.4.4}You Only Look Once (YOLO)}{9}{subsubsection.1.4.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{YOLO}{9}{section*.26}
 \defcounter {refsection}{0}\relax 
