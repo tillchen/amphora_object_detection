@@ -362,11 +362,9 @@
   ResNet is a fully convolutional network (FCN) \cite{he2016deep, long2015fully}. FCNs contain only convolutional layers
   and pooling layers, which means input images can have arbitrary sizes \cite{long2015fully}. Resnet adds skip connections
   (or shortcut connections), which means the input signal of a layer is also added to the ouput of a higher up layer
-  \cite{geron2019hands, he2016deep}. Residual learning forces the network to approximate
-  $f(\mathbf{x}) = h(\mathbf{x}) - \mathbf{x}$ instead of $h(\mathbf{x})$ \cite{geron2019hands, he2016deep}. Skip connections
-  help speed the training considerably, since: 1) the network preconditions the problem to be the identify function, which
-  is often close to the target function, and 2) the network can start making progress even if some layers have not
-  started learning yet \cite{geron2019hands, he2016deep}.
+  \cite{geron2019hands, he2016deep}. Skip connections help speed up the training considerably, since: 1) the network
+  preconditions the problem to be the identify function, which is often close to the target function, and 2) the network
+  can start making progress even if some layers have not started learning yet \cite{geron2019hands, he2016deep}.
 
   \begin{figure}[ht]
     \begin{center}
