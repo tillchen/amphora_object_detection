@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  15 APR 2021 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  15 APR 2021 17:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -719,33 +719,34 @@ File: ./images/resnet.png Graphic file (type png)
 <use ./images/resnet.png>
 Package pdftex.def Info: ./images/resnet.png  used on input line 371.
 (pdftex.def)             Requested size: 341.43437pt x 194.05995pt.
-<./images/deep_learning_vs_traditional_computer_vision.png, id=387, 578.16pt x 238.8925pt>
+ [7 <./images/max_pooling.png> <./images/max_pooling_invariance.png>]
+<./images/deep_learning_vs_traditional_computer_vision.png, id=409, 578.16pt x 238.8925pt>
 File: ./images/deep_learning_vs_traditional_computer_vision.png Graphic file (type png)
 <use ./images/deep_learning_vs_traditional_computer_vision.png>
-Package pdftex.def Info: ./images/deep_learning_vs_traditional_computer_vision.png  used on input line 380.
+Package pdftex.def Info: ./images/deep_learning_vs_traditional_computer_vision.png  used on input line 395.
 (pdftex.def)             Requested size: 341.43437pt x 141.07657pt.
- [7 <./images/max_pooling.png> <./images/max_pooling_invariance.png>] [8 <./images/typical_cnn.png> <./images/resnet.png>] [9 <./images/deep_learning_vs_traditional_computer_vision.png>] [10]
-Overfull \hbox (0.94344pt too wide) in paragraph at lines 469--469
+ [8 <./images/typical_cnn.png> <./images/resnet.png>] [9 <./images/deep_learning_vs_traditional_computer_vision.png>] [10] [11]
+Overfull \hbox (0.94344pt too wide) in paragraph at lines 492--492
 []\OT1/phv/m/n/10.95 Mohamed El-gendy. \OT1/phv/m/sl/10.95 Deep Learn-ing for Vi-sion Sys-tems\OT1/phv/m/n/10.95 . Man-ning Pub-li-ca-tions, 2020. 
  []
 
 
-Overfull \hbox (38.58963pt too wide) in paragraph at lines 469--469
+Overfull \hbox (38.58963pt too wide) in paragraph at lines 492--492
 []\OT1/phv/m/n/10.95 Ian J Good-fel-low et al. ``Gen-er-a-tive ad-ver-sar-ial net-works''. In: \OT1/phv/m/sl/10.95 arXiv preprint arXiv:1406.2661
  []
 
-[11]
-Overfull \hbox (5.0725pt too wide) in paragraph at lines 469--469
+[12]
+Overfull \hbox (5.0725pt too wide) in paragraph at lines 492--492
 []\OT1/phv/m/n/10.95 WJ Zhang et al. ``On def-i-ni-tion of deep learn-ing''. In: \OT1/phv/m/sl/10.95 2018 World au-toma-tion congress
  []
 
-[12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 470.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 470.
+[13]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 493.
+ [14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 493.
  (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 470.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 470.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 493.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 493.
 Package rerunfilecheck Info: File `Tianyao_Chen_bachelor_thesis.out' has not changed.
 (rerunfilecheck)             Checksum: BD11C125A1A813130CF3BE35D1A951FA;1733.
 Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
@@ -753,18 +754,18 @@ Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14668 strings out of 492649
- 250520 string characters out of 6129623
- 699531 words of memory out of 5000000
- 18243 multiletter control sequences out of 15000+600000
+ 14690 strings out of 492649
+ 251398 string characters out of 6129623
+ 699145 words of memory out of 5000000
+ 18257 multiletter control sequences out of 15000+600000
  24525 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,8n,48p,932b,1668s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,8n,48p,932b,1675s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (17 pages, 1349872 bytes).
+Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (18 pages, 1353438 bytes).
 PDF statistics:
- 508 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 121 named destinations out of 1000 (max. 500000)
+ 540 PDF objects out of 1000 (max. 8388607)
+ 461 compressed objects within 5 object streams
+ 129 named destinations out of 1000 (max. 500000)
  268 words of extra memory for PDF output out of 10000 (max. 10000000)
 

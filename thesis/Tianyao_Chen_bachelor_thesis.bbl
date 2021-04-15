@@ -1687,6 +1687,47 @@
       \field{pages}{3431\bibrangedash 3440}
       \range{pages}{10}
     \endentry
+    \entry{voulodimos2018deep}{article}{}
+      \name{author}{4}{}{%
+        {{hash=c06c2fd68d80faf8b963d257f10fe4ba}{%
+           family={Voulodimos},
+           familyi={V\bibinitperiod},
+           given={Athanasios},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ead3a6d2034d9ea00f98b73f0ab9fc60}{%
+           family={Doulamis},
+           familyi={D\bibinitperiod},
+           given={Nikolaos},
+           giveni={N\bibinitperiod}}}%
+        {{hash=af5f7d5422d6beeeb12f7ed107bd4430}{%
+           family={Doulamis},
+           familyi={D\bibinitperiod},
+           given={Anastasios},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3637b2ee5718849d414505cd0b0a25d0}{%
+           family={Protopapadakis},
+           familyi={P\bibinitperiod},
+           given={Eftychios},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Hindawi}%
+      }
+      \strng{namehash}{a8f0140359111d9936c91aab7826f512}
+      \strng{fullhash}{6a3640cd7bc39fdcf962630d8860c731}
+      \strng{bibnamehash}{a8f0140359111d9936c91aab7826f512}
+      \strng{authorbibnamehash}{a8f0140359111d9936c91aab7826f512}
+      \strng{authornamehash}{a8f0140359111d9936c91aab7826f512}
+      \strng{authorfullhash}{6a3640cd7bc39fdcf962630d8860c731}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computational intelligence and neuroscience}
+      \field{title}{Deep learning for computer vision: A brief review}
+      \field{volume}{2018}
+      \field{year}{2018}
+    \endentry
     \entry{o2019deep}{inproceedings}{}
       \name{author}{8}{}{%
         {{hash=77f1ebe097f2eb6ba430259e7c3f909e}{%
@@ -1748,6 +1789,294 @@
       \field{year}{2019}
       \field{pages}{128\bibrangedash 144}
       \range{pages}{17}
+    \endentry
+    \entry{karami2017image}{article}{}
+      \name{author}{3}{}{%
+        {{hash=69699e9e3f88fd71fedc5466b9ebd1fc}{%
+           family={Karami},
+           familyi={K\bibinitperiod},
+           given={Ebrahim},
+           giveni={E\bibinitperiod}}}%
+        {{hash=6b018d6281f260ece84797bd237470da}{%
+           family={Shehata},
+           familyi={S\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=56a71a9efbc344f169ac1454c9e7af49}{%
+           family={Smith},
+           familyi={S\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad3b10db82b0a6fa472c55fcce56b373}
+      \strng{fullhash}{ad3b10db82b0a6fa472c55fcce56b373}
+      \strng{bibnamehash}{ad3b10db82b0a6fa472c55fcce56b373}
+      \strng{authorbibnamehash}{ad3b10db82b0a6fa472c55fcce56b373}
+      \strng{authornamehash}{ad3b10db82b0a6fa472c55fcce56b373}
+      \strng{authorfullhash}{ad3b10db82b0a6fa472c55fcce56b373}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1710.02728}
+      \field{title}{Image identification using SIFT algorithm: Performance analysis against different image deformations}
+      \field{year}{2017}
+    \endentry
+    \entry{bay2006surf}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=a06a24a184d39c3aa9a7718cd9a5868d}{%
+           family={Bay},
+           familyi={B\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1fffde1e018446dc52c3da9c6e26ec11}{%
+           family={Tuytelaars},
+           familyi={T\bibinitperiod},
+           given={Tinne},
+           giveni={T\bibinitperiod}}}%
+        {{hash=97097efa079bb7f45db94404bf6cbfa0}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{e1768fe1bf22d28b202d0066ed2a9c3c}
+      \strng{fullhash}{e1768fe1bf22d28b202d0066ed2a9c3c}
+      \strng{bibnamehash}{e1768fe1bf22d28b202d0066ed2a9c3c}
+      \strng{authorbibnamehash}{e1768fe1bf22d28b202d0066ed2a9c3c}
+      \strng{authornamehash}{e1768fe1bf22d28b202d0066ed2a9c3c}
+      \strng{authorfullhash}{e1768fe1bf22d28b202d0066ed2a9c3c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European conference on computer vision}
+      \field{title}{Surf: Speeded up robust features}
+      \field{year}{2006}
+      \field{pages}{404\bibrangedash 417}
+      \range{pages}{14}
+    \endentry
+    \entry{rosten2006machine}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=712f75fa3873cef1c7e0971ca95a0237}{%
+           family={Rosten},
+           familyi={R\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=7935612af661bcaae62a430e70094064}{%
+           family={Drummond},
+           familyi={D\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{fullhash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{bibnamehash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{authorbibnamehash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{authornamehash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \strng{authorfullhash}{c8dcfd13eb93dd0078708948c42b5a8a}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European conference on computer vision}
+      \field{title}{Machine learning for high-speed corner detection}
+      \field{year}{2006}
+      \field{pages}{430\bibrangedash 443}
+      \range{pages}{14}
+    \endentry
+    \entry{everingham2010pascal}{article}{}
+      \name{author}{5}{}{%
+        {{hash=655191b4f54a942147b118da2f50aeed}{%
+           family={Everingham},
+           familyi={E\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=97097efa079bb7f45db94404bf6cbfa0}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+        {{hash=8cd61d09283907edc07c79aad4ab14da}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Christopher\bibnamedelima KI},
+           giveni={C\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=19dcf449a33f27289a006b0acf819975}{%
+           family={Winn},
+           familyi={W\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c72fc39e94030f67717052309266a44d}{%
+           family={Zisserman},
+           familyi={Z\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{235de32ba219ebb749c8820ac16ff118}
+      \strng{fullhash}{17124ddaa4801802cff2d6978e2b2b02}
+      \strng{bibnamehash}{235de32ba219ebb749c8820ac16ff118}
+      \strng{authorbibnamehash}{235de32ba219ebb749c8820ac16ff118}
+      \strng{authornamehash}{235de32ba219ebb749c8820ac16ff118}
+      \strng{authorfullhash}{17124ddaa4801802cff2d6978e2b2b02}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of computer vision}
+      \field{number}{2}
+      \field{title}{The pascal visual object classes (voc) challenge}
+      \field{volume}{88}
+      \field{year}{2010}
+      \field{pages}{303\bibrangedash 338}
+      \range{pages}{36}
+    \endentry
+    \entry{russakovsky2015imagenet}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=2a74ec28b731b015747e2af5f0b519e1}{%
+           family={Russakovsky},
+           familyi={R\bibinitperiod},
+           given={Olga},
+           giveni={O\bibinitperiod}}}%
+        {{hash=0ae7fdc13773f928525f673b05f37149}{%
+           family={Deng},
+           familyi={D\bibinitperiod},
+           given={Jia},
+           giveni={J\bibinitperiod}}}%
+        {{hash=18c26ddba8b9dd77f278213fd4e93ce4}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod}}}%
+        {{hash=bdb3759bbe6ab0618874848557abd459}{%
+           family={Krause},
+           familyi={K\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=434c8ee62c507c93be09958bae942da5}{%
+           family={Satheesh},
+           familyi={S\bibinitperiod},
+           given={Sanjeev},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e3f8564120f7528479a3ea1b507bd705}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6e8d947dd72de23b8500095b595e1e99}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Zhiheng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=e91a4c2044bccdbef249eabc886ff988}{%
+           family={Karpathy},
+           familyi={K\bibinitperiod},
+           given={Andrej},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c8d6add84efe17681e0d4968ebf47fdc}{%
+           family={Khosla},
+           familyi={K\bibinitperiod},
+           given={Aditya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9c5821708eb9cc9bc6c92c66ada53892}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8ba3ccfdb2fef3e42589e7ae3b2c964a}
+      \strng{fullhash}{02269a963f3dd2d4cd3516e184f1fb29}
+      \strng{bibnamehash}{8ba3ccfdb2fef3e42589e7ae3b2c964a}
+      \strng{authorbibnamehash}{8ba3ccfdb2fef3e42589e7ae3b2c964a}
+      \strng{authornamehash}{8ba3ccfdb2fef3e42589e7ae3b2c964a}
+      \strng{authorfullhash}{02269a963f3dd2d4cd3516e184f1fb29}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International journal of computer vision}
+      \field{number}{3}
+      \field{title}{Imagenet large scale visual recognition challenge}
+      \field{volume}{115}
+      \field{year}{2015}
+      \field{pages}{211\bibrangedash 252}
+      \range{pages}{42}
+    \endentry
+    \entry{lin2014microsoft}{inproceedings}{}
+      \name{author}{8}{}{%
+        {{hash=08f925fe4692d130a1d7cb7d94483351}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Tsung-Yi},
+           giveni={T\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=d980bc6930f008a0fb5fa667785f2309}{%
+           family={Maire},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=044d1db5259b74e4975282f599d8e767}{%
+           family={Belongie},
+           familyi={B\bibinitperiod},
+           given={Serge},
+           giveni={S\bibinitperiod}}}%
+        {{hash=797fc3624ba315db58eef7279ace5bf3}{%
+           family={Hays},
+           familyi={H\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=e52876f830a8a20786ff3e4d7dd6f083}{%
+           family={Perona},
+           familyi={P\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=aedcd3831845183e070aef16857d83ea}{%
+           family={Ramanan},
+           familyi={R\bibinitperiod},
+           given={Deva},
+           giveni={D\bibinitperiod}}}%
+        {{hash=e38ddb38a8e769642319731dae30fa2d}{%
+           family={Doll{á}r},
+           familyi={D\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=694996fef95cacf597b1af2ccb94f5f5}{%
+           family={Zitnick},
+           familyi={Z\bibinitperiod},
+           given={C\bibnamedelima Lawrence},
+           giveni={C\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{fullhash}{494d173f6b1d5ba6e83791ec1028de5b}
+      \strng{bibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authorbibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authornamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authorfullhash}{494d173f6b1d5ba6e83791ec1028de5b}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European conference on computer vision}
+      \field{title}{Microsoft coco: Common objects in context}
+      \field{year}{2014}
+      \field{pages}{740\bibrangedash 755}
+      \range{pages}{16}
     \endentry
   \enddatalist
 \endrefsection
