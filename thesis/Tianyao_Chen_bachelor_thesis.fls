@@ -241,6 +241,9 @@ INPUT ./images/max_pooling_invariance.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/typical_cnn.png
 INPUT ./images/typical_cnn.png
 INPUT ./images/typical_cnn.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/resnet.png
+INPUT ./images/resnet.png
+INPUT ./images/resnet.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
