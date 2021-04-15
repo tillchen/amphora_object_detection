@@ -327,6 +327,25 @@
     \caption{Two feature maps obtained by applying two different filters. Source: \cite{geron2019hands}}
   \end{figure}
 
+  The pooling layers subsample (i.e. shrink) the input image to reduce the computational load and the number of paramters,
+  which also reduces overfitting \cite{geron2019hands}. Plus, pool layers can bring some invariance to small translations,
+  rotations, and scaling \cite{geron2019hands}.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{max_pooling.png}
+    \end{center}
+    \caption{A max pooling layer with a 2 x 2 kernel and stride 2. Only the max value from each receptive field
+    gets passed to the next layer. Source: \cite{geron2019hands}}
+  \end{figure}
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{max_pooling_invariance.png}
+    \end{center}
+    \caption{Max pooling layer's invariance to small translations. Source: \cite{geron2019hands}}
+  \end{figure}
+
   \subsubsection{Deep Learning vs. Traditional Computer Vision}
 
   \subsection{Object Detection}
