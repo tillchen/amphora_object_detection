@@ -351,14 +351,19 @@
     \caption{The typical CNN architecuture. Source: \cite{geron2019hands}.}
   \end{figure}
 
-  Here we give ResNet a more in-depth introduction, as it's the backbone network in the model we use to detect amphoras.
+  Here we give ResNet a more in-depth introduction, as it's the backbone network of the model we use to detect amphoras.
   ResNet is a fully convolutional network (FCN) \cite{he2016deep, long2015fully}. FCNs contain only convolutional layers
   and pooling layers, which means input images can have arbitrary sizes \cite{long2015fully}. Resnet adds skip connections
   (or shortcut connections), which means the input signal of a layer is also added to the ouput of a higher up layer
   \cite{geron2019hands, he2016deep}. Skip connections help speed up the training considerably, since: 1) the network
   preconditions the problem to be the identify function, which is often close to the target function, and 2) the network
-  can start making progress even if some layers have not started learning yet \cite{geron2019hands, he2016deep}.
-  % TODO: Explain Batch Norm, Global avg pool, softmax.
+  can start making progress even if some layers have not started learning yet \cite{geron2019hands, he2016deep}. Batch
+  normalization \cite{ioffe2015batch} is used after each convolution, which zero-centers and normalizes each input to
+  reduce the vanishing gradient problem \cite{hochreiter1998vanishing} and the need for other regularization techniques
+  like dropout \cite{srivastava2014dropout} \cite{geron2019hands, he2016deep}. The global average pooling layer at the end
+  of the network is another type of pooling layer that gets the mean of the entire feature map
+  \cite{geron2019hands, he2016deep}. Softmax is used in the output layer to ensure that all probabilities add up to 1
+  \cite{geron2019hands, he2016deep}.
 
   \begin{figure}[ht]
     \begin{center}
