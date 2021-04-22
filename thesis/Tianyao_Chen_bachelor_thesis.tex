@@ -499,9 +499,29 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=\textwidth]{precision_recall.png}
+      \includegraphics[width=.8\textwidth]{precision_recall.png}
     \end{center}
     \caption{Precision and recall. Source: \cite{precisionrecall}.}
+  \end{figure}
+
+  There is a trade-off between precision and recall
+  \cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
+  (AP) by drawing the precision-recall curve (PR curve) and computing the area under the curve (AUC)
+  \cite{elgendy2020deep, planche2019hands}. Finally, we get the mean average precision (mAP) by averaging
+  the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}. Note that the AP and mAP are the
+  same when it's a single-class object detetction task. The Pascal VOC metric uses mAP@0.5, which means the IOU threshold
+  is 0.5 \cite{liu2020deep, everingham2010pascal, planche2019hands}. And the MS COCO metric - the one we are using for
+  detecting amphoras - $mAP_{coco} = mAP@[0.50:0.05:0.95]$ is averaged with different IOU thresholds from 0.5 to 0.95 in
+  steps of 0.05, which rewards detectors with better localization \cite{liu2020deep, planche2019hands, cocometrics}. MS
+  COCO also introduces mAP for different scales: $mAP^{small}$ for small objects with area smaller than $32^2$ pixels,
+  $mAP^{medium}$ for medium objects with area bigger than than $32^2$ pixels and smaller than $96^2$ pixels, and
+  $mAP^{big}$ for big objects with area bigger than $96^2$ pixels \cite{liu2020deep, cocometrics}.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{pr_curve.png}
+    \end{center}
+    \caption{A PR curve with 0.88 AUC. Source: \cite{planche2019hands}.}
   \end{figure}
 
   \subsubsection{Region-Based Convolutional Neural Networks (R-CNN)}
