@@ -2146,6 +2146,15 @@
     <bcf:citekey order="131">redmon2017yolo9000</bcf:citekey>
     <bcf:citekey order="131">redmon2018yolov3</bcf:citekey>
     <bcf:citekey order="131">bochkovskiy2020yolov4</bcf:citekey>
+    <bcf:citekey order="132">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="133">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="134">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="135">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="136">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="137">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="138">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="139">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="140">elgendy2020deep</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

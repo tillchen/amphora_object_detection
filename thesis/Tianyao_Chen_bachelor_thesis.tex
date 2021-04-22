@@ -426,16 +426,50 @@
   Luckily, many object detection frameworks based on fully convolutional network (FCN) \cite{long2015fully} have been
   introduced. FCNs contain only convolutional layers and pooling layers and only need to process each image once, which
   means they are faster and the input images can have arbitrary sizes \cite{elgendy2020deep, geron2019hands, long2015fully}.
-  Here we summarize three well-established and influential object detection framework families: Region-Base Convolutional
+  Here we summarize three well-established and influential object detection framework families: Region-Based Convolutional
   Neural Networks (R-CNN) \cite{girshick2014rich, girshick2015fast, ren2015faster}, Single Shot Detector (SSD)
   \cite{liu2016ssd}, and You Only Look Once (YOLO)
   \cite{redmon2016you, redmon2017yolo9000, redmon2018yolov3, bochkovskiy2020yolov4}.
 
   \subsubsection{General Object Detection Framework Components}
 
-  \paragraph{Region Proposals}
+  Before we dive into specific object detection frameworks, it's worth understanding the four high-level components of
+  general object detection frameworks \cite{elgendy2020deep}.
+
+  \paragraph{Region Proposal}
+
+  The region proposal algorithm finds regions of interest (RoIs) that are further processed by the framework by
+  discarding regions with low objectness score \cite{elgendy2020deep}. The objectness score indicates the probability of
+  the region containing an object instead of the background, and it is the class probability for a single-class object
+  detection task \cite{elgendy2020deep}.
+
   \paragraph{Network Predictions}
+
+  A pretrained CNN is used as the backbone for feature extraction and makes the bounding-box prediction and class prediction
+  for each region \cite{elgendy2020deep}. The bounding-box prediction is the tuple $(x, y, w, h)$, where $x$ and $y$ are
+  the coordinates of the center and $w, h$ are the width and the height \cite{elgendy2020deep}.
+
   \paragraph{Non-Maximum Suppression (NMS)}
+
+  The backbone network typically produces mulitple overlapping bounding boxes for one object, thus NMS finds
+  the box with the maximum class probability and suppresses the rest \cite{elgendy2020deep}. The steps include
+  \cite{elgendy2020deep}:
+
+  \begin{enumerate}
+    \item Discard boxes with predictions less than the tunable confidence threshold.
+    \item Select the box with the highest probability.
+    \item Compute the overlap - intersection over union (IoU) - of the boxes that have the same class prediction.
+    Boxes with high IoU are averaged together.
+    \item Suppress boxes with an IoU less than the tunable NMS threshold.
+  \end{enumerate}
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{nms.png}
+    \end{center}
+    \caption{NMS. Source: \cite{elgendy2020deep}.}
+  \end{figure}
+
   \paragraph{Metrics}
 
   \subsubsection{Region-Based Convolutional Neural Networks (R-CNN)}
