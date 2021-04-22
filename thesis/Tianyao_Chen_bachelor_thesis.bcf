@@ -2138,6 +2138,14 @@
     <bcf:citekey order="128">elgendy2020deep</bcf:citekey>
     <bcf:citekey order="128">geron2019hands</bcf:citekey>
     <bcf:citekey order="128">long2015fully</bcf:citekey>
+    <bcf:citekey order="129">girshick2014rich</bcf:citekey>
+    <bcf:citekey order="129">girshick2015fast</bcf:citekey>
+    <bcf:citekey order="129">ren2015faster</bcf:citekey>
+    <bcf:citekey order="130">liu2016ssd</bcf:citekey>
+    <bcf:citekey order="131">redmon2016you</bcf:citekey>
+    <bcf:citekey order="131">redmon2017yolo9000</bcf:citekey>
+    <bcf:citekey order="131">redmon2018yolov3</bcf:citekey>
+    <bcf:citekey order="131">bochkovskiy2020yolov4</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

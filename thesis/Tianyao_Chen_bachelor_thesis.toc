@@ -25,11 +25,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Network Predictions}{9}{section*.20}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Non-Maximum Suppression (NMS)}{9}{section*.21}
+\contentsline {paragraph}{Non-Maximum Suppression (NMS)}{10}{section*.21}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Metrics}{10}{section*.22}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.2}Region-Based Convultional Neural Networks (R-CNN)}{10}{subsubsection.1.4.2}
+\contentsline {subsubsection}{\numberline {1.4.2}Region-Based Convolutional Neural Networks (R-CNN)}{10}{subsubsection.1.4.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{R-CNN}{10}{section*.23}
 \defcounter {refsection}{0}\relax 
@@ -47,7 +47,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{YOLOv3}{10}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv4}{10}{section*.29}
+\contentsline {paragraph}{YOLOv4}{11}{section*.29}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{YOLOv5}{11}{section*.30}
 \defcounter {refsection}{0}\relax 
@@ -63,10 +63,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Evaluation}{11}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Visual Evaluation}{11}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Visual Evaluation}{12}{subsection.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Metric Evaluation}{11}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Metric Evaluation}{12}{subsection.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusions}{11}{section.5}
+\contentsline {section}{\numberline {5}Conclusions}{12}{section.5}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {6}Future Work}{12}{section.6}
