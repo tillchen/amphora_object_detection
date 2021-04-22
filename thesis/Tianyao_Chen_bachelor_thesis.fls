@@ -244,6 +244,9 @@ INPUT ./images/resnet.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/deep_learning_vs_traditional_computer_vision.png
 INPUT ./images/deep_learning_vs_traditional_computer_vision.png
 INPUT ./images/deep_learning_vs_traditional_computer_vision.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/sliding_window.png
+INPUT ./images/sliding_window.png
+INPUT ./images/sliding_window.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out

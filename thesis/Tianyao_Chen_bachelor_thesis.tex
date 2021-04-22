@@ -400,7 +400,7 @@
   Segment Test (FAST) \cite{rosten2006machine} are still useful in improving performance for computer vision tasks
   \cite{o2019deep}. And deep learning's performance depends on obtaining large datasets with high image resolution \cite{o2019deep}.
   Some popular public datasets like PASCAL Visual Object Classes (VOC) \cite{everingham2010pascal}, ImageNet
-  \cite{russakovsky2015imagenet}, and Microsoft Common OBjects in Context (COCO) \cite{lin2014microsoft}
+  \cite{russakovsky2015imagenet}, and Microsoft Common Objects in Context (COCO) \cite{lin2014microsoft}
   have respectively 500 thousand, 14 million, and 328 thousand images.
 
   \subsection{Object Detection}
@@ -412,8 +412,20 @@
   \cite{elgendy2020deep, geron2019hands}. Plus, the large variantions in viewpoints, poses, occlusions, and lighting
   conditions make it even more difficult to perform perfect object detection \cite{zhao2019object, liu2020deep}.
 
-  %fully convolutional network (FCN) \cite{long2015fully}. FCNs contain only convolutional layers
-  % and pooling layers, which means input images can have arbitrary sizes \cite{long2015fully}.
+  The traditional sliding window approach is to train a CNN to classify and locate a single object, and then slide it
+  across the image \cite{geron2019hands, pasquet2017amphora}. This approach slides the CNN mulitple times with different
+  window sizes to detect objects with various sizes, which causes it to be quite slow \cite{geron2019hands}.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{sliding_window.png}
+    \end{center}
+    \caption{The sliding window approach for object detection. Source: \cite{o2019deep}.}
+  \end{figure}
+
+  Luckily, many object detection frameworks based on fully convolutional network (FCN) \cite{long2015fully} have been
+  introduced. FCNs contain only convolutional layers and pooling layers and only need to process each image once, which
+  means they are faster and the input images can have arbitrary sizes \cite{elgendy2020deep, geron2019hands, long2015fully}.
 
   \subsubsection{General Object Detection Framework Components}
 
