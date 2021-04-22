@@ -1,15 +1,15 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Tianyao_Chen_bachelor_thesis.blg'
-[58] biber-darwin:313> INFO - === Thu Apr 22, 2021, 12:57:32
-[108] Biber.pm:371> INFO - Reading 'Tianyao_Chen_bachelor_thesis.bcf'
-[283] Biber.pm:857> INFO - Found 66 citekeys in bib section 0
-[312] Biber.pm:3976> INFO - Processing section 0
-[337] Biber.pm:4136> INFO - Looking for bibtex format file 'Tianyao_Chen_bachelor_thesis.bib' for section 0
-[343] bibtex.pm:1500> INFO - LaTeX decoding ...
-[515] bibtex.pm:1316> INFO - Found BibTeX data source 'Tianyao_Chen_bachelor_thesis.bib'
-[1799] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1799] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1800] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1800] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1884] bbl.pm:617> INFO - Writing 'Tianyao_Chen_bachelor_thesis.bbl' with encoding 'UTF-8'
-[1926] bbl.pm:720> INFO - Output to Tianyao_Chen_bachelor_thesis.bbl
+[62] biber-darwin:313> INFO - === Thu Apr 22, 2021, 18:56:13
+[120] Biber.pm:371> INFO - Reading 'Tianyao_Chen_bachelor_thesis.bcf'
+[317] Biber.pm:857> INFO - Found 69 citekeys in bib section 0
+[350] Biber.pm:3976> INFO - Processing section 0
+[385] Biber.pm:4136> INFO - Looking for bibtex format file 'Tianyao_Chen_bachelor_thesis.bib' for section 0
+[391] bibtex.pm:1500> INFO - LaTeX decoding ...
+[787] bibtex.pm:1316> INFO - Found BibTeX data source 'Tianyao_Chen_bachelor_thesis.bib'
+[2336] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2337] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2339] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[2339] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[2483] bbl.pm:617> INFO - Writing 'Tianyao_Chen_bachelor_thesis.bbl' with encoding 'UTF-8'
+[2544] bbl.pm:720> INFO - Output to Tianyao_Chen_bachelor_thesis.bbl

@@ -472,6 +472,38 @@
 
   \paragraph{Metrics}
 
+  The two main metrics for object detection are frames per second (FPS) and mean average precision (mAP)
+  \cite{elgendy2020deep, liu2020deep, geron2019hands, planche2019hands}. To understand mAP, we need to understand first
+  the aforementioned intersection over union (IoU) and the precision-recall curve (PR curve). The IoU is also known as
+  the Jaccard index, which is used to messaure similarity between two sets \cite{planche2019hands}. The IoU can be
+  mathematically formulated as follows \cite{elgendy2020deep, planche2019hands}:
+
+  $$IoU = \frac{B_{ground \ truth} \cap B_{prediction}}{B_{ground \ truth} \cup B_{prediction}}$$
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{iou.png}
+    \end{center}
+    \caption{IOU. Source: \cite{elgendy2020deep}.}
+  \end{figure}
+
+  We say that the prediction is a true positive (TP) if the predicted class is the same as the ground truth and the IoU
+  value is more than the tunable threshold, otherwise it is a false positive (FP)
+  \cite{liu2020deep, elgendy2020deep, planche2019hands}. A false negative (FN) is a ground truth that does not have a
+  prediction \cite{planche2019hands}. Then we can define precision and recall as follows
+  \cite{burkov2019hundred, davis2006relationship}:
+
+  $$Precision = \frac{TP}{TP + FP}$$
+
+  $$Recall = \frac{TP}{TP + FN}$$
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=\textwidth]{precision_recall.png}
+    \end{center}
+    \caption{Precision and recall. Source: \cite{precisionrecall}.}
+  \end{figure}
+
   \subsubsection{Region-Based Convolutional Neural Networks (R-CNN)}
 
   \paragraph{R-CNN}

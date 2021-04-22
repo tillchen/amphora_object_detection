@@ -2513,6 +2513,95 @@
       \field{title}{Yolov4: Optimal speed and accuracy of object detection}
       \field{year}{2020}
     \endentry
+    \entry{planche2019hands}{book}{}
+      \name{author}{2}{}{%
+        {{hash=fc18600077d2a98c776858a18cb145a9}{%
+           family={Planche},
+           familyi={P\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod}}}%
+        {{hash=dfd457bc1e831c87ed7fd512311a0434}{%
+           family={Andres},
+           familyi={A\bibinitperiod},
+           given={Eliot},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing Ltd}%
+      }
+      \strng{namehash}{dc58f13534e620606310ffe18dfdc7ae}
+      \strng{fullhash}{dc58f13534e620606310ffe18dfdc7ae}
+      \strng{bibnamehash}{dc58f13534e620606310ffe18dfdc7ae}
+      \strng{authorbibnamehash}{dc58f13534e620606310ffe18dfdc7ae}
+      \strng{authornamehash}{dc58f13534e620606310ffe18dfdc7ae}
+      \strng{authorfullhash}{dc58f13534e620606310ffe18dfdc7ae}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hands-On Computer Vision with TensorFlow 2: Leverage deep learning to create powerful image processing apps with TensorFlow 2.0 and Keras}
+      \field{year}{2019}
+    \endentry
+    \entry{davis2006relationship}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=5f9ed160b91c65c59a8d61af7f1e5017}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Jesse},
+           giveni={J\bibinitperiod}}}%
+        {{hash=17a8760845dc1d27d9d632b1d341dd85}{%
+           family={Goadrich},
+           familyi={G\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a70191c945c2170327144b65be800a2e}
+      \strng{fullhash}{a70191c945c2170327144b65be800a2e}
+      \strng{bibnamehash}{a70191c945c2170327144b65be800a2e}
+      \strng{authorbibnamehash}{a70191c945c2170327144b65be800a2e}
+      \strng{authornamehash}{a70191c945c2170327144b65be800a2e}
+      \strng{authorfullhash}{a70191c945c2170327144b65be800a2e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 23rd international conference on Machine learning}
+      \field{title}{The relationship between Precision-Recall and ROC curves}
+      \field{year}{2006}
+      \field{pages}{233\bibrangedash 240}
+      \range{pages}{8}
+    \endentry
+    \entry{precisionrecall}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9128766c67cb768f90f210b03df92fe9}{%
+           family={Riggio},
+           familyi={R\bibinitperiod},
+           given={Christopher},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{9128766c67cb768f90f210b03df92fe9}
+      \strng{fullhash}{9128766c67cb768f90f210b03df92fe9}
+      \strng{bibnamehash}{9128766c67cb768f90f210b03df92fe9}
+      \strng{authorbibnamehash}{9128766c67cb768f90f210b03df92fe9}
+      \strng{authornamehash}{9128766c67cb768f90f210b03df92fe9}
+      \strng{authorfullhash}{9128766c67cb768f90f210b03df92fe9}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{What’s the deal with Accuracy, Precision, Recall and F1?}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://towardsdatascience.com/whats-the-deal-with-accuracy-precision-recall-and-f1-f5d8b4db1021
+      \endverb
+      \verb{url}
+      \verb https://towardsdatascience.com/whats-the-deal-with-accuracy-precision-recall-and-f1-f5d8b4db1021
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
