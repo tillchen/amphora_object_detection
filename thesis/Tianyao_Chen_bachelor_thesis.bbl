@@ -2154,6 +2154,45 @@
       \field{pages}{740\bibrangedash 755}
       \range{pages}{16}
     \endentry
+    \entry{girshick2014rich}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=913090a0d65c7a300c602f5a5a5a61e3}{%
+           family={Donahue},
+           familyi={D\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c75a5377b6dc5213831576e88ffe553c}{%
+           family={Malik},
+           familyi={M\bibinitperiod},
+           given={Jitendra},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
+      \strng{fullhash}{9147daa2f6a058d5b8880ff5cf38abd6}
+      \strng{bibnamehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
+      \strng{authorbibnamehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
+      \strng{authornamehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
+      \strng{authorfullhash}{9147daa2f6a058d5b8880ff5cf38abd6}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{title}{Rich feature hierarchies for accurate object detection and semantic segmentation}
+      \field{year}{2014}
+      \field{pages}{580\bibrangedash 587}
+      \range{pages}{8}
+    \endentry
     \entry{pasquet2017amphora}{article}{}
       \name{author}{5}{}{%
         {{hash=add6851d8813e4005f0c6b1d6c6affda}{%
@@ -2228,45 +2267,6 @@
       \field{year}{2015}
       \field{pages}{3431\bibrangedash 3440}
       \range{pages}{10}
-    \endentry
-    \entry{girshick2014rich}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
-           family={Girshick},
-           familyi={G\bibinitperiod},
-           given={Ross},
-           giveni={R\bibinitperiod}}}%
-        {{hash=913090a0d65c7a300c602f5a5a5a61e3}{%
-           family={Donahue},
-           familyi={D\bibinitperiod},
-           given={Jeff},
-           giveni={J\bibinitperiod}}}%
-        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
-           family={Darrell},
-           familyi={D\bibinitperiod},
-           given={Trevor},
-           giveni={T\bibinitperiod}}}%
-        {{hash=c75a5377b6dc5213831576e88ffe553c}{%
-           family={Malik},
-           familyi={M\bibinitperiod},
-           given={Jitendra},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
-      \strng{fullhash}{9147daa2f6a058d5b8880ff5cf38abd6}
-      \strng{bibnamehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
-      \strng{authorbibnamehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
-      \strng{authornamehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
-      \strng{authorfullhash}{9147daa2f6a058d5b8880ff5cf38abd6}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
-      \field{title}{Rich feature hierarchies for accurate object detection and semantic segmentation}
-      \field{year}{2014}
-      \field{pages}{580\bibrangedash 587}
-      \range{pages}{8}
     \endentry
     \entry{girshick2015fast}{inproceedings}{}
       \name{author}{1}{}{%

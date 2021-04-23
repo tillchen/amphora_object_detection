@@ -31,42 +31,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.4.2}Region-Based Convolutional Neural Networks (R-CNN)}{12}{subsubsection.1.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{R-CNN}{12}{section*.27}
+\contentsline {paragraph}{R-CNN}{13}{section*.27}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Faster R-CNN}{13}{section*.28}
+\contentsline {paragraph}{Fast R-CNN}{13}{section*.29}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Faster R-CNN}{13}{section*.29}
+\contentsline {paragraph}{Faster R-CNN}{13}{section*.30}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.4.3}Single Shot Detector (SSD)}{13}{subsubsection.1.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.4.4}You Only Look Once (YOLO)}{13}{subsubsection.1.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLO}{13}{section*.30}
+\contentsline {paragraph}{YOLO}{13}{section*.31}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv2}{13}{section*.31}
+\contentsline {paragraph}{YOLOv2}{13}{section*.32}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv3}{13}{section*.32}
+\contentsline {paragraph}{YOLOv3}{14}{section*.33}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv4}{13}{section*.33}
+\contentsline {paragraph}{YOLOv4}{14}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv5}{13}{section*.34}
+\contentsline {paragraph}{YOLOv5}{14}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Related Work}{13}{section.2}
+\contentsline {section}{\numberline {2}Related Work}{14}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Data and Methods}{13}{section.3}
+\contentsline {section}{\numberline {3}Data and Methods}{14}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Data}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Data}{14}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Model}{13}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Model}{14}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Model Training}{13}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Model Training}{14}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Evaluation}{13}{section.4}
+\contentsline {section}{\numberline {4}Evaluation}{14}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Visual Evaluation}{14}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Visual Evaluation}{15}{subsection.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Metric Evaluation}{14}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Metric Evaluation}{15}{subsection.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusions}{14}{section.5}
+\contentsline {section}{\numberline {5}Conclusions}{15}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Future Work}{14}{section.6}
+\contentsline {section}{\numberline {6}Future Work}{15}{section.6}

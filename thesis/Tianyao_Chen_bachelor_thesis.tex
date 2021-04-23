@@ -409,12 +409,14 @@
   \cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection remains to be one of the most
   challenging problems in computer vision, as it can be considered as both a regression task (localization by predicting
   the bounding box) and a classification task (predicting the object class in each bounding box)
-  \cite{elgendy2020deep, geron2019hands}. Plus, the large variantions in viewpoints, poses, occlusions, and lighting
-  conditions make it even more difficult to perform perfect object detection \cite{zhao2019object, liu2020deep}.
+  \cite{elgendy2020deep, girshick2014rich, geron2019hands}. Plus, the large variantions in viewpoints, poses, occlusions,
+  and lighting conditions make it even more difficult to perform perfect object detection
+  \cite{zhao2019object, liu2020deep}.
 
   The traditional sliding window approach is to train a CNN to classify and locate a single object, and then slide it
-  across the image \cite{geron2019hands, pasquet2017amphora}. This approach slides the CNN mulitple times with different
-  window sizes to detect objects with various sizes, which causes it to be quite slow \cite{geron2019hands}.
+  across the image \cite{geron2019hands, pasquet2017amphora, girshick2014rich}. This approach slides the CNN mulitple
+  times with different window sizes to detect objects with various sizes, which causes it to be quite slow
+  \cite{geron2019hands}.
 
   \begin{figure}[ht]
     \begin{center}
@@ -526,8 +528,38 @@
 
   \subsubsection{Region-Based Convolutional Neural Networks (R-CNN)}
 
+  The evolution from the original R-CNN \cite{girshick2014rich} to Fast R-CNN \cite{girshick2015fast} and then to
+  Faster R-CNN \cite{ren2015faster} builds up the R-CNN family.
+
   \paragraph{R-CNN}
-  \paragraph{Faster R-CNN}
+
+  R-CNN has four components \cite{elgendy2020deep, girshick2014rich}:
+
+  \begin{enumerate}
+    \item Region proposal with a greedy search algorithm called selective search, which finds RoIs by combining similar
+    pixels into boxes.
+    \item Feature extractor with a pretrained CNN.
+    \item Classification with a linear SVM.
+    \item Localization with a bounding-box regressor.
+  \end{enumerate}
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{r_cnn.png}
+    \end{center}
+    \caption{R-CNN. Source: \cite{elgendy2020deep}.}
+  \end{figure}
+
+  R-CNN has the following disadvantages \cite{elgendy2020deep, girshick2014rich}:
+
+  \begin{itemize}
+    \item The FPS is very low. The selective search algorithm proposes about 2000 RoIs, which is every computationally
+    expensive as the CNN has to process each proposal.
+    \item The training is multi-stage, complex, expensive, and not end-to-end. It involves training three components
+    separately: the CNN, the SVM, and the bounding-box regressor.
+  \end{itemize}
+
+  \paragraph{Fast R-CNN}
   \paragraph{Faster R-CNN}
 
   \subsubsection{Single Shot Detector (SSD)}

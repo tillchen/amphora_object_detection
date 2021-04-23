@@ -2126,11 +2126,13 @@
     <bcf:citekey order="120">liu2020deep</bcf:citekey>
     <bcf:citekey order="120">geron2019hands</bcf:citekey>
     <bcf:citekey order="121">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="121">girshick2014rich</bcf:citekey>
     <bcf:citekey order="121">geron2019hands</bcf:citekey>
     <bcf:citekey order="122">zhao2019object</bcf:citekey>
     <bcf:citekey order="122">liu2020deep</bcf:citekey>
     <bcf:citekey order="123">geron2019hands</bcf:citekey>
     <bcf:citekey order="123">pasquet2017amphora</bcf:citekey>
+    <bcf:citekey order="123">girshick2014rich</bcf:citekey>
     <bcf:citekey order="124">geron2019hands</bcf:citekey>
     <bcf:citekey order="125">o2019deep</bcf:citekey>
     <bcf:citekey order="126">o2019deep</bcf:citekey>
@@ -2191,6 +2193,15 @@
     <bcf:citekey order="156">cocometrics</bcf:citekey>
     <bcf:citekey order="157">planche2019hands</bcf:citekey>
     <bcf:citekey order="158">planche2019hands</bcf:citekey>
+    <bcf:citekey order="159">girshick2014rich</bcf:citekey>
+    <bcf:citekey order="160">girshick2015fast</bcf:citekey>
+    <bcf:citekey order="161">ren2015faster</bcf:citekey>
+    <bcf:citekey order="162">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="162">girshick2014rich</bcf:citekey>
+    <bcf:citekey order="163">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="164">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="165">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="165">girshick2014rich</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

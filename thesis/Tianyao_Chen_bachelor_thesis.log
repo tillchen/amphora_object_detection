@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  22 APR 2021 21:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  23 APR 2021 15:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -721,56 +721,68 @@ File: ./images/deep_learning_vs_traditional_computer_vision.png Graphic file (ty
 Package pdftex.def Info: ./images/deep_learning_vs_traditional_computer_vision.png  used on input line 393.
 (pdftex.def)             Requested size: 341.43437pt x 146.14072pt.
  [8 <./images/typical_cnn.png> <./images/resnet.png>]
-<./images/sliding_window.png, id=435, 1330.9725pt x 955.57pt>
+<./images/sliding_window.png, id=437, 1330.9725pt x 955.57pt>
 File: ./images/sliding_window.png Graphic file (type png)
 <use ./images/sliding_window.png>
-Package pdftex.def Info: ./images/sliding_window.png  used on input line 421.
+Package pdftex.def Info: ./images/sliding_window.png  used on input line 423.
 (pdftex.def)             Requested size: 341.43437pt x 245.11792pt.
  [9 <./images/deep_learning_vs_traditional_computer_vision.png>]
-<./images/nms.png, id=477, 522.95375pt x 302.12875pt>
+<./images/nms.png, id=479, 522.95375pt x 302.12875pt>
 File: ./images/nms.png Graphic file (type png)
 <use ./images/nms.png>
-Package pdftex.def Info: ./images/nms.png  used on input line 468.
+Package pdftex.def Info: ./images/nms.png  used on input line 470.
 (pdftex.def)             Requested size: 341.43437pt x 197.26189pt.
  [10 <./images/sliding_window.png>]
-<./images/iou.png, id=501, 421.575pt x 186.6975pt>
+<./images/iou.png, id=503, 421.575pt x 186.6975pt>
 File: ./images/iou.png Graphic file (type png)
 <use ./images/iou.png>
-Package pdftex.def Info: ./images/iou.png  used on input line 485.
+Package pdftex.def Info: ./images/iou.png  used on input line 487.
 (pdftex.def)             Requested size: 341.43437pt x 151.2099pt.
-<./images/precision_recall.png, id=510, 648.4225pt x 319.1925pt>
+<./images/precision_recall.png, id=512, 648.4225pt x 319.1925pt>
 File: ./images/precision_recall.png Graphic file (type png)
 <use ./images/precision_recall.png>
-Package pdftex.def Info: ./images/precision_recall.png  used on input line 502.
+Package pdftex.def Info: ./images/precision_recall.png  used on input line 504.
 (pdftex.def)             Requested size: 341.43437pt x 168.07535pt.
  [11 <./images/nms.png> <./images/iou.png>]
-<./images/pr_curve.png, id=539, 395.4775pt x 200.75pt>
+<./images/pr_curve.png, id=541, 395.4775pt x 200.75pt>
 File: ./images/pr_curve.png Graphic file (type png)
 <use ./images/pr_curve.png>
-Package pdftex.def Info: ./images/pr_curve.png  used on input line 522.
+Package pdftex.def Info: ./images/pr_curve.png  used on input line 524.
 (pdftex.def)             Requested size: 341.43437pt x 173.31859pt.
- [12 <./images/precision_recall.png> <./images/pr_curve.png>] [13] [14]
-Overfull \hbox (0.94344pt too wide) in paragraph at lines 598--598
+ [12 <./images/precision_recall.png> <./images/pr_curve.png>]
+<./images/r_cnn.png, id=560, 584.1825pt x 339.2675pt>
+File: ./images/r_cnn.png Graphic file (type png)
+<use ./images/r_cnn.png>
+Package pdftex.def Info: ./images/r_cnn.png  used on input line 548.
+(pdftex.def)             Requested size: 341.43437pt x 198.29726pt.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 556.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsphv.fd
+File: omsphv.fd 
+)
+LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 556.
+ [13 <./images/r_cnn.png>] [14] [15]
+Overfull \hbox (0.94344pt too wide) in paragraph at lines 630--630
 []\OT1/phv/m/n/10.95 Mohamed El-gendy. \OT1/phv/m/sl/10.95 Deep Learn-ing for Vi-sion Sys-tems\OT1/phv/m/n/10.95 . Man-ning Pub-li-ca-tions, 2020. 
  []
 
 
-Overfull \hbox (38.58963pt too wide) in paragraph at lines 598--598
+Overfull \hbox (38.58963pt too wide) in paragraph at lines 630--630
 []\OT1/phv/m/n/10.95 Ian J Good-fel-low et al. ``Gen-er-a-tive ad-ver-sar-ial net-works''. In: \OT1/phv/m/sl/10.95 arXiv preprint arXiv:1406.2661
  []
 
-[15]
-Overfull \hbox (5.0725pt too wide) in paragraph at lines 598--598
+[16]
+Overfull \hbox (5.0725pt too wide) in paragraph at lines 630--630
 []\OT1/phv/m/n/10.95 WJ Zhang et al. ``On def-i-ni-tion of deep learn-ing''. In: \OT1/phv/m/sl/10.95 2018 World au-toma-tion congress
  []
 
-[16] [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 599.
- [18]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 599.
+[17] [18]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 631.
+ [19]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 631.
  (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 599.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 599.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 631.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 631.
 Package rerunfilecheck Info: File `Tianyao_Chen_bachelor_thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D611241FE8EBF125663F4800178C5C37;1637.
 Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
@@ -778,18 +790,18 @@ Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 14776 strings out of 492649
- 253998 string characters out of 6129623
- 702062 words of memory out of 5000000
- 18309 multiletter control sequences out of 15000+600000
+ 14804 strings out of 492649
+ 254451 string characters out of 6129623
+ 702242 words of memory out of 5000000
+ 18327 multiletter control sequences out of 15000+600000
  26507 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,48p,932b,1691s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (22 pages, 5196268 bytes).
+Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (23 pages, 5280391 bytes).
 PDF statistics:
- 669 PDF objects out of 1000 (max. 8388607)
- 580 compressed objects within 6 object streams
- 156 named destinations out of 1000 (max. 500000)
- 280 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 692 PDF objects out of 1000 (max. 8388607)
+ 599 compressed objects within 6 object streams
+ 162 named destinations out of 1000 (max. 500000)
+ 285 words of extra memory for PDF output out of 10000 (max. 10000000)
 

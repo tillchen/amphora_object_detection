@@ -259,6 +259,11 @@ INPUT ./images/precision_recall.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/pr_curve.png
 INPUT ./images/pr_curve.png
 INPUT ./images/pr_curve.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/r_cnn.png
+INPUT ./images/r_cnn.png
+INPUT ./images/r_cnn.png
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsphv.fd
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsphv.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvrc7t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvrc7t.vf
