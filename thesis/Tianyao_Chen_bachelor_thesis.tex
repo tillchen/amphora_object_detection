@@ -550,16 +550,38 @@
     \caption{R-CNN. Source: \cite{elgendy2020deep}.}
   \end{figure}
 
-  R-CNN has the following disadvantages \cite{elgendy2020deep, girshick2014rich}:
+  R-CNN has the following disadvantages \cite{elgendy2020deep, girshick2014rich, girshick2015fast}:
 
   \begin{itemize}
     \item The FPS is very low. The selective search algorithm proposes about 2000 RoIs, which is every computationally
-    expensive as the CNN has to process each proposal.
-    \item The training is multi-stage, complex, expensive, and not end-to-end. It involves training three components
+    expensive as the CNN has to process each proposal separately.
+    \item The training is multi-stage, inelegant, expensive, and not end-to-end. It involves training three components
     separately: the CNN, the SVM, and the bounding-box regressor.
   \end{itemize}
 
   \paragraph{Fast R-CNN}
+
+  Fast R-CNN makes the following changes from R-CNN \cite{elgendy2020deep, girshick2015fast}:
+
+  \begin{itemize}
+    \item The CNN goes before region proposal instead of after, so that the image only goes through the CNN once instead
+    of 2000 RoIs going through the CNN separately.
+    \item Classification is done by the softmax layer of the CNN instead of the SVM. And localization is also an output
+    layer of the CNN.
+    \item A RoI max pooling layer is added after region proposal to fix the input size for the fully connected layers.
+    \item A multi-task loss function is used.
+  \end{itemize}
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{fast_r_cnn.png}
+    \end{center}
+    \caption{Fast R-CNN. Source: \cite{elgendy2020deep}.}
+  \end{figure}
+
+  Fast R-CNN is much faster than R-CNN, although the selective search algorithm still exists as the bottleneck
+  \cite{elgendy2020deep}.
+
   \paragraph{Faster R-CNN}
 
   \subsubsection{Single Shot Detector (SSD)}
