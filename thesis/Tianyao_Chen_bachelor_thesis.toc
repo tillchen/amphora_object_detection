@@ -43,17 +43,17 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{YOLO}{14}{section*.34}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv2}{14}{section*.35}
+\contentsline {paragraph}{YOLOv2}{15}{section*.35}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv3}{14}{section*.36}
+\contentsline {paragraph}{YOLOv3}{15}{section*.36}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{YOLOv4}{15}{section*.37}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{YOLOv5}{15}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Related Work}{15}{section.2}
+\contentsline {section}{\numberline {2}Related Work}{16}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Data and Methods}{15}{section.3}
+\contentsline {section}{\numberline {3}Data and Methods}{16}{section.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1}Data}{16}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
@@ -69,4 +69,4 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Conclusions}{16}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Future Work}{16}{section.6}
+\contentsline {section}{\numberline {6}Future Work}{17}{section.6}
