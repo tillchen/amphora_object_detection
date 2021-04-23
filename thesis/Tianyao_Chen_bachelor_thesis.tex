@@ -580,9 +580,35 @@
   \end{figure}
 
   Fast R-CNN is much faster than R-CNN, although the selective search algorithm still exists as the bottleneck
-  \cite{elgendy2020deep}.
+  \cite{elgendy2020deep, girshick2015fast, ren2015faster}.
 
   \paragraph{Faster R-CNN}
+
+  Faster R-CNN makes the following improvments from Fast R-CNN \cite{elgendy2020deep, ren2015faster}:
+
+  \begin{itemize}
+    \item Region Proposal Network (RPN) or attention network replaces selective search, which reduces the number of
+    proposals, speeds up the model, and makes the model training end-to-end. RPN is a FCN that outputs objectness scores
+    and RoIs, and it can be used as a standalone network for single-class object detection. It also shares the features
+    with the detection network, which enables region proposal to be nearly cost-free.
+    \item Anchors are introduced as reference boxes at different scales and aspect ratios. Thus the regression layer
+    only needs to output the offsets of the anchors. The anchors are created using the sliding-window approach. By default
+    9 anchors (3 scales and 3 aspect ratios) centered at each sliding window are created for each window.
+  \end{itemize}
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{anchors.png}
+    \end{center}
+    \caption{Anchors in Faster R-CNN. Source: \cite{elgendy2020deep}.}
+  \end{figure}
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{faster_r_cnn.png}
+    \end{center}
+    \caption{Faster R-CNN. Source: \cite{elgendy2020deep}.}
+  \end{figure}
 
   \subsubsection{Single Shot Detector (SSD)}
   \subsubsection{You Only Look Once (YOLO)}

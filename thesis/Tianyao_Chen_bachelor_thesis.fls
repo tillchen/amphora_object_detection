@@ -267,6 +267,12 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsphv.fd
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/fast_r_cnn.png
 INPUT ./images/fast_r_cnn.png
 INPUT ./images/fast_r_cnn.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/anchors.png
+INPUT ./images/anchors.png
+INPUT ./images/anchors.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/faster_r_cnn.png
+INPUT ./images/faster_r_cnn.png
+INPUT ./images/faster_r_cnn.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvrc7t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvrc7t.vf
