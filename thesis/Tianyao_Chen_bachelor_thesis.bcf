@@ -2133,6 +2133,7 @@
     <bcf:citekey order="123">geron2019hands</bcf:citekey>
     <bcf:citekey order="123">pasquet2017amphora</bcf:citekey>
     <bcf:citekey order="123">girshick2014rich</bcf:citekey>
+    <bcf:citekey order="123">redmon2016you</bcf:citekey>
     <bcf:citekey order="124">geron2019hands</bcf:citekey>
     <bcf:citekey order="125">o2019deep</bcf:citekey>
     <bcf:citekey order="126">o2019deep</bcf:citekey>
@@ -2219,8 +2220,10 @@
     <bcf:citekey order="175">elgendy2020deep</bcf:citekey>
     <bcf:citekey order="176">elgendy2020deep</bcf:citekey>
     <bcf:citekey order="176">liu2016ssd</bcf:citekey>
+    <bcf:citekey order="176">redmon2016you</bcf:citekey>
     <bcf:citekey order="177">elgendy2020deep</bcf:citekey>
     <bcf:citekey order="178">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="178">lin2017focal</bcf:citekey>
     <bcf:citekey order="179">elgendy2020deep</bcf:citekey>
     <bcf:citekey order="179">liu2016ssd</bcf:citekey>
     <bcf:citekey order="180">elgendy2020deep</bcf:citekey>
@@ -2230,6 +2233,20 @@
     <bcf:citekey order="183">elgendy2020deep</bcf:citekey>
     <bcf:citekey order="184">elgendy2020deep</bcf:citekey>
     <bcf:citekey order="185">liu2016ssd</bcf:citekey>
+    <bcf:citekey order="186">redmon2016you</bcf:citekey>
+    <bcf:citekey order="187">redmon2017yolo9000</bcf:citekey>
+    <bcf:citekey order="188">redmon2018yolov3</bcf:citekey>
+    <bcf:citekey order="189">bochkovskiy2020yolov4</bcf:citekey>
+    <bcf:citekey order="190">yolov5</bcf:citekey>
+    <bcf:citekey order="191">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="191">redmon2016you</bcf:citekey>
+    <bcf:citekey order="192">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="192">redmon2016you</bcf:citekey>
+    <bcf:citekey order="193">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="194">elgendy2020deep</bcf:citekey>
+    <bcf:citekey order="195">ghiasi2018dropblock</bcf:citekey>
+    <bcf:citekey order="196">misra2019mish</bcf:citekey>
+    <bcf:citekey order="197">bochkovskiy2020yolov4</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

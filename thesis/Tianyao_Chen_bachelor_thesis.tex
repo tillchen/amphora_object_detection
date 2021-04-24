@@ -414,8 +414,8 @@
   \cite{zhao2019object, liu2020deep}.
 
   The traditional sliding window approach is to train a CNN to classify and locate a single object, and then slide it
-  across the image \cite{geron2019hands, pasquet2017amphora, girshick2014rich}. This approach slides the CNN mulitple
-  times with different window sizes to detect objects with various sizes, which causes it to be quite slow
+  across the image \cite{geron2019hands, pasquet2017amphora, girshick2014rich, redmon2016you}. This approach slides the
+  CNN mulitple times with different window sizes to detect objects with various sizes, which causes it to be quite slow
   \cite{geron2019hands}.
 
   \begin{figure}[ht]
@@ -592,8 +592,9 @@
     and RoIs, and it can be used as a standalone network for single-class object detection. It also shares the features
     with the detection network, which enables region proposal to be nearly cost-free.
     \item Anchors are introduced as reference boxes at different scales and aspect ratios. Thus the regression layer
-    only needs to output the offsets of the anchors. The anchors are created using the sliding-window approach. By default
-    9 anchors (3 scales and 3 aspect ratios) centered at each sliding window are created for each window.
+    only needs to output the offsets of coordinates, width, and height from the anchors. The anchors are created using
+    the sliding-window approach. By default 9 anchors (3 scales and 3 aspect ratios) centered at each sliding window are
+    created for each window.
   \end{itemize}
 
   \begin{figure}[ht]
@@ -612,9 +613,9 @@
 
   To summarize, the R-CNN family are two-stage detectors that separate region proposal and detection \cite{elgendy2020deep}.
   They can not achieve real-time detection (only 7 FPS), and they are too computationally intensive
-  \cite{elgendy2020deep, liu2016ssd}. One-stage detectors like Single Shot Detector (SSD) and You Only Look Once (YOLO
-  skip the region proposal to achieve real-time detection speed \cite{elgendy2020deep}. In general, one-stage detectors
-  sacrifices some accuracy for speed \cite{elgendy2020deep}.
+  \cite{elgendy2020deep, liu2016ssd, redmon2016you}. One-stage detectors like Single Shot Detector (SSD) and You Only
+  Look Once (YOLO) skip the region proposal to achieve real-time detection speed \cite{elgendy2020deep}. In general,
+  one-stage detectors sacrifices some accuracy for speed \cite{elgendy2020deep, lin2017focal}.
 
   \subsubsection{Single Shot Detector (SSD)}
 
@@ -650,11 +651,29 @@
 
   \subsubsection{You Only Look Once (YOLO)}
 
-  \paragraph{YOLO}
-  \paragraph{YOLOv2}
-  \paragraph{YOLOv3}
-  \paragraph{YOLOv4}
-  \paragraph{YOLOv5}
+  Like the R-CNN family, the YOLO family has been going through a series of improvements since the original YOLO paper
+  was published. YOLO is also a one-stage real-time detector simlar to SSD. YOLOv1 \cite{redmon2016you} introduces the
+  general architecture; YOLOv2 \cite{redmon2017yolo9000} adds anchors similar to Faster R-CNN and SSD; YOLOv3
+  \cite{redmon2018yolov3} further refines the architecture and the training process; YOLOv4 \cite{bochkovskiy2020yolov4}
+  makes use of some universal object detector features called "bag of freebies" and "bag of specials"; YOLOv5 \cite{yolov5}
+  is under active development and authors have yet to publish a paper.
+
+  YOLO divides the image into a grid, and a grid cell is responsible for detecting an object if the center of the object
+  is inside the cell \cite{elgendy2020deep, redmon2016you}. The backbone network is called DarkNet, which is inspired by
+  GoogLeNet \cite{elgendy2020deep, redmon2016you}.
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=\textwidth]{yolov3.png}
+    \end{center}
+    \caption{YOLOv3 architecture. YOLO performs detections at 3 different scales. Layer 79 makes a grid of 13 x 13 to
+    detect large objects. Layer 91 makes a grid of 26 x 26 to detect medium objects. And finally layer 106 makes a grid
+    of 52 x 52 to detect small objects. Source: \cite{elgendy2020deep}.}
+  \end{figure}
+
+  YOLOv4, a bleeding-edge detector introduced in 2020, utilizes numerous new features to improve the performance
+  from YOLOv3, including DropBlock regulariztion \cite{ghiasi2018dropblock}, Mish activation \cite{misra2019mish},
+  Self-Adversarial Training \cite{bochkovskiy2020yolov4}, etc.
 
   \section{Related Work}
   % \cite{moniruzzaman2017deep, qin2015underwater, pasquet2017amphora, mccarthy20193d}

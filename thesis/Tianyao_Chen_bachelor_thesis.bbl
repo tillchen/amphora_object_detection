@@ -2234,6 +2234,45 @@
       \field{title}{Amphora detection based on a gradient weighted error in a convolution neuronal network}
       \field{year}{2017}
     \endentry
+    \entry{redmon2016you}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=99bced2e56a5253f3fe98a5f04e6d9b2}{%
+           family={Redmon},
+           familyi={R\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=05ca9f19da9ecbd2def4e5514f8043c8}{%
+           family={Divvala},
+           familyi={D\bibinitperiod},
+           given={Santosh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=396c6ddedb6f986906fc3e4994d19974}{%
+           family={Farhadi},
+           familyi={F\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{e1203a0044715040adeb8c5079ee645a}
+      \strng{fullhash}{b5530443e433a4da53dbe3cf155225b4}
+      \strng{bibnamehash}{e1203a0044715040adeb8c5079ee645a}
+      \strng{authorbibnamehash}{e1203a0044715040adeb8c5079ee645a}
+      \strng{authornamehash}{e1203a0044715040adeb8c5079ee645a}
+      \strng{authorfullhash}{b5530443e433a4da53dbe3cf155225b4}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{title}{You only look once: Unified, real-time object detection}
+      \field{year}{2016}
+      \field{pages}{779\bibrangedash 788}
+      \range{pages}{10}
+    \endentry
     \entry{long2015fully}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=17faae490b91366d25e0e2d774e7b6b1}{%
@@ -2385,45 +2424,6 @@
       \field{year}{2016}
       \field{pages}{21\bibrangedash 37}
       \range{pages}{17}
-    \endentry
-    \entry{redmon2016you}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=99bced2e56a5253f3fe98a5f04e6d9b2}{%
-           family={Redmon},
-           familyi={R\bibinitperiod},
-           given={Joseph},
-           giveni={J\bibinitperiod}}}%
-        {{hash=05ca9f19da9ecbd2def4e5514f8043c8}{%
-           family={Divvala},
-           familyi={D\bibinitperiod},
-           given={Santosh},
-           giveni={S\bibinitperiod}}}%
-        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
-           family={Girshick},
-           familyi={G\bibinitperiod},
-           given={Ross},
-           giveni={R\bibinitperiod}}}%
-        {{hash=396c6ddedb6f986906fc3e4994d19974}{%
-           family={Farhadi},
-           familyi={F\bibinitperiod},
-           given={Ali},
-           giveni={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{e1203a0044715040adeb8c5079ee645a}
-      \strng{fullhash}{b5530443e433a4da53dbe3cf155225b4}
-      \strng{bibnamehash}{e1203a0044715040adeb8c5079ee645a}
-      \strng{authorbibnamehash}{e1203a0044715040adeb8c5079ee645a}
-      \strng{authornamehash}{e1203a0044715040adeb8c5079ee645a}
-      \strng{authorfullhash}{b5530443e433a4da53dbe3cf155225b4}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
-      \field{title}{You only look once: Unified, real-time object detection}
-      \field{year}{2016}
-      \field{pages}{779\bibrangedash 788}
-      \range{pages}{10}
     \endentry
     \entry{redmon2017yolo9000}{inproceedings}{}
       \name{author}{2}{}{%
@@ -2629,6 +2629,137 @@
       \verb{url}
       \verb https://cocodataset.org/#detection-eval
       \endverb
+    \endentry
+    \entry{lin2017focal}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=08f925fe4692d130a1d7cb7d94483351}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Tsung-Yi},
+           giveni={T\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=d87be7c19fa16049347907c9820816c6}{%
+           family={Goyal},
+           familyi={G\bibinitperiod},
+           given={Priya},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=e38ddb38a8e769642319731dae30fa2d}{%
+           family={Doll{á}r},
+           familyi={D\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{fullhash}{83b5b0e280a121a189a18bb9777850a6}
+      \strng{bibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authorbibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authornamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
+      \strng{authorfullhash}{83b5b0e280a121a189a18bb9777850a6}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE international conference on computer vision}
+      \field{title}{Focal loss for dense object detection}
+      \field{year}{2017}
+      \field{pages}{2980\bibrangedash 2988}
+      \range{pages}{9}
+    \endentry
+    \entry{yolov5}{online}{}
+      \name{author}{1}{}{%
+        {{hash=88f069848482a556e416f713d2819905}{%
+           family={Ultralytics},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{88f069848482a556e416f713d2819905}
+      \strng{fullhash}{88f069848482a556e416f713d2819905}
+      \strng{bibnamehash}{88f069848482a556e416f713d2819905}
+      \strng{authorbibnamehash}{88f069848482a556e416f713d2819905}
+      \strng{authornamehash}{88f069848482a556e416f713d2819905}
+      \strng{authorfullhash}{88f069848482a556e416f713d2819905}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{YOLOv5}
+      \field{urlday}{24}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/ultralytics/yolov5
+      \endverb
+      \verb{url}
+      \verb https://github.com/ultralytics/yolov5
+      \endverb
+    \endentry
+    \entry{ghiasi2018dropblock}{article}{}
+      \name{author}{3}{}{%
+        {{hash=13a058656fdbdf7b306e1bcfa5ce2d93}{%
+           family={Ghiasi},
+           familyi={G\bibinitperiod},
+           given={Golnaz},
+           giveni={G\bibinitperiod}}}%
+        {{hash=08f925fe4692d130a1d7cb7d94483351}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Tsung-Yi},
+           giveni={T\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=9fd2dcec218c0c88f5cf6dcdefdbadbb}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc\bibnamedelima V},
+           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{bccc976a1bcc0ed4c7417bdcdcb2f024}
+      \strng{fullhash}{bccc976a1bcc0ed4c7417bdcdcb2f024}
+      \strng{bibnamehash}{bccc976a1bcc0ed4c7417bdcdcb2f024}
+      \strng{authorbibnamehash}{bccc976a1bcc0ed4c7417bdcdcb2f024}
+      \strng{authornamehash}{bccc976a1bcc0ed4c7417bdcdcb2f024}
+      \strng{authorfullhash}{bccc976a1bcc0ed4c7417bdcdcb2f024}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1810.12890}
+      \field{title}{Dropblock: A regularization method for convolutional networks}
+      \field{year}{2018}
+    \endentry
+    \entry{misra2019mish}{article}{}
+      \name{author}{1}{}{%
+        {{hash=148e56face00c11b6b4ce8047454cbee}{%
+           family={Misra},
+           familyi={M\bibinitperiod},
+           given={Diganta},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CoRR}%
+      }
+      \strng{namehash}{148e56face00c11b6b4ce8047454cbee}
+      \strng{fullhash}{148e56face00c11b6b4ce8047454cbee}
+      \strng{bibnamehash}{148e56face00c11b6b4ce8047454cbee}
+      \strng{authorbibnamehash}{148e56face00c11b6b4ce8047454cbee}
+      \strng{authornamehash}{148e56face00c11b6b4ce8047454cbee}
+      \strng{authorfullhash}{148e56face00c11b6b4ce8047454cbee}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1908.08681}
+      \field{title}{Mish: A self regularized non-monotonic neural activation function}
+      \field{volume}{4}
+      \field{year}{2019}
     \endentry
   \enddatalist
 \endrefsection

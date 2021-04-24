@@ -279,6 +279,9 @@ INPUT ./images/ssd_feature_maps.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/ssd.png
 INPUT ./images/ssd.png
 INPUT ./images/ssd.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/yolov3.png
+INPUT ./images/yolov3.png
+INPUT ./images/yolov3.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvrc7t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvrc7t.vf
