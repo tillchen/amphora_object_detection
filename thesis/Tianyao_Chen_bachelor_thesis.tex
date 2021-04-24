@@ -611,11 +611,43 @@
   \end{figure}
 
   To summarize, the R-CNN family are two-stage detectors that separate region proposal and detection \cite{elgendy2020deep}.
-  They can not achieve real-time detection, and their training is very expensive \cite{elgendy2020deep}. One-stage detectors
-  like Single Shot Detector (SSD) and You Only Look Once (YOLO) skip the region proposal to achieve real-time detection
-  speed \cite{elgendy2020deep}. In general, one-stage detectors sacrifices some accuracy for speed \cite{elgendy2020deep}.
+  They can not achieve real-time detection (only 7 FPS), and they are too computationally intensive
+  \cite{elgendy2020deep, liu2016ssd}. One-stage detectors like Single Shot Detector (SSD) and You Only Look Once (YOLO
+  skip the region proposal to achieve real-time detection speed \cite{elgendy2020deep}. In general, one-stage detectors
+  sacrifices some accuracy for speed \cite{elgendy2020deep}.
 
   \subsubsection{Single Shot Detector (SSD)}
+
+  Single Shot Detector (SSD) makes both the objectness and class probability predictions directly in one shot
+  \cite{elgendy2020deep, liu2016ssd}. It has three main components \cite{elgendy2020deep, liu2016ssd}:
+
+  \begin{itemize}
+    \item The base network, which is VGG-16 in the original paper. It also uses anchors called priors like in Faster R-CNN.
+    But the network sends the bounding box offsets and the class scores to NMS directly when it finds a bounding box that
+    contains the object features.
+    \item Multi-scale feature layers, which are convolutional layers that decrease in size progressively to detect objects
+    at multiple scales. The resolution of feature maps decreases as the CNN reduces the spatial dimension.
+    \item NMS.
+  \end{itemize}
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{ssd_feature_maps.png}
+    \end{center}
+    \caption{Multi-scale feature maps in SSD. Higher-resolution feature maps (left) detect smaller objects.
+    Lower-resolution feature mpas (right) detect bigger objects Source: \cite{elgendy2020deep}.}
+  \end{figure}
+
+  \begin{figure}[ht]
+    \begin{center}
+      \includegraphics[width=.8\textwidth]{ssd.png}
+    \end{center}
+    \caption{SSD. Source: \cite{elgendy2020deep}.}
+  \end{figure}
+
+  In short, SSD300 (300 x 300 input size) is able to achieve real-time detection with 59 FPS, while SSD512 outperforms
+  Faster R-CNN in terms of mAP \cite{liu2016ssd}.
+
   \subsubsection{You Only Look Once (YOLO)}
 
   \paragraph{YOLO}

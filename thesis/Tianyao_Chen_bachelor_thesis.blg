@@ -1,15 +1,15 @@
-[0] Config.pm:302> INFO - This is Biber 2.11
-[0] Config.pm:305> INFO - Logfile is 'Tianyao_Chen_bachelor_thesis.blg'
-[75] biber-darwin:313> INFO - === Fri Apr 23, 2021, 18:15:08
-[124] Biber.pm:371> INFO - Reading 'Tianyao_Chen_bachelor_thesis.bcf'
-[304] Biber.pm:857> INFO - Found 70 citekeys in bib section 0
-[337] Biber.pm:3976> INFO - Processing section 0
-[367] Biber.pm:4136> INFO - Looking for bibtex format file 'Tianyao_Chen_bachelor_thesis.bib' for section 0
-[375] bibtex.pm:1500> INFO - LaTeX decoding ...
-[573] bibtex.pm:1316> INFO - Found BibTeX data source 'Tianyao_Chen_bachelor_thesis.bib'
-[1521] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1523] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1524] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1525] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[2383] bbl.pm:617> INFO - Writing 'Tianyao_Chen_bachelor_thesis.bbl' with encoding 'UTF-8'
-[2601] bbl.pm:720> INFO - Output to Tianyao_Chen_bachelor_thesis.bbl
+[2] Config.pm:302> INFO - This is Biber 2.11
+[2] Config.pm:305> INFO - Logfile is 'Tianyao_Chen_bachelor_thesis.blg'
+[529] biber-darwin:313> INFO - === Sat Apr 24, 2021, 14:43:02
+[679] Biber.pm:371> INFO - Reading 'Tianyao_Chen_bachelor_thesis.bcf'
+[2133] Biber.pm:857> INFO - Found 70 citekeys in bib section 0
+[2224] Biber.pm:3976> INFO - Processing section 0
+[2281] Biber.pm:4136> INFO - Looking for bibtex format file 'Tianyao_Chen_bachelor_thesis.bib' for section 0
+[2297] bibtex.pm:1500> INFO - LaTeX decoding ...
+[3119] bibtex.pm:1316> INFO - Found BibTeX data source 'Tianyao_Chen_bachelor_thesis.bib'
+[4161] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4161] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4161] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[4162] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[4465] bbl.pm:617> INFO - Writing 'Tianyao_Chen_bachelor_thesis.bbl' with encoding 'UTF-8'
+[4820] bbl.pm:720> INFO - Output to Tianyao_Chen_bachelor_thesis.bbl

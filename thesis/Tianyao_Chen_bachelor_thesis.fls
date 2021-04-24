@@ -273,6 +273,12 @@ INPUT ./images/anchors.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/faster_r_cnn.png
 INPUT ./images/faster_r_cnn.png
 INPUT ./images/faster_r_cnn.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/ssd_feature_maps.png
+INPUT ./images/ssd_feature_maps.png
+INPUT ./images/ssd_feature_maps.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/ssd.png
+INPUT ./images/ssd.png
+INPUT ./images/ssd.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvrc7t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvrc7t.vf

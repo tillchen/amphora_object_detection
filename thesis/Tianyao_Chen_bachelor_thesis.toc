@@ -39,34 +39,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.4.3}Single Shot Detector (SSD)}{14}{subsubsection.1.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.4}You Only Look Once (YOLO)}{14}{subsubsection.1.4.4}
+\contentsline {subsubsection}{\numberline {1.4.4}You Only Look Once (YOLO)}{15}{subsubsection.1.4.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLO}{14}{section*.34}
+\contentsline {paragraph}{YOLO}{15}{section*.36}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv2}{15}{section*.35}
+\contentsline {paragraph}{YOLOv2}{16}{section*.37}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv3}{15}{section*.36}
+\contentsline {paragraph}{YOLOv3}{16}{section*.38}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv4}{15}{section*.37}
+\contentsline {paragraph}{YOLOv4}{16}{section*.39}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{YOLOv5}{15}{section*.38}
+\contentsline {paragraph}{YOLOv5}{16}{section*.40}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2}Related Work}{16}{section.2}
+\contentsline {section}{\numberline {2}Related Work}{17}{section.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3}Data and Methods}{16}{section.3}
+\contentsline {section}{\numberline {3}Data and Methods}{17}{section.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1}Data}{16}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Data}{17}{subsection.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2}Model}{16}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}Model}{17}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Model Training}{16}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Model Training}{17}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Evaluation}{16}{section.4}
+\contentsline {section}{\numberline {4}Evaluation}{17}{section.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Visual Evaluation}{16}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.1}Visual Evaluation}{17}{subsection.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Metric Evaluation}{16}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.2}Metric Evaluation}{17}{subsection.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5}Conclusions}{16}{section.5}
+\contentsline {section}{\numberline {5}Conclusions}{17}{section.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6}Future Work}{17}{section.6}
+\contentsline {section}{\numberline {6}Future Work}{18}{section.6}
