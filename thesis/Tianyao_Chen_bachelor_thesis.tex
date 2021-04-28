@@ -175,6 +175,8 @@
 
   \subsubsection{Computer Vision for Underwater Archaeology}
 
+  \label{sec:112}
+
   Computer vision is the science of perceiving and understanding the world through images and videos \cite{elgendy2020deep}.
   There have been multiple exciting applications of computer vision, including image classification \cite{rawat2017deep},
   object detection and localization \cite{zhao2019object,liu2020deep}, art generation (neural style transfer)
@@ -188,8 +190,9 @@
   of artifacts \cite{maaten2007computer}.
 
   Underwater computer vision has proven to be challenging, largely due to: 1) the distortion and attenuation caused by
-  light propagation in water, and 2) the unrestricted natural environment with the abundance of marine life and suspended
-  particles \cite{qin2015underwater, rizzini2015investigation, lu2017underwater}.
+  light propagation in water, 2) the unrestricted natural environment with the abundance of marine life and suspended
+  particles, and 3) underwater objects are often broken
+  \cite{qin2015underwater, rizzini2015investigation, lu2017underwater, mccarthy20193d}.
 
   Despite the challenges, computer vision has lower cost \cite{rizzini2015investigation} compared to sonar imagery
   \cite{abu2019statistically} and laser scanning \cite{gordon1992use}. Plus, the increasingly abundant visual data obtained
@@ -342,7 +345,8 @@
   The typical CNN architecture involves the aforementioned convolutional layers, pooling layers, and fully connected layers.
   Some well-established CNN architecutres are LeNet-5 \cite{lecun1998gradient}, AlexNet \cite{krizhevsky2012imagenet},
   GoogLeNet \cite{szegedy2015going}, VGGNet \cite{simonyan2014very}, ResNet (Residual Network) \cite{he2016deep}, Xception
-  (Extreme Inception) \cite{chollet2017xception}, and SENet (Squeeze-and-Excitation Network) \cite{hu2018squeeze}.
+  (Extreme Inception) \cite{chollet2017xception}, MobileNet \cite{howard2017mobilenets, sandler2018mobilenetv2},
+  and SENet (Squeeze-and-Excitation Network) \cite{hu2018squeeze}.
 
   \begin{figure}[ht]
     \begin{center}
@@ -431,7 +435,7 @@
   Here we summarize three well-established and influential object detection framework families: Region-Based Convolutional
   Neural Networks (R-CNN) \cite{girshick2014rich, girshick2015fast, ren2015faster}, Single Shot Detector (SSD)
   \cite{liu2016ssd}, and You Only Look Once (YOLO)
-  \cite{redmon2016you, redmon2017yolo9000, redmon2018yolov3, bochkovskiy2020yolov4}.
+  \cite{redmon2016you, redmon2017yolo9000, redmon2018yolov3, bochkovskiy2020yolov4, yolov5}.
 
   \subsubsection{General Object Detection Framework Components}
 
@@ -678,6 +682,23 @@
   \section{Related Work}
   % \cite{moniruzzaman2017deep, qin2015underwater, pasquet2017amphora, mccarthy20193d}
 
+  As we have mentioned in \hyperref[sec:112]{section 1.1.2}, there is limited research on the application of deep learning
+  for underwater archaeology and vision-based underwater object detection in general.
+
+  For fish detection, Qin et al. \cite{qin2015underwater, li2015fast}, Zhang et al. \cite{zhang2016unsupervised},
+  Villon et al. \cite{villon2016coral}, Xu et al. \cite{xu2018underwater}, and Konovalov et al.
+  \cite{konovalov2019underwater} respectively use Fast R-CNN, a model similar to R-CNN, sliding window with a CNN,
+  YOLOv3, and Xception.
+
+  For crab detection, Can et al. \cite{cao2020real} proposes a detector called Faster MSSDLite, which is based on SSD with
+  a MobileNetv2 backbone and feature pyramid network (FPN) \cite{lin2017feature}.
+
+  For planktons and corals, we have only found research for classification but not object detection
+  \cite{qin2015underwater, moniruzzaman2017deep}.
+
+  For amphora detection, Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} uses sliding window with a CNN on
+  high-resolution orthophotos (aerial photos). And this is the only study we have found on amphora detection with deep
+  learning.
 
   \section{Data and Methods}
 
@@ -690,6 +711,7 @@
 
   \subsection{Data}
   \subsection{Model}
+  % UAV require real-time
   \subsection{Model Training}
 
   \section{Evaluation}
@@ -727,6 +749,7 @@
   (target size: 1/2 page)
 
   \section{Future Work}
+  % \cite{mccarthy20193d,pasquet2017amphora} define three classes as amphoras are often broken
 
   \newpage
 
