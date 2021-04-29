@@ -2263,6 +2263,10 @@
     <bcf:citekey order="206">moniruzzaman2017deep</bcf:citekey>
     <bcf:citekey order="207">mccarthy20193d</bcf:citekey>
     <bcf:citekey order="207">pasquet2017amphora</bcf:citekey>
+    <bcf:citekey order="208">googleimages</bcf:citekey>
+    <bcf:citekey order="208">groplan</bcf:citekey>
+    <bcf:citekey order="208">phoenician</bcf:citekey>
+    <bcf:citekey order="209">labelimg</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

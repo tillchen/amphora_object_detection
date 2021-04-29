@@ -680,7 +680,6 @@
   Self-Adversarial Training \cite{bochkovskiy2020yolov4}, etc.
 
   \section{Related Work}
-  % \cite{moniruzzaman2017deep, qin2015underwater, pasquet2017amphora, mccarthy20193d}
 
   As we have mentioned in \hyperref[sec:112]{section 1.1.2}, there is limited research on the application of deep learning
   for underwater archaeology and vision-based underwater object detection in general.
@@ -702,14 +701,13 @@
 
   \section{Data and Methods}
 
-  This is the technical core of the thesis. Here you lay out your how
-  you answered your research question, you specify your design of
-  experiments or simulations, point out difficulties that you
-  encountered, etc.
-
-  (target size: 5-10 pages)
-
   \subsection{Data}
+
+  The dataset consists of 50 images (294 objects) in the training set and 7 images (31 objects) in the validation set,
+  which maintains the 90\% : 10\% ratio for the object count. Two additional images are used as the test set. All the
+  images are obtained through various sources \cite{googleimages, groplan, phoenician} and are annotated with LabelImg
+  \cite{labelimg}.
+
   \subsection{Model}
   % UAV require real-time
   \subsection{Model Training}

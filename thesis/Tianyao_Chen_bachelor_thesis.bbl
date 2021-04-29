@@ -3220,6 +3220,122 @@
       \field{pages}{2117\bibrangedash 2125}
       \range{pages}{9}
     \endentry
+    \entry{googleimages}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Google Images}
+      \verb{urlraw}
+      \verb https://images.google.com/
+      \endverb
+      \verb{url}
+      \verb https://images.google.com/
+      \endverb
+    \endentry
+    \entry{groplan}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cded4464363430f7c8b23e5fb38ea179}{%
+           family={LSIS},
+           familyi={L\bibinitperiod},
+           given={CNRS},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{fullhash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{bibnamehash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{authorbibnamehash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{authornamehash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{authorfullhash}{cded4464363430f7c8b23e5fb38ea179}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GROPLAN}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.lsis.org/groplan/
+      \endverb
+      \verb{url}
+      \verb http://www.lsis.org/groplan/
+      \endverb
+    \endentry
+    \entry{phoenician}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2177c4c6c62e30678a114fba9602b8c4}{%
+           family={Malta},
+           familyi={M\bibinitperiod},
+           given={University},
+           giveni={U\bibinitperiod},
+           prefix={of},
+           prefixi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{2177c4c6c62e30678a114fba9602b8c4}
+      \strng{fullhash}{2177c4c6c62e30678a114fba9602b8c4}
+      \strng{bibnamehash}{2177c4c6c62e30678a114fba9602b8c4}
+      \strng{authorbibnamehash}{2177c4c6c62e30678a114fba9602b8c4}
+      \strng{authornamehash}{2177c4c6c62e30678a114fba9602b8c4}
+      \strng{authorfullhash}{2177c4c6c62e30678a114fba9602b8c4}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Phoenician Shipwreck Project}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://phoenicianshipwreck.org/
+      \endverb
+      \verb{url}
+      \verb https://phoenicianshipwreck.org/
+      \endverb
+    \endentry
+    \entry{labelimg}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fafe3436bf1efb750aa21d85f904808c}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={TuzTa},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{fafe3436bf1efb750aa21d85f904808c}
+      \strng{fullhash}{fafe3436bf1efb750aa21d85f904808c}
+      \strng{bibnamehash}{fafe3436bf1efb750aa21d85f904808c}
+      \strng{authorbibnamehash}{fafe3436bf1efb750aa21d85f904808c}
+      \strng{authornamehash}{fafe3436bf1efb750aa21d85f904808c}
+      \strng{authorfullhash}{fafe3436bf1efb750aa21d85f904808c}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{LabelImg}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/tzutalin/labelImg
+      \endverb
+      \verb{url}
+      \verb https://github.com/tzutalin/labelImg
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
