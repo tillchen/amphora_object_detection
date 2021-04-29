@@ -3463,6 +3463,150 @@
       \verb https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf1_detection_zoo.md
       \endverb
     \endentry
+    \entry{torrey2010transfer}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=13395ed5c40241851a130e97b6b8386b}{%
+           family={Torrey},
+           familyi={T\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b9e25e84bba9c0b453dfaa3f5cd6127b}{%
+           family={Shavlik},
+           familyi={S\bibinitperiod},
+           given={Jude},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IGI global}%
+      }
+      \strng{namehash}{a4b38793f8bb379bcb242dcf389f1112}
+      \strng{fullhash}{a4b38793f8bb379bcb242dcf389f1112}
+      \strng{bibnamehash}{a4b38793f8bb379bcb242dcf389f1112}
+      \strng{authorbibnamehash}{a4b38793f8bb379bcb242dcf389f1112}
+      \strng{authornamehash}{a4b38793f8bb379bcb242dcf389f1112}
+      \strng{authorfullhash}{a4b38793f8bb379bcb242dcf389f1112}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Handbook of research on machine learning applications and trends: algorithms, methods, and techniques}
+      \field{title}{Transfer learning}
+      \field{year}{2010}
+      \field{pages}{242\bibrangedash 264}
+      \range{pages}{23}
+    \endentry
+    \entry{krizhevsky2010convolutional}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c5e3a676e2ac1164b3afcd539c131fc9}{%
+           family={Krizhevsky},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=02d6b3dbe848ae8d6daa02d0ca551107}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={Geoff},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{528760ad72c210a7903ccd2985b5d535}
+      \strng{fullhash}{528760ad72c210a7903ccd2985b5d535}
+      \strng{bibnamehash}{528760ad72c210a7903ccd2985b5d535}
+      \strng{authorbibnamehash}{528760ad72c210a7903ccd2985b5d535}
+      \strng{authornamehash}{528760ad72c210a7903ccd2985b5d535}
+      \strng{authorfullhash}{528760ad72c210a7903ccd2985b5d535}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Unpublished manuscript}
+      \field{number}{7}
+      \field{title}{Convolutional deep belief networks on cifar-10}
+      \field{volume}{40}
+      \field{year}{2010}
+      \field{pages}{1\bibrangedash 9}
+      \range{pages}{9}
+    \endentry
+    \entry{ng2004feature}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=799b172b8d02b7acdf21d0cc48934fca}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Andrew\bibnamedelima Y},
+           giveni={A\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{799b172b8d02b7acdf21d0cc48934fca}
+      \strng{fullhash}{799b172b8d02b7acdf21d0cc48934fca}
+      \strng{bibnamehash}{799b172b8d02b7acdf21d0cc48934fca}
+      \strng{authorbibnamehash}{799b172b8d02b7acdf21d0cc48934fca}
+      \strng{authornamehash}{799b172b8d02b7acdf21d0cc48934fca}
+      \strng{authorfullhash}{799b172b8d02b7acdf21d0cc48934fca}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the twenty-first international conference on Machine learning}
+      \field{title}{Feature selection, L 1 vs. L 2 regularization, and rotational invariance}
+      \field{year}{2004}
+      \field{pages}{78}
+      \range{pages}{1}
+    \endentry
+    \entry{hawkins2004problem}{article}{}
+      \name{author}{1}{}{%
+        {{hash=f2c2e43824a5d0e8b1510362d9a5131f}{%
+           family={Hawkins},
+           familyi={H\bibinitperiod},
+           given={Douglas\bibnamedelima M},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACS Publications}%
+      }
+      \strng{namehash}{f2c2e43824a5d0e8b1510362d9a5131f}
+      \strng{fullhash}{f2c2e43824a5d0e8b1510362d9a5131f}
+      \strng{bibnamehash}{f2c2e43824a5d0e8b1510362d9a5131f}
+      \strng{authorbibnamehash}{f2c2e43824a5d0e8b1510362d9a5131f}
+      \strng{authornamehash}{f2c2e43824a5d0e8b1510362d9a5131f}
+      \strng{authorfullhash}{f2c2e43824a5d0e8b1510362d9a5131f}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of chemical information and computer sciences}
+      \field{number}{1}
+      \field{title}{The problem of overfitting}
+      \field{volume}{44}
+      \field{year}{2004}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+    \endentry
+    \entry{colab}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Colaboratory}
+      \field{urlday}{29}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://colab.research.google.com
+      \endverb
+      \verb{url}
+      \verb https://colab.research.google.com
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

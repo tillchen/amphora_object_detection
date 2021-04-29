@@ -732,6 +732,18 @@
 
   \subsection{Model Training}
 
+  Transfer learning \cite{torrey2010transfer} is used as the model is pretrained on the COCO dataset, which means the
+  weights and biases are restored instead of being randomly intialized and the model does not have to learn the low-level
+  features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config are adjusted
+  to 1, 8, and 7 respectively in the configuration file, while the rest of fields stay unchanged. The images are reshaped
+  to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a modified version of ReLU that caps
+  the maximum value at 6 and thus enchourages the model to learn sparse features earlier
+  \cite{krizhevsky2010convolutional}. $L_2$ regularization \cite{ng2004feature} is used to reduce overfitting
+  \cite{hawkins2004problem}. Data augmentation \cite{geron2019hands, krizhevsky2012imagenet} - a method to artificially
+  enrich the dataset by randomly flipping horizontally and cropping the images - is also used as a regularization technique.
+  The model is trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training takes 2 hours and 40 minutes
+  to reach the peak mAP result.
+
   \section{Evaluation}
 
   This section discusses criteria that are used to evaluate the
