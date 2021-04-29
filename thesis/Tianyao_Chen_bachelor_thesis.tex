@@ -741,16 +741,11 @@
   \cite{krizhevsky2010convolutional}. $L_2$ regularization \cite{ng2004feature} is used to reduce overfitting
   \cite{hawkins2004problem}. Data augmentation \cite{geron2019hands, krizhevsky2012imagenet} - a method to artificially
   enrich the dataset by randomly flipping horizontally and cropping the images - is also used as a regularization technique.
-  The model is trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training takes 2 hours and 40 minutes
-  to reach the peak mAP result.
+  Momentum optimizer \cite{polyak1964some} is used as it converges faster than Stochastic Gradient Descent \cite{bottou2010large}
+  by keeping accelerating to the optimum \cite{geron2019hands}. The model is trained on Google Colaboratory \cite{colab}
+  with a GPU runtime, and the training takes 2 hours and 40 minutes to reach the peak mAP result at step 8621.
 
   \section{Evaluation}
-
-  This section discusses criteria that are used to evaluate the
-  research results. Make sure your results can be used to published
-  research results, i.e., to the already known state-of-the-art.
-
-  (target size: 5-10 pages)
 
   \begin{table}[ht]
     \begin{center}
@@ -767,9 +762,6 @@
       \caption{Useless insights I gained with no further meaning}
     \end{center}
   \end{table}
-
-  \subsection{Visual Evaluation}
-  \subsection{Metric Evaluation}
 
   \section{Conclusions}
 

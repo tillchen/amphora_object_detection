@@ -51,11 +51,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.3}Model Training}{18}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4}Evaluation}{18}{section.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.1}Visual Evaluation}{19}{subsection.4.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.2}Metric Evaluation}{19}{subsection.4.2}
+\contentsline {section}{\numberline {4}Evaluation}{19}{section.4}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {5}Conclusions}{19}{section.5}
 \defcounter {refsection}{0}\relax 

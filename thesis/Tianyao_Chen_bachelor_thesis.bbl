@@ -3579,6 +3579,62 @@
       \field{pages}{1\bibrangedash 12}
       \range{pages}{12}
     \endentry
+    \entry{polyak1964some}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ccd7eace32a9cfebc1b5b23c7a900ed6}{%
+           family={Polyak},
+           familyi={P\bibinitperiod},
+           given={Boris\bibnamedelima T},
+           giveni={B\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ccd7eace32a9cfebc1b5b23c7a900ed6}
+      \strng{fullhash}{ccd7eace32a9cfebc1b5b23c7a900ed6}
+      \strng{bibnamehash}{ccd7eace32a9cfebc1b5b23c7a900ed6}
+      \strng{authorbibnamehash}{ccd7eace32a9cfebc1b5b23c7a900ed6}
+      \strng{authornamehash}{ccd7eace32a9cfebc1b5b23c7a900ed6}
+      \strng{authorfullhash}{ccd7eace32a9cfebc1b5b23c7a900ed6}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Ussr computational mathematics and mathematical physics}
+      \field{number}{5}
+      \field{title}{Some methods of speeding up the convergence of iteration methods}
+      \field{volume}{4}
+      \field{year}{1964}
+      \field{pages}{1\bibrangedash 17}
+      \range{pages}{17}
+    \endentry
+    \entry{bottou2010large}{incollection}{}
+      \name{author}{1}{}{%
+        {{hash=4437d12f87aa10b0c95e9e587862f7ab}{%
+           family={Bottou},
+           familyi={B\bibinitperiod},
+           given={L{é}on},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{4437d12f87aa10b0c95e9e587862f7ab}
+      \strng{fullhash}{4437d12f87aa10b0c95e9e587862f7ab}
+      \strng{bibnamehash}{4437d12f87aa10b0c95e9e587862f7ab}
+      \strng{authorbibnamehash}{4437d12f87aa10b0c95e9e587862f7ab}
+      \strng{authornamehash}{4437d12f87aa10b0c95e9e587862f7ab}
+      \strng{authorfullhash}{4437d12f87aa10b0c95e9e587862f7ab}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of COMPSTAT'2010}
+      \field{title}{Large-scale machine learning with stochastic gradient descent}
+      \field{year}{2010}
+      \field{pages}{177\bibrangedash 186}
+      \range{pages}{10}
+    \endentry
     \entry{colab}{online}{}
       \name{author}{1}{}{%
         {{hash=8b36e9207c24c76e6719268e49201d94}{%

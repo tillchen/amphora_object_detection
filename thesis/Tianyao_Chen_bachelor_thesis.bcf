@@ -2280,7 +2280,10 @@
     <bcf:citekey order="219">hawkins2004problem</bcf:citekey>
     <bcf:citekey order="220">geron2019hands</bcf:citekey>
     <bcf:citekey order="220">krizhevsky2012imagenet</bcf:citekey>
-    <bcf:citekey order="221">colab</bcf:citekey>
+    <bcf:citekey order="221">polyak1964some</bcf:citekey>
+    <bcf:citekey order="222">bottou2010large</bcf:citekey>
+    <bcf:citekey order="223">geron2019hands</bcf:citekey>
+    <bcf:citekey order="224">colab</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
