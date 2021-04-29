@@ -443,6 +443,8 @@
 
   \subsubsection{General Object Detection Framework Components}
 
+  \label{sec:141}
+
   Before we dive into specific object detection frameworks, it's worth understanding the four high-level components of
   general object detection frameworks \cite{elgendy2020deep}.
 
@@ -738,30 +740,36 @@
   to 1, 8, and 7 respectively in the configuration file, while the rest of fields stay unchanged. The images are reshaped
   to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a modified version of ReLU that caps
   the maximum value at 6 and thus enchourages the model to learn sparse features earlier
-  \cite{krizhevsky2010convolutional}. $L_2$ regularization \cite{ng2004feature} is used to reduce overfitting
+  \cite{krizhevsky2010convolutional}. We use $L_2$ regularization \cite{ng2004feature} to reduce overfitting
   \cite{hawkins2004problem}. Data augmentation \cite{geron2019hands, krizhevsky2012imagenet} - a method to artificially
   enrich the dataset by randomly flipping horizontally and cropping the images - is also used as a regularization technique.
-  Momentum optimizer \cite{polyak1964some} is used as it converges faster than Stochastic Gradient Descent \cite{bottou2010large}
-  by keeping accelerating to the optimum \cite{geron2019hands}. The model is trained on Google Colaboratory \cite{colab}
-  with a GPU runtime, and the training takes 2 hours and 40 minutes to reach the peak mAP result at step 8621.
+  We choose the momentum optimizer \cite{polyak1964some} as it converges faster than Stochastic Gradient Descent
+  \cite{bottou2010large} by keeping accelerating to the optimum \cite{geron2019hands}. Learning rate warmup and learning
+  rate scheduling by cosine decay are also added to speed up the convergence, so that the learning rate starts small,
+  increases gradually, and then decreases after reaching the maximum
+  \cite{geron2019hands, goyal2017accurate, senior2013empirical, loshchilov2016sgdr}.
+  The model is trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training takes 2 hours and 40
+  minutes to reach the peak mAP result at step 8621.
 
   \section{Evaluation}
 
-  \begin{table}[ht]
-    \begin{center}
-      \begin{tabular}{cl}
-        \toprule
-        Number & Description \\
-        \midrule
-        7 & A lucky number in Western culture \\
-        8 & A lucky number in Chinese and other Asian cultures \\
-        42 & Answer to the ultimate question of life, the universe, and everything \\
-        404 & Not found \\
-        \bottomrule
-      \end{tabular}
-      \caption{Useless insights I gained with no further meaning}
-    \end{center}
-  \end{table}
+  The main metric $mAP_{coco}$ (see \hyperref[sec:141]{section 1.4.1}) is 0.238, while the traditional $mAP_{50}$ is 0.503.
+
+  % \begin{table}[ht]
+  %   \begin{center}
+  %     \begin{tabular}{cl}
+  %       \toprule
+  %       Number & Description \\
+  %       \midrule
+  %       7 & A lucky number in Western culture \\
+  %       8 & A lucky number in Chinese and other Asian cultures \\
+  %       42 & Answer to the ultimate question of life, the universe, and everything \\
+  %       404 & Not found \\
+  %       \bottomrule
+  %     \end{tabular}
+  %     \caption{Useless insights I gained with no further meaning}
+  %   \end{center}
+  % \end{table}
 
   \section{Conclusions}
 

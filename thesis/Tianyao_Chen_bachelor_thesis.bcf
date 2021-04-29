@@ -2283,7 +2283,11 @@
     <bcf:citekey order="221">polyak1964some</bcf:citekey>
     <bcf:citekey order="222">bottou2010large</bcf:citekey>
     <bcf:citekey order="223">geron2019hands</bcf:citekey>
-    <bcf:citekey order="224">colab</bcf:citekey>
+    <bcf:citekey order="224">geron2019hands</bcf:citekey>
+    <bcf:citekey order="224">goyal2017accurate</bcf:citekey>
+    <bcf:citekey order="224">senior2013empirical</bcf:citekey>
+    <bcf:citekey order="224">loshchilov2016sgdr</bcf:citekey>
+    <bcf:citekey order="225">colab</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
