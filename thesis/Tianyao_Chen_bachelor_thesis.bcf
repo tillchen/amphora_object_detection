@@ -2267,6 +2267,12 @@
     <bcf:citekey order="208">groplan</bcf:citekey>
     <bcf:citekey order="208">phoenician</bcf:citekey>
     <bcf:citekey order="209">labelimg</bcf:citekey>
+    <bcf:citekey order="210">huang2017speed</bcf:citekey>
+    <bcf:citekey order="210">tfobjectdetection</bcf:citekey>
+    <bcf:citekey order="211">tfobjectdetectionmodelzoo</bcf:citekey>
+    <bcf:citekey order="212">he2016deep</bcf:citekey>
+    <bcf:citekey order="213">cao2020real</bcf:citekey>
+    <bcf:citekey order="214">lin2017feature</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

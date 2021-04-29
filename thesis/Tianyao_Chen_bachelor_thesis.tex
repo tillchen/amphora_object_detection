@@ -286,6 +286,8 @@
 
   \subsubsection{Convolutional Neural Networks (CNNs)}
 
+  \label{sec:122}
+
   Convolutional Neural Networks (CNNs) were inspired by the brain's visual cortex, and they have been used in computer
   vision since the 1980s \cite{geron2019hands}. We can not simply use a deep neural network with fully connected layers
   for computer vision, as it breaks down for large images due to the huge number of parameters it requires
@@ -408,6 +410,8 @@
   have respectively 500 thousand, 14 million, and 328 thousand images.
 
   \subsection{Object Detection}
+
+  \label{sec:14}
 
   Object detection is the computer vision task that localizes and classifies objects in an image
   \cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection remains to be one of the most
@@ -690,7 +694,7 @@
   YOLOv3, and Xception.
 
   For crab detection, Can et al. \cite{cao2020real} proposes a detector called Faster MSSDLite, which is based on SSD with
-  a MobileNetv2 backbone and feature pyramid network (FPN) \cite{lin2017feature}.
+  a MobileNetv2 backbone and Feature Pyramid Network (FPN) \cite{lin2017feature}.
 
   For planktons and corals, we have only found research for classification but not object detection
   \cite{qin2015underwater, moniruzzaman2017deep}.
@@ -709,7 +713,23 @@
   \cite{labelimg}.
 
   \subsection{Model}
-  % UAV require real-time
+
+  Out of the three families of obejct detection frameworks we have discussed in \hyperref[sec:14]{section 1.4}, SSD is
+  chosen due to the following reasons:
+
+  \begin{itemize}
+    \item Faster R-CNN is too computationally intensive and two slow for AUVs and UUVs, which require real-time detection.
+    \item YOLOv5, the state-of-art model of the YOLO family, is under active development and authors have yet to publish
+    a paper.
+  \end{itemize}
+
+  The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} is used to build the model. The model name
+  is ssd\_resnet\_50\_fpn\_coco in the TensorFlow Detection Model Zoo \cite{tfobjectdetectionmodelzoo}. The backbone
+  network is changed from VGG-16 in the original SSD paper to ResNet-50 (50-layer ResNet)
+  (see \hyperref[sec:122]{section 1.2.2}), as it improves the mAP significantly \cite{he2016deep}. Similar to the approach
+  from Can et al. \cite{cao2020real} for crab detection, Feature Pyramid Network (FPN) is added to improve the detection at
+  different scales \cite{lin2017feature}.
+
   \subsection{Model Training}
 
   \section{Evaluation}
