@@ -1,18 +1,18 @@
-\documentclass[a4paper,11pt,oneside]{article}
+\documentclass[a4paper, 11pt, oneside]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm]{geometry}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{helvet}
-\usepackage[english]{babel}     %% typographie française
-\usepackage[style=numeric,language=english, sorting=none]{biblatex}
-\usepackage{parskip}		%% blank lines between paragraphs, no indent
-\usepackage[margin=1cm]{caption}%% give long captions a margin
-\usepackage{booktabs}           %% typesetting nice tables
-\usepackage[pdftex]{graphicx}	%% include graphics, preferably pdf
+\usepackage[english]{babel}
+\usepackage[style=numeric, language=english, sorting=none]{biblatex}
+\usepackage{parskip}
+\usepackage[margin=1cm]{caption}
+\usepackage{subcaption}
+\usepackage[pdftex]{graphicx}
 \graphicspath{ {./images/} }
-\usepackage[pdftex]{hyperref}	%% many PDF options can be set here
-\pdfadjustspacing=1		%% force LaTeX-like character spacing
+\usepackage[pdftex]{hyperref}
+\pdfadjustspacing=1
 \usepackage{amsmath}
 
 \newcommand{\myname}{Tianyao Chen}
@@ -711,8 +711,9 @@
 
   The dataset consists of 50 images (294 objects) in the training set and 7 images (31 objects) in the validation set,
   which maintains the 90\% : 10\% ratio for the object count. Two additional images are used as the test set. All the
-  images are obtained through various sources \cite{googleimages, groplan, phoenician} and are annotated with LabelImg
-  \cite{labelimg}.
+  images are obtained through various sources
+  \cite{googleimages, scuba, itinari, whoi, phoenician, auscape, hakai, groplan, ionian, sanisera} and are annotated
+  with LabelImg \cite{labelimg}.
 
   \subsection{Model}
 
@@ -755,33 +756,64 @@
 
   The main metric $mAP_{coco}$ (see \hyperref[sec:141]{section 1.4.1}) is 0.238, while the traditional $mAP_{50}$ is 0.503.
 
-  % \begin{table}[ht]
-  %   \begin{center}
-  %     \begin{tabular}{cl}
-  %       \toprule
-  %       Number & Description \\
-  %       \midrule
-  %       7 & A lucky number in Western culture \\
-  %       8 & A lucky number in Chinese and other Asian cultures \\
-  %       42 & Answer to the ultimate question of life, the universe, and everything \\
-  %       404 & Not found \\
-  %       \bottomrule
-  %     \end{tabular}
-  %     \caption{Useless insights I gained with no further meaning}
-  %   \end{center}
-  % \end{table}
+
+  \begin{figure}[ht]
+    \centering
+    \begin{subfigure}[ht]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{val_1.png}
+    \end{subfigure}
+    \begin{subfigure}[ht]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{val_6.png}
+    \end{subfigure}
+    \bigskip
+    \begin{subfigure}[ht]{0.4\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{val_3.png}
+    \end{subfigure}
+    \begin{subfigure}[ht]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{val_2.png}
+    \end{subfigure}
+    \bigskip
+    \begin{subfigure}[ht]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{val_5.png}
+    \end{subfigure}
+    \begin{subfigure}[ht]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{val_7.png}
+    \end{subfigure}
+    \bigskip
+    \begin{subfigure}[ht]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{val_4.png}
+    \end{subfigure}
+    \caption{The validation images. Source:
+    \cite{scuba, itinari, whoi, phoenician, auscape, hakai, groplan}.}
+\end{figure}
+
+  \begin{figure}[ht]
+    \centering
+    \begin{subfigure}[ht]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{test_1.png}
+    \end{subfigure}
+    \bigskip
+    \begin{subfigure}[ht]{0.8\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{test_2.png}
+    \end{subfigure}
+    \caption{The test images. Source: \cite{ionian, sanisera}.}
+  \end{figure}
 
   \section{Conclusions}
-
-  Summarize the main aspects and results of the research
-  project. Provide an answer to the research questions stated earlier.
-
-  (target size: 1/2 page)
 
   \section{Future Work}
   % \cite{mccarthy20193d,pasquet2017amphora} define three classes as amphoras are often broken
 
-  \newpage
+  \clearpage
 
   \printbibliography
 

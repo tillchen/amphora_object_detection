@@ -3244,34 +3244,78 @@
       \verb https://images.google.com/
       \endverb
     \endentry
-    \entry{groplan}{online}{}
+    \entry{scuba}{online}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://scuba247.net/dive-sites/
+      \endverb
+      \verb{url}
+      \verb https://scuba247.net/dive-sites/
+      \endverb
+    \endentry
+    \entry{itinari}{online}{}
       \name{author}{1}{}{%
-        {{hash=cded4464363430f7c8b23e5fb38ea179}{%
-           family={LSIS},
-           familyi={L\bibinitperiod},
-           given={CNRS},
-           giveni={C\bibinitperiod}}}%
+        {{hash=b9ad9d6fefd0b25a5a1d6345bfe17cbe}{%
+           family={Radojević},
+           familyi={R\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod}}}%
       }
-      \strng{namehash}{cded4464363430f7c8b23e5fb38ea179}
-      \strng{fullhash}{cded4464363430f7c8b23e5fb38ea179}
-      \strng{bibnamehash}{cded4464363430f7c8b23e5fb38ea179}
-      \strng{authorbibnamehash}{cded4464363430f7c8b23e5fb38ea179}
-      \strng{authornamehash}{cded4464363430f7c8b23e5fb38ea179}
-      \strng{authorfullhash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{namehash}{b9ad9d6fefd0b25a5a1d6345bfe17cbe}
+      \strng{fullhash}{b9ad9d6fefd0b25a5a1d6345bfe17cbe}
+      \strng{bibnamehash}{b9ad9d6fefd0b25a5a1d6345bfe17cbe}
+      \strng{authorbibnamehash}{b9ad9d6fefd0b25a5a1d6345bfe17cbe}
+      \strng{authornamehash}{b9ad9d6fefd0b25a5a1d6345bfe17cbe}
+      \strng{authorfullhash}{b9ad9d6fefd0b25a5a1d6345bfe17cbe}
       \field{sortinit}{2}
       \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{GROPLAN}
-      \field{urlday}{28}
-      \field{urlmonth}{4}
+      \field{title}{Discover the underwater winery on the Pelješac peninsula}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
       \field{urlyear}{2021}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb http://www.lsis.org/groplan/
+      \verb https://www.itinari.com/discover-the-underwater-winery-on-the-peljesac-peninsula-1dsk
       \endverb
       \verb{url}
-      \verb http://www.lsis.org/groplan/
+      \verb https://www.itinari.com/discover-the-underwater-winery-on-the-peljesac-peninsula-1dsk
+      \endverb
+    \endentry
+    \entry{whoi}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6781d7bab8ac80337d8c18ee4788a5cd}{%
+           family={Institute},
+           familyi={I\bibinitperiod},
+           given={Woods\bibnamedelimb Hole\bibnamedelima Oceanographic},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \strng{namehash}{6781d7bab8ac80337d8c18ee4788a5cd}
+      \strng{fullhash}{6781d7bab8ac80337d8c18ee4788a5cd}
+      \strng{bibnamehash}{6781d7bab8ac80337d8c18ee4788a5cd}
+      \strng{authorbibnamehash}{6781d7bab8ac80337d8c18ee4788a5cd}
+      \strng{authornamehash}{6781d7bab8ac80337d8c18ee4788a5cd}
+      \strng{authorfullhash}{6781d7bab8ac80337d8c18ee4788a5cd}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Artifacts Discovered on Return Expedition to Antikythera Shipwreck}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.whoi.edu/press-room/news-release/artifacts-discovered-on-return-expedition-to-antikythera-shipwreck/
+      \endverb
+      \verb{url}
+      \verb https://www.whoi.edu/press-room/news-release/artifacts-discovered-on-return-expedition-to-antikythera-shipwreck/
       \endverb
     \endentry
     \entry{phoenician}{online}{}
@@ -3304,6 +3348,158 @@
       \endverb
       \verb{url}
       \verb https://phoenicianshipwreck.org/
+      \endverb
+    \endentry
+    \entry{auscape}{online}{}
+      \name{author}{1}{}{%
+        {{hash=72f892c4b34aa54670462d1800e2ea74}{%
+           family={Deacon},
+           familyi={D\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{72f892c4b34aa54670462d1800e2ea74}
+      \strng{fullhash}{72f892c4b34aa54670462d1800e2ea74}
+      \strng{bibnamehash}{72f892c4b34aa54670462d1800e2ea74}
+      \strng{authorbibnamehash}{72f892c4b34aa54670462d1800e2ea74}
+      \strng{authornamehash}{72f892c4b34aa54670462d1800e2ea74}
+      \strng{authorfullhash}{72f892c4b34aa54670462d1800e2ea74}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Scuba diver examining ancient amphora underwater, Egypt}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://images.auscape.com.au/objects/scuba-diver-examining-ancient-amphora-underwater-10091765.html
+      \endverb
+      \verb{url}
+      \verb https://images.auscape.com.au/objects/scuba-diver-examining-ancient-amphora-underwater-10091765.html
+      \endverb
+    \endentry
+    \entry{hakai}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4bd186009e68ec1a7d23c620391c34b5}{%
+           family={Conroy},
+           familyi={C\bibinitperiod},
+           given={Gemma},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{4bd186009e68ec1a7d23c620391c34b5}
+      \strng{fullhash}{4bd186009e68ec1a7d23c620391c34b5}
+      \strng{bibnamehash}{4bd186009e68ec1a7d23c620391c34b5}
+      \strng{authorbibnamehash}{4bd186009e68ec1a7d23c620391c34b5}
+      \strng{authornamehash}{4bd186009e68ec1a7d23c620391c34b5}
+      \strng{authorfullhash}{4bd186009e68ec1a7d23c620391c34b5}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Seagrass Safeguards Human History}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.hakaimagazine.com/news/seagrass-safeguards-human-history/
+      \endverb
+      \verb{url}
+      \verb https://www.hakaimagazine.com/news/seagrass-safeguards-human-history/
+      \endverb
+    \endentry
+    \entry{groplan}{online}{}
+      \name{author}{1}{}{%
+        {{hash=cded4464363430f7c8b23e5fb38ea179}{%
+           family={LSIS},
+           familyi={L\bibinitperiod},
+           given={CNRS},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{fullhash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{bibnamehash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{authorbibnamehash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{authornamehash}{cded4464363430f7c8b23e5fb38ea179}
+      \strng{authorfullhash}{cded4464363430f7c8b23e5fb38ea179}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GROPLAN}
+      \field{urlday}{28}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://www.lsis.org/groplan/
+      \endverb
+      \verb{url}
+      \verb http://www.lsis.org/groplan/
+      \endverb
+    \endentry
+    \entry{ionian}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3c42d3df96eaec0dfffe6f3230206390}{%
+           family={Aquarium},
+           familyi={A\bibinitperiod},
+           given={Ionian},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{3c42d3df96eaec0dfffe6f3230206390}
+      \strng{fullhash}{3c42d3df96eaec0dfffe6f3230206390}
+      \strng{bibnamehash}{3c42d3df96eaec0dfffe6f3230206390}
+      \strng{authorbibnamehash}{3c42d3df96eaec0dfffe6f3230206390}
+      \strng{authornamehash}{3c42d3df96eaec0dfffe6f3230206390}
+      \strng{authorfullhash}{3c42d3df96eaec0dfffe6f3230206390}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The Fiscardo Roman Merchant Ship Wreck}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ionian-aquarium.com/fiscardo-roman-wreck1.html
+      \endverb
+      \verb{url}
+      \verb https://www.ionian-aquarium.com/fiscardo-roman-wreck1.html
+      \endverb
+    \endentry
+    \entry{sanisera}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d35f2e004b889bc49a1c8a6cb95c3ad2}{%
+           family={International\bibnamedelimb Field\bibnamedelima Schools},
+           familyi={I\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Sanisera\bibnamedelimb Archaeology\bibnamedelima Institute},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim I\bibinitperiod},
+           prefix={for},
+           prefixi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{d35f2e004b889bc49a1c8a6cb95c3ad2}
+      \strng{fullhash}{d35f2e004b889bc49a1c8a6cb95c3ad2}
+      \strng{bibnamehash}{d35f2e004b889bc49a1c8a6cb95c3ad2}
+      \strng{authorbibnamehash}{d35f2e004b889bc49a1c8a6cb95c3ad2}
+      \strng{authornamehash}{d35f2e004b889bc49a1c8a6cb95c3ad2}
+      \strng{authorfullhash}{d35f2e004b889bc49a1c8a6cb95c3ad2}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Discover Amphora and Shipwrecks in the Underwater Port of Sanitja}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://archaeology.institute/013-discover-amphora-and-shipwrecks-in-sanitja.asp
+      \endverb
+      \verb{url}
+      \verb http://archaeology.institute/013-discover-amphora-and-shipwrecks-in-sanitja.asp
       \endverb
     \endentry
     \entry{labelimg}{online}{}

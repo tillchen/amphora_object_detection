@@ -81,8 +81,8 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
-INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
+INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/caption/subcaption.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
@@ -282,6 +282,33 @@ INPUT ./images/ssd.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/yolov3.png
 INPUT ./images/yolov3.png
 INPUT ./images/yolov3.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/val_1.png
+INPUT ./images/val_1.png
+INPUT ./images/val_1.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/val_6.png
+INPUT ./images/val_6.png
+INPUT ./images/val_6.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/val_3.png
+INPUT ./images/val_3.png
+INPUT ./images/val_3.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/val_2.png
+INPUT ./images/val_2.png
+INPUT ./images/val_2.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/val_5.png
+INPUT ./images/val_5.png
+INPUT ./images/val_5.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/val_7.png
+INPUT ./images/val_7.png
+INPUT ./images/val_7.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/val_4.png
+INPUT ./images/val_4.png
+INPUT ./images/val_4.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/test_1.png
+INPUT ./images/test_1.png
+INPUT ./images/test_1.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/test_2.png
+INPUT ./images/test_2.png
+INPUT ./images/test_2.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvrc7t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvrc7t.vf
