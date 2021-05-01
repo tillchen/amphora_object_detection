@@ -175,7 +175,7 @@
 
   \subsubsection{Computer Vision for Underwater Archaeology}
 
-  \label{sec:112}
+  \label{sec:cvForUnderwater}
 
   Computer vision is the science of perceiving and understanding the world through images and videos \cite{elgendy2020deep}.
   There have been multiple exciting applications of computer vision, including image classification \cite{rawat2017deep},
@@ -286,7 +286,7 @@
 
   \subsubsection{Convolutional Neural Networks (CNNs)}
 
-  \label{sec:122}
+  \label{sec:cnn}
 
   Convolutional Neural Networks (CNNs) were inspired by the brain's visual cortex, and they have been used in computer
   vision since the 1980s \cite{geron2019hands}. We can not simply use a deep neural network with fully connected layers
@@ -411,7 +411,7 @@
 
   \subsection{Object Detection}
 
-  \label{sec:14}
+  \label{sec:objectdetection}
 
   Object detection is the computer vision task that localizes and classifies objects in an image
   \cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection remains to be one of the most
@@ -443,7 +443,7 @@
 
   \subsubsection{General Object Detection Framework Components}
 
-  \label{sec:141}
+  \label{sec:generalobjectdetection}
 
   Before we dive into specific object detection frameworks, it's worth understanding the four high-level components of
   general object detection frameworks \cite{elgendy2020deep}.
@@ -687,7 +687,7 @@
 
   \section{Related Work}
 
-  As we have mentioned in \hyperref[sec:112]{section 1.1.2}, there is limited research on the application of deep learning
+  As we have mentioned in section \ref{sec:cvForUnderwater}, there is limited research on the application of deep learning
   for underwater archaeology and vision-based underwater object detection in general.
 
   For fish detection, Qin et al. \cite{qin2015underwater, li2015fast}, Zhang et al. \cite{zhang2016unsupervised},
@@ -717,19 +717,19 @@
 
   \subsection{Model}
 
-  Out of the three families of obejct detection frameworks we have discussed in \hyperref[sec:14]{section 1.4}, SSD is
+  Out of the three families of obejct detection frameworks we have discussed in section \ref{sec:objectdetection}, SSD is
   chosen due to the following reasons:
 
   \begin{itemize}
-    \item Faster R-CNN is too computationally intensive and two slow for AUVs and UUVs, which require real-time detection.
-    \item YOLOv5, the state-of-art model of the YOLO family, is under active development and authors have yet to publish
-    a paper.
+    \item Faster R-CNN is too computationally intensive and too slow for AUVs and UUVs, which require real-time detection.
+    \item YOLOv5, the state-of-art model of the YOLO family, is under active development and the authors have yet to
+    publish a paper.
   \end{itemize}
 
   The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} is used to build the model. The model name
   is ssd\_resnet\_50\_fpn\_coco in the TensorFlow Detection Model Zoo \cite{tfobjectdetectionmodelzoo}. The backbone
   network is changed from VGG-16 in the original SSD paper to ResNet-50 (50-layer ResNet)
-  (see \hyperref[sec:122]{section 1.2.2}), as it improves the mAP significantly \cite{he2016deep}. Similar to the approach
+  (see section \ref{sec:cnn}), as it improves the mAP significantly \cite{he2016deep}. Similar to the approach
   from Can et al. \cite{cao2020real} for crab detection, Feature Pyramid Network (FPN) is added to improve the detection at
   different scales \cite{lin2017feature}.
 
@@ -754,7 +754,7 @@
 
   \section{Evaluation}
 
-  The main metric $mAP_{coco}$ (see \hyperref[sec:141]{section 1.4.1}) is 0.238, while the traditional $mAP_{50}$ is 0.503.
+  The main metric $mAP_{coco}$ (see section \ref{sec:generalobjectdetection}) is 0.238, while the traditional $mAP_{50}$ is 0.503.
 
 
   \begin{figure}[ht]
