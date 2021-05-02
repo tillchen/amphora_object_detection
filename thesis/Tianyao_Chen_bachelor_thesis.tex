@@ -165,6 +165,7 @@
       \includegraphics[width=.5\textwidth]{amphora_various_shapes.jpg}
     \end{center}
     \caption{Amphoras have various shapes. Source: \cite{worldhistory}.}
+    \label{fig:amphora}
   \end{figure}
 
   Amphoras have great significance in archaeology. They can be used as evidence for the trade patterns throughout
@@ -742,7 +743,7 @@
   features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config are adjusted
   to 1, 8, and 7 respectively in the configuration file, while the rest of fields stay unchanged. The images are reshaped
   to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a modified version of ReLU that caps
-  the maximum value at 6 and thus enchourages the model to learn sparse features earlier
+  the maximum value at 6 and thus encourages the model to learn sparse features earlier
   \cite{krizhevsky2010convolutional}. We use $L_2$ regularization \cite{ng2004feature} to reduce overfitting
   \cite{hawkins2004problem}. Data augmentation \cite{geron2019hands, krizhevsky2012imagenet} - a method to artificially
   enrich the dataset by randomly flipping horizontally and cropping the images - is also used as a regularization technique.
@@ -772,7 +773,15 @@
     (38000 x 15000 pixels) into 400 x 400 images and used 25\% of them for training, which means the training set
     alone is around 890 images.
     \item Our dataset is a lot more diverse than that of Pasquet et al. Since our dataset images are obtained through
-    numerous sources instead of from a single orthophoto,
+    numerous sources instead of from a single orthophoto, they reflect better the various shapes of amphoras (see
+    figure \ref{fig:amphora}). Plus, our dataset has both large and medium instances of amphoras that vary significantly
+    in terms of the scale. The diversity of our dataset makes it harder to achieve a high mAP, but it also encourages
+    the model to generalize better.
+    \item Underwater object detection is more challenging than general object detection performed by the COCO dataset.
+    As we have mentioned before in section \ref{sec:cvForUnderwater}, the same challenges also apply for amphora
+    detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
+    in sand, or blocked by suspended particles. We only define one class for all amphoras even if they are broken, while
+    Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
   \end{itemize}
 
 
