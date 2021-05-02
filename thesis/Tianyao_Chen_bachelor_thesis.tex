@@ -784,6 +784,13 @@
     Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
   \end{itemize}
 
+  We also ran the model on 2 test images shown in figure \ref{fig:test}. To our surprise, the model managed to detect
+  the amphora in the second image even though it is so broken that only half of it is present. As for the first image,
+  none of the amphoras was detected as expected. The size of the first image is only 709 x 411, while it has hundreds of
+  amphora instances. This means that they are mostly small instances defined by the COCO metric, which our training set
+  does not include. Plus, the image can be described as a crowded and densely packed scene, where many objects overlap
+  with each other.
+
 
   \begin{figure}[ht]
     \centering
@@ -838,12 +845,14 @@
     \label{fig:test}
   \end{figure}
 
+  \clearpage
+
   \section{Conclusions}
 
   \section{Future Work}
   % \cite{mccarthy20193d,pasquet2017amphora} define three classes as amphoras are often broken
 
-  \clearpage
+  \newpage
 
   \printbibliography
 
