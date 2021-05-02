@@ -124,6 +124,39 @@
       \field{title}{Shipwrecks and ancient trade in the Mediterranean}
       \field{year}{1984}
     \endentry
+    \entry{worldhistory}{online}{}
+      \name{author}{1}{}{%
+        {{hash=765efb7130f175a6929125ab1f5be48e}{%
+           family={World\bibnamedelimb History\bibnamedelima Encyclopedia},
+           familyi={W\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Mark\bibnamedelima Cartwright},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod},
+           prefix={at},
+           prefixi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{765efb7130f175a6929125ab1f5be48e}
+      \strng{fullhash}{765efb7130f175a6929125ab1f5be48e}
+      \strng{bibnamehash}{765efb7130f175a6929125ab1f5be48e}
+      \strng{authorbibnamehash}{765efb7130f175a6929125ab1f5be48e}
+      \strng{authornamehash}{765efb7130f175a6929125ab1f5be48e}
+      \strng{authorfullhash}{765efb7130f175a6929125ab1f5be48e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Amphora}
+      \field{urlday}{2}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.worldhistory.org/Amphora/
+      \endverb
+      \verb{url}
+      \verb https://www.worldhistory.org/Amphora/
+      \endverb
+    \endentry
     \entry{elgendy2020deep}{book}{}
       \name{author}{1}{}{%
         {{hash=85f424d6f0018e7cc5268dc638ec3789}{%

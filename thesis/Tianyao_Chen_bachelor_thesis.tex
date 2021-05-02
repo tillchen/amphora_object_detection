@@ -162,9 +162,9 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{amphora_various_shape.png}
+      \includegraphics[width=.5\textwidth]{amphora_various_shapes.jpg}
     \end{center}
-    \caption{Amphoras have various shapes. Source: \cite{twede2002commercial}.}
+    \caption{Amphoras have various shapes. Source: \cite{worldhistory}.}
   \end{figure}
 
   Amphoras have great significance in archaeology. They can be used as evidence for the trade patterns throughout
@@ -377,6 +377,8 @@
   \end{figure}
 
   \subsection{Deep Learning vs. Traditional Computer Vision}
+
+  \label{sec:dlvscv}
 
   The increasingly abundant visual data and the improvements of deep learning algorithms, computing power, and image
   resolution have enabled deep learning to achieve state-of-the-art performance in many computer vision tasks, including
@@ -692,16 +694,16 @@
 
   For fish detection, Qin et al. \cite{qin2015underwater, li2015fast}, Zhang et al. \cite{zhang2016unsupervised},
   Villon et al. \cite{villon2016coral}, Xu et al. \cite{xu2018underwater}, and Konovalov et al.
-  \cite{konovalov2019underwater} respectively use Fast R-CNN, a model similar to R-CNN, sliding window with a CNN,
+  \cite{konovalov2019underwater} respectively used Fast R-CNN, a model similar to R-CNN, sliding window with a CNN,
   YOLOv3, and Xception.
 
-  For crab detection, Can et al. \cite{cao2020real} proposes a detector called Faster MSSDLite, which is based on SSD with
+  For crab detection, Can et al. \cite{cao2020real} proposed a detector called Faster MSSDLite, which is based on SSD with
   a MobileNetv2 backbone and Feature Pyramid Network (FPN) \cite{lin2017feature}.
 
   For planktons and corals, we have only found research for classification but not object detection
   \cite{qin2015underwater, moniruzzaman2017deep}.
 
-  For amphora detection, Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} uses sliding window with a CNN on
+  For amphora detection, Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} used sliding window with a CNN on
   high-resolution orthophotos (aerial photos). And this is the only study we have found on amphora detection with deep
   learning.
 
@@ -749,12 +751,29 @@
   rate scheduling by cosine decay are also added to speed up the convergence, so that the learning rate starts small,
   increases gradually, and then decreases after reaching the maximum
   \cite{geron2019hands, goyal2017accurate, senior2013empirical, loshchilov2016sgdr}.
-  The model is trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training takes 2 hours and 40
+  The model was trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training took 2 hours and 40
   minutes to reach the peak mAP result at step 8621.
 
   \section{Evaluation}
 
-  The main metric $mAP_{coco}$ (see section \ref{sec:generalobjectdetection}) is 0.238, while the traditional $mAP_{50}$ is 0.503.
+  The main metric $mAP_{coco}$ (see section \ref{sec:generalobjectdetection}) from our model is 0.238, while the
+  traditional $mAP_{50}$ is 0.503. The documented $mAP_{coco}$ in the TensorFlow Detection Model Zoo for
+  ssd\_resnet\_50\_fpn\_coco is 0.35, which is measured on the COCO validation set. Our model's performance is indeed
+  lower than that in the model zoo. And it is somewhat difficult to perform a direct comparison with the result from
+  Pasquet et al. \cite{pasquet2017amphora}, as they did not compute the $mAP$ and only mentioned that they detected
+  around 90.3 percent of amphoras. However, we can conclude that our model does not detect more than 90.3 percent based
+  on the visual inspection of the validation images in figure \ref{fig:val}.
+
+  Nevertheless, our model's performance is still impressive due to the following reasons:
+
+  \begin{itemize}
+    \item Our dataset is very small. As we have mentioned before in section \ref{sec:dlvscv}, the COCO dataset has 328
+    thousand images compared to our 57 images plus 2 test images. For Pasquet et al., they split one orthophoto
+    (38000 x 15000 pixels) into 400 x 400 images and used 25\% of them for training, which means the training set
+    alone is around 890 images.
+    \item Our dataset is a lot more diverse than that of Pasquet et al. Since our dataset images are obtained through
+    numerous sources instead of from a single orthophoto,
+  \end{itemize}
 
 
   \begin{figure}[ht]
@@ -792,6 +811,7 @@
     \end{subfigure}
     \caption{The validation images. Source:
     \cite{scuba, itinari, whoi, phoenician, auscape, hakai, groplan}.}
+    \label{fig:val}
 \end{figure}
 
   \begin{figure}[ht]
@@ -806,6 +826,7 @@
         \includegraphics[width=\textwidth]{test_2.png}
     \end{subfigure}
     \caption{The test images. Source: \cite{ionian, sanisera}.}
+    \label{fig:test}
   \end{figure}
 
   \section{Conclusions}
