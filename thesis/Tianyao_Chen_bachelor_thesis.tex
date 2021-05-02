@@ -151,7 +151,7 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{amphora_stowage_aboard_ship.png}
+      \includegraphics[width=.6\textwidth]{amphora_stowage_aboard_ship.png}
     \end{center}
     \caption{The egg-like shape enabled amphoras to interlock and minimize the waste of space on a ship.
     Source: \cite{twede2002commercial}.}
@@ -788,8 +788,14 @@
   the amphora in the second image even though it is so broken that only half of it is present. As for the first image,
   none of the amphoras was detected as expected. The size of the first image is only 709 x 411, while it has hundreds of
   amphora instances. This means that they are mostly small instances defined by the COCO metric, which our training set
-  does not include. Plus, the image can be described as a crowded and densely packed scene, where many objects overlap
-  with each other.
+  does not include. It is a known issue that small objects are significantly harder to detect than medium and
+  large objects, mainly due to the low resolution and thus the lack of features to learn
+  \cite{kisantal2019augmentation, li2017perceptual, eggert2017closer}.
+  Plus, the image can be described as a crowded and densely packed scene, which is also notoriously difficult for object
+  detectors since the objects overlap with each other so strongly that it is even impossible for human experts to
+  differentiate the instances \cite{goldman2019precise, leibe2005pedestrian, arteta2013learning}. In fact, we tried to
+  split the image and add parts of it to the training set. However, the inter-occlusion of the intances caused many
+  labeling errors, and the resolution of each instance was so low that the training could not converge to a solution.
 
 
   \begin{figure}[ht]
@@ -851,6 +857,7 @@
 
   \section{Future Work}
   % \cite{mccarthy20193d,pasquet2017amphora} define three classes as amphoras are often broken
+  % \cite{kisantal2019augmentation} increase image resolution
 
   \newpage
 
