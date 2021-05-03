@@ -873,10 +873,11 @@
     \item The small number and the low resolution of the images in our dataset are the bottleneck towards a higher
     performance. There are indeed very limited publicly available high resolution images for underwater amphoras
     \cite{pasquet2017amphora}. Future studies may focus on obtaining more amphora images through AUVs and UUVs to improve
-    the $mAP$ in general. And higher resolution images like orthophotos can especially address the issue of detecting
-    small objects \cite{kisantal2019augmentation}. Plus, more data augmentation techniques like randomly change to grayscale
-    and randomly adjust brightness, contrast, and hue can be easily added in the data\_augementation\_options from the
-    TensorFlow Object Detection API to potentially further enrich the dataset.
+    the $mAP$ in general. Higher resolution images like orthophotos can especially address the issue of detecting
+    small objects \cite{kisantal2019augmentation}, and also the issue of detecting overlapping objects by reducing labeling
+    errors. Plus, more data augmentation techniques like randomly change to grayscale and randomly adjust brightness,
+    contrast, and hue can be easily added in the data\_augementation\_options from the TensorFlow Object Detection API
+    to potentially further enrich the dataset.
   \end{itemize}
 
   % \cite{mccarthy20193d,pasquet2017amphora} define three classes as amphoras are often broken
