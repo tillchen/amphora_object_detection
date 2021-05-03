@@ -731,7 +731,7 @@
   \end{itemize}
 
   The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} is used to build the model. The model name
-  is ssd\_resnet\_50\_fpn\_coco in the TensorFlow Detection Model Zoo \cite{tfobjectdetectionmodelzoo}. The backbone
+  is ssd\_resnet\_50\_fpn\_coco in the TensorFlow 1 Detection Model Zoo \cite{tf1detectionmodelzoo}. The backbone
   network is changed from VGG-16 in the original SSD paper to ResNet-50 (50-layer ResNet)
   (see section \ref{sec:cnn}), as it improves the mAP significantly \cite{he2016deep}. Similar to the approach
   from Can et al. \cite{cao2020real} for crab detection, Feature Pyramid Network (FPN) is added to improve the detection at
@@ -770,9 +770,9 @@
 
   \begin{itemize}
     \item Our dataset is very small. As we have mentioned before in section \ref{sec:dlvscv}, the COCO dataset has 328
-    thousand images compared to our 57 images plus 2 test images. For Pasquet et al., they split one orthophoto
-    (38000 x 15000 pixels) into 400 x 400 images and used 25\% of them for training, which means the training set
-    alone is around 890 images.
+    thousand images compared to our 57 images plus 2 test images. For Pasquet et al., they split one 38000 x 15000
+    orthophoto into 400 x 400 images and used 25\% of them for training, which means the training set alone is around
+    890 images.
     \item Our dataset is a lot more diverse than that of Pasquet et al. Since our dataset images are obtained through
     numerous sources instead of from a single orthophoto, they reflect better the various shapes of amphoras (see
     figure \ref{fig:amphora}). Plus, our dataset has both large and medium instances of amphoras that vary significantly
@@ -861,10 +861,10 @@
 
   In this paper, we have reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
   learning, and three major object detector families. We have then trained an SSD model with a ResNet-50 backbone
-  based on a very small and low-resolution dataset, and yet still managed to achieve 0.238 for $mAP_{coco}$ and 0.5392
-  for $mAP_{50}$. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the
+  based on a very small and low-resolution dataset, and yet still managed to achieve a 0.238 $mAP_{coco}$ and a 0.5392
+  $mAP_{50}$. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the same
   difficulties posed by general underwater object detection (see section \ref{sec:cvForUnderwater}), the considerable
-  variantions of the shapes of amphoras (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some
+  variantions of the amphoras' shapes (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some
   shipwrecks (see figure \ref{fig:test}).
 
   We hope this paper can serve as a proof of concept for future studies, since there are many aspects to improve upon:
@@ -873,14 +873,29 @@
     \item The small number and the low resolution of the images in our dataset are the bottleneck towards a higher
     performance. There are indeed very limited publicly available high resolution images for underwater amphoras
     \cite{pasquet2017amphora}. Future studies may focus on obtaining more amphora images through AUVs and UUVs to improve
-    the $mAP$ in general. Higher resolution images like orthophotos can especially address the issue of detecting
+    the $mAP$. Higher resolution images like orthophotos can especially address the issue of detecting
     small objects \cite{kisantal2019augmentation}, and also the issue of detecting overlapping objects by reducing labeling
     errors. Plus, more data augmentation techniques like randomly change to grayscale and randomly adjust brightness,
     contrast, and hue can be easily added in the data\_augementation\_options from the TensorFlow Object Detection API
     to potentially further enrich the dataset.
+    \item Many bleeding-edge object detectors with better performance are emerging. The SSD model in this study
+    has a 0.35 $mAP_{coco}$ and a 76 ms detection speed on the COCO validation set. YOLOv5 is able to achieve a 0.367
+    $mAP_{coco}$ with a mere 2 ms detection speed or a 0.504 $mAP_{coco}$ with a 6.1 ms detection speed for 640 x 640 images,
+    and a 0.55 $mAP_{coco}$ with a 70.8 ms detection speed for 1280 x 1280 images. It will be worth experimenting with
+    YOLOv5 after its authors publish a paper and its active development stablizes. Some other models in the TensorFlow 2
+    Detection Model Zoo \cite{tf2detectionmodelzoo} are also interesting to look into. Note that we used the SSD
+    model in the TensorFlow 1 Detection Model Zoo, as the TensorFlow 2 version requires two scripts to be running
+    to train and evaluate at the same time and it is not possible to do so on Google Colaboratory. But one with access to
+    GPUs can easily train an EfficientDet \cite{tan2020efficientdet} D1 640 x 640 model with a 0.384 $mAP_{coco}$ and a
+    54 ms detection speed or an EfficientDet D7 1536 x 1536 model with a 0.512 $mAP_{coco}$ and a 325 ms detection speed
+    from the TensorFlow 2 Detection Model Zoo. CenterNet \cite{zhou2019objects}, a novel keypoint-based detector that
+    models an object as a single center point and regresses to the object size without NMS
+    (see section \ref{sec:generalobjectdetection}), is also available in the TensorFlow 2 Detection Model Zoo. CenterNet
+    is able to achieve a 0.417 $mAP_{coco}$ with a 6 ms detection speed or a 0.614 $mAP_{coco}$ with a 76 ms detection
+    speed for 512 x 512 images, and a 0.645 $mAP_{coco}$ with a 211 ms detection speed for 1024 x 1024 images.
+    \item Following the approach from Pasquet et al. \cite{pasquet2017amphora}, we could try to define 2 separate classes
+    for the head and the body to better detect broken instances.
   \end{itemize}
-
-  % \cite{mccarthy20193d,pasquet2017amphora} define three classes as amphoras are often broken
 
   \newpage
 

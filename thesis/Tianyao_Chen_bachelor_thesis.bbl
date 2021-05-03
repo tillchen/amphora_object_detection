@@ -3664,7 +3664,7 @@
       \verb https://github.com/tensorflow/models/tree/master/research/object_detection
       \endverb
     \endentry
-    \entry{tfobjectdetectionmodelzoo}{online}{}
+    \entry{tf1detectionmodelzoo}{online}{}
       \name{author}{1}{}{%
         {{hash=074dd699710da0ec1eb45f13b31788e3}{%
            family={TensorFlow},
@@ -4281,6 +4281,100 @@
       \field{year}{2013}
       \field{pages}{3230\bibrangedash 3237}
       \range{pages}{8}
+    \endentry
+    \entry{tf2detectionmodelzoo}{online}{}
+      \name{author}{1}{}{%
+        {{hash=074dd699710da0ec1eb45f13b31788e3}{%
+           family={TensorFlow},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{074dd699710da0ec1eb45f13b31788e3}
+      \strng{fullhash}{074dd699710da0ec1eb45f13b31788e3}
+      \strng{bibnamehash}{074dd699710da0ec1eb45f13b31788e3}
+      \strng{authorbibnamehash}{074dd699710da0ec1eb45f13b31788e3}
+      \strng{authornamehash}{074dd699710da0ec1eb45f13b31788e3}
+      \strng{authorfullhash}{074dd699710da0ec1eb45f13b31788e3}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{TensorFlow 2 Detection Model Zoo}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
+      \endverb
+      \verb{url}
+      \verb https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
+      \endverb
+    \endentry
+    \entry{tan2020efficientdet}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=1e7d6abb8225099acc71f672b9ec336e}{%
+           family={Tan},
+           familyi={T\bibinitperiod},
+           given={Mingxing},
+           giveni={M\bibinitperiod}}}%
+        {{hash=79b11327e6066baac1563390e41c13f2}{%
+           family={Pang},
+           familyi={P\bibinitperiod},
+           given={Ruoming},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9fd2dcec218c0c88f5cf6dcdefdbadbb}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Quoc\bibnamedelima V},
+           giveni={Q\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2dd1bd6b646d9176c05dec746bd5c65}
+      \strng{fullhash}{c2dd1bd6b646d9176c05dec746bd5c65}
+      \strng{bibnamehash}{c2dd1bd6b646d9176c05dec746bd5c65}
+      \strng{authorbibnamehash}{c2dd1bd6b646d9176c05dec746bd5c65}
+      \strng{authornamehash}{c2dd1bd6b646d9176c05dec746bd5c65}
+      \strng{authorfullhash}{c2dd1bd6b646d9176c05dec746bd5c65}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}
+      \field{title}{Efficientdet: Scalable and efficient object detection}
+      \field{year}{2020}
+      \field{pages}{10781\bibrangedash 10790}
+      \range{pages}{10}
+    \endentry
+    \entry{zhou2019objects}{article}{}
+      \name{author}{3}{}{%
+        {{hash=24e39514a947d107ce59334310fc58bb}{%
+           family={Zhou},
+           familyi={Z\bibinitperiod},
+           given={Xingyi},
+           giveni={X\bibinitperiod}}}%
+        {{hash=e7cf4cb73884dff2f3b4dcbb22c0e27d}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Dequan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1daa1e2983e75c6fb9f456add4d82bd5}{%
+           family={Kr{ä}henb{ü}hl},
+           familyi={K\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{be7aca36828b0bcde82a61430496df85}
+      \strng{fullhash}{be7aca36828b0bcde82a61430496df85}
+      \strng{bibnamehash}{be7aca36828b0bcde82a61430496df85}
+      \strng{authorbibnamehash}{be7aca36828b0bcde82a61430496df85}
+      \strng{authornamehash}{be7aca36828b0bcde82a61430496df85}
+      \strng{authorfullhash}{be7aca36828b0bcde82a61430496df85}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1904.07850}
+      \field{title}{Objects as points}
+      \field{year}{2019}
     \endentry
   \enddatalist
 \endrefsection

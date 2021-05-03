@@ -2277,7 +2277,7 @@
     <bcf:citekey order="210">labelimg</bcf:citekey>
     <bcf:citekey order="211">huang2017speed</bcf:citekey>
     <bcf:citekey order="211">tfobjectdetection</bcf:citekey>
-    <bcf:citekey order="212">tfobjectdetectionmodelzoo</bcf:citekey>
+    <bcf:citekey order="212">tf1detectionmodelzoo</bcf:citekey>
     <bcf:citekey order="213">he2016deep</bcf:citekey>
     <bcf:citekey order="214">cao2020real</bcf:citekey>
     <bcf:citekey order="215">lin2017feature</bcf:citekey>
@@ -2325,6 +2325,10 @@
     <bcf:citekey order="234">sanisera</bcf:citekey>
     <bcf:citekey order="235">pasquet2017amphora</bcf:citekey>
     <bcf:citekey order="236">kisantal2019augmentation</bcf:citekey>
+    <bcf:citekey order="237">tf2detectionmodelzoo</bcf:citekey>
+    <bcf:citekey order="238">tan2020efficientdet</bcf:citekey>
+    <bcf:citekey order="239">zhou2019objects</bcf:citekey>
+    <bcf:citekey order="240">pasquet2017amphora</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
