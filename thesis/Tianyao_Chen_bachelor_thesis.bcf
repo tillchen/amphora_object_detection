@@ -2296,19 +2296,13 @@
     <bcf:citekey order="224">loshchilov2016sgdr</bcf:citekey>
     <bcf:citekey order="225">colab</bcf:citekey>
     <bcf:citekey order="226">pasquet2017amphora</bcf:citekey>
-    <bcf:citekey order="227">kisantal2019augmentation</bcf:citekey>
-    <bcf:citekey order="227">li2017perceptual</bcf:citekey>
-    <bcf:citekey order="227">eggert2017closer</bcf:citekey>
-    <bcf:citekey order="228">goldman2019precise</bcf:citekey>
-    <bcf:citekey order="228">leibe2005pedestrian</bcf:citekey>
-    <bcf:citekey order="228">arteta2013learning</bcf:citekey>
-    <bcf:citekey order="229">scuba</bcf:citekey>
-    <bcf:citekey order="229">itinari</bcf:citekey>
-    <bcf:citekey order="229">whoi</bcf:citekey>
-    <bcf:citekey order="229">phoenician</bcf:citekey>
-    <bcf:citekey order="229">auscape</bcf:citekey>
-    <bcf:citekey order="229">hakai</bcf:citekey>
-    <bcf:citekey order="229">groplan</bcf:citekey>
+    <bcf:citekey order="227">xu2018underwater</bcf:citekey>
+    <bcf:citekey order="228">kisantal2019augmentation</bcf:citekey>
+    <bcf:citekey order="228">li2017perceptual</bcf:citekey>
+    <bcf:citekey order="228">eggert2017closer</bcf:citekey>
+    <bcf:citekey order="229">goldman2019precise</bcf:citekey>
+    <bcf:citekey order="229">leibe2005pedestrian</bcf:citekey>
+    <bcf:citekey order="229">arteta2013learning</bcf:citekey>
     <bcf:citekey order="230">scuba</bcf:citekey>
     <bcf:citekey order="230">itinari</bcf:citekey>
     <bcf:citekey order="230">whoi</bcf:citekey>
@@ -2316,10 +2310,17 @@
     <bcf:citekey order="230">auscape</bcf:citekey>
     <bcf:citekey order="230">hakai</bcf:citekey>
     <bcf:citekey order="230">groplan</bcf:citekey>
-    <bcf:citekey order="231">ionian</bcf:citekey>
-    <bcf:citekey order="231">sanisera</bcf:citekey>
+    <bcf:citekey order="231">scuba</bcf:citekey>
+    <bcf:citekey order="231">itinari</bcf:citekey>
+    <bcf:citekey order="231">whoi</bcf:citekey>
+    <bcf:citekey order="231">phoenician</bcf:citekey>
+    <bcf:citekey order="231">auscape</bcf:citekey>
+    <bcf:citekey order="231">hakai</bcf:citekey>
+    <bcf:citekey order="231">groplan</bcf:citekey>
     <bcf:citekey order="232">ionian</bcf:citekey>
     <bcf:citekey order="232">sanisera</bcf:citekey>
+    <bcf:citekey order="233">ionian</bcf:citekey>
+    <bcf:citekey order="233">sanisera</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

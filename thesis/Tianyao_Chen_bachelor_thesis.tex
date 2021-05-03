@@ -782,6 +782,8 @@
     detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
     in sand, or blocked by suspended particles. We only define one class for all amphoras even if they are broken, while
     Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
+    \item Our $mAP_{50}$ score is in fact comparable with that from Xu et al. \cite{xu2018underwater} for fish detection.
+    They achieved a 0.5392 $mAP_{50}$ using YOLOv3, although they did not use $mAP_{coco}$.
   \end{itemize}
 
   We also ran the model on 2 test images shown in figure \ref{fig:test}. To our surprise, the model managed to detect
@@ -855,7 +857,6 @@
 
   \section{Conclusions}
 
-  \section{Future Work}
   % \cite{mccarthy20193d,pasquet2017amphora} define three classes as amphoras are often broken
   % \cite{kisantal2019augmentation} increase image resolution
 
