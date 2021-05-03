@@ -860,13 +860,26 @@
   \section{Conclusion and Future Work}
 
   In this paper, we have reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
-  learning, and three major object detector families. Detecting underwater amphoras is a challenging task,
-  We have then trained an SSD model based on a very small and
-  low-resolution dataset, and yet still managed to achieve 0.238 for $mAP_{coco}$ and 0.5392 for $mAP_{50}$. We hope this
-  paper can serve as a proof of concept for future studies to improve upon.
+  learning, and three major object detector families. We have then trained an SSD model based on a very small and
+  low-resolution dataset, and yet still managed to achieve 0.238 for $mAP_{coco}$ and 0.5392 for $mAP_{50}$. Detecting
+  underwater amphoras is a challenging task, as the object detectors have to overcome the difficulties posed
+  by general underwater object detection (see section \ref{sec:cvForUnderwater}), the considerable variantions of the
+  shapes of amphoras (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some shipwrecks
+  (see figure \ref{fig:test}).
+
+  We hope this paper can serve as a proof of concept for future studies, since there are many aspects to improve upon:
+
+  \begin{itemize}
+    \item The small number and the low resolution of the images in our dataset are the bottleneck towards a higher
+    performance. There are indeed very limited publicly available high resolution images for underwater amphoras
+    \cite{pasquet2017amphora}. Future studies may focus on obtaining more amphora images through AUVs and UUVs to improve
+    the $mAP$ in general. And higher resolution images like orthophotos can especially address the issue of detecting
+    small objects \cite{kisantal2019augmentation}. Plus, more data augmentation techniques like randomly change to grayscale
+    and randomly adjust brightness, contrast, and hue can be easily added in the data\_augementation\_options from the
+    TensorFlow Object Detection API to potentially further enrich the dataset.
+  \end{itemize}
 
   % \cite{mccarthy20193d,pasquet2017amphora} define three classes as amphoras are often broken
-  % \cite{kisantal2019augmentation} increase image resolution
 
   \newpage
 
