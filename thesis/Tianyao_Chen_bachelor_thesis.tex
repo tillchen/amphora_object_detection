@@ -523,12 +523,13 @@
   \cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
   (AP) by drawing the precision-recall curve (PR curve) and computing the area under the curve (AUC)
   \cite{elgendy2020deep, planche2019hands}. Finally, we get the mean average precision (mAP) by averaging
-  the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}. Note that the AP and mAP are the
-  same when it's a single-class object detetction task. The Pascal VOC metric uses mAP@0.5, which means the IOU threshold
-  is 0.5 \cite{liu2020deep, everingham2010pascal, planche2019hands}. And the MS COCO metric - the one we are using for
-  detecting amphoras - $mAP_{coco} = mAP@[0.50:0.05:0.95]$ is averaged with different IOU thresholds from 0.5 to 0.95 in
-  steps of 0.05, which rewards detectors with better localization \cite{liu2020deep, planche2019hands, cocometrics}. MS
-  COCO also introduces mAP for different scales: $mAP^{small}$ for small objects with area smaller than $32^2$ pixels,
+  the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}.
+  The traiditional Pascal VOC metric uses mAP@0.5, which means the IOU threshold is 0.5
+  \cite{liu2020deep, everingham2010pascal, planche2019hands}. The new MS COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$
+  is averaged with different IOU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better
+  localization \cite{liu2020deep, planche2019hands, cocometrics}. Note that AP is sometimes used in the COCO metric to
+  implicitly mean mAP, although we use mAP here consistently in this paper \cite{cocometrics}. MS COCO also
+  introduces mAP for different scales: $mAP^{small}$ for small objects with area smaller than $32^2$ pixels,
   $mAP^{medium}$ for medium objects with area bigger than than $32^2$ pixels and smaller than $96^2$ pixels, and
   $mAP^{big}$ for big objects with area bigger than $96^2$ pixels \cite{liu2020deep, cocometrics}.
 
@@ -856,7 +857,13 @@
 
   \clearpage
 
-  \section{Conclusions}
+  \section{Conclusion and Future Work}
+
+  In this paper, we have reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
+  learning, and three major object detector families. Detecting underwater amphoras is a challenging task,
+  We have then trained an SSD model based on a very small and
+  low-resolution dataset, and yet still managed to achieve 0.238 for $mAP_{coco}$ and 0.5392 for $mAP_{50}$. We hope this
+  paper can serve as a proof of concept for future studies to improve upon.
 
   % \cite{mccarthy20193d,pasquet2017amphora} define three classes as amphoras are often broken
   % \cite{kisantal2019augmentation} increase image resolution
