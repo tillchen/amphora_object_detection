@@ -110,25 +110,24 @@
 
   \section*{Abstract}
 
-  Consider this a separate document, although it is submitted together
-  with the rest. The abstract aims at another audience than the rest
-  of the proposal. It is directed at the final decision maker or
-  generalist, who typically is not an expert at all in your field, but
-  more a manager kind of person. Thus, don't go into any technical
-  description in the abstract, but use it to motivate the work and to
-  highlight the importance of your project.
-
-  (target size: 15-20 lines)
+  Amphoras have great archaeological significance and are often found in ancient shipwrecks. The increasingly abundant
+  visual data and the advent of more advanced deep learning algorithms have enabled us to automate the detection of
+  underwater amphoras. We trained a convolutional neural network (CNN) based model called Single Shot Detector (SSD) with
+  a 50-layer Residual Network (ResNet-50) backbone on a very small dataset with only 50 images, and still managed to
+  achieve a 0.238 MS COCO mean average precision ($mAP_{coco}$) and a 0.503 Pascal VOC mAP@0.5. Underwater amphora
+  detection is a challenging task. We believe future studies can achieve better results by increasing the size and
+  resolution of the dataset, training bleeding-edge object detectors like YOLOv5, and defining 2 separate classes for
+  the head and the body of amphoras. The code and the trained model are available at
+  \url{https://github.com/tillchen/amphora_object_detection}.
 
   \newpage
+
   \tableofcontents
 
   \clearpage
   \pagenumbering{arabic}
 
   \section{Introduction}
-
-  % TODO: A general introduction and an outline of the structure.
 
   \subsection{Motivation}
 
@@ -759,7 +758,7 @@
   \section{Evaluation}
 
   The main metric $mAP_{coco}$ (see section \ref{sec:generalobjectdetection}) from our model is 0.238, while the
-  traditional $mAP_{50}$ is 0.503. The documented $mAP_{coco}$ in the TensorFlow Detection Model Zoo for
+  traditional mAP@0.5 is 0.503. The documented $mAP_{coco}$ in the TensorFlow Detection Model Zoo for
   ssd\_resnet\_50\_fpn\_coco is 0.35, which is measured on the COCO validation set. Our model's performance is indeed
   lower than that in the model zoo. And it is somewhat difficult to perform a direct comparison with the result from
   Pasquet et al. \cite{pasquet2017amphora}, as they did not compute the $mAP$ and only mentioned that they detected
@@ -783,8 +782,8 @@
     detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
     in sand, or blocked by suspended particles. We only define one class for all amphoras even if they are broken, while
     Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
-    \item Our $mAP_{50}$ score is in fact comparable with that from Xu et al. \cite{xu2018underwater} for fish detection.
-    They achieved a 0.5392 $mAP_{50}$ using YOLOv3, although they did not use $mAP_{coco}$.
+    \item Our mAP@0.5 score is in fact comparable with that from Xu et al. \cite{xu2018underwater} for fish detection.
+    They achieved a 0.5392 mAP@0.5 using YOLOv3, although they did not use $mAP_{coco}$.
   \end{itemize}
 
   We also ran the model on 2 test images shown in figure \ref{fig:test}. To our surprise, the model managed to detect
@@ -862,7 +861,7 @@
   In this paper, we have reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
   learning, and three major object detector families. We have then trained an SSD model with a ResNet-50 backbone
   based on a very small and low-resolution dataset, and yet still managed to achieve a 0.238 $mAP_{coco}$ and a 0.5392
-  $mAP_{50}$. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the same
+  mAP@0.5. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the same
   difficulties posed by general underwater object detection (see section \ref{sec:cvForUnderwater}), the considerable
   variantions of the amphoras' shapes (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some
   shipwrecks (see figure \ref{fig:test}).
