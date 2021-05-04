@@ -71,58 +71,34 @@
       \field{pages}{98\bibrangedash 108}
       \range{pages}{11}
     \endentry
-    \entry{cousteau1954fish}{article}{}
+    \entry{will1977ancient}{article}{}
       \name{author}{1}{}{%
-        {{hash=e0c683bca205f21ef839ad3e5bd57344}{%
-           family={Cousteau},
-           familyi={C\bibinitperiod},
-           given={Jacques\bibnamedelima Yves},
-           giveni={J\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=e41d54ca92c7efd156b141dd3057e18c}{%
+           family={Will},
+           familyi={W\bibinitperiod},
+           given={Elizabeth\bibnamedelima Lyding},
+           giveni={E\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
-        {National Geographic Society}%
+        {Archaeological Institute of America}%
       }
-      \strng{namehash}{e0c683bca205f21ef839ad3e5bd57344}
-      \strng{fullhash}{e0c683bca205f21ef839ad3e5bd57344}
-      \strng{bibnamehash}{e0c683bca205f21ef839ad3e5bd57344}
-      \strng{authorbibnamehash}{e0c683bca205f21ef839ad3e5bd57344}
-      \strng{authornamehash}{e0c683bca205f21ef839ad3e5bd57344}
-      \strng{authorfullhash}{e0c683bca205f21ef839ad3e5bd57344}
-      \field{sortinit}{6}
-      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \strng{namehash}{e41d54ca92c7efd156b141dd3057e18c}
+      \strng{fullhash}{e41d54ca92c7efd156b141dd3057e18c}
+      \strng{bibnamehash}{e41d54ca92c7efd156b141dd3057e18c}
+      \strng{authorbibnamehash}{e41d54ca92c7efd156b141dd3057e18c}
+      \strng{authornamehash}{e41d54ca92c7efd156b141dd3057e18c}
+      \strng{authorfullhash}{e41d54ca92c7efd156b141dd3057e18c}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{National geographic}
-      \field{number}{1}
-      \field{title}{Fish men discover a 2,200-year-old Greek ship}
-      \field{volume}{105}
-      \field{year}{1954}
-      \field{pages}{1\bibrangedash 36}
-      \range{pages}{36}
-    \endentry
-    \entry{parker1984shipwrecks}{article}{}
-      \name{author}{1}{}{%
-        {{hash=b92e9ede28a5a151b87d91e72e56fa1b}{%
-           family={Parker},
-           familyi={P\bibinitperiod},
-           given={Anthony\bibnamedelima J},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Archaeological Review from Cambridge}%
-      }
-      \strng{namehash}{b92e9ede28a5a151b87d91e72e56fa1b}
-      \strng{fullhash}{b92e9ede28a5a151b87d91e72e56fa1b}
-      \strng{bibnamehash}{b92e9ede28a5a151b87d91e72e56fa1b}
-      \strng{authorbibnamehash}{b92e9ede28a5a151b87d91e72e56fa1b}
-      \strng{authornamehash}{b92e9ede28a5a151b87d91e72e56fa1b}
-      \strng{authorfullhash}{b92e9ede28a5a151b87d91e72e56fa1b}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Shipwrecks and ancient trade in the Mediterranean}
-      \field{year}{1984}
+      \field{journaltitle}{Archaeology}
+      \field{number}{4}
+      \field{title}{The ancient commercial amphora}
+      \field{volume}{30}
+      \field{year}{1977}
+      \field{pages}{264\bibrangedash 270}
+      \range{pages}{7}
     \endentry
     \entry{worldhistory}{online}{}
       \name{author}{1}{}{%
@@ -140,8 +116,8 @@
       \strng{authorbibnamehash}{765efb7130f175a6929125ab1f5be48e}
       \strng{authornamehash}{765efb7130f175a6929125ab1f5be48e}
       \strng{authorfullhash}{765efb7130f175a6929125ab1f5be48e}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Amphora}
@@ -156,6 +132,104 @@
       \verb{url}
       \verb https://www.worldhistory.org/Amphora/
       \endverb
+    \endentry
+    \entry{foley2012aspects}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7524f5c21325b8e7c1a417c3de27193d}{%
+           family={Foley},
+           familyi={F\bibinitperiod},
+           given={Brendan\bibnamedelima P},
+           giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=ca1de52873a473c8b7fe71d2aa85b382}{%
+           family={Hansson},
+           familyi={H\bibinitperiod},
+           given={Maria\bibnamedelima C},
+           giveni={M\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=27650e1efcc301158f347d0926e833b9}{%
+           family={Kourkoumelis},
+           familyi={K\bibinitperiod},
+           given={Dimitris\bibnamedelima P},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=cfb226262484bb9bc63cd7496dbca2d6}{%
+           family={Theodoulou},
+           familyi={T\bibinitperiod},
+           given={Theotokis\bibnamedelima A},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{ebb0b994f081f0702d4dac5e09ddf873}
+      \strng{fullhash}{ec8776dbf0c0ffa2461ac579c32749ec}
+      \strng{bibnamehash}{ebb0b994f081f0702d4dac5e09ddf873}
+      \strng{authorbibnamehash}{ebb0b994f081f0702d4dac5e09ddf873}
+      \strng{authornamehash}{ebb0b994f081f0702d4dac5e09ddf873}
+      \strng{authorfullhash}{ec8776dbf0c0ffa2461ac579c32749ec}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Archaeological Science}
+      \field{number}{2}
+      \field{title}{Aspects of ancient Greek trade re-evaluated with amphora DNA evidence}
+      \field{volume}{39}
+      \field{year}{2012}
+      \field{pages}{389\bibrangedash 398}
+      \range{pages}{10}
+    \endentry
+    \entry{grace1979amphoras}{book}{}
+      \name{author}{1}{}{%
+        {{hash=412fda54388346c8c9f88782689aca97}{%
+           family={Grace},
+           familyi={G\bibinitperiod},
+           given={Virginia},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ASCSA}%
+      }
+      \strng{namehash}{412fda54388346c8c9f88782689aca97}
+      \strng{fullhash}{412fda54388346c8c9f88782689aca97}
+      \strng{bibnamehash}{412fda54388346c8c9f88782689aca97}
+      \strng{authorbibnamehash}{412fda54388346c8c9f88782689aca97}
+      \strng{authornamehash}{412fda54388346c8c9f88782689aca97}
+      \strng{authorfullhash}{412fda54388346c8c9f88782689aca97}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Amphoras and the ancient wine trade}
+      \field{volume}{6}
+      \field{year}{1979}
+    \endentry
+    \entry{grace1985middle}{article}{}
+      \name{author}{1}{}{%
+        {{hash=412fda54388346c8c9f88782689aca97}{%
+           family={Grace},
+           familyi={G\bibinitperiod},
+           given={Virginia},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {JSTOR}%
+      }
+      \strng{namehash}{412fda54388346c8c9f88782689aca97}
+      \strng{fullhash}{412fda54388346c8c9f88782689aca97}
+      \strng{bibnamehash}{412fda54388346c8c9f88782689aca97}
+      \strng{authorbibnamehash}{412fda54388346c8c9f88782689aca97}
+      \strng{authornamehash}{412fda54388346c8c9f88782689aca97}
+      \strng{authorfullhash}{412fda54388346c8c9f88782689aca97}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Hesperia: The Journal of the American School of Classical Studies at Athens}
+      \field{number}{1}
+      \field{title}{The Middle Stoa dated by amphora stamps}
+      \field{volume}{54}
+      \field{year}{1985}
+      \field{pages}{1\bibrangedash 54}
+      \range{pages}{54}
     \endentry
     \entry{elgendy2020deep}{book}{}
       \name{author}{1}{}{%
@@ -360,8 +434,8 @@
       \strng{authorbibnamehash}{6245dc9df8befaacb2cb06e5dcc128ca}
       \strng{authornamehash}{6245dc9df8befaacb2cb06e5dcc128ca}
       \strng{authorfullhash}{d3983817d06fd6ba677133183a937f86}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE transactions on visualization and computer graphics}
@@ -421,8 +495,8 @@
       \strng{authorbibnamehash}{99d65b9a6d03c42686ad12af9b2d8795}
       \strng{authornamehash}{99d65b9a6d03c42686ad12af9b2d8795}
       \strng{authorfullhash}{726ae226475401564e4dfe2420f52e9a}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1406.2661}
@@ -802,8 +876,8 @@
       \strng{authorbibnamehash}{d3b14b5e669a6ed30e272ba4fe539b6c}
       \strng{authornamehash}{d3b14b5e669a6ed30e272ba4fe539b6c}
       \strng{authorfullhash}{d3b14b5e669a6ed30e272ba4fe539b6c}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{IEEE Sensors Journal}
@@ -831,8 +905,8 @@
       \strng{authorbibnamehash}{fb145d57cc08627137fcc9ec5d76b1b9}
       \strng{authornamehash}{fb145d57cc08627137fcc9ec5d76b1b9}
       \strng{authorfullhash}{fb145d57cc08627137fcc9ec5d76b1b9}
-      \field{sortinit}{3}
-      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the 1992 Symposium on Autonomous Underwater Vehicle Technology}
@@ -1116,8 +1190,8 @@
       \strng{authorbibnamehash}{d17e6557c5836d2d978179999ea1037f}
       \strng{authornamehash}{d17e6557c5836d2d978179999ea1037f}
       \strng{authorfullhash}{d84b0b9d19401c079b1a67dd4962d9e0}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{number}{2}
@@ -1742,8 +1816,8 @@
       \strng{authorbibnamehash}{1c9164ee927d05ae2f91feda20d1ace3}
       \strng{authornamehash}{1c9164ee927d05ae2f91feda20d1ace3}
       \strng{authorfullhash}{79c1456e1800f6227f7e0f330efe55e2}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1704.04861}
@@ -1784,8 +1858,8 @@
       \strng{authorbibnamehash}{70179dd377b16c4cfcc0748ef0bd028a}
       \strng{authornamehash}{70179dd377b16c4cfcc0748ef0bd028a}
       \strng{authorfullhash}{8d58d04315a5e1c06300772330b235d7}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
@@ -1818,8 +1892,8 @@
       \strng{authorbibnamehash}{9bec677974ec98229fc30290681f1fea}
       \strng{authornamehash}{9bec677974ec98229fc30290681f1fea}
       \strng{authorfullhash}{9bec677974ec98229fc30290681f1fea}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
@@ -2968,8 +3042,8 @@
       \strng{authorbibnamehash}{a51b34338916c7d7c77fa679d5fff35c}
       \strng{authornamehash}{a51b34338916c7d7c77fa679d5fff35c}
       \strng{authorfullhash}{90bb22873d527bc785576e00a6a609a7}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{OCEANS 2015-MTS/IEEE Washington}
@@ -3015,8 +3089,8 @@
       \strng{authorbibnamehash}{043c8ffb8b84162de5ed5c9d32afe63e}
       \strng{authornamehash}{043c8ffb8b84162de5ed5c9d32afe63e}
       \strng{authorfullhash}{6de5e206aca0099558ebc613a01e63e1}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2016 IEEE Winter Applications of Computer Vision Workshops (WACVW)}
