@@ -286,26 +286,26 @@
 
   \label{sec:cnn}
 
-  Convolutional Neural Networks (CNNs) were inspired by the brain's visual cortex, and they have been used in computer
-  vision since the 1980s \cite{geron2019hands}. We can not simply use a deep neural network with fully connected layers
-  for computer vision, as it breaks down for large images due to the huge number of parameters it requires
-  \cite{geron2019hands}. CNNs also have successful applications in other domains like recommender systems
-  \cite{van2013deep} and natural language processing (NLP) \cite{collobert2008unified}.
+  Convolutional Neural Networks (CNNs) \cite{lecun1989backpropagation} were inspired by the brain's visual cortex,
+  and they have been used in computer vision since the 1980s \cite{geron2019hands}. We can not simply use a deep neural
+  network with fully connected layers for computer vision, as it breaks down for large images due to the immense
+  number of parameters \cite{geron2019hands}. CNNs also have successful applications in other domains like recommender
+  systems \cite{van2013deep} and natural language processing (NLP) \cite{collobert2008unified}.
 
   Hubel et al. \cite{hubel1959single, hubel1959receptive, hubel1968receptive} found that many biological neurons have
-  a small receptive field, which  means they only react to visual stimuli in a limited region of the visual field
-  \cite{geron2019hands}. Some neurons only react to horizontal lines, while others only react to lines with
-  different orientations \cite{geron2019hands}. Some neurons have larger receptive fields, and they react to more complex
+  a small local receptive field, which  means they only fire if the visual stimuli are present in a limited region of
+  the visual field \cite{geron2019hands}. Some neurons only react to horizontal lines, whereas the others only react to
+  lines oriented differently \cite{geron2019hands}. Some neurons have larger receptive fields to react to more complex
   patterns formed by lower-level patterns \cite{geron2019hands}.
 
-  Neurons in the first convolutional layer are only connected to pixels in their receptive fields, and neurons in the
-  second convolutional layer are only connected to the neurons in a small receptive field in the first layer
-  \cite{geron2019hands}. This allows the CNN to concentrate on lower-level features in the first hidden layer, then
-  combine them into higher-level features in the second hidden layer, and so on \cite{geron2019hands}.
+  The neurons in the first convolutional layer are only connected to pixels in the receptive fields, and those in
+  the next convolutional layer are only connected to the neurons in the receptive fields from the previous layer
+  \cite{geron2019hands}. This enables CNNs to extract low-level visual features in the first few layers and then combine
+  them into more complex features in the subsequent layers.
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{cnn_layers.png}
+      \includegraphics[width=.5\textwidth]{cnn_layers.png}
     \end{center}
     \caption{CNN layers with rectangular receptive fields. Source: \cite{geron2019hands}.}
   \end{figure}
