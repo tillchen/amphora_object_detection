@@ -3708,8 +3708,8 @@
       \strng{authorbibnamehash}{074dd699710da0ec1eb45f13b31788e3}
       \strng{authornamehash}{074dd699710da0ec1eb45f13b31788e3}
       \strng{authorfullhash}{074dd699710da0ec1eb45f13b31788e3}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{TensorFlow 1 Detection Model Zoo}

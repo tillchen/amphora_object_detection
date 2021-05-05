@@ -35,9 +35,9 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Fast R-CNN}{12}{section*.28}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Faster R-CNN}{13}{section*.30}
+\contentsline {paragraph}{Faster R-CNN}{12}{section*.30}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsubsection}{\numberline {1.4.3}Single Shot Detector (SSD)}{13}{subsubsection.1.4.3}
+\contentsline {subsubsection}{\numberline {1.4.3}Single Shot Detector (SSD)}{14}{subsubsection.1.4.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.4.4}You Only Look Once (YOLO)}{15}{subsubsection.1.4.4}
 \defcounter {refsection}{0}\relax 
@@ -49,7 +49,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.2}Model}{16}{subsection.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.3}Model Training}{17}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.3}Model Training}{16}{subsection.3.3}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4}Evaluation}{17}{section.4}
 \defcounter {refsection}{0}\relax 

@@ -518,7 +518,7 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{pr_curve.png}
+      \includegraphics[width=.5\textwidth]{pr_curve.png}
     \end{center}
     \caption{A PR curve with a 0.88 AUC/AP. Source: \cite{planche2019hands}.}
   \end{figure}
@@ -535,7 +535,7 @@
   \begin{enumerate}
     \item Region proposal with a greedy search algorithm called selective search, which finds RoIs by combining similar
     pixels into boxes.
-    \item Feature extractor with a pretrained CNN.
+    \item A pretrained CNN as the network backbone.
     \item Classification with a linear SVM.
     \item Localization with a bounding-box regressor.
   \end{enumerate}
@@ -550,7 +550,7 @@
   R-CNN has the following disadvantages \cite{elgendy2020deep, girshick2014rich, girshick2015fast}:
 
   \begin{itemize}
-    \item The FPS is very low. The selective search algorithm proposes about 2000 RoIs, which is every computationally
+    \item The FPS is very low. The selective search algorithm proposes about 2000 RoIs, which is computationally
     expensive as the CNN has to process each proposal separately.
     \item The training is multi-stage, inelegant, expensive, and not end-to-end. It involves training three components
     separately: the CNN, the SVM, and the bounding-box regressor.
@@ -563,9 +563,9 @@
   \begin{itemize}
     \item The CNN goes before region proposal instead of after, so that the image only goes through the CNN once instead
     of 2000 RoIs going through the CNN separately.
-    \item Classification is done by the softmax layer of the CNN instead of the SVM. And localization is also an output
+    \item Classification is performed by the softmax layer of the CNN instead of the SVM. And localization is also an output
     layer of the CNN.
-    \item A RoI max pooling layer is added after region proposal to fix the input size for the fully connected layers.
+    \item A RoI max pooling layer is added after region proposal to reshape the input size for the fully connected layers.
     \item A multi-task loss function is used.
   \end{itemize}
 
@@ -589,7 +589,7 @@
     and RoIs, and it can be used as a standalone network for single-class object detection. It also shares the features
     with the detection network, which enables region proposal to be nearly cost-free.
     \item Anchors are introduced as reference boxes at different scales and aspect ratios. Thus the regression layer
-    only needs to output the offsets of coordinates, width, and height from the anchors. The anchors are created using
+    only needs to output the offsets of the coordinates, width, and height from the anchors. The anchors are created using
     the sliding-window approach. By default 9 anchors (3 scales and 3 aspect ratios) centered at each sliding window are
     created for each window.
   \end{itemize}
@@ -608,11 +608,12 @@
     \caption{Faster R-CNN. Source: \cite{elgendy2020deep}.}
   \end{figure}
 
-  To summarize, the R-CNN family are two-stage detectors that separate region proposal and detection \cite{elgendy2020deep}.
-  They can not achieve real-time detection (only 7 FPS), and they are too computationally intensive
-  \cite{elgendy2020deep, liu2016ssd, redmon2016you}. One-stage detectors like Single Shot Detector (SSD) and You Only
-  Look Once (YOLO) skip the region proposal to achieve real-time detection speed \cite{elgendy2020deep}. In general,
-  one-stage detectors sacrifices some accuracy for speed \cite{elgendy2020deep, lin2017focal}.
+  To summarize, the R-CNN family are two-stage detectors that separate region proposal and detection
+  \cite{elgendy2020deep, liu2020deep}. They can not achieve real-time detection (only 7 FPS), and they are very
+  computationally intensive \cite{elgendy2020deep, liu2016ssd, redmon2016you}.
+  One-stage detectors like Single Shot Detector (SSD) and You Only Look Once (YOLO) skip the region proposal to achieve
+  real-time detection speed \cite{elgendy2020deep}. In general, one-stage detectors sacrifices some accuracy for speed
+  \cite{elgendy2020deep, lin2017focal}.
 
   \subsubsection{Single Shot Detector (SSD)}
 
@@ -620,7 +621,7 @@
   \cite{elgendy2020deep, liu2016ssd}. It has three main components \cite{elgendy2020deep, liu2016ssd}:
 
   \begin{itemize}
-    \item The base network, which is VGG-16 in the original paper. It also uses anchors called priors like in Faster R-CNN.
+    \item The backbone network, which is VGG-16 in the original paper. It also uses anchors called priors like in Faster R-CNN.
     But the network sends the bounding box offsets and the class scores to NMS directly when it finds a bounding box that
     contains the object features.
     \item Multi-scale feature layers, which are convolutional layers that decrease in size progressively to detect objects
@@ -643,17 +644,12 @@
     \caption{SSD. Source: \cite{elgendy2020deep}.}
   \end{figure}
 
-  In short, SSD300 (300 x 300 input size) is able to achieve real-time detection with 59 FPS, while SSD512 outperforms
-  Faster R-CNN in terms of mAP \cite{liu2016ssd}.
-
   \subsubsection{You Only Look Once (YOLO)}
 
   Like the R-CNN family, the YOLO family has been going through a series of improvements since the original YOLO paper
   was published. YOLO is also a one-stage real-time detector simlar to SSD. YOLOv1 \cite{redmon2016you} introduces the
   general architecture; YOLOv2 \cite{redmon2017yolo9000} adds anchors similar to Faster R-CNN and SSD; YOLOv3
-  \cite{redmon2018yolov3} further refines the architecture and the training process; YOLOv4 \cite{bochkovskiy2020yolov4}
-  makes use of some universal object detector features called "bag of freebies" and "bag of specials"; YOLOv5 \cite{yolov5}
-  is under active development and authors have yet to publish a paper.
+  \cite{redmon2018yolov3} further refines the architecture and the training process.
 
   YOLO divides the image into a grid, and a grid cell is responsible for detecting an object if the center of the object
   is inside the cell \cite{elgendy2020deep, redmon2016you}. The backbone network is called DarkNet, which is inspired by
@@ -668,9 +664,11 @@
     of 52 x 52 to detect small objects. Source: \cite{elgendy2020deep}.}
   \end{figure}
 
-  YOLOv4, a bleeding-edge detector introduced in 2020, utilizes numerous new features to improve the performance
-  from YOLOv3, including DropBlock regulariztion \cite{ghiasi2018dropblock}, Mish activation \cite{misra2019mish},
-  Self-Adversarial Training \cite{bochkovskiy2020yolov4}, etc.
+  YOLOv4 \cite{bochkovskiy2020yolov4}, a bleeding-edge detector introduced in 2020, utilizes numerous new features to
+  improve the performance from YOLOv3, including DropBlock regulariztion \cite{ghiasi2018dropblock}, Mish activation
+  \cite{misra2019mish}, Self-Adversarial Training \cite{bochkovskiy2020yolov4}, etc.
+
+  YOLOv5 \cite{yolov5} is under active development and the authors have yet to publish a paper.
 
   \section{Related Work}
 
