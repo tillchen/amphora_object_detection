@@ -394,11 +394,10 @@
   \end{figure}
 
   However, deep learning's performance depends on obtaining large datasets with high image resolution \cite{o2019deep}.
-  % TODO: Check the numbers.
   Some popular public datasets like PASCAL Visual Object Classes (VOC) \cite{everingham2010pascal}, ImageNet
   \cite{russakovsky2015imagenet}, and Microsoft Common Objects in Context (COCO) \cite{lin2014microsoft}
-  have respectively 500 thousand, 14 million, and 328 thousand images. Having a highly limited dataset for a task may
-  cause deep learning to have poorer results than traiditional computer vision.
+  have respectively 11 thousand, 14 million, and 328 thousand images \cite{liu2020deep}. Having a highly limited dataset
+  for a task may cause deep learning to have poorer results than traiditional computer vision.
 
   \subsection{Object Detection}
 
@@ -409,8 +408,7 @@
   challenging problems in computer vision, as it can be considered as both a regression task (localization by predicting
   the bounding box) and a classification task (predicting the object class in each bounding box)
   \cite{elgendy2020deep, girshick2014rich, geron2019hands}. Plus, the large variantions in viewpoints, poses, occlusions,
-  and lighting conditions make it even more difficult to perform perfect object detection
-  \cite{zhao2019object, liu2020deep}.
+  and lighting conditions add extra difficulties to perform perfect object detection \cite{zhao2019object, liu2020deep}.
 
   The traditional sliding window approach is to train a CNN to classify and locate a single object, and then slide it
   across the image \cite{geron2019hands, pasquet2017amphora, girshick2014rich, redmon2016you}. This approach slides the
@@ -419,7 +417,7 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{sliding_window.png}
+      \includegraphics[width=.5\textwidth]{sliding_window.png}
     \end{center}
     \caption{The sliding window approach for object detection. Source: \cite{o2019deep}.}
   \end{figure}
@@ -437,20 +435,19 @@
   \label{sec:generalobjectdetection}
 
   Before we dive into specific object detection frameworks, it's worth understanding the four high-level components of
-  general object detection frameworks \cite{elgendy2020deep}.
+  general object detection frameworks.
 
   \paragraph{Region Proposal}
 
-  The region proposal algorithm finds regions of interest (RoIs) that are further processed by the framework by
-  discarding regions with low objectness score \cite{elgendy2020deep}. The objectness score indicates the probability of
-  the region containing an object instead of the background, and it is the class probability for a single-class object
-  detection task \cite{elgendy2020deep}.
+  The region proposal algorithm finds regions of interest (RoIs) that are then further processed by the model
+  \cite{elgendy2020deep}. This is achieved by discarding regions with low objectness score, which indicates the probability
+  of the region containing an object instead of the background \cite{elgendy2020deep}.
 
-  \paragraph{Network Predictions}
+  \paragraph{Backbone Network}
 
-  A pretrained CNN is used as the backbone for feature extraction and makes the bounding-box prediction and class prediction
-  for each region \cite{elgendy2020deep}. The bounding-box prediction is the tuple $(x, y, w, h)$, where $x$ and $y$ are
-  the coordinates of the center and $w, h$ are the width and the height \cite{elgendy2020deep}.
+  A pretrained CNN is used as the backbone for feature extraction and performs the bounding-box and class predictions
+  \cite{elgendy2020deep}. The bounding-box prediction is the tuple $(x, y, w, h)$, where $x$ and $y$ are the coordinates
+  of the center and $w, h$ are the width and the height \cite{elgendy2020deep}.
 
   \paragraph{Non-Maximum Suppression (NMS)}
 
@@ -459,7 +456,7 @@
   \cite{elgendy2020deep}:
 
   \begin{enumerate}
-    \item Discard boxes with predictions less than the tunable confidence threshold.
+    \item Discard boxes with prediction values smaller than the tunable confidence threshold.
     \item Select the box with the highest probability.
     \item Compute the overlap - intersection over union (IoU) - of the boxes that have the same class prediction.
     Boxes with high IoU are averaged together.
@@ -485,13 +482,13 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{iou.png}
+      \includegraphics[width=.6\textwidth]{iou.png}
     \end{center}
     \caption{IOU. Source: \cite{elgendy2020deep}.}
   \end{figure}
 
-  We say that the prediction is a true positive (TP) if the predicted class is the same as the ground truth and the IoU
-  value is more than the tunable threshold, otherwise it is a false positive (FP)
+  We say that a prediction is a true positive (TP) if the predicted class is the same as the ground truth and the IoU
+  value is higher than the tunable threshold, otherwise it is a false positive (FP)
   \cite{liu2020deep, elgendy2020deep, planche2019hands}. A false negative (FN) is a ground truth that does not have a
   prediction \cite{planche2019hands}. Then we can define precision and recall as follows
   \cite{burkov2019hundred, davis2006relationship}:
@@ -502,30 +499,28 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{precision_recall.png}
+      \includegraphics[width=\textwidth]{precision_recall.png}
     \end{center}
     \caption{Precision and recall. Source: \cite{precisionrecall}.}
   \end{figure}
 
   There is a trade-off between precision and recall
   \cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
-  (AP) by drawing the precision-recall curve (PR curve) and computing the area under the curve (AUC)
-  \cite{elgendy2020deep, planche2019hands}. Finally, we get the mean average precision (mAP) by averaging
-  the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}.
-  The traiditional Pascal VOC metric uses mAP@0.5, which means the IOU threshold is 0.5
-  \cite{liu2020deep, everingham2010pascal, planche2019hands}. The new MS COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$
-  is averaged with different IOU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better
-  localization \cite{liu2020deep, planche2019hands, cocometrics}. Note that AP is sometimes used in the COCO metric to
-  implicitly mean mAP, although we use mAP here consistently in this paper \cite{cocometrics}. MS COCO also
-  introduces mAP for different scales: $mAP^{small}$ for small objects with area smaller than $32^2$ pixels,
-  $mAP^{medium}$ for medium objects with area bigger than than $32^2$ pixels and smaller than $96^2$ pixels, and
-  $mAP^{big}$ for big objects with area bigger than $96^2$ pixels \cite{liu2020deep, cocometrics}.
+  (AP) by drawing the PR curve and computing the area under the curve (AUC) \cite{elgendy2020deep, planche2019hands}.
+  Finally, we get the mean average precision (mAP) by averaging the AP over all the classes
+  \cite{elgendy2020deep, geron2019hands, planche2019hands}. The traiditional Pascal VOC metric uses mAP@0.5, which means
+  the IOU threshold is 0.5 \cite{liu2020deep, everingham2010pascal}. The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$
+  is averaged over different IOU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better
+  localization \cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean mAP
+  \cite{cocometrics}, although we use mAP here consistently in this paper. COCO also introduced mAP for different scales:
+  $mAP^{small}$ for small objects ($area < 32^2$), $mAP^{medium}$ for medium objects ($32^2 < area < 96^2$),
+  and $mAP^{big}$ for big objects ($area > 96^2$) \cite{liu2020deep, cocometrics}.
 
   \begin{figure}[ht]
     \begin{center}
       \includegraphics[width=.8\textwidth]{pr_curve.png}
     \end{center}
-    \caption{A PR curve with 0.88 AUC. Source: \cite{planche2019hands}.}
+    \caption{A PR curve with a 0.88 AUC/AP. Source: \cite{planche2019hands}.}
   \end{figure}
 
   \subsubsection{Region-Based Convolutional Neural Networks (R-CNN)}
