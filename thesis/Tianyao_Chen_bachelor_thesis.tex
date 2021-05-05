@@ -843,25 +843,25 @@ learning, and three major object detector families. We then trained an SSD model
 on a very small and low-resolution dataset, and we still managed to achieve a 0.238 $mAP_{coco}$ and a 0.5392
 mAP@0.5. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the same
 difficulties posed by general underwater object detection (see section \ref{sec:cvForUnderwater}), the considerable
-variantions of the amphoras' shapes (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some
+variations of the amphoras' shapes (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some
 shipwrecks (see figure \ref{fig:test}).
 
-We hope this paper can serve as a proof of concept for future studies, since there are many aspects to improve upon:
+We hope this paper can serve as a proof of concept for future studies since there are many aspects to improve upon:
 
 \begin{itemize}
-  \item The small number and the low resolution of the images in our dataset are the bottleneck towards a higher
-  performance. There are indeed very limited publicly available high resolution images for underwater amphoras
+  \item The small number and the low resolution of the images in our dataset are the bottlenecks towards higher
+  performance. There are indeed very limited publicly available high-resolution images for underwater amphoras
   \cite{pasquet2017amphora}. Future studies may focus on obtaining more amphora images through AUVs and UUVs to improve
   the mAP. Higher resolution images like orthophotos can especially address the issue of detecting
   small objects \cite{kisantal2019augmentation} and also the issue of detecting overlapping objects by reducing labeling
   errors. Plus, more data augmentation techniques like randomly change to grayscale and randomly adjust brightness,
-  contrast, and hue can be easily added in the data\_augementation\_options from the TensorFlow Object Detection API
+  contrast, and hue can be easily added in the data\_augmentation\_options from the TensorFlow Object Detection API
   to potentially further enrich the dataset.
   \item Many bleeding-edge object detectors with better performance are emerging. The SSD model in this study
-  has a 0.35 $mAP_{coco}$ and a 76 ms detection speed on the COCO validation set. YOLOv5 is able to achieve a 0.367
+  has a 0.35 $mAP_{coco}$ and a 76 ms detection speed on the COCO validation set. YOLOv5 can achieve a 0.367
   $mAP_{coco}$ with a mere 2 ms detection speed or a 0.504 $mAP_{coco}$ with a 6.1 ms detection speed for 640 x 640 images,
   and a 0.55 $mAP_{coco}$ with a 70.8 ms detection speed for 1280 x 1280 images. It will be worth experimenting with
-  YOLOv5 after its authors publish a paper and its active development stablizes. Some other models in the TensorFlow 2
+  YOLOv5 after its authors publish a paper and its active development stabilizes. Some other models in the TensorFlow 2
   Detection Model Zoo \cite{tf2detectionmodelzoo} are also interesting to look into. Note that we used the SSD
   model in the TensorFlow 1 Detection Model Zoo, as the TensorFlow 2 version requires two scripts to be running
   to train and evaluate at the same time, and it is not possible to do so on Google Colaboratory. But one with access to
@@ -870,7 +870,7 @@ We hope this paper can serve as a proof of concept for future studies, since the
   from the TensorFlow 2 Detection Model Zoo. CenterNet \cite{zhou2019objects}, a novel keypoint-based detector that
   models an object as a single center point and regresses to the object size without NMS
   (see section \ref{sec:generalobjectdetection}), is also available in the TensorFlow 2 Detection Model Zoo. CenterNet
-  is able to achieve a 0.417 $mAP_{coco}$ with a 6 ms detection speed or a 0.614 $mAP_{coco}$ with a 76 ms detection
+  can achieve a 0.417 $mAP_{coco}$ with a 6 ms detection speed or a 0.614 $mAP_{coco}$ with a 76 ms detection
   speed for 512 x 512 images, and a 0.645 $mAP_{coco}$ with a 211 ms detection speed for 1024 x 1024 images.
   \item Following the approach from Pasquet et al. \cite{pasquet2017amphora}, we could try to define 2 separate classes
   for the head and the body to better detect broken instances.
