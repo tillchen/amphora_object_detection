@@ -695,43 +695,42 @@
   \subsection{Data}
 
   The dataset consists of 50 images (294 objects) in the training set and 7 images (31 objects) in the validation set,
-  which maintains the 90\% : 10\% ratio for the object count. Two additional images are used as the test set. All the
-  images are obtained through various sources
-  \cite{googleimages, scuba, itinari, whoi, phoenician, auscape, hakai, groplan, ionian, sanisera} and are annotated
+  which maintains the 90\% : 10\% ratio for the object count. Two additional images were used as the test set. All the
+  images were obtained through various sources
+  \cite{googleimages, scuba, itinari, whoi, phoenician, auscape, hakai, groplan, ionian, sanisera} and were labeled
   with LabelImg \cite{labelimg}.
 
   \subsection{Model}
 
-  Out of the three families of obejct detection frameworks we have discussed in section \ref{sec:objectdetection}, SSD is
+  Out of the three families of obejct detection frameworks we have discussed in section \ref{sec:objectdetection}, SSD was
   chosen due to the following reasons:
 
   \begin{itemize}
-    \item Faster R-CNN is too computationally intensive and too slow for AUVs and UUVs, which require real-time detection.
+    \item Faster R-CNN is too computationally intensive and too slow for AUVs and UUVs.
     \item YOLOv5, the state-of-art model of the YOLO family, is under active development and the authors have yet to
     publish a paper.
   \end{itemize}
 
-  The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} is used to build the model. The model name
-  is ssd\_resnet\_50\_fpn\_coco in the TensorFlow 1 Detection Model Zoo \cite{tf1detectionmodelzoo}. The backbone
-  network is changed from VGG-16 in the original SSD paper to ResNet-50 (50-layer ResNet)
-  (see section \ref{sec:cnn}), as it improves the mAP significantly \cite{he2016deep}. Similar to the approach
-  from Can et al. \cite{cao2020real} for crab detection, Feature Pyramid Network (FPN) is added to improve the detection at
-  different scales \cite{lin2017feature}.
+  The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} was used. ssd\_resnet\_50\_fpn\_coco
+  is the model name in the TensorFlow 1 Detection Model Zoo \cite{tf1detectionmodelzoo}. The backbone network
+  is ResNet-50 (50-layer ResNet) (see section \ref{sec:cnn}) instead of VGG-16 in the original SSD paper to, as it
+  improves the mAP significantly \cite{he2016deep}. Similar to the approach from Can et al. \cite{cao2020real} for crab
+  detection, Feature Pyramid Network (FPN) was added to improve the detection at different scales \cite{lin2017feature}.
 
   \subsection{Model Training}
 
-  Transfer learning \cite{torrey2010transfer} is used as the model is pretrained on the COCO dataset, which means the
+  Transfer learning \cite{torrey2010transfer} was used as the model was pretrained on the COCO dataset, which means the
   weights and biases are restored instead of being randomly intialized and the model does not have to learn the low-level
-  features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config are adjusted
-  to 1, 8, and 7 respectively in the configuration file, while the rest of fields stay unchanged. The images are reshaped
+  features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config were adjusted
+  to 1, 8, and 7 respectively in the configuration file, while the rest of fields were unchanged. The images were reshaped
   to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a modified version of ReLU that caps
   the maximum value at 6 and thus encourages the model to learn sparse features earlier
-  \cite{krizhevsky2010convolutional}. We use $L_2$ regularization \cite{ng2004feature} to reduce overfitting
-  \cite{hawkins2004problem}. Data augmentation \cite{geron2019hands, krizhevsky2012imagenet} - a method to artificially
-  enrich the dataset by randomly flipping horizontally and cropping the images - is also used as a regularization technique.
-  We choose the momentum optimizer \cite{polyak1964some} as it converges faster than Stochastic Gradient Descent
+  \cite{krizhevsky2010convolutional}. We used $L_2$ regularization \cite{ng2004feature} to reduce overfitting
+  \cite{hawkins2004problem}. Data augmentation \cite{krizhevsky2012imagenet} - a method to artificially enrich the
+  dataset by randomly flipping horizontally and cropping the images - was also used as a regularization technique.
+  We chose the momentum optimizer \cite{polyak1964some} as it converges faster than Stochastic Gradient Descent
   \cite{bottou2010large} by keeping accelerating to the optimum \cite{geron2019hands}. Learning rate warmup and learning
-  rate scheduling by cosine decay are also added to speed up the convergence, so that the learning rate starts small,
+  rate scheduling by cosine decay were also added to speed up the convergence, so that the learning rate starts small,
   increases gradually, and then decreases after reaching the maximum
   \cite{geron2019hands, goyal2017accurate, senior2013empirical, loshchilov2016sgdr}.
   The model was trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training took 2 hours and 40
@@ -740,11 +739,11 @@
   \section{Evaluation}
 
   The main metric $mAP_{coco}$ (see section \ref{sec:generalobjectdetection}) from our model is 0.238, while the
-  traditional mAP@0.5 is 0.503. The documented $mAP_{coco}$ in the TensorFlow Detection Model Zoo for
-  ssd\_resnet\_50\_fpn\_coco is 0.35, which is measured on the COCO validation set. Our model's performance is indeed
+  traditional mAP@0.5 is 0.503. The documented $mAP_{coco}$ in the TensorFlow 1 Detection Model Zoo for
+  ssd\_resnet\_50\_fpn\_coco is 0.35, which was measured on the COCO validation set. Our model's performance is indeed
   lower than that in the model zoo. And it is somewhat difficult to perform a direct comparison with the result from
   Pasquet et al. \cite{pasquet2017amphora}, as they did not compute the $mAP$ and only mentioned that they detected
-  around 90.3 percent of amphoras. However, we can conclude that our model does not detect more than 90.3 percent based
+  around 90.3 percent of amphoras. However, we can conclude that our model did not detect more than 90.3 percent based
   on the visual inspection of the validation images in figure \ref{fig:val}.
 
   Nevertheless, our model's performance is still impressive due to the following reasons:
@@ -752,30 +751,30 @@
   \begin{itemize}
     \item Our dataset is very small. As we have mentioned before in section \ref{sec:dlvscv}, the COCO dataset has 328
     thousand images compared to our 57 images plus 2 test images. For Pasquet et al., they split one 38000 x 15000
-    orthophoto into 400 x 400 images and used 25\% of them for training, which means the training set alone is around
+    orthophoto into 400 x 400 images and used 25\% of them for training, which means the training set alone was around
     890 images.
-    \item Our dataset is a lot more diverse than that of Pasquet et al. Since our dataset images are obtained through
+    \item Our dataset is more diverse than that of Pasquet et al. Since our dataset images are obtained through
     numerous sources instead of from a single orthophoto, they reflect better the various shapes of amphoras (see
     figure \ref{fig:amphora}). Plus, our dataset has both large and medium instances of amphoras that vary significantly
-    in terms of the scale. The diversity of our dataset makes it harder to achieve a high mAP, but it also encourages
+    in terms of the scale. The diversity of our dataset made it harder to achieve a high mAP, although it encouraged
     the model to generalize better.
     \item Underwater object detection is more challenging than general object detection performed by the COCO dataset.
     As we have mentioned before in section \ref{sec:cvForUnderwater}, the same challenges also apply for amphora
     detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
-    in sand, or blocked by suspended particles. We only define one class for all amphoras even if they are broken, while
+    in sand, or blocked by suspended particles. We only defined one class for all amphoras even if they are broken, while
     Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
     \item Our mAP@0.5 score is in fact comparable with that from Xu et al. \cite{xu2018underwater} for fish detection.
-    They achieved a 0.5392 mAP@0.5 using YOLOv3, although they did not use $mAP_{coco}$.
+    They achieved a 0.5392 mAP@0.5 using YOLOv3, although they did not compute the $mAP_{coco}$.
   \end{itemize}
 
   We also ran the model on 2 test images shown in figure \ref{fig:test}. To our surprise, the model managed to detect
-  the amphora in the second image even though it is so broken that only half of it is present. As for the first image,
+  the amphora in the first image even though it is so broken that only half of it is present. As for the second image,
   none of the amphoras was detected as expected. The size of the first image is only 709 x 411, while it has hundreds of
   amphora instances. This means that they are mostly small instances defined by the COCO metric, which our training set
   does not include. It is a known issue that small objects are significantly harder to detect than medium and
   large objects, mainly due to the low resolution and thus the lack of features to learn
   \cite{kisantal2019augmentation, li2017perceptual, eggert2017closer}.
-  Plus, the image can be described as a crowded and densely packed scene, which is also notoriously difficult for object
+  Plus, the image can be described as a crowded and densely packed scene, which is also notoriously challenging for object
   detectors since the objects overlap with each other so strongly that it is even impossible for human experts to
   differentiate the instances \cite{pasquet2017amphora, goldman2019precise, leibe2005pedestrian, arteta2013learning}.
   In fact, we tried to split the image and add parts of it to the training set. However, the inter-occlusion of the
@@ -840,8 +839,8 @@
 
   \section{Conclusion and Future Work}
 
-  In this paper, we have reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
-  learning, and three major object detector families. We have then trained an SSD model with a ResNet-50 backbone
+  In this paper, we reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
+  learning, and three major object detector families. We then trained an SSD model with a ResNet-50 backbone
   based on a very small and low-resolution dataset, and yet still managed to achieve a 0.238 $mAP_{coco}$ and a 0.5392
   mAP@0.5. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the same
   difficulties posed by general underwater object detection (see section \ref{sec:cvForUnderwater}), the considerable
@@ -854,8 +853,8 @@
     \item The small number and the low resolution of the images in our dataset are the bottleneck towards a higher
     performance. There are indeed very limited publicly available high resolution images for underwater amphoras
     \cite{pasquet2017amphora}. Future studies may focus on obtaining more amphora images through AUVs and UUVs to improve
-    the $mAP$. Higher resolution images like orthophotos can especially address the issue of detecting
-    small objects \cite{kisantal2019augmentation}, and also the issue of detecting overlapping objects by reducing labeling
+    the mAP. Higher resolution images like orthophotos can especially address the issue of detecting
+    small objects \cite{kisantal2019augmentation} and also the issue of detecting overlapping objects by reducing labeling
     errors. Plus, more data augmentation techniques like randomly change to grayscale and randomly adjust brightness,
     contrast, and hue can be easily added in the data\_augementation\_options from the TensorFlow Object Detection API
     to potentially further enrich the dataset.
@@ -866,7 +865,7 @@
     YOLOv5 after its authors publish a paper and its active development stablizes. Some other models in the TensorFlow 2
     Detection Model Zoo \cite{tf2detectionmodelzoo} are also interesting to look into. Note that we used the SSD
     model in the TensorFlow 1 Detection Model Zoo, as the TensorFlow 2 version requires two scripts to be running
-    to train and evaluate at the same time and it is not possible to do so on Google Colaboratory. But one with access to
+    to train and evaluate at the same time, and it is not possible to do so on Google Colaboratory. But one with access to
     GPUs can easily train an EfficientDet \cite{tan2020efficientdet} D1 640 x 640 model with a 0.384 $mAP_{coco}$ and a
     54 ms detection speed or an EfficientDet D7 1536 x 1536 model with a 0.512 $mAP_{coco}$ and a 325 ms detection speed
     from the TensorFlow 2 Detection Model Zoo. CenterNet \cite{zhou2019objects}, a novel keypoint-based detector that
