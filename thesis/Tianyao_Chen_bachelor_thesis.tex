@@ -370,9 +370,9 @@
 
   \label{sec:dlvscv}
 
-  The increasingly abundant visual data and the improvements of deep learning algorithms, computing power, and image
-  resolution have enabled deep learning to achieve state-of-the-art performance in many computer vision tasks, including
-  image classification, object detection, and semantic segmentation \cite{qin2015underwater, voulodimos2018deep, o2019deep}.
+  The improvements of deep learning algorithms, computing power, image resolution, and the amount of visual data have
+  enabled deep learning to achieve state-of-the-art performance in many computer vision tasks, including image
+  classification, object detection, and semantic segmentation \cite{qin2015underwater, voulodimos2018deep, o2019deep}.
 
   Traditionally, computer vision requires the manual feature selection and engineering step, which relies on domain knowledge
   to produce high-quality features \cite{elgendy2020deep, zhao2019object, o2019deep}. These handcrafted features are further
@@ -383,7 +383,7 @@
 
   In deep learning, the manual feature extraction step is no longer needed, and neural networks can be trained end-to-end
   as a feature extractor plus a classifier \cite{elgendy2020deep, o2019deep}. Thus, deep learning requires less domain
-  knowledge, it and provides more flexibility as the models can be re-trained with a custom dataset for any specific use
+  knowledge, and it provides more flexibility as the models can be re-trained with a custom dataset for any specific use
   case \cite{o2019deep}.
 
   \begin{figure}[ht]
@@ -393,13 +393,11 @@
     \caption{(a) Traditional computer vision workflow. (b) Deep learning workflow. Source: \cite{o2019deep}.}
   \end{figure}
 
-  However, deep learning does not make traditional computer vision obsolete. Techniques like Scale Invariant Feature Transform
-  (SIFT) \cite{karami2017image}, Speeded Up Robust Features (SURF) \cite{bay2006surf}, and Features from Accelerated
-  Segment Test (FAST) \cite{rosten2006machine} are still useful in improving performance for computer vision tasks
-  \cite{o2019deep}. And deep learning's performance depends on obtaining large datasets with high image resolution \cite{o2019deep}.
+  However, deep learning's performance depends on obtaining large datasets with high image resolution \cite{o2019deep}.
   Some popular public datasets like PASCAL Visual Object Classes (VOC) \cite{everingham2010pascal}, ImageNet
   \cite{russakovsky2015imagenet}, and Microsoft Common Objects in Context (COCO) \cite{lin2014microsoft}
-  have respectively 500 thousand, 14 million, and 328 thousand images.
+  have respectively 500 thousand, 14 million, and 328 thousand images. Having a highly limited dataset for a task may
+  cause deep learning to have poorer results than traiditional computer vision.
 
   \subsection{Object Detection}
 
