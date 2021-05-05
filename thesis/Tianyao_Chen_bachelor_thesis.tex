@@ -228,7 +228,7 @@
   Inspired by the biological neuron, artificial neural networks (ANNs) were first introduced in 1943 using propositional
   logic \cite{mcculloch1943logical}. The artificial neuron activates its single binary output when the number of active
   binary inputs reaches the activation threshold, which enables us to build networks that can perform any logical
-  computation \cite{geron2019hands, mcculloch1943logical}.
+  proposition \cite{geron2019hands, mcculloch1943logical}.
 
   \begin{figure}[ht]
     \begin{center}
@@ -238,8 +238,8 @@
   \end{figure}
 
   Then the Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
-  (TLU) or linear threshold unit (LTU) \cite{rosenblatt1957perceptron}. The inputs and outputs are numbers instead of
-  binary values, and each input has a weight. TLU computes the weighted sum of the inputs and then applies a step
+  (TLU) or linear threshold unit (LTU) \cite{rosenblatt1957perceptron}. The input and output are numbers instead of
+  binary values, and each input has a weight. TLU computes the weighted sum of the input and then applies a step
   function like the Heaviside function
   $heaviside (x) =
   \begin{cases}
@@ -250,7 +250,7 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{tlu.png}
+      \includegraphics[width=.5\textwidth]{tlu.png}
     \end{center}
     \caption{TLU. Source: \cite{geron2019hands}.}
   \end{figure}
@@ -258,7 +258,7 @@
   A single TLU can be used for simple linear binary classification, while a layer of TLUs plus a bias neuron form a
   Perceptron capable of multi-output classification \cite{geron2019hands}.
 
-  The outputs of a fully connected layer is computed as follows, where $\mathbf{X}, \mathbf{W}, \mathbf{b}$, and $\phi$
+  The output of a fully connected layer is computed as follows, where $\mathbf{X}, \mathbf{W}, \mathbf{b}$, and $\phi$
   are respectively the input matrix, weight matrix, bias vector, and activation function:
 
   $$h_{\mathbf{W,b}}(\mathbf{X}) = \phi(\mathbf{XW} + \mathbf{b})$$
@@ -271,16 +271,16 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{mlp.png}
+      \includegraphics[width=.5\textwidth]{mlp.png}
     \end{center}
     \caption{A Multilayer Perceptron with one hidden layer. Source: \cite{geron2019hands}.}
   \end{figure}
 
-  Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first makes a prediction and measures the
-  error in the forward pass, then measures the error contribution from each connection in the reverse pass, and finally
-  tweaks the connection weights to reduce teh error in the Gradient Descent \cite{ruder2016overview} step. Activation
+  Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first performs a forward pass to compute
+  the loss, then makes a reverse pass to measure the loss contribution from each connection, and finally reduces the
+  loss by adjusting the weights in the Gradient Descent \cite{ruder2016overview} step \cite{geron2019hands}. Activation
   functions like Rectified Linear Unit $ReLU(x) = max(0, x)$ are used to add nonlinearity, which theoretically gives a
-  large enough deep neural network the ability to approximate any continuous function \cite{geron2019hands}.
+  large enough deep neural network the theoretical ability to approximate any continuous function \cite{geron2019hands}.
 
   \subsubsection{Convolutional Neural Networks (CNNs)}
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  5 MAY 2021 10:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  5 MAY 2021 10:42
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -664,82 +664,82 @@ Package pdftex.def Info: ./images/ann_logic_computations.png  used on input line
 File: ./images/tlu.png Graphic file (type png)
 <use ./images/tlu.png>
 Package pdftex.def Info: ./images/tlu.png  used on input line 253.
-(pdftex.def)             Requested size: 341.43437pt x 188.04608pt.
+(pdftex.def)             Requested size: 213.39568pt x 117.52762pt.
  [3 <./images/deep_learning.png>]
 <./images/mlp.png, id=274, 1305.87875pt x 929.4725pt>
 File: ./images/mlp.png Graphic file (type png)
 <use ./images/mlp.png>
 Package pdftex.def Info: ./images/mlp.png  used on input line 274.
-(pdftex.def)             Requested size: 341.43437pt x 243.01868pt.
- [4 <./images/ann_logic_computations.png> <./images/tlu.png>]
-<./images/cnn_layers.png, id=306, 1155.31625pt x 689.57625pt>
+(pdftex.def)             Requested size: 213.39568pt x 151.88135pt.
+ [4 <./images/ann_logic_computations.png> <./images/tlu.png> <./images/mlp.png>]
+<./images/cnn_layers.png, id=307, 1155.31625pt x 689.57625pt>
 File: ./images/cnn_layers.png Graphic file (type png)
 <use ./images/cnn_layers.png>
 Package pdftex.def Info: ./images/cnn_layers.png  used on input line 308.
 (pdftex.def)             Requested size: 341.43437pt x 203.79149pt.
-<./images/filters.png, id=311, 1445.4pt x 907.39pt>
+ [5 <./images/cnn_layers.png>]
+<./images/filters.png, id=325, 1445.4pt x 907.39pt>
 File: ./images/filters.png Graphic file (type png)
 <use ./images/filters.png>
 Package pdftex.def Info: ./images/filters.png  used on input line 321.
 (pdftex.def)             Requested size: 341.43437pt x 214.34433pt.
-<./images/max_pooling.png, id=316, 1446.40375pt x 603.25375pt>
+<./images/max_pooling.png, id=330, 1446.40375pt x 603.25375pt>
 File: ./images/max_pooling.png Graphic file (type png)
 <use ./images/max_pooling.png>
 Package pdftex.def Info: ./images/max_pooling.png  used on input line 332.
 (pdftex.def)             Requested size: 341.43437pt x 142.39978pt.
- [5 <./images/mlp.png>]
-<./images/max_pooling_invariance.png, id=331, 1408.26125pt x 945.5325pt>
+<./images/max_pooling_invariance.png, id=333, 1408.26125pt x 945.5325pt>
 File: ./images/max_pooling_invariance.png Graphic file (type png)
 <use ./images/max_pooling_invariance.png>
 Package pdftex.def Info: ./images/max_pooling_invariance.png  used on input line 340.
 (pdftex.def)             Requested size: 341.43437pt x 229.24086pt.
-<./images/typical_cnn.png, id=343, 1445.4pt x 346.29375pt>
+<./images/typical_cnn.png, id=345, 1445.4pt x 346.29375pt>
 File: ./images/typical_cnn.png Graphic file (type png)
 <use ./images/typical_cnn.png>
 Package pdftex.def Info: ./images/typical_cnn.png  used on input line 353.
 (pdftex.def)             Requested size: 341.43437pt x 81.80176pt.
-<./images/resnet.png, id=359, 1445.4pt x 872.25874pt>
+ [6 <./images/filters.png> <./images/max_pooling.png>]
+<./images/resnet.png, id=376, 1445.4pt x 872.25874pt>
 File: ./images/resnet.png Graphic file (type png)
 <use ./images/resnet.png>
 Package pdftex.def Info: ./images/resnet.png  used on input line 372.
 (pdftex.def)             Requested size: 341.43437pt x 206.0456pt.
- [6 <./images/cnn_layers.png>]
-<./images/deep_learning_vs_traditional_computer_vision.png, id=395, 1059.96pt x 453.695pt>
+ [7 <./images/max_pooling_invariance.png> <./images/typical_cnn.png>]
+<./images/deep_learning_vs_traditional_computer_vision.png, id=405, 1059.96pt x 453.695pt>
 File: ./images/deep_learning_vs_traditional_computer_vision.png Graphic file (type png)
 <use ./images/deep_learning_vs_traditional_computer_vision.png>
 Package pdftex.def Info: ./images/deep_learning_vs_traditional_computer_vision.png  used on input line 399.
 (pdftex.def)             Requested size: 341.43437pt x 146.14072pt.
- [7 <./images/filters.png> <./images/max_pooling.png>]
-<./images/sliding_window.png, id=432, 1330.9725pt x 955.57pt>
+ [8 <./images/resnet.png> <./images/deep_learning_vs_traditional_computer_vision.png>]
+<./images/sliding_window.png, id=442, 1330.9725pt x 955.57pt>
 File: ./images/sliding_window.png Graphic file (type png)
 <use ./images/sliding_window.png>
 Package pdftex.def Info: ./images/sliding_window.png  used on input line 431.
 (pdftex.def)             Requested size: 341.43437pt x 245.11792pt.
- [8 <./images/max_pooling_invariance.png> <./images/typical_cnn.png>] [9 <./images/resnet.png> <./images/deep_learning_vs_traditional_computer_vision.png>]
-<./images/nms.png, id=482, 522.95375pt x 302.12875pt>
+ [9 <./images/sliding_window.png>]
+<./images/nms.png, id=483, 522.95375pt x 302.12875pt>
 File: ./images/nms.png Graphic file (type png)
 <use ./images/nms.png>
 Package pdftex.def Info: ./images/nms.png  used on input line 480.
 (pdftex.def)             Requested size: 341.43437pt x 197.26189pt.
-<./images/iou.png, id=492, 421.575pt x 186.6975pt>
+ [10 <./images/nms.png>]
+<./images/iou.png, id=508, 421.575pt x 186.6975pt>
 File: ./images/iou.png Graphic file (type png)
 <use ./images/iou.png>
 Package pdftex.def Info: ./images/iou.png  used on input line 497.
 (pdftex.def)             Requested size: 341.43437pt x 151.2099pt.
- [10 <./images/sliding_window.png>]
-<./images/precision_recall.png, id=514, 648.4225pt x 319.1925pt>
+<./images/precision_recall.png, id=517, 648.4225pt x 319.1925pt>
 File: ./images/precision_recall.png Graphic file (type png)
 <use ./images/precision_recall.png>
 Package pdftex.def Info: ./images/precision_recall.png  used on input line 514.
 (pdftex.def)             Requested size: 341.43437pt x 168.07535pt.
- [11 <./images/nms.png> <./images/iou.png>]
-<./images/pr_curve.png, id=544, 395.4775pt x 200.75pt>
+ [11 <./images/iou.png> <./images/precision_recall.png>]
+<./images/pr_curve.png, id=548, 395.4775pt x 200.75pt>
 File: ./images/pr_curve.png Graphic file (type png)
 <use ./images/pr_curve.png>
 Package pdftex.def Info: ./images/pr_curve.png  used on input line 535.
 (pdftex.def)             Requested size: 341.43437pt x 173.31859pt.
- [12 <./images/precision_recall.png> <./images/pr_curve.png>]
-<./images/r_cnn.png, id=566, 584.1825pt x 339.2675pt>
+<./images/r_cnn.png, id=556, 584.1825pt x 339.2675pt>
 File: ./images/r_cnn.png Graphic file (type png)
 <use ./images/r_cnn.png>
 Package pdftex.def Info: ./images/r_cnn.png  used on input line 559.
@@ -750,81 +750,82 @@ File: omsphv.fd
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 567.
-<./images/fast_r_cnn.png, id=574, 681.54625pt x 474.77374pt>
+ [12 <./images/pr_curve.png>]
+<./images/fast_r_cnn.png, id=577, 681.54625pt x 474.77374pt>
 File: ./images/fast_r_cnn.png Graphic file (type png)
 <use ./images/fast_r_cnn.png>
 Package pdftex.def Info: ./images/fast_r_cnn.png  used on input line 588.
 (pdftex.def)             Requested size: 341.43437pt x 237.84993pt.
- [13 <./images/r_cnn.png>]
-<./images/anchors.png, id=592, 609.27625pt x 337.26pt>
+ [13 <./images/r_cnn.png> <./images/fast_r_cnn.png>]
+<./images/anchors.png, id=594, 609.27625pt x 337.26pt>
 File: ./images/anchors.png Graphic file (type png)
 <use ./images/anchors.png>
 Package pdftex.def Info: ./images/anchors.png  used on input line 613.
 (pdftex.def)             Requested size: 341.43437pt x 189.00325pt.
-<./images/faster_r_cnn.png, id=595, 632.3625pt x 360.34625pt>
+<./images/faster_r_cnn.png, id=597, 632.3625pt x 360.34625pt>
 File: ./images/faster_r_cnn.png Graphic file (type png)
 <use ./images/faster_r_cnn.png>
 Package pdftex.def Info: ./images/faster_r_cnn.png  used on input line 620.
 (pdftex.def)             Requested size: 341.43437pt x 194.56758pt.
- [14 <./images/fast_r_cnn.png> <./images/anchors.png>]
-<./images/ssd_feature_maps.png, id=618, 661.47125pt x 346.29375pt>
+ [14 <./images/anchors.png>]
+<./images/ssd_feature_maps.png, id=620, 661.47125pt x 346.29375pt>
 File: ./images/ssd_feature_maps.png Graphic file (type png)
 <use ./images/ssd_feature_maps.png>
 Package pdftex.def Info: ./images/ssd_feature_maps.png  used on input line 647.
 (pdftex.def)             Requested size: 341.43437pt x 178.74748pt.
-<./images/ssd.png, id=621, 997.7275pt x 473.77pt>
+<./images/ssd.png, id=623, 997.7275pt x 473.77pt>
 File: ./images/ssd.png Graphic file (type png)
 <use ./images/ssd.png>
 Package pdftex.def Info: ./images/ssd.png  used on input line 655.
 (pdftex.def)             Requested size: 341.43437pt x 162.12788pt.
- [15 <./images/faster_r_cnn.png>]
-<./images/yolov3.png, id=642, 1051.93pt x 719.68875pt>
+ [15 <./images/faster_r_cnn.png> <./images/ssd_feature_maps.png>]
+<./images/yolov3.png, id=645, 1051.93pt x 719.68875pt>
 File: ./images/yolov3.png Graphic file (type png)
 <use ./images/yolov3.png>
 Package pdftex.def Info: ./images/yolov3.png  used on input line 678.
 (pdftex.def)             Requested size: 426.79135pt x 291.99947pt.
- [16 <./images/ssd_feature_maps.png> <./images/ssd.png>] [17 <./images/yolov3.png>] [18]
-<./images/val_1.png, id=763, 623.32875pt x 470.75874pt>
+ [16 <./images/ssd.png>] [17 <./images/yolov3.png>] [18]
+<./images/val_1.png, id=765, 623.32875pt x 470.75874pt>
 File: ./images/val_1.png Graphic file (type png)
 <use ./images/val_1.png>
 Package pdftex.def Info: ./images/val_1.png  used on input line 806.
 (pdftex.def)             Requested size: 170.71393pt x 128.93109pt.
-<./images/val_6.png, id=764, 694.595pt x 470.75874pt>
+<./images/val_6.png, id=766, 694.595pt x 470.75874pt>
 File: ./images/val_6.png Graphic file (type png)
 <use ./images/val_6.png>
 Package pdftex.def Info: ./images/val_6.png  used on input line 810.
 (pdftex.def)             Requested size: 170.71393pt x 115.69965pt.
-<./images/val_3.png, id=765, 512.91624pt x 470.75874pt>
+<./images/val_3.png, id=767, 512.91624pt x 470.75874pt>
 File: ./images/val_3.png Graphic file (type png)
 <use ./images/val_3.png>
 Package pdftex.def Info: ./images/val_3.png  used on input line 815.
 (pdftex.def)             Requested size: 170.71393pt x 156.67975pt.
-<./images/val_2.png, id=766, 476.78125pt x 470.75874pt>
+<./images/val_2.png, id=768, 476.78125pt x 470.75874pt>
 File: ./images/val_2.png Graphic file (type png)
 <use ./images/val_2.png>
 Package pdftex.def Info: ./images/val_2.png  used on input line 819.
 (pdftex.def)             Requested size: 170.71393pt x 168.56075pt.
-<./images/val_5.png, id=767, 712.6625pt x 409.53pt>
+<./images/val_5.png, id=769, 712.6625pt x 409.53pt>
 File: ./images/val_5.png Graphic file (type png)
 <use ./images/val_5.png>
 Package pdftex.def Info: ./images/val_5.png  used on input line 824.
 (pdftex.def)             Requested size: 170.71393pt x 98.09549pt.
-<./images/val_7.png, id=768, 718.685pt x 357.335pt>
+<./images/val_7.png, id=770, 718.685pt x 357.335pt>
 File: ./images/val_7.png Graphic file (type png)
 <use ./images/val_7.png>
 Package pdftex.def Info: ./images/val_7.png  used on input line 828.
 (pdftex.def)             Requested size: 170.71393pt x 84.87885pt.
-<./images/val_4.png, id=769, 476.78125pt x 470.75874pt>
+<./images/val_4.png, id=771, 476.78125pt x 470.75874pt>
 File: ./images/val_4.png Graphic file (type png)
 <use ./images/val_4.png>
 Package pdftex.def Info: ./images/val_4.png  used on input line 833.
 (pdftex.def)             Requested size: 170.71393pt x 168.56075pt.
-<./images/test_1.png, id=784, 711.65875pt x 412.54124pt>
+<./images/test_1.png, id=786, 711.65875pt x 412.54124pt>
 File: ./images/test_1.png Graphic file (type png)
 <use ./images/test_1.png>
 Package pdftex.def Info: ./images/test_1.png  used on input line 844.
 (pdftex.def)             Requested size: 341.43437pt x 197.92313pt.
-<./images/test_2.png, id=785, 622.325pt x 470.75874pt>
+<./images/test_2.png, id=787, 622.325pt x 470.75874pt>
 File: ./images/test_2.png Graphic file (type png)
 <use ./images/test_2.png>
 Package pdftex.def Info: ./images/test_2.png  used on input line 849.
@@ -891,16 +892,16 @@ Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
 Here is how much of TeX's memory you used:
  15042 strings out of 492649
  262225 string characters out of 6129623
- 710429 words of memory out of 5000000
+ 710444 words of memory out of 5000000
  18493 multiletter control sequences out of 15000+600000
  26507 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,48p,886b,1741s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (33 pages, 10263705 bytes).
+Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (33 pages, 10263849 bytes).
 PDF statistics:
- 994 PDF objects out of 1000 (max. 8388607)
- 843 compressed objects within 9 object streams
+ 995 PDF objects out of 1000 (max. 8388607)
+ 844 compressed objects within 9 object streams
  221 named destinations out of 1000 (max. 500000)
  336 words of extra memory for PDF output out of 10000 (max. 10000000)
 
