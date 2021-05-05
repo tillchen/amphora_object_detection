@@ -30,855 +30,854 @@
 \addbibresource{Tianyao_Chen_bachelor_thesis.bib}
 
 \begin{document}
-  \pagenumbering{roman}
+\pagenumbering{roman}
 
-  \thispagestyle{empty}
+\thispagestyle{empty}
 
-  \begin{flushright}
-    \includegraphics[scale=0.8]{bsc-logo}
-  \end{flushright}
-  \vspace*{40mm}
+\begin{flushright}
+  \includegraphics[scale=0.8]{bsc-logo}
+\end{flushright}
+\vspace*{40mm}
+\begin{center}
+  \huge
+  \textbf{\mytitle}
+\end{center}
+\vspace*{4mm}
+\begin{center}
+ \Large by
+\end{center}
+\vspace*{4mm}
+\begin{center}
+  \LARGE
+  \textbf{\myname}
+\end{center}
+\vspace*{20mm}
+\begin{center}
+  \Large
+  Bachelor Thesis in Computer Science
+\end{center}
+\vfill
+\begin{flushleft}
+  \large
+  Submission: \today \hfill Supervisor: \mysupervisor \\
+  \rule{\textwidth}{1pt}
+\end{flushleft}
+\begin{center}
+  Jacobs University Bremen $|$ Department of Computer Science and Electrical Engineering
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+
+\subsection*{English: Declaration of Authorship}
+
+I hereby declare that the thesis submitted was created and written
+solely by myself without any external support. Any sources, direct
+or indirect, are marked as such. I am aware of the fact that the
+contents of the thesis in digital form may be revised with regard to
+usage of unauthorized aid as well as whether the whole or parts of
+it may be identified as plagiarism. I do agree my work to be entered
+into a database for it to be compared with existing sources, where
+it will remain in order to enable further comparisons with future
+theses. This does not grant any rights of reproduction and usage,
+however.
+
+This document was neither presented to any other examination board
+nor has it been published.
+
+\subsection*{German: Erklärung der Autorenschaft (Urheberschaft)}
+
+Ich erkläre hiermit, dass die vorliegende Arbeit ohne fremde Hilfe
+ausschließlich von mir erstellt und geschrieben worden ist. Jedwede
+verwendeten Quellen, direkter oder indirekter Art, sind als solche
+kenntlich gemacht worden. Mir ist die Tatsache bewusst, dass der
+Inhalt der Thesis in digitaler Form geprüft werden kann im Hinblick
+darauf, ob es sich ganz oder in Teilen um ein Plagiat handelt. Ich
+bin damit einverstanden, dass meine Arbeit in einer Datenbank
+eingegeben werden kann, um mit bereits bestehenden Quellen
+verglichen zu werden und dort auch verbleibt, um mit zukünftigen
+Arbeiten verglichen werden zu können. Dies berechtigt jedoch nicht
+zur Verwendung oder Vervielfältigung.
+
+Diese Arbeit wurde noch keiner anderen Prüfungsbehörde vorgelegt
+noch wurde sie bisher veröffentlicht.
+
+\vspace{20mm}
+
+Date, Signature
+
+\newpage
+
+\section*{Abstract}
+
+Amphoras have great archaeological significance and are often found in ancient shipwrecks. The increasingly abundant
+visual data and the advent of more advanced deep learning algorithms motivated us to automate the detection of
+underwater amphoras. We trained a convolutional neural network (CNN) based model called Single Shot Detector (SSD) with
+a 50-layer Residual Network (ResNet-50) backbone on a very small dataset with only 50 images, and we still managed to
+achieve a 0.238 MS COCO mean average precision ($mAP_{coco}$) and a 0.503 Pascal VOC mAP@0.5. Underwater amphora
+detection is a challenging task. We believe future studies can achieve better results by increasing the size and
+resolution of the dataset, training bleeding-edge object detectors like YOLOv5, and defining 2 separate classes for
+the head and the body of amphoras. The code and the trained model are available at
+\url{https://github.com/tillchen/amphora_object_detection}.
+
+\newpage
+
+\tableofcontents
+
+\clearpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+
+\subsection{Motivation}
+
+\subsubsection{Relevance of Amphoras}
+
+The name \textit{amphora} is derived from the Greek word \textit{amphoreus}, which means "two-handled"
+\cite{harper2001online, twede2002commercial, will1977ancient}. It is the combination of two linguistic roots:
+\textit{amphi} (on both sides) and \textit{phoreus} (bearer)
+\cite{harper2001online, twede2002commercial, will1977ancient}. Amphoras (or amphorae) were commercially used from
+1500 B.C.E. to 500 C.E. to ship products throughout the Mediterranean by the ancient Greek and Roman empires
+\cite{twede2002commercial, worldhistory}.
+
+Amphoras were designed to hold large quantities of liquid (wine, oil, and water) and dry products
+(grain, preserved fish, and nuts) \cite{twede2002commercial, foley2012aspects, grace1979amphoras}. Like many measure
+units that are named after the packages, amphoras were also a semi-standard unit for liquid \cite{twede2002commercial}.
+The structurally strong egg-like shape and the high volume-to-weight ratio made amphoras very efficient packages
+\cite{twede2002commercial, worldhistory}.
+
+\begin{figure}[ht]
   \begin{center}
-    \huge
-    \textbf{\mytitle}
+    \includegraphics[width=.6\textwidth]{amphora_stowage_aboard_ship.png}
   \end{center}
-  \vspace*{4mm}
-  \begin{center}
-   \Large by
-  \end{center}
-  \vspace*{4mm}
-  \begin{center}
-    \LARGE
-    \textbf{\myname}
-  \end{center}
-  \vspace*{20mm}
-  \begin{center}
-    \Large
-    Bachelor Thesis in Computer Science
-  \end{center}
-  \vfill
-  \begin{flushleft}
-    \large
-    Submission: \today \hfill Supervisor: \mysupervisor \\
-    \rule{\textwidth}{1pt}
-  \end{flushleft}
-  \begin{center}
-    Jacobs University Bremen $|$ Department of Computer Science and Electrical Engineering
-  \end{center}
-
-  \newpage
-  \thispagestyle{empty}
-
-  \subsection*{English: Declaration of Authorship}
-
-  I hereby declare that the thesis submitted was created and written
-  solely by myself without any external support. Any sources, direct
-  or indirect, are marked as such. I am aware of the fact that the
-  contents of the thesis in digital form may be revised with regard to
-  usage of unauthorized aid as well as whether the whole or parts of
-  it may be identified as plagiarism. I do agree my work to be entered
-  into a database for it to be compared with existing sources, where
-  it will remain in order to enable further comparisons with future
-  theses. This does not grant any rights of reproduction and usage,
-  however.
-
-  This document was neither presented to any other examination board
-  nor has it been published.
-
-  \subsection*{German: Erklärung der Autorenschaft (Urheberschaft)}
-
-  Ich erkläre hiermit, dass die vorliegende Arbeit ohne fremde Hilfe
-  ausschließlich von mir erstellt und geschrieben worden ist. Jedwede
-  verwendeten Quellen, direkter oder indirekter Art, sind als solche
-  kenntlich gemacht worden. Mir ist die Tatsache bewusst, dass der
-  Inhalt der Thesis in digitaler Form geprüft werden kann im Hinblick
-  darauf, ob es sich ganz oder in Teilen um ein Plagiat handelt. Ich
-  bin damit einverstanden, dass meine Arbeit in einer Datenbank
-  eingegeben werden kann, um mit bereits bestehenden Quellen
-  verglichen zu werden und dort auch verbleibt, um mit zukünftigen
-  Arbeiten verglichen werden zu können. Dies berechtigt jedoch nicht
-  zur Verwendung oder Vervielfältigung.
-
-  Diese Arbeit wurde noch keiner anderen Prüfungsbehörde vorgelegt
-  noch wurde sie bisher veröffentlicht.
-
-  \vspace{20mm}
-
-  Date, Signature
-
-  \newpage
-
-  \section*{Abstract}
-
-  Amphoras have great archaeological significance and are often found in ancient shipwrecks. The increasingly abundant
-  visual data and the advent of more advanced deep learning algorithms motivated us to automate the detection of
-  underwater amphoras. We trained a convolutional neural network (CNN) based model called Single Shot Detector (SSD) with
-  a 50-layer Residual Network (ResNet-50) backbone on a very small dataset with only 50 images, and still managed to
-  achieve a 0.238 MS COCO mean average precision ($mAP_{coco}$) and a 0.503 Pascal VOC mAP@0.5. Underwater amphora
-  detection is a challenging task. We believe future studies can achieve better results by increasing the size and
-  resolution of the dataset, training bleeding-edge object detectors like YOLOv5, and defining 2 separate classes for
-  the head and the body of amphoras. The code and the trained model are available at
-  \url{https://github.com/tillchen/amphora_object_detection}.
-
-  \newpage
-
-  \tableofcontents
-
-  \clearpage
-  \pagenumbering{arabic}
-
-  \section{Introduction}
-
-  \subsection{Motivation}
-
-  \subsubsection{Relevance of Amphoras}
-
-  The name \textit{amphora} is derived from the Greek word \textit{amphoreus}, which literally means "two-handled"
-  \cite{harper2001online, twede2002commercial, will1977ancient}. It is the combination of two linguistic roots:
-  \textit{amphi} (on both sides) and \textit{phoreus} (bearer)
-  \cite{harper2001online, twede2002commercial, will1977ancient}. Amphoras (or amphorae) were commercially used from
-  1500 B.C.E. to 500 C.E. to ship products throughout the Mediterranean by the ancient Greek and Roman empires
-  \cite{twede2002commercial, worldhistory}.
-
-  Amphoras were designed to hold large quantities of liquid (wine, oil, and water) and dry products
-  (grain, preserved fish, and nuts) \cite{twede2002commercial, foley2012aspects, grace1979amphoras}. Like many measure
-  units that are named after the packages, amphoras were also a semi-standard unit for liquid \cite{twede2002commercial}.
-  The structurally strong egg-like shape and the high volume-to-weight ratio made amphoras very efficient packages
-  \cite{twede2002commercial, worldhistory}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.6\textwidth]{amphora_stowage_aboard_ship.png}
-    \end{center}
-    \caption{The egg-like shape enabled amphoras to interlock and minimize the waste of space on a ship.
-    Source: \cite{twede2002commercial}.}
-  \end{figure}
-
-  Amphoras' various shapes and stamps - which changed by time, region, producer, contents, and brand
-  identity - were used to identify the package status and the different products inside
-  \cite{twede2002commercial, worldhistory}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.5\textwidth]{amphora_various_shapes.jpg}
-    \end{center}
-    \caption{Amphoras have various shapes. Source: \cite{worldhistory}.}
-    \label{fig:amphora}
-  \end{figure}
-
-  Amphoras have great significance in archaeology. They can be used as evidence for the trade patterns throughout
-  the Mediterranean \cite{twede2002commercial}. As they were usually discarded at the destination of a trade and have been
-  found in shipwrecks, archaeologists use them to recreate the transit routes \cite{twede2002commercial}. Furthermore,
-  researchers are able to classify different amphoras to date ruins and shipwrecks
-  \cite{twede2002commercial, grace1985middle}.
-
-  \subsubsection{Computer Vision for Underwater Archaeology}
-
-  \label{sec:cvForUnderwater}
-
-  Computer vision is the science of perceiving and understanding the world through images and videos \cite{elgendy2020deep}.
-  There have been multiple exciting applications of computer vision, including image classification \cite{rawat2017deep},
-  object detection and localization \cite{zhao2019object,liu2020deep}, art generation (neural style transfer)
-  \cite{jing2019neural}, image creation with Generative Artificial Networks (GAN) \cite{goodfellow2014generative},
-  face recognition \cite{parkhi2015deep}, action and activity recognition \cite{poppe2010survey}, human pose estimation
-  \cite{toshev2014deeppose}, and image recommendation system \cite{niu2018neural}.
-
-  However, there is still limited research for the application of computer vision and machine learning in archaeology,
-  especially underwater archaeology, compared to other domains \cite{maaten2007computer, qin2015underwater}.
-  Computer vision, instead of visual inspection, could be used to automate the detection, assessment, and classification
-  of artifacts \cite{maaten2007computer}.
-
-  Underwater computer vision has proven to be challenging, largely due to: 1) the distortion and attenuation caused by
-  light propagation in water, 2) the unrestricted natural environment with the abundance of marine life and suspended
-  particles, and 3) underwater objects are often broken
-  \cite{qin2015underwater, rizzini2015investigation, lu2017underwater, mccarthy20193d}.
-
-  Despite the challenges, computer vision has lower cost \cite{rizzini2015investigation} compared to sonar imagery
-  \cite{abu2019statistically} and laser scanning \cite{gordon1992use}. Plus, the increasingly abundant visual data obtained
-  through autonomous underwater vehicles (AUVs), unmanned underwater vehicles (UUVs)
-  \cite{lu2017underwater, moniruzzaman2017deep}, and seafloor cabled observatories \cite{qin2015underwater} motivate us
-  to utilize deep learning.
-
-  Furthermore, the research for deep-water shipwrecks is even more limited, mostly due to the lack of information and
-  accessibility \cite{drap2015underwater}. However, the need to study deep-water sites are in high demand, as the threats
-  to these sites are increasing \cite{drap2015underwater}. One major threat is the new forms of trawling that interfere
-  with the readability by destroying the surface of these sites\cite{drap2015underwater}. This means that many
-  shipwrecks are likely to be damaged before they can be studied \cite{drap2015underwater}. It is thus crucial to implement
-  efficient, accessible, and accurate techniques like deep learning based computer vision to study deep-water shipwrecks.
-
-  \subsection{Deep Learning}
-
-  Machine learning is the class of algorithms that allow computers to learn and improve from data instead of being
-  explicitly programmed \cite{samuel1959some, geron2019hands}. And deep learning is the subfield of machine learning that
-  builds artificial neural networks with more than one layer between the input and output layers
-  \cite{geron2019hands, burkov2019hundred, zhang2018definition}. Deep learning constructs complex representations by
-  combining simpler ones from the previous layers \cite{goodfellow2016deep}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{deep_learning.png}
-    \end{center}
-    \caption{A deep learning system that learns the representations of a person. This is achieved by combining simpler
-    features like corners and contours, which are further expressed by combining simpler features like edges. Source:
-    \cite{goodfellow2016deep}.}
-  \end{figure}
-
-  \subsubsection{Artifical Neural Networks (ANNs)}
-
-  Inspired by the biological neuron, artificial neural networks (ANNs) were first introduced in 1943 using propositional
-  logic \cite{mcculloch1943logical}. The artificial neuron activates its single binary output when the number of active
-  binary inputs reaches the activation threshold, which enables us to build networks that can perform any logical
-  proposition \cite{geron2019hands, mcculloch1943logical}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.5\textwidth]{ann_logic_computations.png}
-    \end{center}
-    \caption{ANNs performing logical computations with 2 as the activation threshold. Source: \cite{geron2019hands}.}
-  \end{figure}
-
-  Then the Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
-  (TLU) or linear threshold unit (LTU) \cite{rosenblatt1957perceptron}. The input and output are numbers instead of
-  binary values, and each input has a weight. TLU computes the weighted sum of the input and then applies a step
-  function like the Heaviside function
-  $heaviside (x) =
-  \begin{cases}
-    0 & x \le 0 \\
-    1 & x \geq 0 \\
-  \end{cases}$
-  \cite{geron2019hands, rosenblatt1957perceptron}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.5\textwidth]{tlu.png}
-    \end{center}
-    \caption{TLU. Source: \cite{geron2019hands}.}
-  \end{figure}
-
-  A single TLU can be used for simple linear binary classification, while a layer of TLUs plus a bias neuron form a
-  Perceptron capable of multi-output classification \cite{geron2019hands}.
-
-  The output of a fully connected layer is computed as follows, where $\mathbf{X}, \mathbf{W}, \mathbf{b}$, and $\phi$
-  are respectively the input matrix, weight matrix, bias vector, and activation function:
-
-  $$h_{\mathbf{W,b}}(\mathbf{X}) = \phi(\mathbf{XW} + \mathbf{b})$$
-
-  The Perceptron is trained using a variant of the Herbb's rule \cite{hebb2005organization}, which is famously summarized
-  as "neurons wire together if they fire together" \cite{lowel1992selection}. However, the Perceptron
-  can not learn complex patterns due the linear decision boundary of the output neurons, and it can only make predictions
-  based on a hard threshold instead of outputting a class probability \cite{geron2019hands}. To address these limitations,
-  the Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.5\textwidth]{mlp.png}
-    \end{center}
-    \caption{A Multilayer Perceptron with one hidden layer. Source: \cite{geron2019hands}.}
-  \end{figure}
-
-  Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first performs a forward pass to compute
-  the loss, then makes a reverse pass to measure the loss contribution from each connection, and finally reduces the
-  loss by adjusting the weights in the Gradient Descent \cite{ruder2016overview} step \cite{geron2019hands}. Activation
-  functions like Rectified Linear Unit $ReLU(x) = max(0, x)$ are used to add nonlinearity, which theoretically gives a
-  large enough deep neural network the theoretical ability to approximate any continuous function \cite{geron2019hands}.
-
-  \subsubsection{Convolutional Neural Networks (CNNs)}
-
-  \label{sec:cnn}
-
-  Convolutional Neural Networks (CNNs) \cite{lecun1989backpropagation} were inspired by the brain's visual cortex,
-  and they have been used in computer vision since the 1980s \cite{geron2019hands}. We can not simply use a deep neural
-  network with fully connected layers for computer vision, as it breaks down for large images due to the immense
-  number of parameters \cite{geron2019hands}. CNNs also have successful applications in other domains like recommender
-  systems \cite{van2013deep} and natural language processing (NLP) \cite{collobert2008unified}.
-
-  Hubel et al. \cite{hubel1959single, hubel1959receptive, hubel1968receptive} found that many biological neurons have
-  a small local receptive field, which  means they only fire if the visual stimuli are present in a limited region of
-  the visual field \cite{geron2019hands}. Some neurons only react to horizontal lines, whereas the others only react to
-  lines oriented differently \cite{geron2019hands}. Some neurons have larger receptive fields to react to more complex
-  patterns formed by lower-level patterns \cite{geron2019hands}.
-
-  The neurons in the first convolutional layer are only connected to pixels in the receptive fields, and those in
-  the next convolutional layer are only connected to the neurons in the receptive fields from the previous layer
-  \cite{geron2019hands}. This enables CNNs to extract low-level visual features in the first few layers and then combine
-  them into more complex features in the subsequent layers.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.5\textwidth]{cnn_layers.png}
-    \end{center}
-    \caption{Convolutional layers with rectangular receptive fields. Source: \cite{geron2019hands}.}
-  \end{figure}
-
-  The filters or convolution kernels, which are learned during training, are neurons' weights that can be presented as
-  small images the size of receptive fields \cite{geron2019hands}. For example, a dark sqaure with a horizontal white
-  line in the middle (a matrix full of 0s except for the central row with 1s) is a filter that only reacts to the central
-  row in the receptive field. A layer of neurons with the same filter outputs a feature map, which highlights the parts
-  of an image that maximizes the acitivation of the filter \cite{geron2019hands}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.6\textwidth]{filters.png}
-    \end{center}
-    \caption{Two feature maps by applying two different filters. Source: \cite{geron2019hands}.}
-  \end{figure}
-
-  The pooling layers subsample (i.e. shrink) the input image to reduce the computational load and the number of paramters,
-  which also reduces overfitting \cite{geron2019hands}. Plus, pooling layers can bring some invariance to small
-  translations, rotations, and scaling \cite{geron2019hands}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.5\textwidth]{max_pooling.png}
-    \end{center}
-    \caption{A max pooling layer with 2 x 2 as the kernel size and 2 as the stride. The max value from the receptive
-    field passes to the next layer. Source: \cite{geron2019hands}.}
-  \end{figure}
-
-  The typical CNN architecture involves the aforementioned convolutional layers, pooling layers, and fully connected layers.
-  Some well-established CNN architecutres are LeNet-5 \cite{lecun1998gradient}, AlexNet \cite{krizhevsky2012imagenet},
-  GoogLeNet \cite{szegedy2015going}, VGGNet \cite{simonyan2014very}, ResNet (Residual Network) \cite{he2016deep}, Xception
-  (Extreme Inception) \cite{chollet2017xception}, MobileNet \cite{howard2017mobilenets, sandler2018mobilenetv2},
-  and SENet (Squeeze-and-Excitation Network) \cite{hu2018squeeze}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{typical_cnn.png}
-    \end{center}
-    \caption{The typical CNN architecuture. Source: \cite{geron2019hands}.}
-  \end{figure}
-
-  Here we give ResNet a more in-depth introduction, as it is the backbone network of the model used in this paper.
-  ResNet introduced skip connections (or shortcut connections), which means the input signal of a layer is also added to the
-  ouput of a higher up layer \cite{geron2019hands, he2016deep}. Skip connections help speed up the training considerably,
-  since: 1) the network preconditions the problem to be the identify function, which is often close to the target function,
-  and 2) the network can start making progress even if some layers have not started learning yet
-  \cite{geron2019hands, he2016deep}. Batch normalization \cite{ioffe2015batch} is used after each convolution, which
-  zero-centers and normalizes each input to reduce the vanishing gradient problem \cite{hochreiter1998vanishing} and the
-  need for other regularization techniques like dropout \cite{srivastava2014dropout}. The global average pooling layer
-  at the end of the network is another type of pooling layer that computes the mean of the entire feature map. Softmax
-  is used in the output layer to ensure that all probabilities add up to 1.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{resnet.png}
-    \end{center}
-    \caption{ResNet architecture. Source: \cite{geron2019hands}.}
-  \end{figure}
-
-  \subsection{Deep Learning vs. Traditional Computer Vision}
-
-  \label{sec:dlvscv}
-
-  The improvements of deep learning algorithms, computing power, image resolution, and the amount of visual data have
-  enabled deep learning to achieve state-of-the-art performance in many computer vision tasks, including image
-  classification, object detection, and semantic segmentation \cite{qin2015underwater, voulodimos2018deep, o2019deep}.
-
-  Traditionally, computer vision requires the manual feature selection and engineering step, which relies on domain knowledge
-  to produce high-quality features \cite{elgendy2020deep, zhao2019object, o2019deep}. These handcrafted features are further
-  procesed by a machine learning classifier like a support vector machine (SVM)
-  \cite{elgendy2020deep, zhao2019object, o2019deep}. However, manual feature extraction becomes more and more complex as
-  the number of classes increases \cite{o2019deep}. Besides, conventional machine learning algorithms' ability to
-  generalize saturates quickly as the size of training data grows \cite{qin2015underwater}.
-
-  In deep learning, the manual feature extraction step is no longer needed, and neural networks can be trained end-to-end
-  as a feature extractor plus a classifier \cite{elgendy2020deep, o2019deep}. Thus, deep learning requires less domain
-  knowledge, and it provides more flexibility as the models can be re-trained with a custom dataset for any specific use
-  case \cite{o2019deep}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.7\textwidth]{deep_learning_vs_traditional_computer_vision.png}
-    \end{center}
-    \caption{(a) Traditional computer vision workflow. (b) Deep learning workflow. Source: \cite{o2019deep}.}
-  \end{figure}
-
-  However, deep learning's performance depends on obtaining large datasets with high image resolution \cite{o2019deep}.
-  Some popular public datasets like PASCAL Visual Object Classes (VOC) \cite{everingham2010pascal}, ImageNet
-  \cite{russakovsky2015imagenet}, and Microsoft Common Objects in Context (COCO) \cite{lin2014microsoft}
-  have respectively 11 thousand, 14 million, and 328 thousand images \cite{liu2020deep}. Having a highly limited dataset
-  for a task may cause deep learning to have poorer results than traiditional computer vision.
-
-  \subsection{Object Detection}
-
-  \label{sec:objectdetection}
-
-  Object detection is the computer vision task that localizes and classifies objects in an image
-  \cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection remains to be one of the most
-  challenging problems in computer vision, as it can be considered as both a regression task (localization by predicting
-  the bounding box) and a classification task (predicting the object class in each bounding box)
-  \cite{elgendy2020deep, girshick2014rich, geron2019hands}. Plus, the large variantions in viewpoints, poses, occlusions,
-  and lighting conditions add extra difficulties to perform perfect object detection \cite{zhao2019object, liu2020deep}.
-
-  The traditional sliding window approach is to train a CNN to classify and locate a single object, and then slide it
-  across the image \cite{geron2019hands, pasquet2017amphora, girshick2014rich, redmon2016you}. This approach slides the
-  CNN mulitple times with different window sizes to detect objects with various sizes, which causes it to be quite slow
-  \cite{geron2019hands}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.5\textwidth]{sliding_window.png}
-    \end{center}
-    \caption{The sliding window approach for object detection. Source: \cite{o2019deep}.}
-  \end{figure}
-
-  Luckily, many object detection frameworks based on fully convolutional network (FCN) \cite{long2015fully} have been
-  introduced. FCNs contain only convolutional layers and pooling layers and only need to process each image once, which
-  means they are faster and the input images can have arbitrary sizes \cite{elgendy2020deep, geron2019hands, long2015fully}.
-  Here we summarize three well-established and influential object detection framework families: Region-Based Convolutional
-  Neural Networks (R-CNN) \cite{girshick2014rich, girshick2015fast, ren2015faster}, Single Shot Detector (SSD)
-  \cite{liu2016ssd}, and You Only Look Once (YOLO)
-  \cite{redmon2016you, redmon2017yolo9000, redmon2018yolov3, bochkovskiy2020yolov4, yolov5}.
-
-  \subsubsection{General Object Detection Framework Components}
-
-  \label{sec:generalobjectdetection}
-
-  Before we dive into specific object detection frameworks, it's worth understanding the four high-level components of
-  general object detection frameworks.
-
-  \paragraph{Region Proposal}
-
-  The region proposal algorithm finds regions of interest (RoIs) that are then further processed by the model
-  \cite{elgendy2020deep}. This is achieved by discarding regions with low objectness score, which indicates the probability
-  of the region containing an object instead of the background \cite{elgendy2020deep}.
-
-  \paragraph{Backbone Network}
-
-  A pretrained CNN is used as the backbone for feature extraction and performs the bounding-box and class predictions
-  \cite{elgendy2020deep}. The bounding-box prediction is the tuple $(x, y, w, h)$, where $x$ and $y$ are the coordinates
-  of the center and $w, h$ are the width and the height \cite{elgendy2020deep}.
-
-  \paragraph{Non-Maximum Suppression (NMS)}
-
-  The backbone network typically produces mulitple overlapping bounding boxes for one object, thus NMS finds
-  the box with the maximum class probability and suppresses the rest \cite{elgendy2020deep}. The steps include
-  \cite{elgendy2020deep}:
-
-  \begin{enumerate}
-    \item Discard boxes with prediction values smaller than the tunable confidence threshold.
-    \item Select the box with the highest probability.
-    \item Compute the overlap - intersection over union (IoU) - of the boxes that have the same class prediction.
-    Boxes with high IoU are averaged together.
-    \item Suppress boxes with an IoU less than the tunable NMS threshold.
-  \end{enumerate}
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{nms.png}
-    \end{center}
-    \caption{NMS. Source: \cite{elgendy2020deep}.}
-  \end{figure}
-
-  \paragraph{Metrics}
-
-  The two main metrics for object detection are frames per second (FPS) and mean average precision (mAP)
-  \cite{elgendy2020deep, liu2020deep, geron2019hands, planche2019hands}. To understand mAP, we need to understand first
-  the aforementioned intersection over union (IoU) and the precision-recall curve (PR curve). The IoU is also known as
-  the Jaccard index, which is used to messaure similarity between two sets \cite{planche2019hands}. The IoU can be
-  mathematically formulated as follows \cite{elgendy2020deep, planche2019hands}:
-
-  $$IoU = \frac{B_{ground \ truth} \cap B_{prediction}}{B_{ground \ truth} \cup B_{prediction}}$$
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.6\textwidth]{iou.png}
-    \end{center}
-    \caption{IOU. Source: \cite{elgendy2020deep}.}
-  \end{figure}
-
-  We say that a prediction is a true positive (TP) if the predicted class is the same as the ground truth and the IoU
-  value is higher than the tunable threshold, otherwise it is a false positive (FP)
-  \cite{liu2020deep, elgendy2020deep, planche2019hands}. A false negative (FN) is a ground truth that does not have a
-  prediction \cite{planche2019hands}. Then we can define precision and recall as follows
-  \cite{burkov2019hundred, davis2006relationship}:
-
-  $$Precision = \frac{TP}{TP + FP}$$
-
-  $$Recall = \frac{TP}{TP + FN}$$
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=\textwidth]{precision_recall.png}
-    \end{center}
-    \caption{Precision and recall. Source: \cite{precisionrecall}.}
-  \end{figure}
-
-  There is a trade-off between precision and recall
-  \cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
-  (AP) by drawing the PR curve and computing the area under the curve (AUC) \cite{elgendy2020deep, planche2019hands}.
-  Finally, we get the mean average precision (mAP) by averaging the AP over all the classes
-  \cite{elgendy2020deep, geron2019hands, planche2019hands}. The traiditional Pascal VOC metric uses mAP@0.5, which means
-  the IOU threshold is 0.5 \cite{liu2020deep, everingham2010pascal}. The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$
-  is averaged over different IOU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better
-  localization \cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean mAP
-  \cite{cocometrics}, although we use mAP here consistently in this paper. COCO also introduced mAP for different scales:
-  $mAP^{small}$ for small objects ($area < 32^2$), $mAP^{medium}$ for medium objects ($32^2 < area < 96^2$),
-  and $mAP^{big}$ for big objects ($area > 96^2$) \cite{liu2020deep, cocometrics}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.5\textwidth]{pr_curve.png}
-    \end{center}
-    \caption{A PR curve with a 0.88 AUC/AP. Source: \cite{planche2019hands}.}
-  \end{figure}
-
-  \subsubsection{Region-Based Convolutional Neural Networks (R-CNN)}
-
-  The evolution from the original R-CNN \cite{girshick2014rich} to Fast R-CNN \cite{girshick2015fast} and then to
-  Faster R-CNN \cite{ren2015faster} builds up the R-CNN family.
-
-  \paragraph{R-CNN}
-
-  R-CNN has four components \cite{elgendy2020deep, girshick2014rich}:
-
-  \begin{enumerate}
-    \item Region proposal with a greedy search algorithm called selective search, which finds RoIs by combining similar
-    pixels into boxes.
-    \item A pretrained CNN as the network backbone.
-    \item Classification with a linear SVM.
-    \item Localization with a bounding-box regressor.
-  \end{enumerate}
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{r_cnn.png}
-    \end{center}
-    \caption{R-CNN. Source: \cite{elgendy2020deep}.}
-  \end{figure}
-
-  R-CNN has the following disadvantages \cite{elgendy2020deep, girshick2014rich, girshick2015fast}:
-
-  \begin{itemize}
-    \item The FPS is very low. The selective search algorithm proposes about 2000 RoIs, which is computationally
-    expensive as the CNN has to process each proposal separately.
-    \item The training is multi-stage, inelegant, expensive, and not end-to-end. It involves training three components
-    separately: the CNN, the SVM, and the bounding-box regressor.
-  \end{itemize}
-
-  \paragraph{Fast R-CNN}
-
-  Fast R-CNN makes the following changes from R-CNN \cite{elgendy2020deep, girshick2015fast}:
-
-  \begin{itemize}
-    \item The CNN goes before region proposal instead of after, so that the image only goes through the CNN once instead
-    of 2000 RoIs going through the CNN separately.
-    \item Classification is performed by the softmax layer of the CNN instead of the SVM. And localization is also an output
-    layer of the CNN.
-    \item A RoI max pooling layer is added after region proposal to reshape the input size for the fully connected layers.
-    \item A multi-task loss function is used.
-  \end{itemize}
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{fast_r_cnn.png}
-    \end{center}
-    \caption{Fast R-CNN. Source: \cite{elgendy2020deep}.}
-  \end{figure}
-
-  Fast R-CNN is much faster than R-CNN, although the selective search algorithm still exists as the bottleneck
-  \cite{elgendy2020deep, girshick2015fast, ren2015faster}.
-
-  \paragraph{Faster R-CNN}
-
-  Faster R-CNN makes the following improvments from Fast R-CNN \cite{elgendy2020deep, ren2015faster}:
-
-  \begin{itemize}
-    \item Region Proposal Network (RPN) or attention network replaces selective search, which reduces the number of
-    proposals, speeds up the model, and makes the model training end-to-end. RPN is a FCN that outputs objectness scores
-    and RoIs, and it can be used as a standalone network for single-class object detection. It also shares the features
-    with the detection network, which enables region proposal to be nearly cost-free.
-    \item Anchors are introduced as reference boxes at different scales and aspect ratios. Thus the regression layer
-    only needs to output the offsets of the coordinates, width, and height from the anchors. The anchors are created using
-    the sliding-window approach. By default 9 anchors (3 scales and 3 aspect ratios) centered at each sliding window are
-    created for each window.
-  \end{itemize}
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{anchors.png}
-    \end{center}
-    \caption{Anchors in Faster R-CNN. Source: \cite{elgendy2020deep}.}
-  \end{figure}
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{faster_r_cnn.png}
-    \end{center}
-    \caption{Faster R-CNN. Source: \cite{elgendy2020deep}.}
-  \end{figure}
-
-  To summarize, the R-CNN family are two-stage detectors that separate region proposal and detection
-  \cite{elgendy2020deep, liu2020deep}. They can not achieve real-time detection (only 7 FPS), and they are very
-  computationally intensive \cite{elgendy2020deep, liu2016ssd, redmon2016you}.
-  One-stage detectors like Single Shot Detector (SSD) and You Only Look Once (YOLO) skip the region proposal to achieve
-  real-time detection speed \cite{elgendy2020deep}. In general, one-stage detectors sacrifices some accuracy for speed
-  \cite{elgendy2020deep, lin2017focal}.
-
-  \subsubsection{Single Shot Detector (SSD)}
-
-  Single Shot Detector (SSD) makes both the objectness and class probability predictions directly in one shot
-  \cite{elgendy2020deep, liu2016ssd}. It has three main components \cite{elgendy2020deep, liu2016ssd}:
-
-  \begin{itemize}
-    \item The backbone network, which is VGG-16 in the original paper. It also uses anchors called priors like in Faster R-CNN.
-    But the network sends the bounding box offsets and the class scores to NMS directly when it finds a bounding box that
-    contains the object features.
-    \item Multi-scale feature layers, which are convolutional layers that decrease in size progressively to detect objects
-    at multiple scales. The resolution of feature maps decreases as the CNN reduces the spatial dimension.
-    \item NMS.
-  \end{itemize}
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{ssd_feature_maps.png}
-    \end{center}
-    \caption{Multi-scale feature maps in SSD. Higher-resolution feature maps (left) detect smaller objects.
-    Lower-resolution feature mpas (right) detect bigger objects Source: \cite{elgendy2020deep}.}
-  \end{figure}
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{ssd.png}
-    \end{center}
-    \caption{SSD. Source: \cite{elgendy2020deep}.}
-  \end{figure}
-
-  \subsubsection{You Only Look Once (YOLO)}
-
-  Like the R-CNN family, the YOLO family has been going through a series of improvements since the original YOLO paper
-  was published. YOLO is also a one-stage real-time detector simlar to SSD. YOLOv1 \cite{redmon2016you} introduces the
-  general architecture; YOLOv2 \cite{redmon2017yolo9000} adds anchors similar to Faster R-CNN and SSD; YOLOv3
-  \cite{redmon2018yolov3} further refines the architecture and the training process.
-
-  YOLO divides the image into a grid, and a grid cell is responsible for detecting an object if the center of the object
-  is inside the cell \cite{elgendy2020deep, redmon2016you}. The backbone network is called DarkNet, which is inspired by
-  GoogLeNet \cite{elgendy2020deep, redmon2016you}.
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=\textwidth]{yolov3.png}
-    \end{center}
-    \caption{YOLOv3 architecture. YOLO performs detections at 3 different scales. Layer 79 makes a grid of 13 x 13 to
-    detect large objects. Layer 91 makes a grid of 26 x 26 to detect medium objects. And finally layer 106 makes a grid
-    of 52 x 52 to detect small objects. Source: \cite{elgendy2020deep}.}
-  \end{figure}
-
-  YOLOv4 \cite{bochkovskiy2020yolov4}, a bleeding-edge detector introduced in 2020, utilizes numerous new features to
-  improve the performance from YOLOv3, including DropBlock regulariztion \cite{ghiasi2018dropblock}, Mish activation
-  \cite{misra2019mish}, Self-Adversarial Training \cite{bochkovskiy2020yolov4}, etc.
-
-  YOLOv5 \cite{yolov5} is under active development and the authors have yet to publish a paper.
-
-  \section{Related Work}
-
-  As we have mentioned in section \ref{sec:cvForUnderwater}, there is limited research on the application of deep learning
-  for underwater archaeology and vision-based underwater object detection in general.
-
-  For fish detection, Qin et al. \cite{qin2015underwater, li2015fast}, Zhang et al. \cite{zhang2016unsupervised},
-  Villon et al. \cite{villon2016coral}, Xu et al. \cite{xu2018underwater}, and Konovalov et al.
-  \cite{konovalov2019underwater} respectively used Fast R-CNN, a model similar to R-CNN, sliding window with a CNN,
-  YOLOv3, and Xception.
-
-  For crab detection, Can et al. \cite{cao2020real} proposed a detector called Faster MSSDLite, which is based on SSD with
-  a MobileNetv2 backbone and Feature Pyramid Network (FPN) \cite{lin2017feature}.
-
-  For planktons and corals, we have only found research for classification but not object detection
-  \cite{qin2015underwater, moniruzzaman2017deep}.
-
-  For amphora detection, Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} used sliding window with a CNN on
-  high-resolution orthophotos (aerial photos). And this is the only study we have found on amphora detection with deep
-  learning.
-
-  \section{Data and Methods}
-
-  \subsection{Data}
-
-  The dataset consists of 50 images (294 objects) in the training set and 7 images (31 objects) in the validation set,
-  which maintains the 90\% : 10\% ratio for the object count. Two additional images were used as the test set. All the
-  images were obtained through various sources
-  \cite{googleimages, scuba, itinari, whoi, phoenician, auscape, hakai, groplan, ionian, sanisera} and were labeled
-  with LabelImg \cite{labelimg}.
-
-  \subsection{Model}
-
-  Out of the three families of obejct detection frameworks we have discussed in section \ref{sec:objectdetection}, SSD was
-  chosen due to the following reasons:
-
-  \begin{itemize}
-    \item Faster R-CNN is too computationally intensive and too slow for AUVs and UUVs.
-    \item YOLOv5, the state-of-art model of the YOLO family, is under active development and the authors have yet to
-    publish a paper.
-  \end{itemize}
-
-  The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} was used. ssd\_resnet\_50\_fpn\_coco
-  is the model name in the TensorFlow 1 Detection Model Zoo \cite{tf1detectionmodelzoo}. The backbone network
-  is ResNet-50 (50-layer ResNet) (see section \ref{sec:cnn}) instead of VGG-16 in the original SSD paper to, as it
-  improves the mAP significantly \cite{he2016deep}. Similar to the approach from Can et al. \cite{cao2020real} for crab
-  detection, Feature Pyramid Network (FPN) was added to improve the detection at different scales \cite{lin2017feature}.
-
-  \subsection{Model Training}
-
-  Transfer learning \cite{torrey2010transfer} was used as the model was pretrained on the COCO dataset, which means the
-  weights and biases are restored instead of being randomly intialized and the model does not have to learn the low-level
-  features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config were adjusted
-  to 1, 8, and 7 respectively in the configuration file, while the rest of fields were unchanged. The images were reshaped
-  to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a modified version of ReLU that caps
-  the maximum value at 6 and thus encourages the model to learn sparse features earlier
-  \cite{krizhevsky2010convolutional}. We used $L_2$ regularization \cite{ng2004feature} to reduce overfitting
-  \cite{hawkins2004problem}. Data augmentation \cite{krizhevsky2012imagenet} - a method to artificially enrich the
-  dataset by randomly flipping horizontally and cropping the images - was also used as a regularization technique.
-  We chose the momentum optimizer \cite{polyak1964some} as it converges faster than Stochastic Gradient Descent
-  \cite{bottou2010large} by keeping accelerating to the optimum \cite{geron2019hands}. Learning rate warmup and learning
-  rate scheduling by cosine decay were also added to speed up the convergence, so that the learning rate starts small,
-  increases gradually, and then decreases after reaching the maximum
-  \cite{geron2019hands, goyal2017accurate, senior2013empirical, loshchilov2016sgdr}.
-  The model was trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training took 2 hours and 40
-  minutes to reach the peak mAP result at step 8621.
-
-  \section{Evaluation}
-
-  The main metric $mAP_{coco}$ (see section \ref{sec:generalobjectdetection}) from our model is 0.238, while the
-  traditional mAP@0.5 is 0.503. The documented $mAP_{coco}$ in the TensorFlow 1 Detection Model Zoo for
-  ssd\_resnet\_50\_fpn\_coco is 0.35, which was measured on the COCO validation set. Our model's performance is indeed
-  lower than that in the model zoo. And it is somewhat difficult to perform a direct comparison with the result from
-  Pasquet et al. \cite{pasquet2017amphora}, as they did not compute the $mAP$ and only mentioned that they detected
-  around 90.3 percent of amphoras. However, we can conclude that our model did not detect more than 90.3 percent based
-  on the visual inspection of the validation images in figure \ref{fig:val}.
-
-  Nevertheless, our model's performance is still impressive due to the following reasons:
-
-  \begin{itemize}
-    \item Our dataset is very small. As we have mentioned before in section \ref{sec:dlvscv}, the COCO dataset has 328
-    thousand images compared to our 57 images plus 2 test images. For Pasquet et al., they split one 38000 x 15000
-    orthophoto into 400 x 400 images and used 25\% of them for training, which means the training set alone was around
-    890 images.
-    \item Our dataset is more diverse than that of Pasquet et al. Since our dataset images are obtained through
-    numerous sources instead of from a single orthophoto, they reflect better the various shapes of amphoras (see
-    figure \ref{fig:amphora}). Plus, our dataset has both large and medium instances of amphoras that vary significantly
-    in terms of the scale. The diversity of our dataset made it harder to achieve a high mAP, although it encouraged
-    the model to generalize better.
-    \item Underwater object detection is more challenging than general object detection performed by the COCO dataset.
-    As we have mentioned before in section \ref{sec:cvForUnderwater}, the same challenges also apply for amphora
-    detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
-    in sand, or blocked by suspended particles. We only defined one class for all amphoras even if they are broken, while
-    Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
-    \item Our mAP@0.5 score is in fact comparable with that from Xu et al. \cite{xu2018underwater} for fish detection.
-    They achieved a 0.5392 mAP@0.5 using YOLOv3, although they did not compute the $mAP_{coco}$.
-  \end{itemize}
-
-  We also ran the model on 2 test images shown in figure \ref{fig:test}. To our surprise, the model managed to detect
-  the amphora in the first image even though it is so broken that only half of it is present. As for the second image,
-  none of the amphoras was detected as expected. The size of the first image is only 709 x 411, while it has hundreds of
-  amphora instances. This means that they are mostly small instances defined by the COCO metric, which our training set
-  does not include. It is a known issue that small objects are significantly harder to detect than medium and
-  large objects, mainly due to the low resolution and thus the lack of features to learn
-  \cite{kisantal2019augmentation, li2017perceptual, eggert2017closer}.
-  Plus, the image can be described as a crowded and densely packed scene, which is also notoriously challenging for object
-  detectors since the objects overlap with each other so strongly that it is even impossible for human experts to
-  differentiate the instances \cite{pasquet2017amphora, goldman2019precise, leibe2005pedestrian, arteta2013learning}.
-  In fact, we tried to split the image and add parts of it to the training set. However, the inter-occlusion of the
-  intances caused many labeling errors, and the resolution of each instance was so low that the training could not
-  converge to a solution.
-
-
-  \begin{figure}[ht]
-    \centering
-    \begin{subfigure}[ht]{0.4\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{val_1.png}
-    \end{subfigure}
-    \begin{subfigure}[ht]{0.4\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{val_6.png}
-    \end{subfigure}
-    \bigskip
-    \begin{subfigure}[ht]{0.4\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{val_3.png}
-    \end{subfigure}
-    \begin{subfigure}[ht]{0.4\textwidth}
-      \centering
-      \includegraphics[width=\textwidth]{val_2.png}
-    \end{subfigure}
-    \bigskip
-    \begin{subfigure}[ht]{0.4\textwidth}
-      \centering
-      \includegraphics[width=\textwidth]{val_5.png}
-    \end{subfigure}
-    \begin{subfigure}[ht]{0.4\textwidth}
-      \centering
-      \includegraphics[width=\textwidth]{val_7.png}
-    \end{subfigure}
-    \bigskip
-    \begin{subfigure}[ht]{0.4\textwidth}
-      \centering
-      \includegraphics[width=\textwidth]{val_4.png}
-    \end{subfigure}
-    \caption{The validation images. Source:
-    \cite{scuba, itinari, whoi, phoenician, auscape, hakai, groplan}.}
-    \label{fig:val}
+  \caption{The egg-like shape enabled amphoras to interlock and minimize the waste of space on a ship.
+  Source: \cite{twede2002commercial}.}
 \end{figure}
 
-  \begin{figure}[ht]
+Amphoras' various shapes and stamps - which changed by time, region, producer, contents, and brand
+identity - were used to identify the package status and the different products inside
+\cite{twede2002commercial, worldhistory}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.5\textwidth]{amphora_various_shapes.jpg}
+  \end{center}
+  \caption{Amphoras have various shapes. Source: \cite{worldhistory}.}
+  \label{fig:amphora}
+\end{figure}
+
+Amphoras have great significance in archaeology. They can be used as evidence for the trade patterns throughout
+the Mediterranean \cite{twede2002commercial}. As they were usually discarded at the trade destination and have been
+found in shipwrecks, archaeologists use them to recreate the transit routes \cite{twede2002commercial}. Furthermore,
+researchers can date ruins and shipwrecks by classifying different amphoras \cite{twede2002commercial, grace1985middle}.
+
+\subsubsection{Computer Vision for Underwater Archaeology}
+
+\label{sec:cvForUnderwater}
+
+Computer vision is the science of perceiving and understanding the world through images and videos \cite{elgendy2020deep}.
+There have been multiple exciting applications of computer vision, including image classification \cite{rawat2017deep},
+object detection and localization \cite{zhao2019object,liu2020deep}, art generation (neural style transfer)
+\cite{jing2019neural}, image creation with Generative Artificial Networks (GAN) \cite{goodfellow2014generative},
+face recognition \cite{parkhi2015deep}, action and activity recognition \cite{poppe2010survey}, human pose estimation
+\cite{toshev2014deeppose}, and image recommendation system \cite{niu2018neural}.
+
+However, there is still limited research for the application of computer vision and machine learning in archaeology,
+especially underwater archaeology, compared to other domains \cite{maaten2007computer, qin2015underwater}.
+Computer vision, instead of visual inspection, could be used to automate the detection, assessment, and classification
+of artifacts \cite{maaten2007computer}.
+
+Underwater computer vision has proven to be challenging, largely due to: 1) the distortion and attenuation caused by
+light propagation in water, 2) the unrestricted natural environment with the abundance of marine life and suspended
+particles, and 3) underwater objects are often broken
+\cite{qin2015underwater, rizzini2015investigation, lu2017underwater, mccarthy20193d}.
+
+Despite the challenges, computer vision has lower costs \cite{rizzini2015investigation} compared to sonar imagery
+\cite{abu2019statistically} and laser scanning \cite{gordon1992use}. Plus, the increasingly abundant visual data obtained
+through autonomous underwater vehicles (AUVs), unmanned underwater vehicles (UUVs)
+\cite{lu2017underwater, moniruzzaman2017deep}, and seafloor cabled observatories \cite{qin2015underwater} motivate us
+to utilize deep learning.
+
+Furthermore, the research for deep-water shipwrecks is even more limited, mostly due to the lack of information and
+accessibility \cite{drap2015underwater}. However, the need to study deep-water sites is in high demand, as the threats
+to these sites are increasing \cite{drap2015underwater}. One major threat is the new forms of trawling that interfere
+with the readability by destroying the surface of these sites\cite{drap2015underwater}. This means that many
+shipwrecks are likely to be damaged before they can be studied \cite{drap2015underwater}. It is thus crucial to implement
+efficient, accessible, and accurate techniques like deep learning based computer vision to study deep-water shipwrecks.
+
+\subsection{Deep Learning}
+
+Machine learning is the class of algorithms that allow computers to learn and improve from data instead of being
+explicitly programmed \cite{samuel1959some, geron2019hands}. And deep learning is the subfield of machine learning that
+builds artificial neural networks with more than one layer between the input and output layers
+\cite{geron2019hands, burkov2019hundred, zhang2018definition}. Deep learning constructs complex representations by
+combining simpler ones from the previous layers \cite{goodfellow2016deep}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{deep_learning.png}
+  \end{center}
+  \caption{A deep learning system that learns the representations of a person. This is achieved by combining simpler
+  features like corners and contours, which are further expressed by combining simpler features like edges. Source:
+  \cite{goodfellow2016deep}.}
+\end{figure}
+
+\subsubsection{Artifical Neural Networks (ANNs)}
+
+Inspired by the biological neuron, artificial neural networks (ANNs) were first introduced in 1943 using propositional
+logic \cite{mcculloch1943logical}. The artificial neuron activates its single binary output when the number of active
+binary inputs reaches the activation threshold, which enables us to build networks that can perform any logical
+proposition \cite{geron2019hands, mcculloch1943logical}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.5\textwidth]{ann_logic_computations.png}
+  \end{center}
+  \caption{ANNs performing logical computations with 2 as the activation threshold. Source: \cite{geron2019hands}.}
+\end{figure}
+
+Then the Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
+(TLU) or linear threshold unit (LTU) \cite{rosenblatt1957perceptron}. The input and output are numbers instead of
+binary values, and each input has a weight. TLU computes the weighted sum of the input and then applies a step
+function like the Heaviside function
+$heaviside (x) =
+\begin{cases}
+  0 & x \le 0 \\
+  1 & x \geq 0 \\
+\end{cases}$
+\cite{geron2019hands, rosenblatt1957perceptron}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.5\textwidth]{tlu.png}
+  \end{center}
+  \caption{TLU. Source: \cite{geron2019hands}.}
+\end{figure}
+
+A single TLU can be used for simple linear binary classification, while a layer of TLUs plus a bias neuron form a
+Perceptron capable of multi-output classification \cite{geron2019hands}.
+
+The output of a fully connected layer is computed as follows, where $\mathbf{X}, \mathbf{W}, \mathbf{b}$, and $\phi$
+are respectively the input matrix, weight matrix, bias vector, and activation function:
+
+$$h_{\mathbf{W,b}}(\mathbf{X}) = \phi(\mathbf{XW} + \mathbf{b})$$
+
+The Perceptron is trained using a variant of the Herbb's rule \cite{hebb2005organization}, which is famously summarized
+as "neurons wire together if they fire together" \cite{lowel1992selection}. However, the Perceptron
+can not learn complex patterns due to the linear decision boundary of the output neurons, and it can only make predictions
+based on a hard threshold instead of outputting a class probability \cite{geron2019hands}. To address these limitations,
+the Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.5\textwidth]{mlp.png}
+  \end{center}
+  \caption{A Multilayer Perceptron with one hidden layer. Source: \cite{geron2019hands}.}
+\end{figure}
+
+Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first performs a forward pass to compute
+the loss, then makes a reverse pass to measure the loss contribution from each connection, and finally reduces the
+loss by adjusting the weights in the Gradient Descent \cite{ruder2016overview} step \cite{geron2019hands}. Activation
+functions like Rectified Linear Unit $ReLU(x) = max(0, x)$ are used to add nonlinearity, which theoretically gives a
+large enough deep neural network the theoretical ability to approximate any continuous function \cite{geron2019hands}.
+
+\subsubsection{Convolutional Neural Networks (CNNs)}
+
+\label{sec:cnn}
+
+Convolutional Neural Networks (CNNs) \cite{lecun1989backpropagation} were inspired by the brain's visual cortex,
+and they have been used in computer vision since the 1980s \cite{geron2019hands}. We can not simply use a deep neural
+network with fully connected layers for computer vision, as it breaks down for large images due to the immense
+number of parameters \cite{geron2019hands}. CNNs also have successful applications in other domains like recommender
+systems \cite{van2013deep} and natural language processing (NLP) \cite{collobert2008unified}.
+
+Hubel et al. \cite{hubel1959single, hubel1959receptive, hubel1968receptive} found that many biological neurons have
+a small local receptive field, which means they only fire if the visual stimuli are present in a limited region of
+the visual field \cite{geron2019hands}. Some neurons only react to horizontal lines, whereas the others only react to
+lines oriented differently \cite{geron2019hands}. Some neurons have larger receptive fields to react to more complex
+patterns formed by lower-level patterns \cite{geron2019hands}.
+
+The neurons in the first convolutional layer are only connected to pixels in the receptive fields, and those in
+the next convolutional layer are only connected to the neurons in the receptive fields from the previous layer
+\cite{geron2019hands}. This enables CNNs to extract low-level visual features in the first few layers and then combine
+them into more complex features in the subsequent layers.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.5\textwidth]{cnn_layers.png}
+  \end{center}
+  \caption{Convolutional layers with rectangular receptive fields. Source: \cite{geron2019hands}.}
+\end{figure}
+
+The filters or convolution kernels, which are learned during training, are neurons' weights that can be presented as
+small images the size of receptive fields \cite{geron2019hands}. For example, a dark square with a horizontal white
+line in the middle (a matrix full of 0s except for the central row with 1s) is a filter that only reacts to the central
+row in the receptive field. A layer of neurons with the same filter outputs a feature map, which highlights the parts
+of an image that maximizes the activation of the filter \cite{geron2019hands}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.6\textwidth]{filters.png}
+  \end{center}
+  \caption{Two feature maps by applying two different filters. Source: \cite{geron2019hands}.}
+\end{figure}
+
+The pooling layers subsample (i.e. shrink) the input image to reduce the computational load and the number of parameters,
+which also reduces overfitting \cite{geron2019hands}. Plus, pooling layers can bring some invariance to small
+translations, rotations, and scaling \cite{geron2019hands}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.5\textwidth]{max_pooling.png}
+  \end{center}
+  \caption{A max pooling layer with 2 x 2 as the kernel size and 2 as the stride. The max value from the receptive
+  field passes to the next layer. Source: \cite{geron2019hands}.}
+\end{figure}
+
+The typical CNN architecture involves the aforementioned convolutional layers, pooling layers, and fully connected layers.
+Some well-established CNN architectures are LeNet-5 \cite{lecun1998gradient}, AlexNet \cite{krizhevsky2012imagenet},
+GoogLeNet \cite{szegedy2015going}, VGGNet \cite{simonyan2014very}, ResNet (Residual Network) \cite{he2016deep}, Xception
+(Extreme Inception) \cite{chollet2017xception}, MobileNet \cite{howard2017mobilenets, sandler2018mobilenetv2},
+and SENet (Squeeze-and-Excitation Network) \cite{hu2018squeeze}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{typical_cnn.png}
+  \end{center}
+  \caption{The typical CNN architecture. Source: \cite{geron2019hands}.}
+\end{figure}
+
+Here we give ResNet a more in-depth introduction, as it is the backbone network of the model used in this paper.
+ResNet introduced skip connections (or shortcut connections), which means the input signal of a layer is also added to the
+output of a higher-up layer \cite{geron2019hands, he2016deep}. Skip connections help speed up the training considerably,
+since: 1) the network preconditions the problem to be the identity function, which is often close to the target function,
+and 2) the network can start making progress even if some layers have not started learning yet
+\cite{geron2019hands, he2016deep}. Batch normalization \cite{ioffe2015batch} is used after each convolution, which
+zero-centers and normalizes each input to reduce the vanishing gradient problem \cite{hochreiter1998vanishing} and the
+need for other regularization techniques like dropout \cite{srivastava2014dropout}. The global average pooling layer
+at the end of the network is another type of pooling layer that computes the mean of the entire feature map. Softmax
+is used in the output layer to ensure that all probabilities add up to 1.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{resnet.png}
+  \end{center}
+  \caption{ResNet architecture. Source: \cite{geron2019hands}.}
+\end{figure}
+
+\subsection{Deep Learning vs. Traditional Computer Vision}
+
+\label{sec:dlvscv}
+
+The improvements of deep learning algorithms, computing power, image resolution, and the amount of visual data have
+enabled deep learning to achieve state-of-the-art performance in many computer vision tasks, including image
+classification, object detection, and semantic segmentation \cite{qin2015underwater, voulodimos2018deep, o2019deep}.
+
+Traditionally, computer vision requires the manual feature selection and engineering step, which relies on domain knowledge
+to produce high-quality features \cite{elgendy2020deep, zhao2019object, o2019deep}. These handcrafted features are further
+processed by a machine learning classifier like a support vector machine (SVM)
+\cite{elgendy2020deep, zhao2019object, o2019deep}. However, manual feature extraction becomes more and more complex as
+the number of classes increases \cite{o2019deep}. Besides, conventional machine learning algorithms' ability to
+generalize saturates quickly as the size of training data grows \cite{qin2015underwater}.
+
+In deep learning, the manual feature extraction step is no longer needed, and neural networks can be trained end-to-end
+as a feature extractor plus a classifier \cite{elgendy2020deep, o2019deep}. Thus, deep learning requires less domain
+knowledge, and it provides more flexibility as the models can be re-trained with a custom dataset for any specific use
+case \cite{o2019deep}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.7\textwidth]{deep_learning_vs_traditional_computer_vision.png}
+  \end{center}
+  \caption{(a) Traditional computer vision workflow. (b) Deep learning workflow. Source: \cite{o2019deep}.}
+\end{figure}
+
+However, deep learning's performance depends on obtaining large datasets with high image resolution \cite{o2019deep}.
+Some popular public datasets like PASCAL Visual Object Classes (VOC) \cite{everingham2010pascal}, ImageNet
+\cite{russakovsky2015imagenet}, and Microsoft Common Objects in Context (COCO) \cite{lin2014microsoft}
+have respectively 11 thousand, 14 million, and 328 thousand images \cite{liu2020deep}. Having a highly limited dataset
+for a task may cause deep learning to have poorer results than traditional computer vision.
+
+\subsection{Object Detection}
+
+\label{sec:objectdetection}
+
+Object detection is the computer vision task that localizes and classifies objects in an image
+\cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection remains to be one of the most
+challenging problems in computer vision, as it can be considered as both a regression task (localization by predicting
+the bounding box) and a classification task (predicting the object class in each bounding box)
+\cite{elgendy2020deep, girshick2014rich, geron2019hands}. Plus, the large variations in viewpoints, poses, occlusions,
+and lighting conditions add extra difficulties to perform perfect object detection \cite{zhao2019object, liu2020deep}.
+
+The traditional sliding window approach is to train a CNN to classify and locate a single object, and then slide it
+across the image \cite{geron2019hands, pasquet2017amphora, girshick2014rich, redmon2016you}. This approach slides the
+CNN multiple times with different window sizes to detect objects with various sizes, which causes it to be quite slow
+\cite{geron2019hands}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.5\textwidth]{sliding_window.png}
+  \end{center}
+  \caption{The sliding window approach for object detection. Source: \cite{o2019deep}.}
+\end{figure}
+
+Luckily, many object detection frameworks based on fully convolutional networks (FCNs) \cite{long2015fully} have been
+introduced. FCNs contain only convolutional layers and pooling layers and only need to process each image once, which
+means they are faster and the input images can have arbitrary sizes \cite{elgendy2020deep, geron2019hands, long2015fully}.
+Here we summarize three well-established and influential object detection framework families: Region-Based Convolutional
+Neural Networks (R-CNN) \cite{girshick2014rich, girshick2015fast, ren2015faster}, Single Shot Detector (SSD)
+\cite{liu2016ssd}, and You Only Look Once (YOLO)
+\cite{redmon2016you, redmon2017yolo9000, redmon2018yolov3, bochkovskiy2020yolov4, yolov5}.
+
+\subsubsection{General Object Detection Framework Components}
+
+\label{sec:generalobjectdetection}
+
+Before we dive into specific object detection frameworks, it's worth understanding the four high-level components of
+general object detection frameworks.
+
+\paragraph{Region Proposal}
+
+The region proposal algorithm finds regions of interest (RoIs) that are then further processed by the model
+\cite{elgendy2020deep}. This is achieved by discarding regions with a low objectness score, which indicates the probability
+of the region containing an object instead of the background \cite{elgendy2020deep}.
+
+\paragraph{Backbone Network}
+
+A pre-trained CNN is used as the backbone for feature extraction and performs the bounding-box and class predictions
+\cite{elgendy2020deep}. The bounding-box prediction is the tuple $(x, y, w, h)$, where $x$ and $y$ are the coordinates
+of the center and $w, h$ are the width and the height \cite{elgendy2020deep}.
+
+\paragraph{Non-Maximum Suppression (NMS)}
+
+The backbone network typically produces multiple overlapping bounding boxes for one object, thus NMS finds
+the box with the maximum class probability and suppresses the rest \cite{elgendy2020deep}. The steps include
+\cite{elgendy2020deep}:
+
+\begin{enumerate}
+  \item Discard boxes with prediction values smaller than the tunable confidence threshold.
+  \item Select the box with the highest probability.
+  \item Compute the overlap - intersection over union (IoU) - of the boxes that have the same class prediction.
+  Boxes with high IoU are averaged together.
+  \item Suppress boxes with an IoU less than the tunable NMS threshold.
+\end{enumerate}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{nms.png}
+  \end{center}
+  \caption{NMS. Source: \cite{elgendy2020deep}.}
+\end{figure}
+
+\paragraph{Metrics}
+
+The two main metrics for object detection are frames per second (FPS) and mean average precision (mAP)
+\cite{elgendy2020deep, liu2020deep, geron2019hands, planche2019hands}. To understand mAP, we need to understand first
+the aforementioned intersection over union (IoU) and the precision-recall curve (PR curve). The IoU is also known as
+the Jaccard index, which is used to measure similarity between two sets \cite{planche2019hands}. The IoU can be
+mathematically formulated as follows \cite{elgendy2020deep, planche2019hands}:
+
+$$IoU = \frac{B_{ground \ truth} \cap B_{prediction}}{B_{ground \ truth} \cup B_{prediction}}$$
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.6\textwidth]{iou.png}
+  \end{center}
+  \caption{IOU. Source: \cite{elgendy2020deep}.}
+\end{figure}
+
+We say that a prediction is a true positive (TP) if the predicted class is the same as the ground truth and the IoU
+value is higher than the tunable threshold, otherwise it is a false positive (FP)
+\cite{liu2020deep, elgendy2020deep, planche2019hands}. A false negative (FN) is a ground truth that does not have a
+prediction \cite{planche2019hands}. Then we can define precision and recall as follows
+\cite{burkov2019hundred, davis2006relationship}:
+
+$$Precision = \frac{TP}{TP + FP}$$
+
+$$Recall = \frac{TP}{TP + FN}$$
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=\textwidth]{precision_recall.png}
+  \end{center}
+  \caption{Precision and recall. Source: \cite{precisionrecall}.}
+\end{figure}
+
+There is a trade-off between precision and recall
+\cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
+(AP) by drawing the PR curve and computing the area under the curve (AUC) \cite{elgendy2020deep, planche2019hands}.
+Finally, we get the mean average precision (mAP) by averaging the AP over all the classes
+\cite{elgendy2020deep, geron2019hands, planche2019hands}. The traiditional Pascal VOC metric uses mAP@0.5, which means
+the IOU threshold is 0.5 \cite{liu2020deep, everingham2010pascal}. The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$
+is averaged over different IOU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better
+localization \cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean mAP
+\cite{cocometrics}, although we use mAP here consistently in this paper. COCO also introduced mAP for different scales:
+$mAP^{small}$ for small objects ($area < 32^2$), $mAP^{medium}$ for medium objects ($32^2 < area < 96^2$),
+and $mAP^{big}$ for big objects ($area > 96^2$) \cite{liu2020deep, cocometrics}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.5\textwidth]{pr_curve.png}
+  \end{center}
+  \caption{A PR curve with a 0.88 AUC/AP. Source: \cite{planche2019hands}.}
+\end{figure}
+
+\subsubsection{Region-Based Convolutional Neural Networks (R-CNN)}
+
+The evolution from the original R-CNN \cite{girshick2014rich} to Fast R-CNN \cite{girshick2015fast} and then to
+Faster R-CNN \cite{ren2015faster} builds up the R-CNN family.
+
+\paragraph{R-CNN}
+
+R-CNN has four components \cite{elgendy2020deep, girshick2014rich}:
+
+\begin{enumerate}
+  \item Region proposal with a greedy search algorithm called selective search, which finds RoIs by combining similar
+  pixels into boxes.
+  \item A pre-trained CNN as the network backbone.
+  \item Classification with a linear SVM.
+  \item Localization with a bounding-box regressor.
+\end{enumerate}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{r_cnn.png}
+  \end{center}
+  \caption{R-CNN. Source: \cite{elgendy2020deep}.}
+\end{figure}
+
+R-CNN has the following disadvantages \cite{elgendy2020deep, girshick2014rich, girshick2015fast}:
+
+\begin{itemize}
+  \item The FPS is very low. The selective search algorithm proposes about 2000 RoIs, which is computationally
+  expensive as the CNN has to process each proposal separately.
+  \item The training is multi-stage, inelegant, expensive, and not end-to-end. It involves training three components
+  separately: the CNN, the SVM, and the bounding-box regressor.
+\end{itemize}
+
+\paragraph{Fast R-CNN}
+
+Fast R-CNN makes the following changes from R-CNN \cite{elgendy2020deep, girshick2015fast}:
+
+\begin{itemize}
+  \item The CNN goes before region proposal instead of after, so that the image only goes through the CNN once instead
+  of 2000 RoIs going through the CNN separately.
+  \item Classification is performed by the softmax layer of the CNN instead of the SVM. And localization is also an output
+  layer of the CNN.
+  \item A RoI max pooling layer is added after region proposal to reshape the input size for the fully connected layers.
+  \item A multi-task loss function is used.
+\end{itemize}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{fast_r_cnn.png}
+  \end{center}
+  \caption{Fast R-CNN. Source: \cite{elgendy2020deep}.}
+\end{figure}
+
+Fast R-CNN is much faster than R-CNN, although the selective search algorithm still exists as the bottleneck
+\cite{elgendy2020deep, girshick2015fast, ren2015faster}.
+
+\paragraph{Faster R-CNN}
+
+Faster R-CNN makes the following improvments from Fast R-CNN \cite{elgendy2020deep, ren2015faster}:
+
+\begin{itemize}
+  \item Region Proposal Network (RPN) or attention network replaces selective search, which reduces the number of
+  proposals, speeds up the model, and makes the model training end-to-end. RPN is a FCN that outputs objectness scores
+  and RoIs, and it can be used as a standalone network for single-class object detection. It also shares the features
+  with the detection network, which enables region proposal to be nearly cost-free.
+  \item Anchors are introduced as reference boxes at different scales and aspect ratios. Thus the regression layer
+  only needs to output the offsets of the coordinates, width, and height from the anchors. The anchors are created using
+  the sliding-window approach. By default 9 anchors (3 scales and 3 aspect ratios) centered at each sliding window are
+  created for each window.
+\end{itemize}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{anchors.png}
+  \end{center}
+  \caption{Anchors in Faster R-CNN. Source: \cite{elgendy2020deep}.}
+\end{figure}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{faster_r_cnn.png}
+  \end{center}
+  \caption{Faster R-CNN. Source: \cite{elgendy2020deep}.}
+\end{figure}
+
+To summarize, the R-CNN family are two-stage detectors that separate region proposal and detection
+\cite{elgendy2020deep, liu2020deep}. They can not achieve real-time detection (only 7 FPS), and they are very
+computationally intensive \cite{elgendy2020deep, liu2016ssd, redmon2016you}.
+One-stage detectors like Single Shot Detector (SSD) and You Only Look Once (YOLO) skip the region proposal to achieve
+real-time detection speed \cite{elgendy2020deep}. In general, one-stage detectors sacrifices some accuracy for speed
+\cite{elgendy2020deep, lin2017focal}.
+
+\subsubsection{Single Shot Detector (SSD)}
+
+Single Shot Detector (SSD) makes both the objectness and class probability predictions directly in one shot
+\cite{elgendy2020deep, liu2016ssd}. It has three main components \cite{elgendy2020deep, liu2016ssd}:
+
+\begin{itemize}
+  \item The backbone network, which is VGG-16 in the original paper. It also uses anchors called priors like in Faster R-CNN.
+  But the network sends the bounding box offsets and the class scores to NMS directly when it finds a bounding box that
+  contains the object features.
+  \item Multi-scale feature layers, which are convolutional layers that decrease in size progressively to detect objects
+  at multiple scales. The resolution of feature maps decreases as the CNN reduces the spatial dimension.
+  \item NMS.
+\end{itemize}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{ssd_feature_maps.png}
+  \end{center}
+  \caption{Multi-scale feature maps in SSD. Higher-resolution feature maps (left) detect smaller objects.
+  Lower-resolution feature mpas (right) detect bigger objects Source: \cite{elgendy2020deep}.}
+\end{figure}
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=.8\textwidth]{ssd.png}
+  \end{center}
+  \caption{SSD. Source: \cite{elgendy2020deep}.}
+\end{figure}
+
+\subsubsection{You Only Look Once (YOLO)}
+
+Like the R-CNN family, the YOLO family has been going through a series of improvements since the original YOLO paper
+was published. YOLO is also a one-stage real-time detector similar to SSD. YOLOv1 \cite{redmon2016you} introduces the
+general architecture; YOLOv2 \cite{redmon2017yolo9000} adds anchors similar to Faster R-CNN and SSD; YOLOv3
+\cite{redmon2018yolov3} further refines the architecture and the training process.
+
+YOLO divides the image into a grid, and a grid cell is responsible for detecting an object if the center of the object
+is inside the cell \cite{elgendy2020deep, redmon2016you}. The backbone network is called DarkNet, which is inspired by
+GoogLeNet \cite{elgendy2020deep, redmon2016you}.
+
+\begin{figure}[ht]
+  \begin{center}
+    \includegraphics[width=\textwidth]{yolov3.png}
+  \end{center}
+  \caption{YOLOv3 architecture. YOLO performs detections at 3 different scales. Layer 79 makes a grid of 13 x 13 to
+  detect large objects. Layer 91 makes a grid of 26 x 26 to detect medium objects. And finally layer 106 makes a grid
+  of 52 x 52 to detect small objects. Source: \cite{elgendy2020deep}.}
+\end{figure}
+
+YOLOv4 \cite{bochkovskiy2020yolov4}, a bleeding-edge detector introduced in 2020, utilizes numerous new features to
+improve the performance from YOLOv3, including DropBlock regulariztion \cite{ghiasi2018dropblock}, Mish activation
+\cite{misra2019mish}, Self-Adversarial Training \cite{bochkovskiy2020yolov4}, etc.
+
+YOLOv5 \cite{yolov5} is under active development and the authors have yet to publish a paper.
+
+\section{Related Work}
+
+As we have mentioned in section \ref{sec:cvForUnderwater}, there is limited research on the application of deep learning
+for underwater archaeology and vision-based underwater object detection in general.
+
+For fish detection, Qin et al. \cite{qin2015underwater, li2015fast}, Zhang et al. \cite{zhang2016unsupervised},
+Villon et al. \cite{villon2016coral}, Xu et al. \cite{xu2018underwater}, and Konovalov et al.
+\cite{konovalov2019underwater} respectively used Fast R-CNN, a model similar to R-CNN, sliding window with a CNN,
+YOLOv3, and Xception.
+
+For crab detection, Can et al. \cite{cao2020real} proposed a detector called Faster MSSDLite, which is based on SSD with
+a MobileNetv2 backbone and Feature Pyramid Network (FPN) \cite{lin2017feature}.
+
+For planktons and corals, we have only found research for classification but not object detection
+\cite{qin2015underwater, moniruzzaman2017deep}.
+
+For amphora detection, Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} used sliding window with a CNN on
+high-resolution orthophotos (aerial photos). And this is the only study we have found on amphora detection with deep
+learning.
+
+\section{Data and Methods}
+
+\subsection{Data}
+
+The dataset consists of 50 images (294 objects) in the training set and 7 images (31 objects) in the validation set,
+which maintains the 90\% : 10\% ratio for the object count. Two additional images were used as the test set. All the
+images were obtained through various sources
+\cite{googleimages, scuba, itinari, whoi, phoenician, auscape, hakai, groplan, ionian, sanisera} and were labeled
+with LabelImg \cite{labelimg}.
+
+\subsection{Model}
+
+Out of the three families of object detection frameworks we have discussed in section \ref{sec:objectdetection}, SSD was
+chosen due to the following reasons:
+
+\begin{itemize}
+  \item Faster R-CNN is too computationally intensive and too slow for AUVs and UUVs.
+  \item YOLOv5, the state-of-art model of the YOLO family, is under active development and the authors have yet to
+  publish a paper.
+\end{itemize}
+
+The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} was used. ssd\_resnet\_50\_fpn\_coco
+is the model name in the TensorFlow 1 Detection Model Zoo \cite{tf1detectionmodelzoo}. The backbone network
+is ResNet-50 (50-layer ResNet) (see section \ref{sec:cnn}) instead of VGG-16 in the original SSD paper to, as it
+improves the mAP significantly \cite{he2016deep}. Similar to the approach from Can et al. \cite{cao2020real} for crab
+detection, Feature Pyramid Network (FPN) was added to improve the detection at different scales \cite{lin2017feature}.
+
+\subsection{Model Training}
+
+Transfer learning \cite{torrey2010transfer} was used as the model was pre-trained on the COCO dataset, which means the
+weights and biases are restored instead of being randomly intialized and the model does not have to learn the low-level
+features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config were adjusted
+to 1, 8, and 7 respectively in the configuration file, while the rest of fields were unchanged. The images were reshaped
+to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a modified version of ReLU that caps
+the maximum value at 6 and thus encourages the model to learn sparse features earlier
+\cite{krizhevsky2010convolutional}. We used $L_2$ regularization \cite{ng2004feature} to reduce overfitting
+\cite{hawkins2004problem}. Data augmentation \cite{krizhevsky2012imagenet} - a method to artificially enrich the
+dataset by randomly flipping horizontally and cropping the images - was also used as a regularization technique.
+We chose the momentum optimizer \cite{polyak1964some} as it converges faster than Stochastic Gradient Descent
+\cite{bottou2010large} by keeping accelerating to the optimum \cite{geron2019hands}. Learning rate warmup and learning
+rate scheduling by cosine decay were also added to speed up the convergence, so that the learning rate starts small,
+increases gradually, and then decreases after reaching the maximum
+\cite{geron2019hands, goyal2017accurate, senior2013empirical, loshchilov2016sgdr}.
+The model was trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training took 2 hours and 40
+minutes to reach the peak mAP result at step 8621.
+
+\section{Evaluation}
+
+The main metric $mAP_{coco}$ (see section \ref{sec:generalobjectdetection}) from our model is 0.238, while the
+traditional mAP@0.5 is 0.503. The documented $mAP_{coco}$ in the TensorFlow 1 Detection Model Zoo for
+ssd\_resnet\_50\_fpn\_coco is 0.35, which was measured on the COCO validation set. Our model's performance is indeed
+lower than that in the model zoo. And it is somewhat difficult to perform a direct comparison with the result from
+Pasquet et al. \cite{pasquet2017amphora}, as they did not compute the $mAP$ and only mentioned that they detected
+around 90.3 percent of amphoras. However, we can conclude that our model did not detect more than 90.3 percent based
+on the visual inspection of the validation images in figure \ref{fig:val}.
+
+Nevertheless, our model's performance is still impressive due to the following reasons:
+
+\begin{itemize}
+  \item Our dataset is very small. As we have mentioned before in section \ref{sec:dlvscv}, the COCO dataset has 328
+  thousand images compared to our 57 images plus 2 test images. For Pasquet et al., they split one 38000 x 15000
+  orthophoto into 400 x 400 images and used 25\% of them for training, which means the training set alone was around
+  890 images.
+  \item Our dataset is more diverse than that of Pasquet et al. Since our dataset images are obtained through
+  numerous sources instead of from a single orthophoto, they reflect better the various shapes of amphoras (see
+  figure \ref{fig:amphora}). Plus, our dataset has both large and medium instances of amphoras that vary significantly
+  in terms of the scale. The diversity of our dataset made it harder to achieve a high mAP, although it encouraged
+  the model to generalize better.
+  \item Underwater object detection is more challenging than general object detection performed by the COCO dataset.
+  As we have mentioned before in section \ref{sec:cvForUnderwater}, the same challenges also apply for amphora
+  detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
+  in sand, or blocked by suspended particles. We only defined one class for all amphoras even if they are broken, while
+  Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
+  \item Our mAP@0.5 score is in fact comparable with that from Xu et al. \cite{xu2018underwater} for fish detection.
+  They achieved a 0.5392 mAP@0.5 using YOLOv3, although they did not compute the $mAP_{coco}$.
+\end{itemize}
+
+We also ran the model on 2 test images shown in figure \ref{fig:test}. To our surprise, the model managed to detect
+the amphora in the first image even though it is so broken that only half of it is present. As for the second image,
+none of the amphoras was detected as expected. The size of the first image is only 709 x 411, while it has hundreds of
+amphora instances. This means that they are mostly small instances defined by the COCO metric, which our training set
+does not include. It is a known issue that small objects are significantly harder to detect than medium and
+large objects, mainly due to the low resolution and thus the lack of features to learn
+\cite{kisantal2019augmentation, li2017perceptual, eggert2017closer}.
+Plus, the image can be described as a crowded and densely packed scene, which is also notoriously challenging for object
+detectors since the objects overlap with each other so strongly that it is even impossible for human experts to
+differentiate the instances \cite{pasquet2017amphora, goldman2019precise, leibe2005pedestrian, arteta2013learning}.
+In fact, we tried to split the image and add parts of it to the training set. However, the inter-occlusion of the
+instances caused many labeling errors, and the resolution of each instance was so low that the training could not
+converge to a solution.
+
+
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}[ht]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{val_1.png}
+  \end{subfigure}
+  \begin{subfigure}[ht]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{val_6.png}
+  \end{subfigure}
+  \bigskip
+  \begin{subfigure}[ht]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{val_3.png}
+  \end{subfigure}
+  \begin{subfigure}[ht]{0.4\textwidth}
     \centering
-    \begin{subfigure}[ht]{0.8\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{test_1.png}
-    \end{subfigure}
-    \bigskip
-    \begin{subfigure}[ht]{0.8\textwidth}
-        \centering
-        \includegraphics[width=\textwidth]{test_2.png}
-    \end{subfigure}
-    \caption{The test images. Source: \cite{ionian, sanisera}.}
-    \label{fig:test}
-  \end{figure}
+    \includegraphics[width=\textwidth]{val_2.png}
+  \end{subfigure}
+  \bigskip
+  \begin{subfigure}[ht]{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{val_5.png}
+  \end{subfigure}
+  \begin{subfigure}[ht]{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{val_7.png}
+  \end{subfigure}
+  \bigskip
+  \begin{subfigure}[ht]{0.4\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{val_4.png}
+  \end{subfigure}
+  \caption{The validation images. Source:
+  \cite{scuba, itinari, whoi, phoenician, auscape, hakai, groplan}.}
+  \label{fig:val}
+\end{figure}
 
-  \clearpage
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}[ht]{0.8\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{test_1.png}
+  \end{subfigure}
+  \bigskip
+  \begin{subfigure}[ht]{0.8\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{test_2.png}
+  \end{subfigure}
+  \caption{The test images. Source: \cite{ionian, sanisera}.}
+  \label{fig:test}
+\end{figure}
 
-  \section{Conclusion and Future Work}
+\clearpage
 
-  In this paper, we reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
-  learning, and three major object detector families. We then trained an SSD model with a ResNet-50 backbone
-  based on a very small and low-resolution dataset, and yet still managed to achieve a 0.238 $mAP_{coco}$ and a 0.5392
-  mAP@0.5. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the same
-  difficulties posed by general underwater object detection (see section \ref{sec:cvForUnderwater}), the considerable
-  variantions of the amphoras' shapes (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some
-  shipwrecks (see figure \ref{fig:test}).
+\section{Conclusion and Future Work}
 
-  We hope this paper can serve as a proof of concept for future studies, since there are many aspects to improve upon:
+In this paper, we reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
+learning, and three major object detector families. We then trained an SSD model with a ResNet-50 backbone
+on a very small and low-resolution dataset, and we still managed to achieve a 0.238 $mAP_{coco}$ and a 0.5392
+mAP@0.5. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the same
+difficulties posed by general underwater object detection (see section \ref{sec:cvForUnderwater}), the considerable
+variantions of the amphoras' shapes (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some
+shipwrecks (see figure \ref{fig:test}).
 
-  \begin{itemize}
-    \item The small number and the low resolution of the images in our dataset are the bottleneck towards a higher
-    performance. There are indeed very limited publicly available high resolution images for underwater amphoras
-    \cite{pasquet2017amphora}. Future studies may focus on obtaining more amphora images through AUVs and UUVs to improve
-    the mAP. Higher resolution images like orthophotos can especially address the issue of detecting
-    small objects \cite{kisantal2019augmentation} and also the issue of detecting overlapping objects by reducing labeling
-    errors. Plus, more data augmentation techniques like randomly change to grayscale and randomly adjust brightness,
-    contrast, and hue can be easily added in the data\_augementation\_options from the TensorFlow Object Detection API
-    to potentially further enrich the dataset.
-    \item Many bleeding-edge object detectors with better performance are emerging. The SSD model in this study
-    has a 0.35 $mAP_{coco}$ and a 76 ms detection speed on the COCO validation set. YOLOv5 is able to achieve a 0.367
-    $mAP_{coco}$ with a mere 2 ms detection speed or a 0.504 $mAP_{coco}$ with a 6.1 ms detection speed for 640 x 640 images,
-    and a 0.55 $mAP_{coco}$ with a 70.8 ms detection speed for 1280 x 1280 images. It will be worth experimenting with
-    YOLOv5 after its authors publish a paper and its active development stablizes. Some other models in the TensorFlow 2
-    Detection Model Zoo \cite{tf2detectionmodelzoo} are also interesting to look into. Note that we used the SSD
-    model in the TensorFlow 1 Detection Model Zoo, as the TensorFlow 2 version requires two scripts to be running
-    to train and evaluate at the same time, and it is not possible to do so on Google Colaboratory. But one with access to
-    GPUs can easily train an EfficientDet \cite{tan2020efficientdet} D1 640 x 640 model with a 0.384 $mAP_{coco}$ and a
-    54 ms detection speed or an EfficientDet D7 1536 x 1536 model with a 0.512 $mAP_{coco}$ and a 325 ms detection speed
-    from the TensorFlow 2 Detection Model Zoo. CenterNet \cite{zhou2019objects}, a novel keypoint-based detector that
-    models an object as a single center point and regresses to the object size without NMS
-    (see section \ref{sec:generalobjectdetection}), is also available in the TensorFlow 2 Detection Model Zoo. CenterNet
-    is able to achieve a 0.417 $mAP_{coco}$ with a 6 ms detection speed or a 0.614 $mAP_{coco}$ with a 76 ms detection
-    speed for 512 x 512 images, and a 0.645 $mAP_{coco}$ with a 211 ms detection speed for 1024 x 1024 images.
-    \item Following the approach from Pasquet et al. \cite{pasquet2017amphora}, we could try to define 2 separate classes
-    for the head and the body to better detect broken instances.
-  \end{itemize}
+We hope this paper can serve as a proof of concept for future studies, since there are many aspects to improve upon:
 
-  \newpage
+\begin{itemize}
+  \item The small number and the low resolution of the images in our dataset are the bottleneck towards a higher
+  performance. There are indeed very limited publicly available high resolution images for underwater amphoras
+  \cite{pasquet2017amphora}. Future studies may focus on obtaining more amphora images through AUVs and UUVs to improve
+  the mAP. Higher resolution images like orthophotos can especially address the issue of detecting
+  small objects \cite{kisantal2019augmentation} and also the issue of detecting overlapping objects by reducing labeling
+  errors. Plus, more data augmentation techniques like randomly change to grayscale and randomly adjust brightness,
+  contrast, and hue can be easily added in the data\_augementation\_options from the TensorFlow Object Detection API
+  to potentially further enrich the dataset.
+  \item Many bleeding-edge object detectors with better performance are emerging. The SSD model in this study
+  has a 0.35 $mAP_{coco}$ and a 76 ms detection speed on the COCO validation set. YOLOv5 is able to achieve a 0.367
+  $mAP_{coco}$ with a mere 2 ms detection speed or a 0.504 $mAP_{coco}$ with a 6.1 ms detection speed for 640 x 640 images,
+  and a 0.55 $mAP_{coco}$ with a 70.8 ms detection speed for 1280 x 1280 images. It will be worth experimenting with
+  YOLOv5 after its authors publish a paper and its active development stablizes. Some other models in the TensorFlow 2
+  Detection Model Zoo \cite{tf2detectionmodelzoo} are also interesting to look into. Note that we used the SSD
+  model in the TensorFlow 1 Detection Model Zoo, as the TensorFlow 2 version requires two scripts to be running
+  to train and evaluate at the same time, and it is not possible to do so on Google Colaboratory. But one with access to
+  GPUs can easily train an EfficientDet \cite{tan2020efficientdet} D1 640 x 640 model with a 0.384 $mAP_{coco}$ and a
+  54 ms detection speed or an EfficientDet D7 1536 x 1536 model with a 0.512 $mAP_{coco}$ and a 325 ms detection speed
+  from the TensorFlow 2 Detection Model Zoo. CenterNet \cite{zhou2019objects}, a novel keypoint-based detector that
+  models an object as a single center point and regresses to the object size without NMS
+  (see section \ref{sec:generalobjectdetection}), is also available in the TensorFlow 2 Detection Model Zoo. CenterNet
+  is able to achieve a 0.417 $mAP_{coco}$ with a 6 ms detection speed or a 0.614 $mAP_{coco}$ with a 76 ms detection
+  speed for 512 x 512 images, and a 0.645 $mAP_{coco}$ with a 211 ms detection speed for 1024 x 1024 images.
+  \item Following the approach from Pasquet et al. \cite{pasquet2017amphora}, we could try to define 2 separate classes
+  for the head and the body to better detect broken instances.
+\end{itemize}
 
-  \printbibliography
+\newpage
+
+\printbibliography
 
 \end{document}
