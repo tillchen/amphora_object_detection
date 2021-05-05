@@ -507,7 +507,7 @@ There is a trade-off between precision and recall
 \cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
 (AP) by drawing the PR curve and computing the area under the curve (AUC) \cite{elgendy2020deep, planche2019hands}.
 Finally, we get the mean average precision (mAP) by averaging the AP over all the classes
-\cite{elgendy2020deep, geron2019hands, planche2019hands}. The traiditional Pascal VOC metric uses mAP@0.5, which means
+\cite{elgendy2020deep, geron2019hands, planche2019hands}. The traditional Pascal VOC metric uses mAP@0.5, which means
 the IOU threshold is 0.5 \cite{liu2020deep, everingham2010pascal}. The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$
 is averaged over different IOU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better
 localization \cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean mAP
@@ -580,11 +580,11 @@ Fast R-CNN is much faster than R-CNN, although the selective search algorithm st
 
 \paragraph{Faster R-CNN}
 
-Faster R-CNN makes the following improvments from Fast R-CNN \cite{elgendy2020deep, ren2015faster}:
+Faster R-CNN makes the following improvements from Fast R-CNN \cite{elgendy2020deep, ren2015faster}:
 
 \begin{itemize}
   \item Region Proposal Network (RPN) or attention network replaces selective search, which reduces the number of
-  proposals, speeds up the model, and makes the model training end-to-end. RPN is a FCN that outputs objectness scores
+  proposals, speeds up the model, and makes the model training end-to-end. RPN is an FCN that outputs objectness scores
   and RoIs, and it can be used as a standalone network for single-class object detection. It also shares the features
   with the detection network, which enables region proposal to be nearly cost-free.
   \item Anchors are introduced as reference boxes at different scales and aspect ratios. Thus the regression layer
@@ -633,7 +633,7 @@ Single Shot Detector (SSD) makes both the objectness and class probability predi
     \includegraphics[width=.8\textwidth]{ssd_feature_maps.png}
   \end{center}
   \caption{Multi-scale feature maps in SSD. Higher-resolution feature maps (left) detect smaller objects.
-  Lower-resolution feature mpas (right) detect bigger objects Source: \cite{elgendy2020deep}.}
+  Lower-resolution feature maps (right) detect bigger objects Source: \cite{elgendy2020deep}.}
 \end{figure}
 
 \begin{figure}[ht]
@@ -664,7 +664,7 @@ GoogLeNet \cite{elgendy2020deep, redmon2016you}.
 \end{figure}
 
 YOLOv4 \cite{bochkovskiy2020yolov4}, a bleeding-edge detector introduced in 2020, utilizes numerous new features to
-improve the performance from YOLOv3, including DropBlock regulariztion \cite{ghiasi2018dropblock}, Mish activation
+improve the performance from YOLOv3, including DropBlock regularization \cite{ghiasi2018dropblock}, Mish activation
 \cite{misra2019mish}, Self-Adversarial Training \cite{bochkovskiy2020yolov4}, etc.
 
 YOLOv5 \cite{yolov5} is under active development and the authors have yet to publish a paper.
@@ -694,7 +694,7 @@ learning.
 \subsection{Data}
 
 The dataset consists of 50 images (294 objects) in the training set and 7 images (31 objects) in the validation set,
-which maintains the 90\% : 10\% ratio for the object count. Two additional images were used as the test set. All the
+which maintains the 90\%: 10\% ratio for the object count. Two additional images were used as the test set. All the
 images were obtained through various sources
 \cite{googleimages, scuba, itinari, whoi, phoenician, auscape, hakai, groplan, ionian, sanisera} and were labeled
 with LabelImg \cite{labelimg}.
@@ -712,14 +712,14 @@ chosen due to the following reasons:
 
 The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} was used. ssd\_resnet\_50\_fpn\_coco
 is the model name in the TensorFlow 1 Detection Model Zoo \cite{tf1detectionmodelzoo}. The backbone network
-is ResNet-50 (50-layer ResNet) (see section \ref{sec:cnn}) instead of VGG-16 in the original SSD paper to, as it
+is ResNet-50 (50-layer ResNet) (see section \ref{sec:cnn}) instead of VGG-16 in the original SSD paper, as it
 improves the mAP significantly \cite{he2016deep}. Similar to the approach from Can et al. \cite{cao2020real} for crab
 detection, Feature Pyramid Network (FPN) was added to improve the detection at different scales \cite{lin2017feature}.
 
 \subsection{Model Training}
 
 Transfer learning \cite{torrey2010transfer} was used as the model was pre-trained on the COCO dataset, which means the
-weights and biases are restored instead of being randomly intialized and the model does not have to learn the low-level
+weights and biases are restored instead of being randomly initialized and the model does not have to learn the low-level
 features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config were adjusted
 to 1, 8, and 7 respectively in the configuration file, while the rest of fields were unchanged. The images were reshaped
 to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a modified version of ReLU that caps
@@ -755,15 +755,15 @@ Nevertheless, our model's performance is still impressive due to the following r
   \item Our dataset is more diverse than that of Pasquet et al. Since our dataset images are obtained through
   numerous sources instead of from a single orthophoto, they reflect better the various shapes of amphoras (see
   figure \ref{fig:amphora}). Plus, our dataset has both large and medium instances of amphoras that vary significantly
-  in terms of the scale. The diversity of our dataset made it harder to achieve a high mAP, although it encouraged
+  in terms of scale. The diversity of our dataset made it harder to achieve a high mAP, although it encouraged
   the model to generalize better.
   \item Underwater object detection is more challenging than general object detection performed by the COCO dataset.
-  As we have mentioned before in section \ref{sec:cvForUnderwater}, the same challenges also apply for amphora
+  As we have mentioned before in section \ref{sec:cvForUnderwater}, the same challenges also apply to amphora
   detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
   in sand, or blocked by suspended particles. We only defined one class for all amphoras even if they are broken, while
   Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
-  \item Our mAP@0.5 score is in fact comparable with that from Xu et al. \cite{xu2018underwater} for fish detection.
-  They achieved a 0.5392 mAP@0.5 using YOLOv3, although they did not compute the $mAP_{coco}$.
+  \item Our mAP@0.5 score is comparable with that from Xu et al. \cite{xu2018underwater} for fish detection. They
+  achieved a 0.5392 mAP@0.5 using YOLOv3, although they did not compute the $mAP_{coco}$.
 \end{itemize}
 
 We also ran the model on 2 test images shown in figure \ref{fig:test}. To our surprise, the model managed to detect
@@ -776,7 +776,7 @@ large objects, mainly due to the low resolution and thus the lack of features to
 Plus, the image can be described as a crowded and densely packed scene, which is also notoriously challenging for object
 detectors since the objects overlap with each other so strongly that it is even impossible for human experts to
 differentiate the instances \cite{pasquet2017amphora, goldman2019precise, leibe2005pedestrian, arteta2013learning}.
-In fact, we tried to split the image and add parts of it to the training set. However, the inter-occlusion of the
+We tried to split the image and add parts of it to the training set. However, the inter-occlusion of the
 instances caused many labeling errors, and the resolution of each instance was so low that the training could not
 converge to a solution.
 
