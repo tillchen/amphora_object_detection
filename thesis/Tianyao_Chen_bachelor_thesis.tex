@@ -234,7 +234,7 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{ann_logic_computations.png}
     \end{center}
-    \caption{ANNs performing logical computations with the activation threshold of 2. Source: \cite{geron2019hands}.}
+    \caption{ANNs performing logical computations with 2 as the activation threshold. Source: \cite{geron2019hands}.}
   \end{figure}
 
   Then the Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
@@ -252,7 +252,7 @@
     \begin{center}
       \includegraphics[width=.8\textwidth]{tlu.png}
     \end{center}
-    \caption{Threshold logic unit. Source: \cite{geron2019hands}.}
+    \caption{TLU. Source: \cite{geron2019hands}.}
   \end{figure}
 
   A single TLU can be used for simple linear binary classification, while a layer of TLUs plus a bias neuron form a
@@ -264,7 +264,7 @@
   $$h_{\mathbf{W,b}}(\mathbf{X}) = \phi(\mathbf{XW} + \mathbf{b})$$
 
   The Perceptron is trained using a variant of the Herbb's rule \cite{hebb2005organization}, which is famously summarized
-  as "neurons wire together if they fire together \cite{lowel1992selection}" \cite{geron2019hands}. However, the Perceptron
+  as "neurons wire together if they fire together" \cite{lowel1992selection}. However, the Perceptron
   can not learn complex patterns due the linear decision boundary of the output neurons, and it can only make predictions
   based on a hard threshold instead of outputting a class probability \cite{geron2019hands}. To address these limitations,
   the Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
@@ -278,10 +278,9 @@
 
   Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first makes a prediction and measures the
   error in the forward pass, then measures the error contribution from each connection in the reverse pass, and finally
-  tweaks the connection weights to reduce teh error in the Gradient Descent \cite{ruder2016overview} step
-  \cite{geron2019hands}. Activation functions like Rectified Linear Unit $ReLU(x) = max(0, x)$ are used to add
-  nonlinearity, which theoretically gives a large enough deep neural network the ability to approximate any continuos
-  function \cite{geron2019hands}.
+  tweaks the connection weights to reduce teh error in the Gradient Descent \cite{ruder2016overview} step. Activation
+  functions like Rectified Linear Unit $ReLU(x) = max(0, x)$ are used to add nonlinearity, which theoretically gives a
+  large enough deep neural network the ability to approximate any continuous function \cite{geron2019hands}.
 
   \subsubsection{Convolutional Neural Networks (CNNs)}
 
