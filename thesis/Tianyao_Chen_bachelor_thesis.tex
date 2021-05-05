@@ -232,7 +232,7 @@
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{ann_logic_computations.png}
+      \includegraphics[width=.5\textwidth]{ann_logic_computations.png}
     \end{center}
     \caption{ANNs performing logical computations with 2 as the activation threshold. Source: \cite{geron2019hands}.}
   \end{figure}
@@ -307,39 +307,32 @@
     \begin{center}
       \includegraphics[width=.5\textwidth]{cnn_layers.png}
     \end{center}
-    \caption{CNN layers with rectangular receptive fields. Source: \cite{geron2019hands}.}
+    \caption{Convolutional layers with rectangular receptive fields. Source: \cite{geron2019hands}.}
   \end{figure}
 
   The filters or convolution kernels, which are learned during training, are neurons' weights that can be presented as
-  small images the size of receptive fields \cite{geron2019hands}. For example, a black sqaure with a horizontal white
+  small images the size of receptive fields \cite{geron2019hands}. For example, a dark sqaure with a horizontal white
   line in the middle (a matrix full of 0s except for the central row with 1s) is a filter that only reacts to the central
   row in the receptive field. A layer of neurons with the same filter outputs a feature map, which highlights the parts
-  of an image that activate the filter the most \cite{geron2019hands}.
+  of an image that maximizes the acitivation of the filter \cite{geron2019hands}.
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{filters.png}
+      \includegraphics[width=.6\textwidth]{filters.png}
     \end{center}
-    \caption{Two feature maps obtained by applying two different filters. Source: \cite{geron2019hands}.}
+    \caption{Two feature maps by applying two different filters. Source: \cite{geron2019hands}.}
   \end{figure}
 
   The pooling layers subsample (i.e. shrink) the input image to reduce the computational load and the number of paramters,
-  which also reduces overfitting \cite{geron2019hands}. Plus, pool layers can bring some invariance to small translations,
-  rotations, and scaling \cite{geron2019hands}.
+  which also reduces overfitting \cite{geron2019hands}. Plus, pooling layers can bring some invariance to small
+  translations, rotations, and scaling \cite{geron2019hands}.
 
   \begin{figure}[ht]
     \begin{center}
-      \includegraphics[width=.8\textwidth]{max_pooling.png}
+      \includegraphics[width=.5\textwidth]{max_pooling.png}
     \end{center}
-    \caption{A max pooling layer with a 2 x 2 kernel and stride 2. Only the max value from each receptive field
-    gets passed to the next layer. Source: \cite{geron2019hands}.}
-  \end{figure}
-
-  \begin{figure}[ht]
-    \begin{center}
-      \includegraphics[width=.8\textwidth]{max_pooling_invariance.png}
-    \end{center}
-    \caption{Max pooling layer's invariance to small translations. Source: \cite{geron2019hands}.}
+    \caption{A max pooling layer with 2 x 2 as the kernel size and 2 as the stride. The max value from the receptive
+    field passes to the next layer. Source: \cite{geron2019hands}.}
   \end{figure}
 
   The typical CNN architecture involves the aforementioned convolutional layers, pooling layers, and fully connected layers.
@@ -355,17 +348,16 @@
     \caption{The typical CNN architecuture. Source: \cite{geron2019hands}.}
   \end{figure}
 
-  Here we give ResNet a more in-depth introduction, as it's the backbone network of the model we use to detect amphoras.
-  Resnet adds skip connections (or shortcut connections), which means the input signal of a layer is also added to the
+  Here we give ResNet a more in-depth introduction, as it is the backbone network of the model used in this paper.
+  ResNet introduced skip connections (or shortcut connections), which means the input signal of a layer is also added to the
   ouput of a higher up layer \cite{geron2019hands, he2016deep}. Skip connections help speed up the training considerably,
   since: 1) the network preconditions the problem to be the identify function, which is often close to the target function,
   and 2) the network can start making progress even if some layers have not started learning yet
   \cite{geron2019hands, he2016deep}. Batch normalization \cite{ioffe2015batch} is used after each convolution, which
   zero-centers and normalizes each input to reduce the vanishing gradient problem \cite{hochreiter1998vanishing} and the
-  need for other regularization techniques like dropout \cite{srivastava2014dropout} \cite{geron2019hands, he2016deep}.
-  The global average pooling layer at the end of the network is another type of pooling layer that gets the mean of the
-  entire feature map \cite{geron2019hands, he2016deep}. Softmax is used in the output layer to ensure that all
-  probabilities add up to 1 \cite{geron2019hands, he2016deep}.
+  need for other regularization techniques like dropout \cite{srivastava2014dropout}. The global average pooling layer
+  at the end of the network is another type of pooling layer that computes the mean of the entire feature map. Softmax
+  is used in the output layer to ensure that all probabilities add up to 1.
 
   \begin{figure}[ht]
     \begin{center}

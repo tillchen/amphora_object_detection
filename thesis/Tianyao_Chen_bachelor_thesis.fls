@@ -233,9 +233,6 @@ INPUT ./images/filters.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/max_pooling.png
 INPUT ./images/max_pooling.png
 INPUT ./images/max_pooling.png
-INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/max_pooling_invariance.png
-INPUT ./images/max_pooling_invariance.png
-INPUT ./images/max_pooling_invariance.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/typical_cnn.png
 INPUT ./images/typical_cnn.png
 INPUT ./images/typical_cnn.png
