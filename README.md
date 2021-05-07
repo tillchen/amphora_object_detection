@@ -18,7 +18,6 @@ This repository contains the code, the trained model, and the thesis for "Deep L
 * `thesis` has the complete thesis write-up in LaTeX. `Tianyao_Chen_bachelor_thesis.pdf` is the main PDF file.
 * `trained_models/ssd_resnet50_v1_fpn.pb` has the exported trained model for inference from this study.
 
-
 ## References
 
 * <https://tensorflow-object-detection-api-tutorial.readthedocs.io/en/tensorflow-1.14/training.html>
