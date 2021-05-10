@@ -184,7 +184,7 @@ face recognition \cite{parkhi2015deep}, action and activity recognition \cite{po
 
 However, there is still limited research for the application of computer vision and machine learning in archaeology,
 especially underwater archaeology, compared to other domains \cite{maaten2007computer, qin2015underwater}.
-Computer vision, instead of visual inspection, could be used to automate the detection, assessment, and classification
+Computer vision, instead of visual inspection, can be used to automate the detection, assessment, and classification
 of artifacts \cite{maaten2007computer}.
 
 Underwater computer vision has proven to be challenging, largely due to: 1) the distortion and attenuation caused by
@@ -225,7 +225,7 @@ combining simpler ones from the previous layers \cite{goodfellow2016deep}.
 
 Inspired by the biological neuron, artificial neural networks (ANNs) were first introduced in 1943 using propositional
 logic \cite{mcculloch1943logical}. The artificial neuron activates its single binary output when the number of active
-binary inputs reaches the activation threshold, which enables us to build networks that can perform any logical
+binary inputs reaches the activation threshold, which makes it possible to build networks that can perform any logical
 proposition \cite{geron2019hands, mcculloch1943logical}.
 
 \begin{figure}[ht]
@@ -235,8 +235,8 @@ proposition \cite{geron2019hands, mcculloch1943logical}.
   \caption{ANNs performing logical computations with 2 as the activation threshold. Source: \cite{geron2019hands}.}
 \end{figure}
 
-Then the Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
-(TLU) or linear threshold unit (LTU) \cite{rosenblatt1957perceptron}. The input and output are numbers instead of
+Then Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
+(TLU) or linear threshold unit (LTU) \cite{rosenblatt1957perceptron}. The input and output are real numbers instead of
 binary values, and each input has a weight. TLU computes the weighted sum of the input and then applies a step
 function like the Heaviside function
 $heaviside (x) =
@@ -261,11 +261,11 @@ are respectively the input matrix, weight matrix, bias vector, and activation fu
 
 $$h_{\mathbf{W,b}}(\mathbf{X}) = \phi(\mathbf{XW} + \mathbf{b})$$
 
-The Perceptron is trained using a variant of the Herbb's rule \cite{hebb2005organization}, which is famously summarized
+Perceptron is trained using a variant of the Herbb's rule \cite{hebb2005organization}, which is famously summarized
 as "neurons wire together if they fire together" \cite{lowel1992selection}. However, the Perceptron
 can not learn complex patterns due to the linear decision boundary of the output neurons, and it can only make predictions
 based on a hard threshold instead of outputting a class probability \cite{geron2019hands}. To address these limitations,
-the Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
+Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
 
 \begin{figure}[ht]
   \begin{center}
@@ -321,9 +321,9 @@ of an image that maximizes the activation of the filter \cite{geron2019hands}.
   \caption{Two feature maps by applying two different filters. Source: \cite{geron2019hands}.}
 \end{figure}
 
-The pooling layers subsample (i.e. shrink) the input image to reduce the computational load and the number of parameters,
-which also reduces overfitting \cite{geron2019hands}. Plus, pooling layers can bring some invariance to small
-translations, rotations, and scaling \cite{geron2019hands}.
+The pooling layers subsample (i.e. shrink) the input image to make the network less computationally intensive
+\cite{geron2019hands}. Plus, pooling layers can bring some invariance to small translations, rotations, and scaling
+\cite{geron2019hands}.
 
 \begin{figure}[ht]
   \begin{center}
@@ -351,11 +351,11 @@ ResNet introduced skip connections (or shortcut connections), which means the in
 output of a higher-up layer \cite{geron2019hands, he2016deep}. Skip connections help speed up the training considerably,
 since: 1) the network preconditions the problem to be the identity function, which is often close to the target function,
 and 2) the network can start making progress even if some layers have not started learning yet
-\cite{geron2019hands, he2016deep}. Batch normalization \cite{ioffe2015batch} is used after each convolution, which
-zero-centers and normalizes each input to reduce the vanishing gradient problem \cite{hochreiter1998vanishing} and the
-need for other regularization techniques like dropout \cite{srivastava2014dropout}. The global average pooling layer
-at the end of the network is another type of pooling layer that computes the mean of the entire feature map. Softmax
-is used in the output layer to ensure that all probabilities add up to 1.
+\cite{geron2019hands, he2016deep}. Batch normalization \cite{ioffe2015batch} is used after each convolution
+to reduce the vanishing gradient problem \cite{hochreiter1998vanishing} and the need for other regularization techniques
+like dropout \cite{srivastava2014dropout}. The global average pooling layer at the end of the network is another type of
+pooling layer that computes the mean of the entire feature map. Softmax is used in the output layer to ensure that all
+probabilities add up to 1.
 
 \begin{figure}[ht]
   \begin{center}
@@ -391,7 +391,7 @@ case \cite{o2019deep}.
   \caption{(a) Traditional computer vision workflow. (b) Deep learning workflow. Source: \cite{o2019deep}.}
 \end{figure}
 
-However, deep learning's performance depends on obtaining large datasets with high image resolution \cite{o2019deep}.
+However, deep learning's performance does depend on obtaining large datasets with high image resolution \cite{o2019deep}.
 Some popular public datasets like PASCAL Visual Object Classes (VOC) \cite{everingham2010pascal}, ImageNet
 \cite{russakovsky2015imagenet}, and Microsoft Common Objects in Context (COCO) \cite{lin2014microsoft}
 have respectively 11 thousand, 14 million, and 328 thousand images \cite{liu2020deep}. Having a highly limited dataset
@@ -403,8 +403,8 @@ for a task may cause deep learning to have poorer results than traditional compu
 
 Object detection is the computer vision task that localizes and classifies objects in an image
 \cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection remains to be one of the most
-challenging problems in computer vision, as it can be considered as both a regression task (localization by predicting
-the bounding box) and a classification task (predicting the object class in each bounding box)
+challenging problems in computer vision, as it can be considered as both a regression task (predicting the bounding box)
+and a classification task (predicting the object class in each bounding box)
 \cite{elgendy2020deep, girshick2014rich, geron2019hands}. Plus, the large variations in viewpoints, poses, occlusions,
 and lighting conditions add extra difficulties to perform perfect object detection \cite{zhao2019object, liu2020deep}.
 
@@ -420,13 +420,10 @@ CNN multiple times with different window sizes to detect objects with various si
   \caption{The sliding window approach for object detection. Source: \cite{o2019deep}.}
 \end{figure}
 
-Luckily, many object detection frameworks based on fully convolutional networks (FCNs) \cite{long2015fully} have been
-introduced. FCNs contain only convolutional layers and pooling layers and only need to process each image once, which
-means they are faster and the input images can have arbitrary sizes \cite{elgendy2020deep, geron2019hands, long2015fully}.
-Here we summarize three well-established and influential object detection framework families: Region-Based Convolutional
-Neural Networks (R-CNN) \cite{girshick2014rich, girshick2015fast, ren2015faster}, Single Shot Detector (SSD)
-\cite{liu2016ssd}, and You Only Look Once (YOLO)
-\cite{redmon2016you, redmon2017yolo9000, redmon2018yolov3, bochkovskiy2020yolov4, yolov5}.
+Luckily, various novel object detectors have been introduced. Here we summarize three well-established and influential
+object detection framework families: Region-Based Convolutional Neural Networks (R-CNN)
+\cite{girshick2014rich, girshick2015fast, ren2015faster}, Single Shot Detector (SSD) \cite{liu2016ssd}, and You Only
+Look Once (YOLO) \cite{redmon2016you, redmon2017yolo9000, redmon2018yolov3, bochkovskiy2020yolov4, yolov5}.
 
 \subsubsection{General Object Detection Framework Components}
 
@@ -443,9 +440,9 @@ of the region containing an object instead of the background \cite{elgendy2020de
 
 \paragraph{Backbone Network}
 
-A pre-trained CNN is used as the backbone for feature extraction and performs the bounding-box and class predictions
-\cite{elgendy2020deep}. The bounding-box prediction is the tuple $(x, y, w, h)$, where $x$ and $y$ are the coordinates
-of the center and $w, h$ are the width and the height \cite{elgendy2020deep}.
+A pre-trained CNN is used as the backbone for feature extraction and predictions \cite{elgendy2020deep}. The bounding-box
+prediction is the tuple $(x, y, w, h)$, where $x$ and $y$ are the coordinates of the center and $w, h$ are the width and
+the height \cite{elgendy2020deep}.
 
 \paragraph{Non-Maximum Suppression (NMS)}
 
@@ -456,8 +453,8 @@ the box with the maximum class probability and suppresses the rest \cite{elgendy
 \begin{enumerate}
   \item Discard boxes with prediction values smaller than the tunable confidence threshold.
   \item Select the box with the highest probability.
-  \item Compute the overlap - intersection over union (IoU) - of the boxes that have the same class prediction.
-  Boxes with high IoU are averaged together.
+  \item Compute the overlap - intersection over union (IoU) - of the boxes with the same classification. Boxes with high
+  IoU are averaged together.
   \item Suppress boxes with an IoU less than the tunable NMS threshold.
 \end{enumerate}
 
@@ -472,8 +469,8 @@ the box with the maximum class probability and suppresses the rest \cite{elgendy
 
 The two main metrics for object detection are frames per second (FPS) and mean average precision ($mAP$)
 \cite{elgendy2020deep, liu2020deep, geron2019hands, planche2019hands}. To understand $mAP$, we need to understand first
-the aforementioned intersection over union (IoU) and the precision-recall curve (PR curve). The IoU is also known as
-the Jaccard index, which is used to measure similarity between two sets \cite{planche2019hands}. The IoU can be
+the aforementioned intersection over union (IoU) and the precision-recall curve (PR curve). IoU is also known as
+the Jaccard index, which is used to measure similarity between two sets \cite{planche2019hands}. IoU can be
 mathematically formulated as follows \cite{elgendy2020deep, planche2019hands}:
 
 $$IoU = \frac{B_{ground \ truth} \cap B_{prediction}}{B_{ground \ truth} \cup B_{prediction}}$$
@@ -485,10 +482,9 @@ $$IoU = \frac{B_{ground \ truth} \cap B_{prediction}}{B_{ground \ truth} \cup B_
   \caption{IOU. Source: \cite{elgendy2020deep}.}
 \end{figure}
 
-We say that a prediction is a true positive (TP) if the predicted class is the same as the ground truth and the IoU
-value is higher than the tunable threshold, otherwise it is a false positive (FP)
-\cite{liu2020deep, elgendy2020deep, planche2019hands}. A false negative (FN) is a ground truth that does not have a
-prediction \cite{planche2019hands}. Then we can define precision and recall as follows
+We say that a prediction is a true positive (TP) if the classification is correct and IoU is higher than the NMS threshold,
+otherwise it is a false positive (FP) \cite{elgendy2020deep, liu2020deep, planche2019hands}. A false negative (FN) is a
+ground truth that does not have a prediction \cite{planche2019hands}. Precision and recall are defined as follows
 \cite{burkov2019hundred, davis2006relationship}:
 
 $$Precision = \frac{TP}{TP + FP}$$
@@ -505,12 +501,12 @@ $$Recall = \frac{TP}{TP + FN}$$
 There is a trade-off between precision and recall
 \cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
 (AP) by drawing the PR curve and computing the area under the curve (AUC) \cite{elgendy2020deep, planche2019hands}.
-Then we get the $mAP$ by averaging the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}.
-The traditional Pascal VOC metric uses $mAP@0.5$, which means the IoU threshold is 0.5
-\cite{liu2020deep, everingham2010pascal}. The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$ is averaged over
+We then get the $mAP$ by averaging the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}.
+The traditional Pascal VOC metric uses $mAP@0.5$ with a 0.5 IoU threshold \cite{liu2020deep, everingham2010pascal}.
+The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$ is averaged over
 different IoU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better localization
 \cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean $mAP$
-\cite{cocometrics}, although we use $mAP$ here consistently in this paper. COCO also introduced $mAP$ for different scales:
+\cite{cocometrics}, although we use $mAP$ consistently in this paper. COCO also introduced $mAP$ for different scales:
 $mAP^{small}$ for small objects ($area < 32^2$), $mAP^{medium}$ for medium objects ($32^2 < area < 96^2$),
 and $mAP^{big}$ for big objects ($area > 96^2$) \cite{liu2020deep, cocometrics}.
 
@@ -684,8 +680,8 @@ a MobileNetv2 backbone and Feature Pyramid Network (FPN) \cite{lin2017feature}.
 For planktons and corals, we have only found research for classification but not object detection
 \cite{qin2015underwater, moniruzzaman2017deep}.
 
-For amphora detection, Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} used sliding window with a CNN on
-high-resolution orthophotos (aerial photos). This is the only study we found on amphora detection with deep learning.
+For amphora detection, Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} used sliding window with a CNN on a
+high-resolution orthophoto (i.e. aerial photo). This is the only study we found on amphora detection with deep learning.
 
 \section{Data and Methods}
 
@@ -884,7 +880,7 @@ We hope this paper can serve as a proof of concept for future studies since ther
   (see section \ref{sec:generalobjectdetection}), is also available in the TensorFlow 2 Detection Model Zoo. CenterNet
   can achieve a 0.417 $mAP_{coco}$ with a 6 ms detection speed or a 0.614 $mAP_{coco}$ with a 76 ms detection
   speed for 512 x 512 images, and a 0.645 $mAP_{coco}$ with a 211 ms detection speed for 1024 x 1024 images.
-  \item Following the approach from Pasquet et al. \cite{pasquet2017amphora}, we could try to define 2 separate classes
+  \item Following the approach from Pasquet et al. \cite{pasquet2017amphora}, we can try to define 2 separate classes
   for the head and the body to better detect broken instances.
 \end{itemize}
 

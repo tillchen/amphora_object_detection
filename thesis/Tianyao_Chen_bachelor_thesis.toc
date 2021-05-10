@@ -21,7 +21,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {1.4.1}General Object Detection Framework Components}{8}{subsubsection.1.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Region Proposal}{9}{section*.18}
+\contentsline {paragraph}{Region Proposal}{8}{section*.18}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Backbone Network}{9}{section*.19}
 \defcounter {refsection}{0}\relax 

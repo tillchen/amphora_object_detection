@@ -2480,40 +2480,6 @@
       \field{pages}{779\bibrangedash 788}
       \range{pages}{10}
     \endentry
-    \entry{long2015fully}{inproceedings}{}
-      \name{author}{3}{}{%
-        {{hash=17faae490b91366d25e0e2d774e7b6b1}{%
-           family={Long},
-           familyi={L\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod}}}%
-        {{hash=4ce499f8943cac7cba0a73388d289a2e}{%
-           family={Shelhamer},
-           familyi={S\bibinitperiod},
-           given={Evan},
-           giveni={E\bibinitperiod}}}%
-        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
-           family={Darrell},
-           familyi={D\bibinitperiod},
-           given={Trevor},
-           giveni={T\bibinitperiod}}}%
-      }
-      \strng{namehash}{4f969c1eddab717aa873b0a90831c45a}
-      \strng{fullhash}{4f969c1eddab717aa873b0a90831c45a}
-      \strng{bibnamehash}{4f969c1eddab717aa873b0a90831c45a}
-      \strng{authorbibnamehash}{4f969c1eddab717aa873b0a90831c45a}
-      \strng{authornamehash}{4f969c1eddab717aa873b0a90831c45a}
-      \strng{authorfullhash}{4f969c1eddab717aa873b0a90831c45a}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
-      \field{title}{Fully convolutional networks for semantic segmentation}
-      \field{year}{2015}
-      \field{pages}{3431\bibrangedash 3440}
-      \range{pages}{10}
-    \endentry
     \entry{girshick2015fast}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
