@@ -114,7 +114,7 @@ Amphoras have great archaeological significance and are often found in ancient s
 visual data and the advent of more advanced deep learning algorithms motivated us to automate the detection of
 underwater amphoras. We trained a convolutional neural network (CNN) based model called Single Shot Detector (SSD) with
 a 50-layer Residual Network (ResNet-50) backbone on a very small dataset with only 50 images, and we still managed to
-achieve a 0.238 MS COCO mean average precision ($mAP_{coco}$) and a 0.503 Pascal VOC mAP@0.5. Underwater amphora
+achieve a 0.238 MS COCO mean average precision ($mAP_{coco}$) and a 0.503 Pascal VOC $mAP@0.5$. Underwater amphora
 detection is a challenging task. We believe future studies can achieve better results by increasing the size and
 resolution of the dataset, training bleeding-edge object detectors like YOLOv5, and defining 2 separate classes for
 the head and the body of amphoras. The code and the trained model are available at
@@ -470,8 +470,8 @@ the box with the maximum class probability and suppresses the rest \cite{elgendy
 
 \paragraph{Metrics}
 
-The two main metrics for object detection are frames per second (FPS) and mean average precision (mAP)
-\cite{elgendy2020deep, liu2020deep, geron2019hands, planche2019hands}. To understand mAP, we need to understand first
+The two main metrics for object detection are frames per second (FPS) and mean average precision ($mAP$)
+\cite{elgendy2020deep, liu2020deep, geron2019hands, planche2019hands}. To understand $mAP$, we need to understand first
 the aforementioned intersection over union (IoU) and the precision-recall curve (PR curve). The IoU is also known as
 the Jaccard index, which is used to measure similarity between two sets \cite{planche2019hands}. The IoU can be
 mathematically formulated as follows \cite{elgendy2020deep, planche2019hands}:
@@ -505,12 +505,12 @@ $$Recall = \frac{TP}{TP + FN}$$
 There is a trade-off between precision and recall
 \cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
 (AP) by drawing the PR curve and computing the area under the curve (AUC) \cite{elgendy2020deep, planche2019hands}.
-Then we get the mAP by averaging the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}.
-The traditional Pascal VOC metric uses mAP@0.5, which means the IOU threshold is 0.5
+Then we get the $mAP$ by averaging the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}.
+The traditional Pascal VOC metric uses $mAP@0.5$, which means the IoU threshold is 0.5
 \cite{liu2020deep, everingham2010pascal}. The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$ is averaged over
-different IOU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better localization
-\cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean mAP
-\cite{cocometrics}, although we use mAP here consistently in this paper. COCO also introduced mAP for different scales:
+different IoU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better localization
+\cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean $mAP$
+\cite{cocometrics}, although we use $mAP$ here consistently in this paper. COCO also introduced $mAP$ for different scales:
 $mAP^{small}$ for small objects ($area < 32^2$), $mAP^{medium}$ for medium objects ($32^2 < area < 96^2$),
 and $mAP^{big}$ for big objects ($area > 96^2$) \cite{liu2020deep, cocometrics}.
 
@@ -711,7 +711,7 @@ chosen due to the following reasons:
 The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} was used. ssd\_resnet\_50\_fpn\_coco
 is the model name in the TensorFlow 1 Detection Model Zoo \cite{tf1detectionmodelzoo}. The backbone network
 is ResNet-50 (50-layer ResNet) (see section \ref{sec:cnn}) instead of VGG-16 in the original SSD paper, as it
-improves the mAP significantly \cite{he2016deep}. Similar to the approach from Can et al. \cite{cao2020real} for crab
+improves $mAP$ significantly \cite{he2016deep}. Similar to the approach from Can et al. \cite{cao2020real} for crab
 detection, Feature Pyramid Network (FPN) was added to improve the detection at different scales \cite{lin2017feature}.
 
 \subsection{Model Training}
@@ -731,7 +731,7 @@ rate scheduling by cosine decay were also added to speed up the convergence, so 
 increases gradually, and then decreases after reaching the maximum
 \cite{geron2019hands, goyal2017accurate, senior2013empirical, loshchilov2016sgdr}.
 The model was trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training took 2 hours and 40
-minutes to reach the peak mAP result at step 8621.
+minutes to reach the peak $mAP$ result at step 8621.
 
 \begin{figure}[ht]
   \centering
@@ -744,13 +744,13 @@ minutes to reach the peak mAP result at step 8621.
       \centering
       \includegraphics[width=\textwidth]{map50.png}
   \end{subfigure}
-  \caption{$mAP_{coco}$ (left) and mAP@0.5 (right).}
+  \caption{$mAP_{coco}$ (left) and $mAP@0.5$ (right).}
 \end{figure}
 
 \section{Evaluation}
 
 The main metric $mAP_{coco}$ (see section \ref{sec:generalobjectdetection}) from our model is 0.238, while the
-traditional mAP@0.5 is 0.503. The documented $mAP_{coco}$ in the TensorFlow 1 Detection Model Zoo for
+traditional $mAP@0.5$ is 0.503. The documented $mAP_{coco}$ in the TensorFlow 1 Detection Model Zoo for
 ssd\_resnet\_50\_fpn\_coco is 0.35, which was measured on the COCO validation set. Our model's performance is indeed
 lower than that in the model zoo. And it is somewhat difficult to perform a direct comparison with the result from
 Pasquet et al. \cite{pasquet2017amphora}, as they did not compute the $mAP$ and only mentioned that they detected
@@ -767,15 +767,15 @@ Nevertheless, our model's performance is still impressive due to the following r
   \item Our dataset is more diverse than that of Pasquet et al. Since our dataset images are obtained through
   numerous sources instead of from a single orthophoto, they reflect better the various shapes of amphoras (see
   figure \ref{fig:amphora}). Plus, our dataset has both large and medium instances of amphoras that vary significantly
-  in terms of scale. The diversity of our dataset made it harder to achieve a high mAP, although it encouraged
+  in terms of scale. The diversity of our dataset made it harder to achieve a high $mAP$, although it encouraged
   the model to generalize better.
   \item Underwater object detection is more challenging than general object detection performed by the COCO dataset.
   As we have mentioned before in section \ref{sec:cvForUnderwater}, the same challenges also apply to amphora
   detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
   in sand, or blocked by suspended particles. We only defined one class for all amphoras even if they are broken, while
   Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
-  \item Our mAP@0.5 score is comparable with that from Xu et al. \cite{xu2018underwater} for fish detection. They
-  achieved a 0.5392 mAP@0.5 using YOLOv3, although they did not compute the $mAP_{coco}$.
+  \item Our $mAP@0.5$ score is comparable with that from Xu et al. \cite{xu2018underwater} for fish detection. They
+  achieved a 0.5392 $mAP@0.5$ using YOLOv3, although they did not compute the $mAP_{coco}$.
 \end{itemize}
 
 We also ran the model on 2 test images shown in figure \ref{fig:test}. To our surprise, the model managed to detect
@@ -853,7 +853,7 @@ converge to a solution.
 In this paper, we reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
 learning, and three major object detector families. We then trained an SSD model with a ResNet-50 backbone
 on a very small and low-resolution dataset, and we still managed to achieve a 0.238 $mAP_{coco}$ and a 0.5392
-mAP@0.5. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the same
+$mAP@0.5$. Detecting underwater amphoras is a challenging task, as the object detectors have to overcome the same
 difficulties posed by general underwater object detection (see section \ref{sec:cvForUnderwater}), the considerable
 variations of the amphoras' shapes (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some
 shipwrecks (see figure \ref{fig:test}).
@@ -864,7 +864,7 @@ We hope this paper can serve as a proof of concept for future studies since ther
   \item The small number and the low resolution of the images in our dataset are the bottlenecks towards higher
   performance. There are indeed very limited publicly available high-resolution images for underwater amphoras
   \cite{pasquet2017amphora}. Future studies may focus on obtaining more amphora images through AUVs and UUVs to improve
-  the mAP. Higher resolution images like orthophotos can especially address the issue of detecting
+  $mAP$. Higher resolution images like orthophotos can especially address the issue of detecting
   small objects \cite{kisantal2019augmentation} and also the issue of detecting overlapping objects by reducing labeling
   errors. Plus, more data augmentation techniques like randomly change to grayscale and randomly adjust brightness,
   contrast, and hue can be easily added in the data\_augmentation\_options from the TensorFlow Object Detection API

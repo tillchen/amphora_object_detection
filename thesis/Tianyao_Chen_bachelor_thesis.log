@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  10 MAY 2021 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  10 MAY 2021 18:25
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -632,12 +632,12 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
  [4]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 136.
-<./images/amphora_stowage_aboard_ship.png, id=155, 493.845pt x 360.34625pt>
+<./images/amphora_stowage_aboard_ship.png, id=156, 493.845pt x 360.34625pt>
 File: ./images/amphora_stowage_aboard_ship.png Graphic file (type png)
 <use ./images/amphora_stowage_aboard_ship.png>
 Package pdftex.def Info: ./images/amphora_stowage_aboard_ship.png  used on input line 151.
 (pdftex.def)             Requested size: 256.07741pt x 186.84778pt.
-<./images/amphora_various_shapes.jpg, id=160, 491.8375pt x 602.25pt>
+<./images/amphora_various_shapes.jpg, id=161, 491.8375pt x 602.25pt>
 File: ./images/amphora_various_shapes.jpg Graphic file (type jpg)
 <use ./images/amphora_various_shapes.jpg>
 Package pdftex.def Info: ./images/amphora_various_shapes.jpg  used on input line 163.
@@ -645,23 +645,23 @@ Package pdftex.def Info: ./images/amphora_various_shapes.jpg  used on input line
  [1
 
  <./images/amphora_stowage_aboard_ship.png>] [2 <./images/amphora_various_shapes.jpg>]
-<./images/deep_learning.png, id=237, 520.94624pt x 398.48875pt>
+<./images/deep_learning.png, id=238, 520.94624pt x 398.48875pt>
 File: ./images/deep_learning.png Graphic file (type png)
 <use ./images/deep_learning.png>
 Package pdftex.def Info: ./images/deep_learning.png  used on input line 217.
 (pdftex.def)             Requested size: 341.43437pt x 261.17317pt.
-<./images/ann_logic_computations.png, id=244, 1444.39626pt x 487.8225pt>
+<./images/ann_logic_computations.png, id=245, 1444.39626pt x 487.8225pt>
 File: ./images/ann_logic_computations.png Graphic file (type png)
 <use ./images/ann_logic_computations.png>
 Package pdftex.def Info: ./images/ann_logic_computations.png  used on input line 233.
 (pdftex.def)             Requested size: 213.39568pt x 72.06856pt.
  [3 <./images/deep_learning.png> <./images/ann_logic_computations.png>]
-<./images/tlu.png, id=265, 1117.17375pt x 615.29875pt>
+<./images/tlu.png, id=266, 1117.17375pt x 615.29875pt>
 File: ./images/tlu.png Graphic file (type png)
 <use ./images/tlu.png>
 Package pdftex.def Info: ./images/tlu.png  used on input line 251.
 (pdftex.def)             Requested size: 213.39568pt x 117.52762pt.
-<./images/mlp.png, id=272, 1305.87875pt x 929.4725pt>
+<./images/mlp.png, id=273, 1305.87875pt x 929.4725pt>
 File: ./images/mlp.png Graphic file (type png)
 <use ./images/mlp.png>
 Package pdftex.def Info: ./images/mlp.png  used on input line 272.
@@ -898,7 +898,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  44i,8n,48p,886b,1739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (32 pages, 10271849 bytes).
+Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (32 pages, 10271933 bytes).
 PDF statistics:
  974 PDF objects out of 1000 (max. 8388607)
  824 compressed objects within 9 object streams
