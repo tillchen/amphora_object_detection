@@ -198,12 +198,11 @@ through autonomous underwater vehicles (AUVs), unmanned underwater vehicles (UUV
 \cite{lu2017underwater, moniruzzaman2017deep}, and seafloor cabled observatories \cite{qin2015underwater} motivate us
 to utilize deep learning.
 
-Furthermore, the research for deep-water shipwrecks is even more limited, mostly due to the lack of information and
-accessibility \cite{drap2015underwater}. However, the need to study deep-water sites is in high demand, as the threats
-to these sites are increasing \cite{drap2015underwater}. One major threat is the new forms of trawling that interfere
-with the readability by destroying the surface of these sites\cite{drap2015underwater}. This means that many
-shipwrecks are likely to be damaged before they can be studied \cite{drap2015underwater}. It is thus crucial to implement
-efficient, accessible, and accurate techniques like deep learning based computer vision to study deep-water shipwrecks.
+The study of deep-water shipwrecks is in high demand, as the threats to these sites are increasing
+\cite{drap2015underwater}. One major threat is the new forms of trawling that interfere with the readability by
+destroying the surface of these sites \cite{drap2015underwater}. This means that many shipwrecks are likely to be damaged
+before they can be studied \cite{drap2015underwater}. It is thus crucial to implement efficient, accessible, and accurate
+techniques like deep learning based computer vision to study deep-water shipwrecks.
 
 \subsection{Deep Learning}
 
@@ -506,11 +505,11 @@ $$Recall = \frac{TP}{TP + FN}$$
 There is a trade-off between precision and recall
 \cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
 (AP) by drawing the PR curve and computing the area under the curve (AUC) \cite{elgendy2020deep, planche2019hands}.
-Finally, we get the mean average precision (mAP) by averaging the AP over all the classes
-\cite{elgendy2020deep, geron2019hands, planche2019hands}. The traditional Pascal VOC metric uses mAP@0.5, which means
-the IOU threshold is 0.5 \cite{liu2020deep, everingham2010pascal}. The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$
-is averaged over different IOU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better
-localization \cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean mAP
+Then we get the mAP by averaging the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}.
+The traditional Pascal VOC metric uses mAP@0.5, which means the IOU threshold is 0.5
+\cite{liu2020deep, everingham2010pascal}. The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$ is averaged over
+different IOU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better localization
+\cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean mAP
 \cite{cocometrics}, although we use mAP here consistently in this paper. COCO also introduced mAP for different scales:
 $mAP^{small}$ for small objects ($area < 32^2$), $mAP^{medium}$ for medium objects ($32^2 < area < 96^2$),
 and $mAP^{big}$ for big objects ($area > 96^2$) \cite{liu2020deep, cocometrics}.
@@ -646,7 +645,7 @@ Single Shot Detector (SSD) makes both the objectness and class probability predi
 \subsubsection{You Only Look Once (YOLO)}
 
 Like the R-CNN family, the YOLO family has been going through a series of improvements since the original YOLO paper
-was published. YOLO is also a one-stage real-time detector similar to SSD. YOLOv1 \cite{redmon2016you} introduces the
+was published. YOLO is a one-stage real-time detector family similar to SSD. YOLOv1 \cite{redmon2016you} introduces the
 general architecture; YOLOv2 \cite{redmon2017yolo9000} adds anchors similar to Faster R-CNN and SSD; YOLOv3
 \cite{redmon2018yolov3} further refines the architecture and the training process.
 
@@ -686,8 +685,7 @@ For planktons and corals, we have only found research for classification but not
 \cite{qin2015underwater, moniruzzaman2017deep}.
 
 For amphora detection, Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} used sliding window with a CNN on
-high-resolution orthophotos (aerial photos). And this is the only study we have found on amphora detection with deep
-learning.
+high-resolution orthophotos (aerial photos). This is the only study we found on amphora detection with deep learning.
 
 \section{Data and Methods}
 
