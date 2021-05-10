@@ -733,6 +733,20 @@ increases gradually, and then decreases after reaching the maximum
 The model was trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training took 2 hours and 40
 minutes to reach the peak mAP result at step 8621.
 
+\begin{figure}[ht]
+  \centering
+  \begin{subfigure}[ht]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{mapcoco.png}
+  \end{subfigure}
+  \bigskip
+  \begin{subfigure}[ht]{0.4\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{map50.png}
+  \end{subfigure}
+  \caption{$mAP_{coco}$ (left) and mAP@0.5 (right).}
+\end{figure}
+
 \section{Evaluation}
 
 The main metric $mAP_{coco}$ (see section \ref{sec:generalobjectdetection}) from our model is 0.238, while the

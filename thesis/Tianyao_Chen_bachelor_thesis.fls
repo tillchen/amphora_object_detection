@@ -280,6 +280,12 @@ INPUT ./images/ssd.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/yolov3.png
 INPUT ./images/yolov3.png
 INPUT ./images/yolov3.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/mapcoco.png
+INPUT ./images/mapcoco.png
+INPUT ./images/mapcoco.png
+INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/map50.png
+INPUT ./images/map50.png
+INPUT ./images/map50.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/val_1.png
 INPUT ./images/val_1.png
 INPUT ./images/val_1.png

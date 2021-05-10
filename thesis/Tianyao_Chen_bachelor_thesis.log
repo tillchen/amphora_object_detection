@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  10 MAY 2021 10:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  10 MAY 2021 16:49
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -773,105 +773,116 @@ File: ./images/yolov3.png Graphic file (type png)
 <use ./images/yolov3.png>
 Package pdftex.def Info: ./images/yolov3.png  used on input line 658.
 (pdftex.def)             Requested size: 426.79135pt x 291.99947pt.
- [15 <./images/yolov3.png>] [16] [17]
-<./images/val_1.png, id=738, 623.32875pt x 470.75874pt>
+ [15 <./images/yolov3.png>] [16]
+<./images/mapcoco.png, id=708, 331.2375pt x 200.75pt>
+File: ./images/mapcoco.png Graphic file (type png)
+<use ./images/mapcoco.png>
+Package pdftex.def Info: ./images/mapcoco.png  used on input line 740.
+(pdftex.def)             Requested size: 170.71393pt x 103.46243pt.
+<./images/map50.png, id=709, 331.2375pt x 200.75pt>
+File: ./images/map50.png Graphic file (type png)
+<use ./images/map50.png>
+Package pdftex.def Info: ./images/map50.png  used on input line 745.
+(pdftex.def)             Requested size: 170.71393pt x 103.46243pt.
+ [17 <./images/mapcoco.png> <./images/map50.png>]
+<./images/val_1.png, id=743, 623.32875pt x 470.75874pt>
 File: ./images/val_1.png Graphic file (type png)
 <use ./images/val_1.png>
-Package pdftex.def Info: ./images/val_1.png  used on input line 786.
+Package pdftex.def Info: ./images/val_1.png  used on input line 800.
 (pdftex.def)             Requested size: 170.71393pt x 128.93109pt.
-<./images/val_6.png, id=739, 694.595pt x 470.75874pt>
+<./images/val_6.png, id=744, 694.595pt x 470.75874pt>
 File: ./images/val_6.png Graphic file (type png)
 <use ./images/val_6.png>
-Package pdftex.def Info: ./images/val_6.png  used on input line 790.
+Package pdftex.def Info: ./images/val_6.png  used on input line 804.
 (pdftex.def)             Requested size: 170.71393pt x 115.69965pt.
-<./images/val_3.png, id=740, 512.91624pt x 470.75874pt>
+<./images/val_3.png, id=745, 512.91624pt x 470.75874pt>
 File: ./images/val_3.png Graphic file (type png)
 <use ./images/val_3.png>
-Package pdftex.def Info: ./images/val_3.png  used on input line 795.
+Package pdftex.def Info: ./images/val_3.png  used on input line 809.
 (pdftex.def)             Requested size: 170.71393pt x 156.67975pt.
-<./images/val_2.png, id=741, 476.78125pt x 470.75874pt>
+<./images/val_2.png, id=746, 476.78125pt x 470.75874pt>
 File: ./images/val_2.png Graphic file (type png)
 <use ./images/val_2.png>
-Package pdftex.def Info: ./images/val_2.png  used on input line 799.
+Package pdftex.def Info: ./images/val_2.png  used on input line 813.
 (pdftex.def)             Requested size: 170.71393pt x 168.56075pt.
-<./images/val_5.png, id=742, 712.6625pt x 409.53pt>
+<./images/val_5.png, id=747, 712.6625pt x 409.53pt>
 File: ./images/val_5.png Graphic file (type png)
 <use ./images/val_5.png>
-Package pdftex.def Info: ./images/val_5.png  used on input line 804.
+Package pdftex.def Info: ./images/val_5.png  used on input line 818.
 (pdftex.def)             Requested size: 170.71393pt x 98.09549pt.
-<./images/val_7.png, id=743, 718.685pt x 357.335pt>
+<./images/val_7.png, id=748, 718.685pt x 357.335pt>
 File: ./images/val_7.png Graphic file (type png)
 <use ./images/val_7.png>
-Package pdftex.def Info: ./images/val_7.png  used on input line 808.
+Package pdftex.def Info: ./images/val_7.png  used on input line 822.
 (pdftex.def)             Requested size: 170.71393pt x 84.87885pt.
-<./images/val_4.png, id=744, 476.78125pt x 470.75874pt>
+<./images/val_4.png, id=749, 476.78125pt x 470.75874pt>
 File: ./images/val_4.png Graphic file (type png)
 <use ./images/val_4.png>
-Package pdftex.def Info: ./images/val_4.png  used on input line 813.
+Package pdftex.def Info: ./images/val_4.png  used on input line 827.
 (pdftex.def)             Requested size: 170.71393pt x 168.56075pt.
-<./images/test_1.png, id=759, 622.325pt x 470.75874pt>
+<./images/test_1.png, id=764, 622.325pt x 470.75874pt>
 File: ./images/test_1.png Graphic file (type png)
 <use ./images/test_1.png>
-Package pdftex.def Info: ./images/test_1.png  used on input line 824.
+Package pdftex.def Info: ./images/test_1.png  used on input line 838.
 (pdftex.def)             Requested size: 341.43437pt x 258.27881pt.
-<./images/test_2.png, id=760, 711.65875pt x 412.54124pt>
+<./images/test_2.png, id=765, 711.65875pt x 412.54124pt>
 File: ./images/test_2.png Graphic file (type png)
 <use ./images/test_2.png>
-Package pdftex.def Info: ./images/test_2.png  used on input line 829.
+Package pdftex.def Info: ./images/test_2.png  used on input line 843.
 (pdftex.def)             Requested size: 341.43437pt x 197.92313pt.
  [18] [19 <./images/val_1.png> <./images/val_6.png> <./images/val_3.png> <./images/val_2.png> <./images/val_5.png> <./images/val_7.png> <./images/val_4.png>] [20 <./images/test_1.png> <./images/test_2.png>] [21
 
 ]
-Overfull \hbox (44.67775pt too wide) in paragraph at lines 880--880
+Overfull \hbox (44.67775pt too wide) in paragraph at lines 894--894
 []\OT1/phv/m/n/10.95 Ian J Good-fel-low et al. ``Gen-er-a-tive ad-ver-sar-ial net-works''. In: \OT1/phv/m/sl/10.95 arXiv preprint arXiv:1406.2661
  []
 
 [22]
-Overfull \hbox (2.26387pt too wide) in paragraph at lines 880--880
+Overfull \hbox (2.26387pt too wide) in paragraph at lines 894--894
 []\OT1/phv/m/n/10.95 Frank Rosen-blatt. \OT1/phv/m/sl/10.95 The per-cep-tron, a per-ceiv-ing and rec-og-niz-ing au-toma-ton Project
  []
 
 
-Overfull \hbox (2.5945pt too wide) in paragraph at lines 880--880
+Overfull \hbox (2.5945pt too wide) in paragraph at lines 894--894
 []\OT1/phv/m/n/10.95 A[]aron Van Den Oord, Sander Diele-man, and Ben-jamin Schrauwen. ``Deep content-
  []
 
 [23] [24] [25]
-Overfull \hbox (10.16374pt too wide) in paragraph at lines 880--880
+Overfull \hbox (10.16374pt too wide) in paragraph at lines 894--894
 \OT1/phv/m/n/10.95 2019. \OT1/phv/m/sc/10.95 url\OT1/phv/m/n/10.95 : [][]$\OT1/cmtt/m/n/10.95 https : / / towardsdatascience . com / whats -[] the -[] deal -[] with -[] accuracy -[]
  []
 
 
-Overfull \hbox (4.2667pt too wide) in paragraph at lines 880--880
+Overfull \hbox (4.2667pt too wide) in paragraph at lines 894--894
 \OT1/phv/m/n/10.95 deep learn-ing''. In: \OT1/phv/m/sl/10.95 Com-put-ers and Elec-tron-ics in Agri-cul-ture \OT1/phv/m/n/10.95 172 (2020), p. 105339. 
  []
 
 
-Overfull \hbox (36.22528pt too wide) in paragraph at lines 880--880
+Overfull \hbox (36.22528pt too wide) in paragraph at lines 894--894
 []\OT1/phv/m/n/10.95 University of Malta. \OT1/phv/m/sl/10.95 Phoeni-cian Ship-wreck Project\OT1/phv/m/n/10.95 . \OT1/phv/m/sc/10.95 url\OT1/phv/m/n/10.95 : [][]$\OT1/cmtt/m/n/10.95 https : / / phoenicianshipwreck .
  []
 
 
-Overfull \hbox (1.42177pt too wide) in paragraph at lines 880--880
+Overfull \hbox (1.42177pt too wide) in paragraph at lines 894--894
 [][]$\OT1/cmtt/m/n/10.95 https : / / images . auscape . com . au / objects / scuba -[] diver -[] examining -[] ancient -[]
  []
 
 [26]
-Overfull \hbox (46.70459pt too wide) in paragraph at lines 880--880
+Overfull \hbox (46.70459pt too wide) in paragraph at lines 894--894
 []\OT1/phv/m/n/10.95 Gemma Con-roy. \OT1/phv/m/sl/10.95 Sea-grass Safe-guards Hu-man His-tory\OT1/phv/m/n/10.95 . \OT1/phv/m/sc/10.95 url\OT1/phv/m/n/10.95 : [][]$\OT1/cmtt/m/n/10.95 https : / / www . hakaimagazine .
  []
 
 [27]
-Overfull \hbox (10.6313pt too wide) in paragraph at lines 880--880
+Overfull \hbox (10.6313pt too wide) in paragraph at lines 894--894
 []\OT1/phv/m/n/10.95 Bastian Leibe, Edgar See-mann, and Bernt Schiele. ``Pedes-trian de-tec-tion in crowded
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 881.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 895.
 [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 881.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 895.
  (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 881.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 881.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 895.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 895.
 Package rerunfilecheck Info: File `Tianyao_Chen_bachelor_thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 31220E8ED74EA4FD6EC2E237AD8816E9;1471.
 Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
@@ -879,18 +890,18 @@ Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15029 strings out of 492649
- 261813 string characters out of 6129623
- 709142 words of memory out of 5000000
- 18485 multiletter control sequences out of 15000+600000
+ 15040 strings out of 492649
+ 262040 string characters out of 6129623
+ 710142 words of memory out of 5000000
+ 18493 multiletter control sequences out of 15000+600000
  26507 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,48p,886b,1739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (32 pages, 10244873 bytes).
+Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (32 pages, 10271849 bytes).
 PDF statistics:
- 969 PDF objects out of 1000 (max. 8388607)
- 823 compressed objects within 9 object streams
- 217 named destinations out of 1000 (max. 500000)
- 331 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 974 PDF objects out of 1000 (max. 8388607)
+ 824 compressed objects within 9 object streams
+ 218 named destinations out of 1000 (max. 500000)
+ 341 words of extra memory for PDF output out of 10000 (max. 10000000)
 
