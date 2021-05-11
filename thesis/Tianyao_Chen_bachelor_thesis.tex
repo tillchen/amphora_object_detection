@@ -552,10 +552,10 @@ R-CNN has the following disadvantages \cite{elgendy2020deep, girshick2014rich, g
 
 \paragraph{Fast R-CNN}
 
-Fast R-CNN makes the following changes from R-CNN \cite{elgendy2020deep, girshick2015fast}:
+Fast R-CNN made the following changes from R-CNN \cite{elgendy2020deep, girshick2015fast}:
 
 \begin{itemize}
-  \item The CNN goes before region proposal instead of after, so that the image only goes through the CNN once instead
+  \item The CNN goes before region proposal, so that the image only goes through the CNN once instead
   of 2000 RoIs going through the CNN separately.
   \item Classification is performed by the softmax layer of the CNN instead of the SVM. And localization is also an output
   layer of the CNN.
@@ -579,9 +579,10 @@ Faster R-CNN makes the following improvements from Fast R-CNN \cite{elgendy2020d
 
 \begin{itemize}
   \item Region Proposal Network (RPN) or attention network replaces selective search, which reduces the number of
-  proposals, speeds up the model, and makes the model training end-to-end. RPN is an FCN that outputs objectness scores
-  and RoIs, and it can be used as a standalone network for single-class object detection. It also shares the features
-  with the detection network, which enables region proposal to be nearly cost-free.
+  proposals, speeds up the model, and makes the model training end-to-end. RPN is a Fully Convolutional Network (FCN)
+  \cite{long2015fully} that outputs objectness scores and RoIs, and it can be used as a standalone network for
+  single-class object detection. It also shares the features with the detection network, which enables region proposal
+  to be nearly cost-free.
   \item Anchors are introduced as reference boxes at different scales and aspect ratios. Thus the regression layer
   only needs to output the offsets of the coordinates, width, and height from the anchors. The anchors are created using
   the sliding-window approach. By default 9 anchors (3 scales and 3 aspect ratios) centered at each sliding window are
@@ -688,7 +689,7 @@ high-resolution orthophoto (i.e. aerial photo). This is the only study we found 
 \subsection{Data}
 
 The dataset consists of 50 images (294 objects) in the training set and 7 images (31 objects) in the validation set,
-which maintains the 90\%: 10\% ratio for the object count. Two additional images were used as the test set. All the
+which maintains a 90\%: 10\% ratio for the object count. Two additional images were used as the test set. All the
 images were obtained through various sources
 \cite{googleimages, scuba, itinari, whoi, phoenician, auscape, hakai, groplan, ionian, sanisera} and were labeled
 with labelImg \cite{labelimg}.
