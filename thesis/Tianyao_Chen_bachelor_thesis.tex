@@ -612,11 +612,11 @@ real-time detection speed \cite{elgendy2020deep}. In general, one-stage detector
 
 \subsubsection{Single Shot Detector (SSD)}
 
-Single Shot Detector (SSD) makes both the objectness and class probability predictions directly in one shot
+Single Shot Detector (SSD) makes both the objectness prediction and classification directly in one shot
 \cite{elgendy2020deep, liu2016ssd}. It has three main components \cite{elgendy2020deep, liu2016ssd}:
 
 \begin{itemize}
-  \item The backbone network, which is VGG-16 in the original paper. It also uses anchors called priors like in Faster R-CNN.
+  \item The backbone network. It also uses anchors called priors like in Faster R-CNN.
   But the network sends the bounding box offsets and the class scores to NMS directly when it finds a bounding box that
   contains the object features.
   \item Multi-scale feature layers, which are convolutional layers that decrease in size progressively to detect objects
@@ -642,9 +642,9 @@ Single Shot Detector (SSD) makes both the objectness and class probability predi
 \subsubsection{You Only Look Once (YOLO)}
 
 Like the R-CNN family, the YOLO family has been going through a series of improvements since the original YOLO paper
-was published. YOLO is a one-stage real-time detector family similar to SSD. YOLOv1 \cite{redmon2016you} introduces the
-general architecture; YOLOv2 \cite{redmon2017yolo9000} adds anchors similar to Faster R-CNN and SSD; YOLOv3
-\cite{redmon2018yolov3} further refines the architecture and the training process.
+was published. YOLO is a one-stage real-time detector family similar to SSD. YOLOv1 \cite{redmon2016you} introduced the
+general architecture; YOLOv2 \cite{redmon2017yolo9000} added anchors similar to Faster R-CNN and SSD; YOLOv3
+\cite{redmon2018yolov3} further refined the architecture.
 
 YOLO divides the image into a grid, and a grid cell is responsible for detecting an object if the center of the object
 is inside the cell \cite{elgendy2020deep, redmon2016you}. The backbone network is called DarkNet, which is inspired by
@@ -708,12 +708,12 @@ chosen due to the following reasons:
 The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} was used. ssd\_resnet\_50\_fpn\_coco
 is the model name in the TensorFlow 1 Detection Model Zoo \cite{tf1detectionmodelzoo}. The backbone network
 is ResNet-50 (50-layer ResNet) (see section \ref{sec:cnn}) instead of VGG-16 in the original SSD paper, as it
-improves $mAP$ significantly \cite{he2016deep}. Similar to the approach from Can et al. \cite{cao2020real} for crab
+improves $mAP$ significantly \cite{he2016deep}. Similar to the approach from Cao et al. \cite{cao2020real} for crab
 detection, Feature Pyramid Network (FPN) was added to improve the detection at different scales \cite{lin2017feature}.
 
 \subsection{Model Training}
 
-Transfer learning \cite{torrey2010transfer} was used as the model was pre-trained on the COCO dataset, which means the
+We used transfer learning \cite{torrey2010transfer} as the model was pre-trained on the COCO dataset, which means the
 weights and biases are restored instead of being randomly initialized and the model does not have to learn the low-level
 features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config were adjusted
 to 1, 8, and 7 respectively in the configuration file, while the rest of fields were unchanged. The images were reshaped
@@ -769,8 +769,8 @@ Nevertheless, our model's performance is still impressive due to the following r
   \item Underwater object detection is more challenging than general object detection performed by the COCO dataset.
   As we have mentioned before in section \ref{sec:cvForUnderwater}, the same challenges also apply to amphora
   detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
-  in sand, or blocked by suspended particles. We only defined one class for all amphoras even if they are broken, while
-  Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
+  in sand, or blocked by suspended particles. We only defined one class for all amphoras even though some of them are
+  broken, while Pasquet et al. defined 2 separate classes for the head and the body to better detect broken instances.
   \item Our $mAP@0.5$ score is comparable with that from Xu et al. \cite{xu2018underwater} for fish detection. They
   achieved a 0.5392 $mAP@0.5$ using YOLOv3, although they did not compute the $mAP_{coco}$.
 \end{itemize}
@@ -873,10 +873,10 @@ We hope this paper can serve as a proof of concept for future studies since ther
   YOLOv5 after its authors publish a paper and its active development stabilizes. Some other models in the TensorFlow 2
   Detection Model Zoo \cite{tf2detectionmodelzoo} are also interesting to look into. Note that we used the SSD
   model in the TensorFlow 1 Detection Model Zoo, as the TensorFlow 2 version requires two scripts to be running
-  to train and evaluate at the same time, and it is not possible to do so on Google Colaboratory. But one with access to
-  GPUs can easily train an EfficientDet \cite{tan2020efficientdet} D1 640 x 640 model with a 0.384 $mAP_{coco}$ and a
-  54 ms detection speed or an EfficientDet D7 1536 x 1536 model with a 0.512 $mAP_{coco}$ and a 325 ms detection speed
-  from the TensorFlow 2 Detection Model Zoo. CenterNet \cite{zhou2019objects}, a novel keypoint-based detector that
+  to train and evaluate at the same time. It is unfortunately not possible to do so on Google Colaboratory. But one with
+  access to GPUs can easily train an EfficientDet \cite{tan2020efficientdet} D1 640 x 640 model with a 0.384 $mAP_{coco}$
+  and a 54 ms detection speed or an EfficientDet D7 1536 x 1536 model with a 0.512 $mAP_{coco}$ and a 325 ms detection
+  speed from the TensorFlow 2 Detection Model Zoo. CenterNet \cite{zhou2019objects}, a novel keypoint-based detector that
   models an object as a single center point and regresses to the object size without NMS
   (see section \ref{sec:generalobjectdetection}), is also available in the TensorFlow 2 Detection Model Zoo. CenterNet
   can achieve a 0.417 $mAP_{coco}$ with a 6 ms detection speed or a 0.614 $mAP_{coco}$ with a 76 ms detection
