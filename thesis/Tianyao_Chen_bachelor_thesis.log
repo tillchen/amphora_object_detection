@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  11 MAY 2021 10:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.6)  12 MAY 2021 19:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -477,7 +477,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 28.
+Package hyperref Info: Option `colorlinks' set `true' on input line 31.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/biblatex/lbx/english.lbx
@@ -492,21 +492,21 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux)
 \openout1 = `Tianyao_Chen_bachelor_thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 35.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
@@ -552,8 +552,8 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Tianyao_Chen_bachelor_thesis.bbl' found.
 (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 32.
-Package biblatex Info: Reference segment=0 on input line 32.
+Package biblatex Info: Reference section=0 on input line 35.
+Package biblatex Info: Reference segment=0 on input line 35.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -590,7 +590,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 32.
+Package hyperref Info: Link coloring ON on input line 35.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -598,9 +598,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count314
 )
-LaTeX Info: Redefining \ref on input line 32.
-LaTeX Info: Redefining \pageref on input line 32.
-LaTeX Info: Redefining \nameref on input line 32.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
  (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out) (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.out)
 \@outlinefile=\write5
 \openout5 = `Tianyao_Chen_bachelor_thesis.out'.
@@ -608,21 +608,20 @@ LaTeX Info: Redefining \nameref on input line 32.
 <bsc-logo.pdf, id=84, 233.87375pt x 84.315pt>
 File: bsc-logo.pdf Graphic file (type pdf)
 <use bsc-logo.pdf>
-Package pdftex.def Info: bsc-logo.pdf  used on input line 38.
+Package pdftex.def Info: bsc-logo.pdf  used on input line 41.
 (pdftex.def)             Requested size: 187.09923pt x 67.45207pt.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 43.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 46.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 52.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 55.
  [1
 
 {/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/tillchen/Google Drive/JUB/thesis/thesis/bsc-logo.pdf>]
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 72.
- [2]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 111.
- [3] (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.toc
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 76.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <12> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 91.
+ [2] [3] (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.toc
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 4.
 )
@@ -631,16 +630,16 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 
  [4]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 136.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 156.
 <./images/amphora_stowage_aboard_ship.png, id=156, 493.845pt x 360.34625pt>
 File: ./images/amphora_stowage_aboard_ship.png Graphic file (type png)
 <use ./images/amphora_stowage_aboard_ship.png>
-Package pdftex.def Info: ./images/amphora_stowage_aboard_ship.png  used on input line 151.
+Package pdftex.def Info: ./images/amphora_stowage_aboard_ship.png  used on input line 171.
 (pdftex.def)             Requested size: 256.07741pt x 186.84778pt.
 <./images/amphora_various_shapes.jpg, id=161, 491.8375pt x 602.25pt>
 File: ./images/amphora_various_shapes.jpg Graphic file (type jpg)
 <use ./images/amphora_various_shapes.jpg>
-Package pdftex.def Info: ./images/amphora_various_shapes.jpg  used on input line 163.
+Package pdftex.def Info: ./images/amphora_various_shapes.jpg  used on input line 183.
 (pdftex.def)             Requested size: 213.39568pt x 261.2966pt.
  [1
 
@@ -648,241 +647,241 @@ Package pdftex.def Info: ./images/amphora_various_shapes.jpg  used on input line
 <./images/deep_learning.png, id=238, 520.94624pt x 398.48875pt>
 File: ./images/deep_learning.png Graphic file (type png)
 <use ./images/deep_learning.png>
-Package pdftex.def Info: ./images/deep_learning.png  used on input line 217.
+Package pdftex.def Info: ./images/deep_learning.png  used on input line 237.
 (pdftex.def)             Requested size: 341.43437pt x 261.17317pt.
 <./images/ann_logic_computations.png, id=245, 1444.39626pt x 487.8225pt>
 File: ./images/ann_logic_computations.png Graphic file (type png)
 <use ./images/ann_logic_computations.png>
-Package pdftex.def Info: ./images/ann_logic_computations.png  used on input line 233.
+Package pdftex.def Info: ./images/ann_logic_computations.png  used on input line 253.
 (pdftex.def)             Requested size: 213.39568pt x 72.06856pt.
  [3 <./images/deep_learning.png> <./images/ann_logic_computations.png>]
 <./images/tlu.png, id=266, 1117.17375pt x 615.29875pt>
 File: ./images/tlu.png Graphic file (type png)
 <use ./images/tlu.png>
-Package pdftex.def Info: ./images/tlu.png  used on input line 251.
+Package pdftex.def Info: ./images/tlu.png  used on input line 271.
 (pdftex.def)             Requested size: 213.39568pt x 117.52762pt.
 <./images/mlp.png, id=273, 1305.87875pt x 929.4725pt>
 File: ./images/mlp.png Graphic file (type png)
 <use ./images/mlp.png>
-Package pdftex.def Info: ./images/mlp.png  used on input line 272.
+Package pdftex.def Info: ./images/mlp.png  used on input line 292.
 (pdftex.def)             Requested size: 213.39568pt x 151.88135pt.
  [4 <./images/tlu.png> <./images/mlp.png>]
 <./images/cnn_layers.png, id=307, 1155.31625pt x 689.57625pt>
 File: ./images/cnn_layers.png Graphic file (type png)
 <use ./images/cnn_layers.png>
-Package pdftex.def Info: ./images/cnn_layers.png  used on input line 306.
+Package pdftex.def Info: ./images/cnn_layers.png  used on input line 326.
 (pdftex.def)             Requested size: 213.39568pt x 127.36967pt.
 <./images/filters.png, id=312, 1445.4pt x 907.39pt>
 File: ./images/filters.png Graphic file (type png)
 <use ./images/filters.png>
-Package pdftex.def Info: ./images/filters.png  used on input line 319.
+Package pdftex.def Info: ./images/filters.png  used on input line 339.
 (pdftex.def)             Requested size: 256.07741pt x 160.7617pt.
 <./images/max_pooling.png, id=317, 1446.40375pt x 603.25375pt>
 File: ./images/max_pooling.png Graphic file (type png)
 <use ./images/max_pooling.png>
-Package pdftex.def Info: ./images/max_pooling.png  used on input line 330.
+Package pdftex.def Info: ./images/max_pooling.png  used on input line 350.
 (pdftex.def)             Requested size: 213.39568pt x 88.99295pt.
  [5 <./images/cnn_layers.png>]
 <./images/typical_cnn.png, id=342, 1445.4pt x 346.29375pt>
 File: ./images/typical_cnn.png Graphic file (type png)
 <use ./images/typical_cnn.png>
-Package pdftex.def Info: ./images/typical_cnn.png  used on input line 344.
+Package pdftex.def Info: ./images/typical_cnn.png  used on input line 364.
 (pdftex.def)             Requested size: 341.43437pt x 81.80176pt.
 <./images/resnet.png, id=352, 1445.4pt x 872.25874pt>
 File: ./images/resnet.png Graphic file (type png)
 <use ./images/resnet.png>
-Package pdftex.def Info: ./images/resnet.png  used on input line 362.
+Package pdftex.def Info: ./images/resnet.png  used on input line 382.
 (pdftex.def)             Requested size: 341.43437pt x 206.0456pt.
  [6 <./images/filters.png> <./images/max_pooling.png> <./images/typical_cnn.png>]
 <./images/deep_learning_vs_traditional_computer_vision.png, id=388, 1059.96pt x 453.695pt>
 File: ./images/deep_learning_vs_traditional_computer_vision.png Graphic file (type png)
 <use ./images/deep_learning_vs_traditional_computer_vision.png>
-Package pdftex.def Info: ./images/deep_learning_vs_traditional_computer_vision.png  used on input line 389.
+Package pdftex.def Info: ./images/deep_learning_vs_traditional_computer_vision.png  used on input line 409.
 (pdftex.def)             Requested size: 298.75264pt x 127.87138pt.
  [7 <./images/resnet.png> <./images/deep_learning_vs_traditional_computer_vision.png>]
 <./images/sliding_window.png, id=418, 1330.9725pt x 955.57pt>
 File: ./images/sliding_window.png Graphic file (type png)
 <use ./images/sliding_window.png>
-Package pdftex.def Info: ./images/sliding_window.png  used on input line 418.
+Package pdftex.def Info: ./images/sliding_window.png  used on input line 438.
 (pdftex.def)             Requested size: 213.39568pt x 153.20052pt.
  [8 <./images/sliding_window.png>]
 <./images/nms.png, id=455, 522.95375pt x 302.12875pt>
 File: ./images/nms.png Graphic file (type png)
 <use ./images/nms.png>
-Package pdftex.def Info: ./images/nms.png  used on input line 463.
+Package pdftex.def Info: ./images/nms.png  used on input line 483.
 (pdftex.def)             Requested size: 341.43437pt x 197.26189pt.
 <./images/iou.png, id=465, 421.575pt x 186.6975pt>
 File: ./images/iou.png Graphic file (type png)
 <use ./images/iou.png>
-Package pdftex.def Info: ./images/iou.png  used on input line 480.
+Package pdftex.def Info: ./images/iou.png  used on input line 500.
 (pdftex.def)             Requested size: 256.07741pt x 113.40671pt.
  [9 <./images/nms.png>]
 <./images/precision_recall.png, id=490, 648.4225pt x 319.1925pt>
 File: ./images/precision_recall.png Graphic file (type png)
 <use ./images/precision_recall.png>
-Package pdftex.def Info: ./images/precision_recall.png  used on input line 496.
+Package pdftex.def Info: ./images/precision_recall.png  used on input line 516.
 (pdftex.def)             Requested size: 426.79135pt x 210.09297pt.
 <./images/pr_curve.png, id=509, 395.4775pt x 279.0425pt>
 File: ./images/pr_curve.png Graphic file (type png)
 <use ./images/pr_curve.png>
-Package pdftex.def Info: ./images/pr_curve.png  used on input line 515.
+Package pdftex.def Info: ./images/pr_curve.png  used on input line 535.
 (pdftex.def)             Requested size: 213.39568pt x 150.56999pt.
  [10 <./images/iou.png> <./images/precision_recall.png>]
 <./images/r_cnn.png, id=529, 584.1825pt x 339.2675pt>
 File: ./images/r_cnn.png Graphic file (type png)
 <use ./images/r_cnn.png>
-Package pdftex.def Info: ./images/r_cnn.png  used on input line 539.
+Package pdftex.def Info: ./images/r_cnn.png  used on input line 559.
 (pdftex.def)             Requested size: 341.43437pt x 198.29726pt.
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 547.
+LaTeX Font Info:    Try loading font information for OMS+phv on input line 567.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsphv.fd
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 547.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 567.
  [11 <./images/pr_curve.png> <./images/r_cnn.png>]
 <./images/fast_r_cnn.png, id=549, 681.54625pt x 474.77374pt>
 File: ./images/fast_r_cnn.png Graphic file (type png)
 <use ./images/fast_r_cnn.png>
-Package pdftex.def Info: ./images/fast_r_cnn.png  used on input line 568.
+Package pdftex.def Info: ./images/fast_r_cnn.png  used on input line 588.
 (pdftex.def)             Requested size: 341.43437pt x 237.84993pt.
  [12 <./images/fast_r_cnn.png>]
 <./images/anchors.png, id=567, 609.27625pt x 337.26pt>
 File: ./images/anchors.png Graphic file (type png)
 <use ./images/anchors.png>
-Package pdftex.def Info: ./images/anchors.png  used on input line 594.
+Package pdftex.def Info: ./images/anchors.png  used on input line 614.
 (pdftex.def)             Requested size: 341.43437pt x 189.00325pt.
 <./images/faster_r_cnn.png, id=570, 632.3625pt x 360.34625pt>
 File: ./images/faster_r_cnn.png Graphic file (type png)
 <use ./images/faster_r_cnn.png>
-Package pdftex.def Info: ./images/faster_r_cnn.png  used on input line 601.
+Package pdftex.def Info: ./images/faster_r_cnn.png  used on input line 621.
 (pdftex.def)             Requested size: 341.43437pt x 194.56758pt.
  [13 <./images/anchors.png> <./images/faster_r_cnn.png>]
 <./images/ssd_feature_maps.png, id=594, 661.47125pt x 346.29375pt>
 File: ./images/ssd_feature_maps.png Graphic file (type png)
 <use ./images/ssd_feature_maps.png>
-Package pdftex.def Info: ./images/ssd_feature_maps.png  used on input line 629.
+Package pdftex.def Info: ./images/ssd_feature_maps.png  used on input line 649.
 (pdftex.def)             Requested size: 341.43437pt x 178.74748pt.
 <./images/ssd.png, id=597, 997.7275pt x 473.77pt>
 File: ./images/ssd.png Graphic file (type png)
 <use ./images/ssd.png>
-Package pdftex.def Info: ./images/ssd.png  used on input line 637.
+Package pdftex.def Info: ./images/ssd.png  used on input line 657.
 (pdftex.def)             Requested size: 341.43437pt x 162.12788pt.
  [14 <./images/ssd_feature_maps.png> <./images/ssd.png>]
 <./images/yolov3.png, id=616, 1051.93pt x 719.68875pt>
 File: ./images/yolov3.png Graphic file (type png)
 <use ./images/yolov3.png>
-Package pdftex.def Info: ./images/yolov3.png  used on input line 655.
+Package pdftex.def Info: ./images/yolov3.png  used on input line 675.
 (pdftex.def)             Requested size: 426.79135pt x 291.99947pt.
  [15 <./images/yolov3.png>] [16]
 <./images/mapcoco.png, id=705, 331.2375pt x 200.75pt>
 File: ./images/mapcoco.png Graphic file (type png)
 <use ./images/mapcoco.png>
-Package pdftex.def Info: ./images/mapcoco.png  used on input line 737.
+Package pdftex.def Info: ./images/mapcoco.png  used on input line 757.
 (pdftex.def)             Requested size: 170.71393pt x 103.46243pt.
 <./images/map50.png, id=706, 331.2375pt x 200.75pt>
 File: ./images/map50.png Graphic file (type png)
 <use ./images/map50.png>
-Package pdftex.def Info: ./images/map50.png  used on input line 742.
+Package pdftex.def Info: ./images/map50.png  used on input line 762.
 (pdftex.def)             Requested size: 170.71393pt x 103.46243pt.
  [17 <./images/mapcoco.png> <./images/map50.png>]
 <./images/val_1.png, id=740, 623.32875pt x 470.75874pt>
 File: ./images/val_1.png Graphic file (type png)
 <use ./images/val_1.png>
-Package pdftex.def Info: ./images/val_1.png  used on input line 797.
+Package pdftex.def Info: ./images/val_1.png  used on input line 817.
 (pdftex.def)             Requested size: 170.71393pt x 128.93109pt.
 <./images/val_6.png, id=741, 694.595pt x 470.75874pt>
 File: ./images/val_6.png Graphic file (type png)
 <use ./images/val_6.png>
-Package pdftex.def Info: ./images/val_6.png  used on input line 801.
+Package pdftex.def Info: ./images/val_6.png  used on input line 821.
 (pdftex.def)             Requested size: 170.71393pt x 115.69965pt.
 <./images/val_3.png, id=742, 512.91624pt x 470.75874pt>
 File: ./images/val_3.png Graphic file (type png)
 <use ./images/val_3.png>
-Package pdftex.def Info: ./images/val_3.png  used on input line 806.
+Package pdftex.def Info: ./images/val_3.png  used on input line 826.
 (pdftex.def)             Requested size: 170.71393pt x 156.67975pt.
 <./images/val_2.png, id=743, 476.78125pt x 470.75874pt>
 File: ./images/val_2.png Graphic file (type png)
 <use ./images/val_2.png>
-Package pdftex.def Info: ./images/val_2.png  used on input line 810.
+Package pdftex.def Info: ./images/val_2.png  used on input line 830.
 (pdftex.def)             Requested size: 170.71393pt x 168.56075pt.
 <./images/val_5.png, id=744, 712.6625pt x 409.53pt>
 File: ./images/val_5.png Graphic file (type png)
 <use ./images/val_5.png>
-Package pdftex.def Info: ./images/val_5.png  used on input line 815.
+Package pdftex.def Info: ./images/val_5.png  used on input line 835.
 (pdftex.def)             Requested size: 170.71393pt x 98.09549pt.
 <./images/val_7.png, id=745, 718.685pt x 357.335pt>
 File: ./images/val_7.png Graphic file (type png)
 <use ./images/val_7.png>
-Package pdftex.def Info: ./images/val_7.png  used on input line 819.
+Package pdftex.def Info: ./images/val_7.png  used on input line 839.
 (pdftex.def)             Requested size: 170.71393pt x 84.87885pt.
 <./images/val_4.png, id=746, 476.78125pt x 470.75874pt>
 File: ./images/val_4.png Graphic file (type png)
 <use ./images/val_4.png>
-Package pdftex.def Info: ./images/val_4.png  used on input line 824.
+Package pdftex.def Info: ./images/val_4.png  used on input line 844.
 (pdftex.def)             Requested size: 170.71393pt x 168.56075pt.
 <./images/test_1.png, id=761, 622.325pt x 470.75874pt>
 File: ./images/test_1.png Graphic file (type png)
 <use ./images/test_1.png>
-Package pdftex.def Info: ./images/test_1.png  used on input line 835.
+Package pdftex.def Info: ./images/test_1.png  used on input line 855.
 (pdftex.def)             Requested size: 341.43437pt x 258.27881pt.
 <./images/test_2.png, id=762, 711.65875pt x 412.54124pt>
 File: ./images/test_2.png Graphic file (type png)
 <use ./images/test_2.png>
-Package pdftex.def Info: ./images/test_2.png  used on input line 840.
+Package pdftex.def Info: ./images/test_2.png  used on input line 860.
 (pdftex.def)             Requested size: 341.43437pt x 197.92313pt.
  [18] [19 <./images/val_1.png> <./images/val_6.png> <./images/val_3.png> <./images/val_2.png> <./images/val_5.png> <./images/val_7.png> <./images/val_4.png>] [20 <./images/test_1.png> <./images/test_2.png>] [21
 
 ]
-Overfull \hbox (44.67775pt too wide) in paragraph at lines 891--891
+Overfull \hbox (44.67775pt too wide) in paragraph at lines 911--911
 []\OT1/phv/m/n/10.95 Ian J Good-fel-low et al. ``Gen-er-a-tive ad-ver-sar-ial net-works''. In: \OT1/phv/m/sl/10.95 arXiv preprint arXiv:1406.2661
  []
 
 [22]
-Overfull \hbox (2.26387pt too wide) in paragraph at lines 891--891
+Overfull \hbox (2.26387pt too wide) in paragraph at lines 911--911
 []\OT1/phv/m/n/10.95 Frank Rosen-blatt. \OT1/phv/m/sl/10.95 The per-cep-tron, a per-ceiv-ing and rec-og-niz-ing au-toma-ton Project
  []
 
 
-Overfull \hbox (2.5945pt too wide) in paragraph at lines 891--891
+Overfull \hbox (2.5945pt too wide) in paragraph at lines 911--911
 []\OT1/phv/m/n/10.95 A[]aron Van Den Oord, Sander Diele-man, and Ben-jamin Schrauwen. ``Deep content-
  []
 
 [23] [24]
-Overfull \hbox (10.16374pt too wide) in paragraph at lines 891--891
+Overfull \hbox (10.16374pt too wide) in paragraph at lines 911--911
 \OT1/phv/m/n/10.95 2019. \OT1/phv/m/sc/10.95 url\OT1/phv/m/n/10.95 : [][]$\OT1/cmtt/m/n/10.95 https : / / towardsdatascience . com / whats -[] the -[] deal -[] with -[] accuracy -[]
  []
 
 [25]
-Overfull \hbox (4.2667pt too wide) in paragraph at lines 891--891
+Overfull \hbox (4.2667pt too wide) in paragraph at lines 911--911
 \OT1/phv/m/n/10.95 deep learn-ing''. In: \OT1/phv/m/sl/10.95 Com-put-ers and Elec-tron-ics in Agri-cul-ture \OT1/phv/m/n/10.95 172 (2020), p. 105339. 
  []
 
 
-Overfull \hbox (36.22528pt too wide) in paragraph at lines 891--891
+Overfull \hbox (36.22528pt too wide) in paragraph at lines 911--911
 []\OT1/phv/m/n/10.95 University of Malta. \OT1/phv/m/sl/10.95 Phoeni-cian Ship-wreck Project\OT1/phv/m/n/10.95 . \OT1/phv/m/sc/10.95 url\OT1/phv/m/n/10.95 : [][]$\OT1/cmtt/m/n/10.95 https : / / phoenicianshipwreck .
  []
 
 
-Overfull \hbox (1.42177pt too wide) in paragraph at lines 891--891
+Overfull \hbox (1.42177pt too wide) in paragraph at lines 911--911
 [][]$\OT1/cmtt/m/n/10.95 https : / / images . auscape . com . au / objects / scuba -[] diver -[] examining -[] ancient -[]
  []
 
 [26]
-Overfull \hbox (46.70459pt too wide) in paragraph at lines 891--891
+Overfull \hbox (46.70459pt too wide) in paragraph at lines 911--911
 []\OT1/phv/m/n/10.95 Gemma Con-roy. \OT1/phv/m/sl/10.95 Sea-grass Safe-guards Hu-man His-tory\OT1/phv/m/n/10.95 . \OT1/phv/m/sc/10.95 url\OT1/phv/m/n/10.95 : [][]$\OT1/cmtt/m/n/10.95 https : / / www . hakaimagazine .
  []
 
 [27]
-Overfull \hbox (10.6313pt too wide) in paragraph at lines 891--891
+Overfull \hbox (10.6313pt too wide) in paragraph at lines 911--911
 []\OT1/phv/m/n/10.95 Bastian Leibe, Edgar See-mann, and Bernt Schiele. ``Pedes-trian de-tec-tion in crowded
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 892.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 912.
 [28]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 892.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 912.
  (/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 892.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 892.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 912.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 912.
 Package rerunfilecheck Info: File `Tianyao_Chen_bachelor_thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 31220E8ED74EA4FD6EC2E237AD8816E9;1471.
 Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
@@ -890,15 +889,15 @@ Package logreq Info: Writing requests to 'Tianyao_Chen_bachelor_thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15040 strings out of 492649
- 262040 string characters out of 6129623
- 710097 words of memory out of 5000000
- 18493 multiletter control sequences out of 15000+600000
+ 15043 strings out of 492649
+ 262069 string characters out of 6129623
+ 710117 words of memory out of 5000000
+ 18496 multiletter control sequences out of 15000+600000
  26507 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,8n,48p,886b,1739s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (32 pages, 10271511 bytes).
+Output written on "/Users/tillchen/Google Drive/JUB/thesis/thesis/Tianyao_Chen_bachelor_thesis.pdf" (32 pages, 10271845 bytes).
 PDF statistics:
  971 PDF objects out of 1000 (max. 8388607)
  821 compressed objects within 9 object streams

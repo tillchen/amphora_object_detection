@@ -1,17 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'Tianyao_Chen_bachelor_thesis.blg'
-[58] biber-darwin:313> INFO - === Tue May 11, 2021, 09:26:19
-[105] Biber.pm:371> INFO - Reading 'Tianyao_Chen_bachelor_thesis.bcf'
-[251] Biber.pm:857> INFO - Found 118 citekeys in bib section 0
-[270] Biber.pm:3976> INFO - Processing section 0
-[290] Biber.pm:4136> INFO - Looking for bibtex format file 'Tianyao_Chen_bachelor_thesis.bib' for section 0
-[297] bibtex.pm:1500> INFO - LaTeX decoding ...
-[493] bibtex.pm:1316> INFO - Found BibTeX data source 'Tianyao_Chen_bachelor_thesis.bib'
-[1566] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/k6/7fb3csjn49sc1jvw7xy93g0m0000gn/T/mmpDu1pjwC/Tianyao_Chen_bachelor_thesis.bib_2539.utf8, line 684, warning: undefined macro "2014-2018"
-[1670] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[1670] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[1670] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[1670] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
-[1797] bbl.pm:617> INFO - Writing 'Tianyao_Chen_bachelor_thesis.bbl' with encoding 'UTF-8'
-[1857] bbl.pm:720> INFO - Output to Tianyao_Chen_bachelor_thesis.bbl
-[1857] Biber.pm:110> INFO - WARNINGS: 1
+[74] biber-darwin:313> INFO - === Wed May 12, 2021, 19:14:31
+[123] Biber.pm:371> INFO - Reading 'Tianyao_Chen_bachelor_thesis.bcf'
+[275] Biber.pm:857> INFO - Found 118 citekeys in bib section 0
+[292] Biber.pm:3976> INFO - Processing section 0
+[313] Biber.pm:4136> INFO - Looking for bibtex format file 'Tianyao_Chen_bachelor_thesis.bib' for section 0
+[320] bibtex.pm:1500> INFO - LaTeX decoding ...
+[831] bibtex.pm:1316> INFO - Found BibTeX data source 'Tianyao_Chen_bachelor_thesis.bib'
+[2286] Utils.pm:193> WARN - BibTeX subsystem: /var/folders/k6/7fb3csjn49sc1jvw7xy93g0m0000gn/T/uvQ9nkVpw9/Tianyao_Chen_bachelor_thesis.bib_21569.utf8, line 684, warning: undefined macro "2014-2018"
+[2454] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2454] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2454] Biber.pm:3804> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[2454] Biber.pm:3810> INFO - No sort tailoring available for locale 'en-US'
+[2633] bbl.pm:617> INFO - Writing 'Tianyao_Chen_bachelor_thesis.bbl' with encoding 'UTF-8'
+[2713] bbl.pm:720> INFO - Output to Tianyao_Chen_bachelor_thesis.bbl
+[2714] Biber.pm:110> INFO - WARNINGS: 1
