@@ -212,21 +212,12 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/deep_learning.png
 INPUT ./images/deep_learning.png
 INPUT ./images/deep_learning.png
-INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/ann_logic_computations.png
-INPUT ./images/ann_logic_computations.png
-INPUT ./images/ann_logic_computations.png
-INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/tlu.png
-INPUT ./images/tlu.png
-INPUT ./images/tlu.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/mlp.png
 INPUT ./images/mlp.png
 INPUT ./images/mlp.png
-INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/cnn_layers.png
-INPUT ./images/cnn_layers.png
-INPUT ./images/cnn_layers.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/filters.png
 INPUT ./images/filters.png
 INPUT ./images/filters.png

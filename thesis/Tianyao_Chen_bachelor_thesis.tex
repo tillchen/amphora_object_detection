@@ -247,13 +247,6 @@ logic \cite{mcculloch1943logical}. The neuron activates its binary output when t
 the activation threshold, which makes it possible to build networks that can perform any logical proposition
 \cite{geron2019hands, mcculloch1943logical}.
 
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[width=.5\textwidth]{ann_logic_computations.png}
-  \end{center}
-  \caption{ANNs performing logical computations with 2 as the activation threshold. Source: \cite{geron2019hands}.}
-\end{figure}
-
 Then Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
 (TLU) \cite{rosenblatt1957perceptron}. The input values are real numbers. TLU computes the weighted sum of the input
 and then applies a step function like the Heaviside function
@@ -263,13 +256,6 @@ $heaviside (x) =
   1 & x \geq 0 \\
 \end{cases}$
 \cite{geron2019hands, rosenblatt1957perceptron}.
-
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[width=.5\textwidth]{tlu.png}
-  \end{center}
-  \caption{TLU. Source: \cite{geron2019hands}.}
-\end{figure}
 
 A TLU can perform linear binary classification, whereas a layer of TLUs plus a bias neuron form a Perceptron capable of
 multi-output classification \cite{geron2019hands}.
@@ -302,35 +288,20 @@ ability to approximate any continuous function \cite{geron2019hands}.
 
 \label{sec:cnn}
 
-Convolutional Neural Networks (CNNs) \cite{lecun1989backpropagation} were inspired by the brain's visual cortex,
-and they have been used in computer vision since the 1980s \cite{geron2019hands}. We can not simply use a deep neural
+Convolutional Neural Networks (CNNs) \cite{lecun1989backpropagation} were inspired by the visual cortex, and they have
+been used in computer vision since the 1980s \cite{geron2019hands}. We can not simply use a deep neural
 network with fully connected layers for computer vision, as it breaks down for large images due to the immense
 number of parameters \cite{geron2019hands}. CNNs also have successful applications in other domains like recommender
 systems \cite{van2013deep} and natural language processing (NLP) \cite{collobert2008unified}.
 
 Hubel et al. \cite{hubel1959single, hubel1959receptive, hubel1968receptive} found that many biological neurons have
-a small local receptive field, which means they only fire if the visual stimuli are present in a limited region of
-the visual field \cite{geron2019hands}. Some neurons only react to horizontal lines, whereas the others only react to
-lines oriented differently \cite{geron2019hands}. Some neurons have larger receptive fields to react to more complex
-patterns formed by lower-level patterns \cite{geron2019hands}.
-
-The neurons in the first convolutional layer are only connected to pixels in the receptive fields, and those in
-the next convolutional layer are only connected to the neurons in the receptive fields from the previous layer
-\cite{geron2019hands}. This enables CNNs to extract low-level visual features in the first few layers and then combine
-them into more complex features in the subsequent layers.
-
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[width=.5\textwidth]{cnn_layers.png}
-  \end{center}
-  \caption{Convolutional layers with rectangular receptive fields. Source: \cite{geron2019hands}.}
-\end{figure}
+small receptive fields, which means they only fire if a finite region of the visual field is stimulated
+\cite{geron2019hands}. Some neurons only react to specific patterns, while the others with larger receptive fields
+react to more complex patterns \cite{geron2019hands}.
 
 The filters or convolution kernels, which are learned during training, are neurons' weights that can be presented as
-small images the size of receptive fields \cite{geron2019hands}. For example, a dark square with a horizontal white
-line in the middle (a matrix full of 0s except for the central row with 1s) is a filter that only reacts to the central
-row in the receptive field. A layer of neurons with the same filter outputs a feature map, which highlights the parts
-of an image that maximizes the activation of the filter \cite{geron2019hands}.
+small images the size of receptive fields \cite{geron2019hands}. A layer of neurons with the same filter outputs a
+feature map, which highlights the parts of an image that maximizes the activation of the filter \cite{geron2019hands}.
 
 \begin{figure}[ht]
   \begin{center}
@@ -364,16 +335,12 @@ and SENet (Squeeze-and-Excitation Network) \cite{hu2018squeeze}.
   \caption{The typical CNN architecture. Source: \cite{geron2019hands}.}
 \end{figure}
 
-Here we give ResNet a more in-depth introduction, as it is the backbone network of the model used in this paper.
-ResNet introduced skip connections (or shortcut connections), which means the input signal of a layer is also added to the
-output of a higher-up layer \cite{geron2019hands, he2016deep}. Skip connections help speed up the training considerably,
-since: 1) the network preconditions the problem to be the identity function, which is often close to the target function,
-and 2) the network can start making progress even if some layers have not started learning yet
+ResNet is the backbone network of the model used in this paper. ResNet's skip connections help speed up the training
+considerably, since: 1) the network preconditions the problem to be the identity function, which is often close to the
+target function, and 2) the network can start making progress even if some layers have not started learning yet
 \cite{geron2019hands, he2016deep}. Batch normalization \cite{ioffe2015batch} is used after each convolution
 to reduce the vanishing gradient problem \cite{hochreiter1998vanishing} and the need for other regularization techniques
-like dropout \cite{srivastava2014dropout}. The global average pooling layer at the end of the network is another type of
-pooling layer that computes the mean of the entire feature map. Softmax is used in the output layer to ensure that all
-probabilities add up to 1.
+like dropout \cite{srivastava2014dropout}.
 
 \begin{figure}[ht]
   \begin{center}
