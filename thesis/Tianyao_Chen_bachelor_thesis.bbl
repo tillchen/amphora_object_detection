@@ -537,35 +537,6 @@
       \field{title}{Deep face recognition}
       \field{year}{2015}
     \endentry
-    \entry{poppe2010survey}{article}{}
-      \name{author}{1}{}{%
-        {{hash=2bb9cbd401a4c95faf6cbab0f6983eae}{%
-           family={Poppe},
-           familyi={P\bibinitperiod},
-           given={Ronald},
-           giveni={R\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{2bb9cbd401a4c95faf6cbab0f6983eae}
-      \strng{fullhash}{2bb9cbd401a4c95faf6cbab0f6983eae}
-      \strng{bibnamehash}{2bb9cbd401a4c95faf6cbab0f6983eae}
-      \strng{authorbibnamehash}{2bb9cbd401a4c95faf6cbab0f6983eae}
-      \strng{authornamehash}{2bb9cbd401a4c95faf6cbab0f6983eae}
-      \strng{authorfullhash}{2bb9cbd401a4c95faf6cbab0f6983eae}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Image and vision computing}
-      \field{number}{6}
-      \field{title}{A survey on vision-based human action recognition}
-      \field{volume}{28}
-      \field{year}{2010}
-      \field{pages}{976\bibrangedash 990}
-      \range{pages}{15}
-    \endentry
     \entry{toshev2014deeppose}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=1ee35bc00bbae520d60769a153d7a5de}{%
@@ -594,6 +565,35 @@
       \field{year}{2014}
       \field{pages}{1653\bibrangedash 1660}
       \range{pages}{8}
+    \endentry
+    \entry{poppe2010survey}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2bb9cbd401a4c95faf6cbab0f6983eae}{%
+           family={Poppe},
+           familyi={P\bibinitperiod},
+           given={Ronald},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{2bb9cbd401a4c95faf6cbab0f6983eae}
+      \strng{fullhash}{2bb9cbd401a4c95faf6cbab0f6983eae}
+      \strng{bibnamehash}{2bb9cbd401a4c95faf6cbab0f6983eae}
+      \strng{authorbibnamehash}{2bb9cbd401a4c95faf6cbab0f6983eae}
+      \strng{authornamehash}{2bb9cbd401a4c95faf6cbab0f6983eae}
+      \strng{authorfullhash}{2bb9cbd401a4c95faf6cbab0f6983eae}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Image and vision computing}
+      \field{number}{6}
+      \field{title}{A survey on vision-based human action recognition}
+      \field{volume}{28}
+      \field{year}{2010}
+      \field{pages}{976\bibrangedash 990}
+      \range{pages}{15}
     \endentry
     \entry{niu2018neural}{inproceedings}{}
       \name{author}{3}{}{%
@@ -1221,8 +1221,8 @@
       \strng{authorbibnamehash}{eab08eddb4719c72a337c996dc1d1bc6}
       \strng{authornamehash}{eab08eddb4719c72a337c996dc1d1bc6}
       \strng{authorfullhash}{eab08eddb4719c72a337c996dc1d1bc6}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{The bulletin of mathematical biophysics}
@@ -1303,8 +1303,8 @@
       \strng{authorbibnamehash}{c8afbbd780b1dd20b97514f4b2b8d46e}
       \strng{authornamehash}{c8afbbd780b1dd20b97514f4b2b8d46e}
       \strng{authorfullhash}{c8afbbd780b1dd20b97514f4b2b8d46e}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Science}
@@ -1726,8 +1726,8 @@
       \strng{authorbibnamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
       \strng{authornamehash}{80f8e6bfc3aff3e75b2807a6f6962740}
       \strng{authorfullhash}{64fbaf3c8a6b53523f74f0087b58e7e6}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
@@ -1983,8 +1983,8 @@
       \strng{authorbibnamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
       \strng{authornamehash}{7e8dee717d54c2984b1c6bd3f3c0561f}
       \strng{authorfullhash}{7e8dee717d54c2984b1c6bd3f3c0561f}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{International conference on machine learning}

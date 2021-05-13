@@ -151,7 +151,7 @@ the head and the body of amphoras. The code and the trained model are available 
 
 \subsection{Motivation}
 
-\subsubsection{Relevance of Amphoras}
+\subsubsection{Amphoras}
 
 The name \textit{amphora} is derived from the Greek word \textit{amphoreus}, which means "two-handled"
 \cite{harper2001online, twede2002commercial, will1977ancient}. It is the combination of two linguistic roots:
@@ -199,10 +199,10 @@ Computer vision is the science of perceiving and understanding the world through
 There have been multiple exciting applications of computer vision, including image classification \cite{rawat2017deep},
 object detection and localization \cite{zhao2019object,liu2020deep}, art generation (neural style transfer)
 \cite{jing2019neural}, image creation with Generative Artificial Networks (GAN) \cite{goodfellow2014generative},
-face recognition \cite{parkhi2015deep}, action and activity recognition \cite{poppe2010survey}, human pose estimation
-\cite{toshev2014deeppose}, and image recommendation system \cite{niu2018neural}.
+face recognition \cite{parkhi2015deep}, human pose estimation \cite{toshev2014deeppose}, action and activity recognition
+\cite{poppe2010survey}, and image recommendation system \cite{niu2018neural}.
 
-However, there is still limited research for the application of computer vision and machine learning in archaeology,
+However, there is still limited research for the usage of computer vision and machine learning in archaeology,
 especially underwater archaeology, compared to other domains \cite{maaten2007computer, qin2015underwater}.
 Computer vision, instead of visual inspection, can be used to automate the detection, assessment, and classification
 of artifacts \cite{maaten2007computer}.
@@ -214,15 +214,14 @@ particles, and 3) underwater objects are often broken
 
 Despite the challenges, computer vision has lower costs \cite{rizzini2015investigation} compared to sonar imagery
 \cite{abu2019statistically} and laser scanning \cite{gordon1992use}. Plus, the increasingly abundant visual data obtained
-through autonomous underwater vehicles (AUVs), unmanned underwater vehicles (UUVs)
+through unmanned underwater vehicles (UUVs), autonomous underwater vehicles (AUVs)
 \cite{lu2017underwater, moniruzzaman2017deep}, and seafloor cabled observatories \cite{qin2015underwater} motivate us
 to utilize deep learning.
 
-The study of deep-water shipwrecks is in high demand, as the threats to these sites are increasing
-\cite{drap2015underwater}. One major threat is the new forms of trawling that interfere with the readability by
-destroying the surface of these sites \cite{drap2015underwater}. This means that many shipwrecks are likely to be damaged
-before they can be studied \cite{drap2015underwater}. It is thus crucial to implement efficient, accessible, and accurate
-techniques like deep learning based computer vision to study deep-water shipwrecks.
+The study of deep-water shipwrecks is in high demand, as more and more threats to these sites are emerging
+\cite{drap2015underwater}. Some new trawling techniques can destroy the surface of these sites \cite{drap2015underwater}.
+It is thus crucial to implement efficient, accessible, and accurate techniques like deep learning based computer vision to
+study deep-water shipwrecks.
 
 \subsection{Deep Learning}
 
@@ -244,9 +243,9 @@ combining simpler ones from the previous layers \cite{goodfellow2016deep}.
 \subsubsection{Artifical Neural Networks (ANNs)}
 
 Inspired by the biological neuron, artificial neural networks (ANNs) were first introduced in 1943 using propositional
-logic \cite{mcculloch1943logical}. The artificial neuron activates its single binary output when the number of active
-binary inputs reaches the activation threshold, which makes it possible to build networks that can perform any logical
-proposition \cite{geron2019hands, mcculloch1943logical}.
+logic \cite{mcculloch1943logical}. The neuron activates its binary output when the number of active binary inputs reaches
+the activation threshold, which makes it possible to build networks that can perform any logical proposition
+\cite{geron2019hands, mcculloch1943logical}.
 
 \begin{figure}[ht]
   \begin{center}
@@ -256,9 +255,8 @@ proposition \cite{geron2019hands, mcculloch1943logical}.
 \end{figure}
 
 Then Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
-(TLU) or linear threshold unit (LTU) \cite{rosenblatt1957perceptron}. The input and output are real numbers instead of
-binary values, and each input has a weight. TLU computes the weighted sum of the input and then applies a step
-function like the Heaviside function
+(TLU) \cite{rosenblatt1957perceptron}. The input values are real numbers. TLU computes the weighted sum of the input
+and then applies a step function like the Heaviside function
 $heaviside (x) =
 \begin{cases}
   0 & x \le 0 \\
@@ -273,19 +271,19 @@ $heaviside (x) =
   \caption{TLU. Source: \cite{geron2019hands}.}
 \end{figure}
 
-A single TLU can be used for simple linear binary classification, while a layer of TLUs plus a bias neuron form a
-Perceptron capable of multi-output classification \cite{geron2019hands}.
+A TLU can perform linear binary classification, whereas a layer of TLUs plus a bias neuron form a Perceptron capable of
+multi-output classification \cite{geron2019hands}.
 
-The output of a fully connected layer is computed as follows, where $\mathbf{X}, \mathbf{W}, \mathbf{b}$, and $\phi$
+The output of a Perceptron is computed as follows, where $\mathbf{X}, \mathbf{W}, \mathbf{b}$, and $\phi$
 are respectively the input matrix, weight matrix, bias vector, and activation function:
 
 $$h_{\mathbf{W,b}}(\mathbf{X}) = \phi(\mathbf{XW} + \mathbf{b})$$
 
 Perceptron is trained using a variant of the Herbb's rule \cite{hebb2005organization}, which is famously summarized
 as "neurons wire together if they fire together" \cite{lowel1992selection}. However, the Perceptron
-can not learn complex patterns due to the linear decision boundary of the output neurons, and it can only make predictions
-based on a hard threshold instead of outputting a class probability \cite{geron2019hands}. To address these limitations,
-Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
+can not learn complex patterns due to its linear decision boundary, and it does not output a class probability
+\cite{geron2019hands}. To address these limitations, Multilayer Perceptron (MLP) was introduced by stacking multiple
+Perceptrons.
 
 \begin{figure}[ht]
   \begin{center}
@@ -294,11 +292,11 @@ Multilayer Perceptron (MLP) was introduced by stacking multiple Perceptrons.
   \caption{A Multilayer Perceptron with one hidden layer. Source: \cite{geron2019hands}.}
 \end{figure}
 
-Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first performs a forward pass to compute
-the loss, then makes a reverse pass to measure the loss contribution from each connection, and finally reduces the
-loss by adjusting the weights in the Gradient Descent \cite{ruder2016overview} step \cite{geron2019hands}. Activation
-functions like Rectified Linear Unit $ReLU(x) = max(0, x)$ are used to add nonlinearity, which theoretically gives a
-large enough deep neural network the theoretical ability to approximate any continuous function \cite{geron2019hands}.
+Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first computes the loss, then measures each
+connection's loss contribution, and finally reduces the loss by adjusting the weights in the Gradient Descent
+\cite{ruder2016overview} step \cite{geron2019hands}. Activation functions like Rectified Linear Unit
+$ReLU(x) = max(0, x)$ are adopted to add nonlinearity, which gives deep neural networks the theoretical
+ability to approximate any continuous function \cite{geron2019hands}.
 
 \subsubsection{Convolutional Neural Networks (CNNs)}
 
@@ -696,7 +694,7 @@ Villon et al. \cite{villon2016coral}, Xu et al. \cite{xu2018underwater}, and Kon
 YOLOv3, and Xception.
 
 For crab detection, Cao et al. \cite{cao2020real} proposed a detector called Faster MSSDLite, which is based on SSD with
-a MobileNetv2 backbone and Feature Pyramid Network (FPN) \cite{lin2017feature}.
+a MobileNetV2 backbone and Feature Pyramid Network (FPN) \cite{lin2017feature}.
 
 For planktons and corals, we have only found research for classification but not object detection
 \cite{qin2015underwater, moniruzzaman2017deep}.
@@ -729,7 +727,7 @@ The TensorFlow Object Detection API \cite{huang2017speed, tfobjectdetection} was
 is the model name in the TensorFlow 1 Detection Model Zoo \cite{tf1detectionmodelzoo}. The backbone network
 is ResNet-50 (50-layer ResNet) (see section \ref{sec:cnn}) instead of VGG-16 in the original SSD paper, as it
 improves $mAP$ significantly \cite{he2016deep}. Similar to the approach from Cao et al. \cite{cao2020real} for crab
-detection, Feature Pyramid Network (FPN) was added to improve the detection at different scales \cite{lin2017feature}.
+detection, Feature Pyramid Network (FPN) was adopted to improve the detection at different scales \cite{lin2017feature}.
 
 \subsection{Model Training}
 
