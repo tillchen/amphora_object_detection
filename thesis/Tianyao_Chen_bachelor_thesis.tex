@@ -133,7 +133,7 @@ Date, Signature
 Amphoras have great archaeological significance and are often found in ancient shipwrecks. The increasingly abundant
 visual data and the advent of more advanced deep learning algorithms motivated us to automate the detection of
 underwater amphoras. We trained a convolutional neural network (CNN) based model called Single Shot Detector (SSD) with
-a 50-layer Residual Network (ResNet-50) backbone on a tiny dataset with only 50 images. And we still managed to
+a 50-layer Residual Network (ResNet-50) backbone on a very small dataset of only 50 images. And we still managed to
 achieve a 0.238 MS COCO mean average precision ($mAP_{coco}$) and a 0.503 Pascal VOC $mAP@0.5$. Underwater amphora
 detection is a challenging task. We believe future studies can achieve better results by increasing the size and
 resolution of the dataset, training bleeding-edge object detectors like YOLOv5, and defining two separate classes for
@@ -457,7 +457,9 @@ The traditional Pascal VOC metric uses $mAP@0.5$ with a 0.5 IoU threshold \cite{
 The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$ is averaged over
 various IoU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better localization
 \cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean $mAP$
-\cite{cocometrics}, although we use $mAP$ consistently in this paper.
+\cite{cocometrics}, although we use $mAP$ consistently in this paper. COCO also introduced $mAP$ for different scales:
+$mAP^{small}$ for $area < 32^2$, $mAP^{medium}$ for $32^2 < area < 96^2$, and $mAP^{big}$ for $area > 96^2$
+\cite{liu2020deep, cocometrics}
 
 \begin{figure}[ht]
   \begin{center}
@@ -602,22 +604,22 @@ YOLOv5 \cite{yolov5} is under active development, and the authors have yet to pu
 
 \section{Related Work}
 
-As we have mentioned in section \ref{sec:cvForUnderwater}, there is limited research applying deep learning for underwater
+As previously mentioned in section \ref{sec:cvForUnderwater}, there is limited research on deep learning for underwater
 archaeology and vision-based underwater object detection in general.
 
 For fish detection, Qin et al. \cite{qin2015underwater, li2015fast}, Zhang et al. \cite{zhang2016unsupervised},
 Villon et al. \cite{villon2016coral}, Xu et al. \cite{xu2018underwater}, and Konovalov et al.
-\cite{konovalov2019underwater} respectively used Fast R-CNN, a model similar to R-CNN, sliding window with a CNN,
+\cite{konovalov2019underwater} respectively used Fast R-CNN, a model similar to R-CNN, a sliding window with a CNN,
 YOLOv3, and Xception.
 
 For crab detection, Cao et al. \cite{cao2020real} proposed a detector called Faster MSSDLite, which is based on SSD with
 a MobileNetV2 backbone and Feature Pyramid Network (FPN) \cite{lin2017feature}.
 
-For planktons and corals, we have only found research for classification but not object detection
+For planktons and corals, we only found research for classification but not object detection
 \cite{qin2015underwater, moniruzzaman2017deep}.
 
-For amphora detection, Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} used sliding window with a CNN on a
-high-resolution orthophoto (i.e. aerial photo). This is the only study we found on amphora detection with deep learning.
+For amphora detection, we only found the study from Pasquet et al. \cite{mccarthy20193d, pasquet2017amphora} that used
+a sliding window with a CNN on a high-resolution orthophoto (i.e. aerial photo).
 
 \section{Data and Methods}
 
@@ -632,11 +634,11 @@ with labelImg \cite{labelimg}.
 \subsection{Model}
 
 Out of the three families of object detection frameworks we have discussed in section \ref{sec:objectdetection}, we chose
-due to the following reasons:
+SSD due to the following reasons:
 
 \begin{itemize}
   \item Faster R-CNN is too computationally intensive and too slow for AUVs and UUVs.
-  \item YOLOv5, the state-of-art model of the YOLO family, is under active development, and the authors have yet to
+  \item YOLOv5, the state-of-the-art model of the YOLO family, is under active development, and the authors have yet to
   publish a paper.
 \end{itemize}
 
@@ -651,7 +653,7 @@ detection, we adopted Feature Pyramid Network (FPN) to improve the detection at 
 We used transfer learning \cite{torrey2010transfer} as the model was pre-trained on the COCO dataset, which means the
 weights and biases are restored instead of randomly initialized, and the model does not have to learn the low-level
 features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config were adjusted
-to one, eight, and seven respectively in the configuration file, while the rest of fields were unchanged. The network
+to one, eight, and seven respectively in the configuration file, while the rest of the fields were unchanged. The network
 reshaped the images to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a ReLU variant that
 caps the maximum value at six to encourage the model to learn sparse features earlier \cite{krizhevsky2010convolutional}.
 We used $L_2$ regularization \cite{ng2004feature} to reduce overfitting \cite{hawkins2004problem}. Data augmentation
@@ -677,7 +679,7 @@ on the visual inspection of the validation images in figure \ref{fig:val}.
 Nevertheless, our model's performance is still impressive due to the following reasons:
 
 \begin{itemize}
-  \item Our dataset is tiny. As we have mentioned before in section \ref{sec:dlvscv}, the COCO dataset has 328
+  \item Our dataset is very limited. As previously mentioned in section \ref{sec:dlvscv}, the COCO dataset has 328
   thousand images compared to our 57 images plus two test images. For Pasquet et al., they split one 38000 x 15000
   orthophoto into 400 x 400 images and used 25\% of them for training, which means the training set alone was around
   890 images.
@@ -687,7 +689,7 @@ Nevertheless, our model's performance is still impressive due to the following r
   in terms of scale. The diversity of our dataset made it harder to achieve a high $mAP$, although it encouraged
   the model to generalize better.
   \item Underwater object detection is more challenging than general object detection performed by the COCO dataset.
-  As we have mentioned before in section \ref{sec:cvForUnderwater}, the same challenges also apply to amphora
+  As previously mentioned in section \ref{sec:cvForUnderwater}, the same challenges also apply to amphora
   detection. In fact, the undetected amphoras in figure \ref{fig:val} are almost all either broken, or partially buried
   in sand, or blocked by suspended particles. We only defined one class for all amphoras even though some of them are
   broken, while Pasquet et al. defined two separate classes for the head and the body to detect broken instances better.
@@ -743,7 +745,7 @@ converge to a solution.
     \centering
     \includegraphics[width=\textwidth]{val_4.png}
   \end{subfigure}
-  \caption{The validation images. Source:
+  \caption{The validation images. Sources:
   \cite{scuba, itinari, whoi, phoenician, auscape, hakai, groplan}.}
   \label{fig:val}
 \end{figure}
@@ -759,7 +761,7 @@ converge to a solution.
       \centering
       \includegraphics[width=\textwidth]{test_2.png}
   \end{subfigure}
-  \caption{The test images. Source: \cite{ionian, sanisera}.}
+  \caption{The test images. Sources: \cite{ionian, sanisera}.}
   \label{fig:test}
 \end{figure}
 
@@ -769,7 +771,7 @@ converge to a solution.
 
 In this paper, we reviewed the relevance of amphoras, computer vision's potential in underwater archaeology, deep
 learning, and three influential object detector families. We then trained an SSD model with a ResNet-50 backbone on a
-tiny and low-resolution dataset, and we still managed to achieve a 0.238 $mAP_{coco}$ and a 0.5392 $mAP@0.5$. Detecting
+very small and low-resolution dataset, and we still managed to achieve a 0.238 $mAP_{coco}$ and a 0.5392 $mAP@0.5$. Detecting
 underwater amphoras is a challenging task. The object detectors have to overcome the same difficulties posed by general
 underwater object detection (see section \ref{sec:cvForUnderwater}), the considerable variations of the amphoras' shapes
 (see figure \ref{fig:amphora}), and the crowdedness of the scenes in some shipwrecks (see figure \ref{fig:test}).
