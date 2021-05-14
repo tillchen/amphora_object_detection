@@ -23,7 +23,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Region Proposal}{6}{section*.13}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Backbone Network}{6}{section*.14}
+\contentsline {paragraph}{Backbone Network}{7}{section*.14}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Non-Maximum Suppression (NMS)}{7}{section*.15}
 \defcounter {refsection}{0}\relax 
@@ -33,7 +33,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{R-CNN}{8}{section*.19}
 \defcounter {refsection}{0}\relax 
-\contentsline {paragraph}{Fast R-CNN}{8}{section*.20}
+\contentsline {paragraph}{Fast R-CNN}{9}{section*.20}
 \defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{Faster R-CNN}{9}{section*.22}
 \defcounter {refsection}{0}\relax 
