@@ -239,12 +239,6 @@ INPUT ./images/sliding_window.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/nms.png
 INPUT ./images/nms.png
 INPUT ./images/nms.png
-INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/iou.png
-INPUT ./images/iou.png
-INPUT ./images/iou.png
-INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/precision_recall.png
-INPUT ./images/precision_recall.png
-INPUT ./images/precision_recall.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/pr_curve.png
 INPUT ./images/pr_curve.png
 INPUT ./images/pr_curve.png

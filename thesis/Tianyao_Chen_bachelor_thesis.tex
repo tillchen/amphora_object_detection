@@ -280,9 +280,9 @@ Perceptrons.
 
 Backpropagation \cite{rumelhart1985learning} is used to train the MLP, which first computes the loss, then measures each
 connection's loss contribution, and finally reduces the loss by adjusting the weights in the Gradient Descent
-\cite{ruder2016overview} step \cite{geron2019hands}. Activation functions like Rectified Linear Unit
-$ReLU(x) = max(0, x)$ are adopted to add nonlinearity, which gives deep neural networks the theoretical
-ability to approximate any continuous function \cite{geron2019hands}.
+\cite{ruder2016overview} step. Activation functions like Rectified Linear Unit $ReLU(x) = max(0, x)$ are adopted to add
+nonlinearity, which gives deep neural networks the theoretical ability to approximate any continuous function
+\cite{geron2019hands}.
 
 \subsubsection{Convolutional Neural Networks (CNNs)}
 
@@ -295,9 +295,8 @@ number of parameters \cite{geron2019hands}. CNNs also have successful applicatio
 systems \cite{van2013deep} and natural language processing (NLP) \cite{collobert2008unified}.
 
 Hubel et al. \cite{hubel1959single, hubel1959receptive, hubel1968receptive} found that many biological neurons have
-small receptive fields, which means they only fire if a finite region of the visual field is stimulated
-\cite{geron2019hands}. Some neurons only react to specific patterns, while the others with larger receptive fields
-react to more complex patterns \cite{geron2019hands}.
+small receptive fields, which means they only fire if a finite region of the visual field is stimulated. Some neurons
+only react to specific patterns, while the others with larger receptive fields react to more complex patterns.
 
 The filters or convolution kernels, which are learned during training, are neurons' weights that can be presented as
 small images the size of receptive fields \cite{geron2019hands}. A layer of neurons with the same filter outputs a
@@ -344,7 +343,7 @@ like dropout \cite{srivastava2014dropout}.
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=.8\textwidth]{resnet.png}
+    \includegraphics[width=.6\textwidth]{resnet.png}
   \end{center}
   \caption{ResNet architecture. Source: \cite{geron2019hands}.}
 \end{figure}
@@ -357,23 +356,22 @@ The improvements of deep learning algorithms, computing power, image resolution,
 enabled deep learning to achieve state-of-the-art performance in many computer vision tasks, including image
 classification, object detection, and semantic segmentation \cite{qin2015underwater, voulodimos2018deep, o2019deep}.
 
-Traditionally, computer vision requires the manual feature selection and engineering step, which relies on domain knowledge
-to produce high-quality features \cite{elgendy2020deep, zhao2019object, o2019deep}. These handcrafted features are further
-processed by a machine learning classifier like a support vector machine (SVM)
-\cite{elgendy2020deep, zhao2019object, o2019deep}. However, manual feature extraction becomes more and more complex as
-the number of classes increases \cite{o2019deep}. Besides, conventional machine learning algorithms' ability to
-generalize saturates quickly as the size of training data grows \cite{qin2015underwater}.
+Traditionally, computer vision requires the manual feature extraction step, which relies on domain knowledge to produce
+high-quality features \cite{elgendy2020deep, zhao2019object, o2019deep}. These handcrafted features are further processed
+by a machine learning classifier like a support vector machine (SVM) \cite{elgendy2020deep, zhao2019object, o2019deep}.
+However, manual feature extraction becomes more and more complex as the number of classes grows \cite{o2019deep}.
+Besides, conventional machine learning algorithms' generalization ability saturates quickly as the size of training data
+expands \cite{qin2015underwater}.
 
-In deep learning, the manual feature extraction step is no longer needed, and neural networks can be trained end-to-end
-as a feature extractor plus a classifier \cite{elgendy2020deep, o2019deep}. Thus, deep learning requires less domain
-knowledge, and it provides more flexibility as the models can be re-trained with a custom dataset for any specific use
-case \cite{o2019deep}.
+Deep learning removes the manual feature extraction step and makes training end-to-end \cite{elgendy2020deep, o2019deep}.
+Thus, deep learning requires less domain knowledge, and it is more flexible as we can re-train the models on custom
+datasets for specific tasks \cite{o2019deep}.
 
 \begin{figure}[ht]
   \begin{center}
     \includegraphics[width=.7\textwidth]{deep_learning_vs_traditional_computer_vision.png}
   \end{center}
-  \caption{(a) Traditional computer vision workflow. (b) Deep learning workflow. Source: \cite{o2019deep}.}
+  \caption{Traditional computer vision (a) vs. deep learning (b). Source: \cite{o2019deep}.}
 \end{figure}
 
 However, deep learning's performance does depend on obtaining large datasets with high image resolution \cite{o2019deep}.
@@ -387,15 +385,15 @@ for a task may cause deep learning to have poorer results than traditional compu
 \label{sec:objectdetection}
 
 Object detection is the computer vision task that localizes and classifies objects in an image
-\cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection remains to be one of the most
-challenging problems in computer vision, as it can be considered as both a regression task (predicting the bounding box)
-and a classification task (predicting the object class in each bounding box)
-\cite{elgendy2020deep, girshick2014rich, geron2019hands}. Plus, the large variations in viewpoints, poses, occlusions,
-and lighting conditions add extra difficulties to perform perfect object detection \cite{zhao2019object, liu2020deep}.
+\cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection is be one of the most
+challenging tasks in computer vision, as it can be considered as both a regression task for bounding box prediction
+and a classification task \cite{elgendy2020deep, girshick2014rich, geron2019hands}. Plus, the large variations in
+viewpoints, poses, occlusions, and lighting conditions add extra difficulties to perform perfect object detection
+\cite{zhao2019object, liu2020deep}.
 
 The traditional sliding window approach is to train a CNN to classify and locate a single object, and then slide it
 across the image \cite{geron2019hands, pasquet2017amphora, girshick2014rich, redmon2016you}. This approach slides the
-CNN multiple times with different window sizes to detect objects with various sizes, which causes it to be quite slow
+CNN multiple times with various window sizes to detect objects at different scales, which causes it to be quite slow
 \cite{geron2019hands}.
 
 \begin{figure}[ht]
@@ -405,47 +403,47 @@ CNN multiple times with different window sizes to detect objects with various si
   \caption{The sliding window approach for object detection. Source: \cite{o2019deep}.}
 \end{figure}
 
-Luckily, various novel object detectors have been introduced. Here we summarize three well-established and influential
-object detection framework families: Region-Based Convolutional Neural Networks (R-CNN)
-\cite{girshick2014rich, girshick2015fast, ren2015faster}, Single Shot Detector (SSD) \cite{liu2016ssd}, and You Only
-Look Once (YOLO) \cite{redmon2016you, redmon2017yolo9000, redmon2018yolov3, bochkovskiy2020yolov4, yolov5}.
+Luckily, many novel object detectors have been introduced. Here we summarize three influential object detector families:
+Region-Based Convolutional Neural Networks (R-CNN) \cite{girshick2014rich, girshick2015fast, ren2015faster}, Single Shot
+Detector (SSD) \cite{liu2016ssd}, and You Only Look Once (YOLO)
+\cite{redmon2016you, redmon2017yolo9000, redmon2018yolov3, bochkovskiy2020yolov4, yolov5}.
 
 \subsubsection{General Object Detection Framework Components}
 
 \label{sec:generalobjectdetection}
 
-Before we dive into specific object detection frameworks, it's worth understanding the four high-level components of
+Before we dive into specific object detectors, it's worth understanding the four high-level components of
 general object detection frameworks.
 
 \paragraph{Region Proposal}
 
-The region proposal algorithm finds regions of interest (RoIs) that are then further processed by the model
-\cite{elgendy2020deep}. This is achieved by discarding regions with a low objectness score, which indicates the probability
-of the region containing an object instead of the background \cite{elgendy2020deep}.
+Region proposal finds regions of interest (RoIs) for further processing. This is achieved by discarding regions with a
+low objectness score, which is a score that indicates the probability of the region containing objects
+\cite{alexe2012measuring}.
 
 \paragraph{Backbone Network}
 
-A pre-trained CNN is used as the backbone for feature extraction and predictions \cite{elgendy2020deep}. The bounding-box
-prediction is the tuple $(x, y, w, h)$, where $x$ and $y$ are the coordinates of the center and $w, h$ are the width and
-the height \cite{elgendy2020deep}.
+A pre-trained CNN is used for feature extraction and predictions. The bounding-box prediction is the tuple
+$(x, y, w, h)$, which are respectively the coordinates of the center, the width, and the height
+\cite{elgendy2020deep, geron2019hands}.
 
 \paragraph{Non-Maximum Suppression (NMS)}
 
 The backbone network typically produces multiple overlapping bounding boxes for one object, thus NMS finds
 the box with the maximum class probability and suppresses the rest \cite{elgendy2020deep}. The steps include
-\cite{elgendy2020deep}:
+\cite{bodla2017soft}:
 
 \begin{enumerate}
-  \item Discard boxes with prediction values smaller than the tunable confidence threshold.
-  \item Select the box with the highest probability.
-  \item Compute the overlap - intersection over union (IoU) - of the boxes with the same classification. Boxes with high
-  IoU are averaged together.
-  \item Suppress boxes with an IoU less than the tunable NMS threshold.
+  \item Sort the boxes based on the probability score.
+  \item Select the box with the maximum probability score.
+  \item Compute the overlap - intersection over union (IoU) - of the boxes and discard the ones with an IoU higher than
+  the NMS threshold.
+  \item Repeat recursively on the remaining boxes.
 \end{enumerate}
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=.8\textwidth]{nms.png}
+    \includegraphics[width=.6\textwidth]{nms.png}
   \end{center}
   \caption{NMS. Source: \cite{elgendy2020deep}.}
 \end{figure}
@@ -455,33 +453,19 @@ the box with the maximum class probability and suppresses the rest \cite{elgendy
 The two main metrics for object detection are frames per second (FPS) and mean average precision ($mAP$)
 \cite{elgendy2020deep, liu2020deep, geron2019hands, planche2019hands}. To understand $mAP$, we need to understand first
 the aforementioned intersection over union (IoU) and the precision-recall curve (PR curve). IoU is also known as
-the Jaccard index, which is used to measure similarity between two sets \cite{planche2019hands}. IoU can be
-mathematically formulated as follows \cite{elgendy2020deep, planche2019hands}:
+the Jaccard index, which measures the similarity between two sets \cite{planche2019hands}. IoU can be mathematically
+formulated as follows \cite{elgendy2020deep, planche2019hands}:
 
 $$IoU = \frac{B_{ground \ truth} \cap B_{prediction}}{B_{ground \ truth} \cup B_{prediction}}$$
 
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[width=.6\textwidth]{iou.png}
-  \end{center}
-  \caption{IOU. Source: \cite{elgendy2020deep}.}
-\end{figure}
-
-We say that a prediction is a true positive (TP) if the classification is correct and IoU is higher than the NMS threshold,
-otherwise it is a false positive (FP) \cite{elgendy2020deep, liu2020deep, planche2019hands}. A false negative (FN) is a
-ground truth that does not have a prediction \cite{planche2019hands}. Precision and recall are defined as follows
-\cite{burkov2019hundred, davis2006relationship}:
+We say that a prediction is a true positive (TP) if the classification is correct and the IoU is higher than the NMS
+threshold, otherwise it is a false positive (FP) \cite{elgendy2020deep, liu2020deep, planche2019hands}. A false negative
+(FN) is a ground truth that does not have a prediction \cite{planche2019hands}. Precision and recall are defined as
+follows \cite{burkov2019hundred, davis2006relationship}:
 
 $$Precision = \frac{TP}{TP + FP}$$
 
 $$Recall = \frac{TP}{TP + FN}$$
-
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[width=\textwidth]{precision_recall.png}
-  \end{center}
-  \caption{Precision and recall. Source: \cite{precisionrecall}.}
-\end{figure}
 
 There is a trade-off between precision and recall
 \cite{elgendy2020deep, geron2019hands, burkov2019hundred, planche2019hands}. We can obtain the average precision
@@ -489,11 +473,9 @@ There is a trade-off between precision and recall
 We then get the $mAP$ by averaging the AP over all the classes \cite{elgendy2020deep, geron2019hands, planche2019hands}.
 The traditional Pascal VOC metric uses $mAP@0.5$ with a 0.5 IoU threshold \cite{liu2020deep, everingham2010pascal}.
 The new COCO metric $mAP_{coco} = mAP@[0.50:0.05:0.95]$ is averaged over
-different IoU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better localization
+various IoU thresholds from 0.5 to 0.95 in steps of 0.05, which rewards detectors with better localization
 \cite{liu2020deep, cocometrics}. Note that AP is sometimes used in the COCO metric to implicitly mean $mAP$
-\cite{cocometrics}, although we use $mAP$ consistently in this paper. COCO also introduced $mAP$ for different scales:
-$mAP^{small}$ for small objects ($area < 32^2$), $mAP^{medium}$ for medium objects ($32^2 < area < 96^2$),
-and $mAP^{big}$ for big objects ($area > 96^2$) \cite{liu2020deep, cocometrics}.
+\cite{cocometrics}, although we use $mAP$ consistently in this paper.
 
 \begin{figure}[ht]
   \begin{center}
