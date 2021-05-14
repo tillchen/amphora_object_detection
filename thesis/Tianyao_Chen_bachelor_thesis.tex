@@ -155,14 +155,13 @@ the head and the body of amphoras. The code and the trained model are available 
 
 The name \textit{amphora} is derived from the Greek word \textit{amphoreus}, which means "two-handled"
 \cite{harper2001online, twede2002commercial, will1977ancient}. It is the combination of two linguistic roots:
-\textit{amphi} (on both sides) and \textit{phoreus} (bearer)
-\cite{harper2001online, twede2002commercial, will1977ancient}. Amphoras (or amphorae) were commercially used from
-1500 B.C.E. to 500 C.E. to ship products throughout the Mediterranean by the ancient Greek and Roman empires
+\textit{amphi} (on both sides) and \textit{phoreus} (bearer) \cite{harper2001online, twede2002commercial, will1977ancient}.
+The Greek and Roman empires used amphoras (or amphorae) from 1500 B.C.E. to 500 C.E. to ship products
 \cite{twede2002commercial, worldhistory}.
 
-Amphoras were designed to hold large quantities of liquid (wine, oil, and water) and dry products
-(grain, preserved fish, and nuts) \cite{twede2002commercial, foley2012aspects, grace1979amphoras}. Like many measure
-units that are named after the packages, amphoras were also a semi-standard unit for liquid \cite{twede2002commercial}.
+Amphoras were designed to hold large quantities of liquid (wine, oil, and water) and dry products (grain, preserved fish,
+and nuts) \cite{twede2002commercial, foley2012aspects, grace1979amphoras}. Like many units of measurement that are named
+after the packages, amphoras were also a semi-standard unit for liquid \cite{twede2002commercial}.
 The structurally strong egg-like shape and the high volume-to-weight ratio made amphoras very efficient packages
 \cite{twede2002commercial, worldhistory}.
 
@@ -170,7 +169,7 @@ The structurally strong egg-like shape and the high volume-to-weight ratio made 
   \begin{center}
     \includegraphics[width=.4\textwidth]{amphora_stowage_aboard_ship.png}
   \end{center}
-  \caption{The egg-like shape enabled amphoras to interlock and minimize the waste of space on a ship.
+  \caption{The egg-like shape allowed amphoras to interlock and minimize the waste of space on a ship.
   Source: \cite{twede2002commercial}.}
 \end{figure}
 
@@ -219,7 +218,7 @@ through unmanned underwater vehicles (UUVs), autonomous underwater vehicles (AUV
 to utilize deep learning.
 
 The study of deep-water shipwrecks is in high demand, as more and more threats to these sites are emerging
-\cite{drap2015underwater}. Some new trawling techniques can destroy the surface of these sites \cite{drap2015underwater}.
+\cite{drap2015underwater}. Some new trawling methods have been destroying the surface of these sites \cite{drap2015underwater}.
 It is thus crucial to implement efficient, accessible, and accurate techniques like deep learning based computer vision to
 study deep-water shipwrecks.
 
@@ -238,7 +237,7 @@ logic \cite{mcculloch1943logical}. The neuron activates its binary output when t
 the activation threshold, which makes it possible to build networks that can perform any logical proposition
 \cite{geron2019hands, mcculloch1943logical}.
 
-Then Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
+Perceptron was introduced in 1957, which is based on a different artificial neuron called threshold logic unit
 (TLU) \cite{rosenblatt1957perceptron}. The input values are real numbers. TLU computes the weighted sum of the input
 and then applies a step function like the Heaviside function
 $heaviside (x) =
@@ -257,7 +256,7 @@ are respectively the input matrix, weight matrix, bias vector, and activation fu
 $$h_{\mathbf{W,b}}(\mathbf{X}) = \phi(\mathbf{XW} + \mathbf{b})$$
 
 Perceptron is trained using a variant of the Herbb's rule \cite{hebb2005organization}, which is famously summarized
-as "neurons wire together if they fire together" \cite{lowel1992selection}. However, the Perceptron
+as "neurons wire together if they fire together" \cite{lowel1992selection}. However, Perceptron
 can not learn complex patterns due to its linear decision boundary, and it does not output a class probability
 \cite{geron2019hands}. To address these limitations, Multilayer Perceptron (MLP) was introduced by stacking multiple
 Perceptrons.
@@ -291,7 +290,7 @@ only react to specific patterns, while the others with larger receptive fields r
 
 The filters or convolution kernels, which are learned during training, are neurons' weights that can be presented as
 small images the size of receptive fields \cite{geron2019hands}. A layer of neurons with the same filter outputs a
-feature map, which highlights the parts of an image that maximizes the activation of the filter \cite{geron2019hands}.
+feature map, which highlights the parts of an image that maximize the activation of the filter \cite{geron2019hands}.
 
 \begin{figure}[ht]
   \begin{center}
@@ -317,13 +316,6 @@ Some well-established CNN architectures are LeNet-5 \cite{lecun1998gradient}, Al
 GoogLeNet \cite{szegedy2015going}, VGGNet \cite{simonyan2014very}, ResNet (Residual Network) \cite{he2016deep}, Xception
 (Extreme Inception) \cite{chollet2017xception}, MobileNet \cite{howard2017mobilenets, sandler2018mobilenetv2},
 and SENet (Squeeze-and-Excitation Network) \cite{hu2018squeeze}.
-
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[width=.8\textwidth]{typical_cnn.png}
-  \end{center}
-  \caption{The typical CNN architecture. Source: \cite{geron2019hands}.}
-\end{figure}
 
 ResNet is the backbone network of the model used in this paper. ResNet's skip connections help speed up the training
 considerably, since: 1) the network preconditions the problem to be the identity function, which is often close to the
@@ -378,12 +370,12 @@ for a task may cause deep learning to have poorer results than traditional compu
 Object detection is the computer vision task that localizes and classifies objects in an image
 \cite{elgendy2020deep, zhao2019object, liu2020deep, geron2019hands}. Object detection is be one of the most
 challenging tasks in computer vision, as it can be considered as both a regression task for bounding box prediction
-and a classification task \cite{elgendy2020deep, girshick2014rich, geron2019hands}. Plus, the large variations in
+and a classification task \cite{elgendy2020deep, geron2019hands, girshick2014rich}. Plus, the large variations in
 viewpoints, poses, occlusions, and lighting conditions add extra difficulties to perform perfect object detection
 \cite{zhao2019object, liu2020deep}.
 
 The traditional sliding window approach is to train a CNN to classify and locate a single object, and then slide it
-across the image \cite{geron2019hands, pasquet2017amphora, girshick2014rich, redmon2016you}. This approach slides the
+across the image \cite{geron2019hands, girshick2014rich, pasquet2017amphora, redmon2016you}. This approach slides the
 CNN multiple times with various window sizes to detect objects at different scales, which causes it to be quite slow
 \cite{geron2019hands}.
 
@@ -612,6 +604,9 @@ YOLOv5 \cite{yolov5} is under active development and the authors have yet to pub
 
 \section{Related Work}
 
+As we have mentioned in section \ref{sec:cvForUnderwater}, there is limited research on the application of deep learning
+for underwater archaeology and vision-based underwater object detection in general.
+
 For fish detection, Qin et al. \cite{qin2015underwater, li2015fast}, Zhang et al. \cite{zhang2016unsupervised},
 Villon et al. \cite{villon2016coral}, Xu et al. \cite{xu2018underwater}, and Konovalov et al.
 \cite{konovalov2019underwater} respectively used Fast R-CNN, a model similar to R-CNN, sliding window with a CNN,
@@ -659,32 +654,17 @@ We used transfer learning \cite{torrey2010transfer} as the model was pre-trained
 weights and biases are restored instead of being randomly initialized and the model does not have to learn the low-level
 features from scratch \cite{geron2019hands}. num\_classes, batch\_size, and num\_examples in eval\_config were adjusted
 to 1, 8, and 7 respectively in the configuration file, while the rest of fields were unchanged. The images were reshaped
-to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a modified version of ReLU that caps
-the maximum value at 6 and thus encourages the model to learn sparse features earlier
-\cite{krizhevsky2010convolutional}. We used $L_2$ regularization \cite{ng2004feature} to reduce overfitting
-\cite{hawkins2004problem}. Data augmentation \cite{krizhevsky2012imagenet} - a method to artificially enrich the
-dataset by randomly flipping horizontally and cropping the images - was also used as a regularization technique.
-We chose the momentum optimizer \cite{polyak1964some} as it converges faster than Stochastic Gradient Descent
-\cite{bottou2010large} by keeping accelerating to the optimum \cite{geron2019hands}. Learning rate warmup and learning
-rate scheduling by cosine decay were also added to speed up the convergence, so that the learning rate starts small,
-increases gradually, and then decreases after reaching the maximum
+to 640 x 640 with the fixed\_shape\_resizer. The activation function is ReLU6, a ReLU variant that caps the maximum value
+at 6 and thus encourages the model to learn sparse features earlier \cite{krizhevsky2010convolutional}. We used $L_2$
+regularization \cite{ng2004feature} to reduce overfitting \cite{hawkins2004problem}. Data augmentation
+\cite{krizhevsky2012imagenet} - a method to artificially enrich the dataset by randomly flipping horizontally and cropping
+the images - was adopted as a regularization technique. We chose the momentum optimizer \cite{polyak1964some} as it
+converges faster than Stochastic Gradient Descent \cite{bottou2010large} by keeping accelerating to the optimum
+\cite{geron2019hands}. Learning rate warmup and learning rate scheduling by cosine decay were also added to speed up the
+convergence, so that the learning rate starts small, increases gradually, and then decreases after reaching the maximum
 \cite{geron2019hands, goyal2017accurate, senior2013empirical, loshchilov2016sgdr}.
 The model was trained on Google Colaboratory \cite{colab} with a GPU runtime, and the training took 2 hours and 40
 minutes to reach the peak $mAP$ result at step 8621.
-
-\begin{figure}[ht]
-  \centering
-  \begin{subfigure}[ht]{0.4\textwidth}
-      \centering
-      \includegraphics[width=\textwidth]{mapcoco.png}
-  \end{subfigure}
-  \bigskip
-  \begin{subfigure}[ht]{0.4\textwidth}
-      \centering
-      \includegraphics[width=\textwidth]{map50.png}
-  \end{subfigure}
-  \caption{$mAP_{coco}$ (left) and $mAP@0.5$ (right).}
-\end{figure}
 
 \section{Evaluation}
 
@@ -800,10 +780,10 @@ shipwrecks (see figure \ref{fig:test}).
 We hope this paper can serve as a proof of concept for future studies since there are many aspects to improve upon:
 
 \begin{itemize}
-  \item The small number and the low resolution of the images in our dataset are the bottlenecks towards higher
+  \item The small number and the low resolutions of the images in our dataset are the bottlenecks towards higher
   performance. There are indeed very limited publicly available high-resolution images for underwater amphoras
   \cite{pasquet2017amphora}. Future studies may focus on obtaining more amphora images through AUVs and UUVs to improve
-  $mAP$. Higher resolution images like orthophotos can especially address the issue of detecting
+  the $mAP$. Higher resolution images like orthophotos can especially address the issue of detecting
   small objects \cite{kisantal2019augmentation} and also the issue of detecting overlapping objects by reducing labeling
   errors. Plus, more data augmentation techniques like randomly change to grayscale and randomly adjust brightness,
   contrast, and hue can be easily added in the data\_augmentation\_options from the TensorFlow Object Detection API
@@ -819,7 +799,7 @@ We hope this paper can serve as a proof of concept for future studies since ther
   access to GPUs can easily train an EfficientDet \cite{tan2020efficientdet} D1 640 x 640 model with a 0.384 $mAP_{coco}$
   and a 54 ms detection speed or an EfficientDet D7 1536 x 1536 model with a 0.512 $mAP_{coco}$ and a 325 ms detection
   speed from the TensorFlow 2 Detection Model Zoo. CenterNet \cite{zhou2019objects}, a novel keypoint-based detector that
-  models an object as a single center point and regresses to the object size without NMS
+  considers an object as a single center point and regresses to the object size without NMS
   (see section \ref{sec:generalobjectdetection}), is also available in the TensorFlow 2 Detection Model Zoo. CenterNet
   can achieve a 0.417 $mAP_{coco}$ with a 6 ms detection speed or a 0.614 $mAP_{coco}$ with a 76 ms detection
   speed for 512 x 512 images, and a 0.645 $mAP_{coco}$ with a 211 ms detection speed for 1024 x 1024 images.
