@@ -168,7 +168,7 @@ The structurally strong egg-like shape and the high volume-to-weight ratio made 
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=.6\textwidth]{amphora_stowage_aboard_ship.png}
+    \includegraphics[width=.4\textwidth]{amphora_stowage_aboard_ship.png}
   \end{center}
   \caption{The egg-like shape enabled amphoras to interlock and minimize the waste of space on a ship.
   Source: \cite{twede2002commercial}.}
@@ -180,7 +180,7 @@ identity - were used to identify the package status and the different products i
 
 \begin{figure}[ht]
   \begin{center}
-    \includegraphics[width=.5\textwidth]{amphora_various_shapes.jpg}
+    \includegraphics[width=.3\textwidth]{amphora_various_shapes.jpg}
   \end{center}
   \caption{Amphoras have various shapes. Source: \cite{worldhistory}.}
   \label{fig:amphora}
@@ -230,15 +230,6 @@ explicitly programmed \cite{samuel1959some, geron2019hands}. And deep learning i
 builds artificial neural networks with more than one layer between the input and output layers
 \cite{geron2019hands, burkov2019hundred, zhang2018definition}. Deep learning constructs complex representations by
 combining simpler ones from the previous layers \cite{goodfellow2016deep}.
-
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[width=.8\textwidth]{deep_learning.png}
-  \end{center}
-  \caption{A deep learning system that learns the representations of a person. This is achieved by combining simpler
-  features like corners and contours, which are further expressed by combining simpler features like edges. Source:
-  \cite{goodfellow2016deep}.}
-\end{figure}
 
 \subsubsection{Artifical Neural Networks (ANNs)}
 
@@ -501,13 +492,6 @@ R-CNN has four components \cite{elgendy2020deep, girshick2014rich}:
   \item Localization with a bounding-box regressor.
 \end{enumerate}
 
-\begin{figure}[ht]
-  \begin{center}
-    \includegraphics[width=.8\textwidth]{r_cnn.png}
-  \end{center}
-  \caption{R-CNN. Source: \cite{elgendy2020deep}.}
-\end{figure}
-
 R-CNN has the following disadvantages \cite{elgendy2020deep, girshick2014rich, girshick2015fast}:
 
 \begin{itemize}
@@ -522,12 +506,11 @@ R-CNN has the following disadvantages \cite{elgendy2020deep, girshick2014rich, g
 Fast R-CNN made the following changes from R-CNN \cite{elgendy2020deep, girshick2015fast}:
 
 \begin{itemize}
-  \item The CNN goes before region proposal, so that the image only goes through the CNN once instead
+  \item The backbone CNN comes before region proposal, so that the images only go through the CNN once instead
   of 2000 RoIs going through the CNN separately.
   \item Classification is performed by the softmax layer of the CNN instead of the SVM. And localization is also an output
   layer of the CNN.
-  \item A RoI max pooling layer is added after region proposal to reshape the input size for the fully connected layers.
-  \item A multi-task loss function is used.
+  \item A RoI max pooling layer was added after region proposal to reshape the input size for the fully connected layers.
 \end{itemize}
 
 \begin{figure}[ht]
@@ -537,23 +520,21 @@ Fast R-CNN made the following changes from R-CNN \cite{elgendy2020deep, girshick
   \caption{Fast R-CNN. Source: \cite{elgendy2020deep}.}
 \end{figure}
 
-Fast R-CNN is much faster than R-CNN, although the selective search algorithm still exists as the bottleneck
+Fast R-CNN is significantly faster than R-CNN, although the selective search algorithm still exists as the bottleneck
 \cite{elgendy2020deep, girshick2015fast, ren2015faster}.
 
 \paragraph{Faster R-CNN}
 
-Faster R-CNN makes the following improvements from Fast R-CNN \cite{elgendy2020deep, ren2015faster}:
+Faster R-CNN made the following improvements from Fast R-CNN \cite{elgendy2020deep, ren2015faster}:
 
 \begin{itemize}
-  \item Region Proposal Network (RPN) or attention network replaces selective search, which reduces the number of
-  proposals, speeds up the model, and makes the model training end-to-end. RPN is a Fully Convolutional Network (FCN)
+  \item Region Proposal Network (RPN) or attention network replaced selective search, which reduced the number of
+  proposals, speeded up the model, and made training end-to-end. RPN is a Fully Convolutional Network (FCN)
   \cite{long2015fully} that outputs objectness scores and RoIs, and it can be used as a standalone network for
-  single-class object detection. It also shares the features with the detection network, which enables region proposal
-  to be nearly cost-free.
-  \item Anchors are introduced as reference boxes at different scales and aspect ratios. Thus the regression layer
-  only needs to output the offsets of the coordinates, width, and height from the anchors. The anchors are created using
-  the sliding-window approach. By default 9 anchors (3 scales and 3 aspect ratios) centered at each sliding window are
-  created for each window.
+  single-class object detection. RPN adds very little cost as the features are also shared with the detection network.
+  \item Anchors were introduced as reference boxes at different scales and aspect ratios. Thus, the regression layer
+  only needs to output the offsets of the coordinates, width, and height from the anchors. The anchors are created with
+  the sliding-window approach. By default, 9 anchors (3 scales and 3 aspect ratios) are generated for each window.
 \end{itemize}
 
 \begin{figure}[ht]
@@ -571,11 +552,9 @@ Faster R-CNN makes the following improvements from Fast R-CNN \cite{elgendy2020d
 \end{figure}
 
 To summarize, the R-CNN family are two-stage detectors that separate region proposal and detection
-\cite{elgendy2020deep, liu2020deep}. They can not achieve real-time detection (only 7 FPS), and they are very
-computationally intensive \cite{elgendy2020deep, liu2016ssd, redmon2016you}.
-One-stage detectors like Single Shot Detector (SSD) and You Only Look Once (YOLO) skip the region proposal to achieve
-real-time detection speed \cite{elgendy2020deep}. In general, one-stage detectors sacrifices some accuracy for speed
-\cite{elgendy2020deep, lin2017focal}.
+\cite{elgendy2020deep, liu2020deep}. They can not achieve real-time detection, and they are very computationally
+intensive \cite{elgendy2020deep, liu2016ssd, redmon2016you}. One-stage detectors like Single Shot Detector (SSD) and You
+Only Look Once (YOLO) skip the region proposal to achieve real-time detection \cite{elgendy2020deep}.
 
 \subsubsection{Single Shot Detector (SSD)}
 
@@ -583,11 +562,10 @@ Single Shot Detector (SSD) makes both the objectness prediction and classificati
 \cite{elgendy2020deep, liu2016ssd}. It has three main components \cite{elgendy2020deep, liu2016ssd}:
 
 \begin{itemize}
-  \item The backbone network. It also uses anchors called priors like in Faster R-CNN.
-  But the network sends the bounding box offsets and the class scores to NMS directly when it finds a bounding box that
-  contains the object features.
+  \item The backbone network. It also uses anchors called priors like in Faster R-CNN. But the network sends the bounding
+  box offsets and the class scores to NMS directly when it finds a box that contains the object features.
   \item Multi-scale feature layers, which are convolutional layers that decrease in size progressively to detect objects
-  at multiple scales. The resolution of feature maps decreases as the CNN reduces the spatial dimension.
+  at various scales. The resolutions of feature maps decrease as the CNN reduces the spatial dimension.
   \item NMS.
 \end{itemize}
 
@@ -608,14 +586,14 @@ Single Shot Detector (SSD) makes both the objectness prediction and classificati
 
 \subsubsection{You Only Look Once (YOLO)}
 
-Like the R-CNN family, the YOLO family has been going through a series of improvements since the original YOLO paper
-was published. YOLO is a one-stage real-time detector family similar to SSD. YOLOv1 \cite{redmon2016you} introduced the
-general architecture; YOLOv2 \cite{redmon2017yolo9000} added anchors similar to Faster R-CNN and SSD; YOLOv3
+YOLO is a one-stage real-time detector family similar to SSD. The YOLO family has also been going through a series of
+improvements since the original YOLO paper was published. YOLOv1 \cite{redmon2016you} introduced the general
+architecture; YOLOv2 \cite{redmon2017yolo9000} added anchors similar to Faster R-CNN and SSD; YOLOv3
 \cite{redmon2018yolov3} further refined the architecture.
 
-YOLO divides the image into a grid, and a grid cell is responsible for detecting an object if the center of the object
-is inside the cell \cite{elgendy2020deep, redmon2016you}. The backbone network is called DarkNet, which is inspired by
-GoogLeNet \cite{elgendy2020deep, redmon2016you}.
+YOLO divides the image into a grid, and the grid cell detects objects if the object's center is inside the cell
+\cite{redmon2016you}. The backbone network is called DarkNet, which is inspired by GoogLeNet
+\cite{elgendy2020deep, redmon2016you}.
 
 \begin{figure}[ht]
   \begin{center}
@@ -626,16 +604,13 @@ GoogLeNet \cite{elgendy2020deep, redmon2016you}.
   of 52 x 52 to detect small objects. Source: \cite{elgendy2020deep}.}
 \end{figure}
 
-YOLOv4 \cite{bochkovskiy2020yolov4}, a bleeding-edge detector introduced in 2020, utilizes numerous new features to
+YOLOv4 \cite{bochkovskiy2020yolov4}, a bleeding-edge detector introduced in 2020, utilized numerous new features to
 improve the performance from YOLOv3, including DropBlock regularization \cite{ghiasi2018dropblock}, Mish activation
 \cite{misra2019mish}, Self-Adversarial Training \cite{bochkovskiy2020yolov4}, etc.
 
 YOLOv5 \cite{yolov5} is under active development and the authors have yet to publish a paper.
 
 \section{Related Work}
-
-As we have mentioned in section \ref{sec:cvForUnderwater}, there is limited research on the application of deep learning
-for underwater archaeology and vision-based underwater object detection in general.
 
 For fish detection, Qin et al. \cite{qin2015underwater, li2015fast}, Zhang et al. \cite{zhang2016unsupervised},
 Villon et al. \cite{villon2016coral}, Xu et al. \cite{xu2018underwater}, and Konovalov et al.

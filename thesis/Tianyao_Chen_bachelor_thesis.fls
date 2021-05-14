@@ -209,9 +209,6 @@ INPUT ./images/amphora_various_shapes.jpg
 INPUT ./images/amphora_various_shapes.jpg
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/helvetic/phvro7t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/helvetic/phvro8r.tfm
-INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/deep_learning.png
-INPUT ./images/deep_learning.png
-INPUT ./images/deep_learning.png
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
@@ -242,9 +239,6 @@ INPUT ./images/nms.png
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/pr_curve.png
 INPUT ./images/pr_curve.png
 INPUT ./images/pr_curve.png
-INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/r_cnn.png
-INPUT ./images/r_cnn.png
-INPUT ./images/r_cnn.png
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsphv.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsphv.fd
 INPUT /Users/tillchen/Google Drive/JUB/thesis/thesis/./images/fast_r_cnn.png

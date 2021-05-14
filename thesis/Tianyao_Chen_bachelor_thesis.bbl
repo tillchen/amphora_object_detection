@@ -1250,8 +1250,8 @@
       \strng{authorbibnamehash}{9e8511ef13d0cdda3a709b93fa650e71}
       \strng{authornamehash}{9e8511ef13d0cdda3a709b93fa650e71}
       \strng{authorfullhash}{9e8511ef13d0cdda3a709b93fa650e71}
-      \field{sortinit}{4}
-      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
+      \field{sortinit}{3}
+      \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The perceptron, a perceiving and recognizing automaton Project Para}
@@ -1364,8 +1364,8 @@
       \strng{authorbibnamehash}{b468248a20d75c52ee742f4592c2569f}
       \strng{authornamehash}{b468248a20d75c52ee742f4592c2569f}
       \strng{authorfullhash}{b468248a20d75c52ee742f4592c2569f}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{4}
+      \field{sortinithash}{11cdaee3b18e01d77f3f428b13c1fc76}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1609.04747}
@@ -1792,8 +1792,8 @@
       \strng{authorbibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
       \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
       \strng{authorfullhash}{42c4b52dc3a62cebabbc11c73e1afb53}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
@@ -1816,8 +1816,8 @@
       \strng{authorbibnamehash}{922300a9b90cf51cfd0988bd2ae26e8c}
       \strng{authornamehash}{922300a9b90cf51cfd0988bd2ae26e8c}
       \strng{authorfullhash}{922300a9b90cf51cfd0988bd2ae26e8c}
-      \field{sortinit}{7}
-      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
@@ -2912,50 +2912,6 @@
       \field{year}{2015}
       \field{pages}{3431\bibrangedash 3440}
       \range{pages}{10}
-    \endentry
-    \entry{lin2017focal}{inproceedings}{}
-      \name{author}{5}{}{%
-        {{hash=08f925fe4692d130a1d7cb7d94483351}{%
-           family={Lin},
-           familyi={L\bibinitperiod},
-           given={Tsung-Yi},
-           giveni={T\bibinithyphendelim Y\bibinitperiod}}}%
-        {{hash=d87be7c19fa16049347907c9820816c6}{%
-           family={Goyal},
-           familyi={G\bibinitperiod},
-           given={Priya},
-           giveni={P\bibinitperiod}}}%
-        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
-           family={Girshick},
-           familyi={G\bibinitperiod},
-           given={Ross},
-           giveni={R\bibinitperiod}}}%
-        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
-           family={He},
-           familyi={H\bibinitperiod},
-           given={Kaiming},
-           giveni={K\bibinitperiod}}}%
-        {{hash=e38ddb38a8e769642319731dae30fa2d}{%
-           family={Doll{á}r},
-           familyi={D\bibinitperiod},
-           given={Piotr},
-           giveni={P\bibinitperiod}}}%
-      }
-      \strng{namehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
-      \strng{fullhash}{83b5b0e280a121a189a18bb9777850a6}
-      \strng{bibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
-      \strng{authorbibnamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
-      \strng{authornamehash}{3b7e00bc88d7aca4d4d5ddb8c252e36c}
-      \strng{authorfullhash}{83b5b0e280a121a189a18bb9777850a6}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the IEEE international conference on computer vision}
-      \field{title}{Focal loss for dense object detection}
-      \field{year}{2017}
-      \field{pages}{2980\bibrangedash 2988}
-      \range{pages}{9}
     \endentry
     \entry{ghiasi2018dropblock}{article}{}
       \name{author}{3}{}{%
@@ -4373,8 +4329,8 @@
       \strng{authorbibnamehash}{074dd699710da0ec1eb45f13b31788e3}
       \strng{authornamehash}{074dd699710da0ec1eb45f13b31788e3}
       \strng{authorfullhash}{074dd699710da0ec1eb45f13b31788e3}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{TensorFlow 2 Detection Model Zoo}
@@ -4413,8 +4369,8 @@
       \strng{authorbibnamehash}{c2dd1bd6b646d9176c05dec746bd5c65}
       \strng{authornamehash}{c2dd1bd6b646d9176c05dec746bd5c65}
       \strng{authorfullhash}{c2dd1bd6b646d9176c05dec746bd5c65}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the IEEE/CVF conference on computer vision and pattern recognition}
@@ -4447,8 +4403,8 @@
       \strng{authorbibnamehash}{be7aca36828b0bcde82a61430496df85}
       \strng{authornamehash}{be7aca36828b0bcde82a61430496df85}
       \strng{authorfullhash}{be7aca36828b0bcde82a61430496df85}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{arXiv preprint arXiv:1904.07850}
